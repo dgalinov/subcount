@@ -47,7 +47,7 @@ $dataPoints2 = array(
     </head>
     <body>
         <?php
-            /*$servername = "localhost";
+            $servername = "localhost";
             $username = "root";
             $password = "";
             $dbname = "bd_leads";
@@ -81,9 +81,9 @@ $dataPoints2 = array(
                         echo "<p>" . $row['Sun'] . "</p>";
                     }
                 }
-            }*/
+            }
         ?>
-        <div class="topnav">
+        <!--<div class="topnav">
             <a class="active" href="Dashboard.php">Dashboard</a>
             <a href="#Sequences">Sequences</a>
         </div>
@@ -108,7 +108,7 @@ $dataPoints2 = array(
                     <th>Date Subscribed</th>
                 </tr>
                 <?php
-                    $servername = "localhost";
+                    /*$servername = "localhost";
                     $username = "root";
                     $password = "";
                     $dbname = "bd_leads";
@@ -134,9 +134,9 @@ $dataPoints2 = array(
                                             </tr>";
                             }
                         }
-                    }
+                    }*/
                 ?>
             </table>
-        </div>
+        </div>-->
     </body>
 <html>
