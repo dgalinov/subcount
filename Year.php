@@ -9,53 +9,81 @@ if (mysqli_connect_errno()) {
     exit();
 }
 //initialize variables
-$mUnsubs = $tUnsubs = $wUnsubs = $thUnsubs = $fUnsubs = $sUnsubs = $suUnsubs = "";
-$mSubs  = $tSubs = $wSubs = $thSubs = $fSubs = $sSubs = $suSubs = "";
+$Jan = $Feb = $Mar = $Apr = $May = $Jun = $Jul = $Aug = $Sep = $Oct = $Nov = $Dec = "";
+$JanU = $FebU = $MarU = $AprU = $MayU = $JunU = $JulU = $AugU = $SepU = $OctU = $NovU = $DecU = "";
 
 
-$sqlMon = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE week(date) = week(CURDATE()) AND weekday(date) = '0'");
-while($row = mysqli_fetch_array($sqlMon)){
-    $mSubs	= $row['sub'];
-    $mUnsubs	= $row['unsub'];
+$sql1 = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND month(date) = '01'");
+while($row = mysqli_fetch_array($sql1)){
+    $Jan	= $row['sub'];
+    $JanU	= $row['unsub'];
 }
-$sqlTue = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE week(date) = week(CURDATE()) AND weekday(date) = '1'");
-while($row = mysqli_fetch_array($sqlTue)){
-    $tSubs	= $row['sub'];
-    $tUnsubs	= $row['unsub'];
+$sql2 = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND month(date) = '02'");
+while($row = mysqli_fetch_array($sql2)){
+    $Feb	= $row['sub'];
+    $FebU	= $row['unsub'];
 }
-$sqlWed = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE week(date) = week(CURDATE()) AND weekday(date) = '2'");
-while($row = mysqli_fetch_array($sqlWed)){
-    $wSubs	= $row['sub'];
-    $wUnsubs	= $row['unsub'];
+$sql3 = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND month(date) = '03'");
+while($row = mysqli_fetch_array($sql3)){
+    $Mar	= $row['sub'];
+    $MarU	= $row['unsub'];
 }
-$sqlThu = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE week(date) = week(CURDATE()) AND weekday(date) = '3'");
-while($row = mysqli_fetch_array($sqlThu)){
-    $thSubs	= $row['sub'];
-    $thUnsubs	= $row['unsub'];
+$sql4 = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND month(date) = '04'");
+while($row = mysqli_fetch_array($sql4)){
+    $Apr	= $row['sub'];
+    $AprU	= $row['unsub'];
 }
-$sqlFri = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE week(date) = week(CURDATE()) AND weekday(date) = '4'");
-while($row = mysqli_fetch_array($sqlFri)){
-    $fSubs	= $row['sub'];
-    $fUnsubs	= $row['unsub'];
+$sql5 = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND month(date) = '05'");
+while($row = mysqli_fetch_array($sql5)){
+    $May	= $row['sub'];
+    $MayU	= $row['unsub'];
 }
-$sqlSat = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE week(date) = week(CURDATE()) AND weekday(date) = '5'");
-while($row = mysqli_fetch_array($sqlSat)){
-    $sSubs	= $row['sub'];
-    $sUnsubs	= $row['unsub'];
+$sql6 = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND month(date) = '06'");
+while($row = mysqli_fetch_array($sql6)){
+    $Jun	= $row['sub'];
+    $JunU	= $row['unsub'];
 }
-$sqlSun = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE week(date) = week(CURDATE()) AND weekday(date) = '6'");
-while($row = mysqli_fetch_array($sqlSun)){
-    $suSubs	= $row['sub'];
-    $suUnsubs	= $row['unsub'];
+$sql7 = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND month(date) = '07'");
+while($row = mysqli_fetch_array($sql7)){
+    $Jul	= $row['sub'];
+    $JulU	= $row['unsub'];
+}
+$sql8 = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND month(date) = '08'");
+while($row = mysqli_fetch_array($sql8)){
+    $Aug	= $row['sub'];
+    $AugU	= $row['unsub'];
+}
+$sql9 = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND month(date) = '09'");
+while($row = mysqli_fetch_array($sql9)){
+    $Sep	= $row['sub'];
+    $SepU	= $row['unsub'];
+}
+$sql10 = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND month(date) = '10'");
+while($row = mysqli_fetch_array($sql10)){
+    $Oct	= $row['sub'];
+    $OctU	= $row['unsub'];
+}
+$sql11 = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND month(date) = '11'");
+while($row = mysqli_fetch_array($sql11)){
+    $Nov	= $row['sub'];
+    $NovU	= $row['unsub'];
+}
+$sql12 = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND month(date) = '12'");
+while($row = mysqli_fetch_array($sql12)){
+    $Dec	= $row['sub'];
+    $DecU	= $row['unsub'];
 }
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <style>
@@ -87,7 +115,7 @@ while($row = mysqli_fetch_array($sqlSun)){
 </div>
 <div class="row"  style="width: 100%">
     <div class="column">
-    <canvas id="Chart" ></canvas>
+        <canvas id="Chart" ></canvas>
     </div>
     <div class="column2">
         <div>
@@ -104,7 +132,6 @@ while($row = mysqli_fetch_array($sqlSun)){
             <h2 style="color: #08c;font-family: 'Nunito', sans-serif;">Total subscribers: <?php echo $total ?></h2>
             <h4 style="color: #ff5050;font-family: 'Nunito', sans-serif;">Total unsubscribed: <?php echo $totalU ?></h4>
         </div>
-
         <a href="Day.php" data-title="Awesome Button" style="position: relative;display: inline-block;padding: 0.7em 1.2em;text-decoration: none;
             text-align: center;cursor: pointer;user-select: none;color: white;border-radius: 10px;margin-left: 10px;margin-bottom: 12px;background: linear-gradient(to right, #0088cc 0%, #33ccff 100%);">Day</a>
         <a href="index.php" data-title="Awesome Button" style="position: relative;display: inline-block;padding: 0.7em 1.2em;text-decoration: none;
@@ -113,7 +140,7 @@ while($row = mysqli_fetch_array($sqlSun)){
             text-align: center;cursor: pointer;user-select: none;color: white;border-radius: 10px;margin-left: 10px; margin-bottom: 12px;background: linear-gradient(to right, #0088cc 0%, #33ccff 100%);">Month</a>
         <a href="Year.php" data-title="Awesome Button" style="position: relative;display: inline-block;padding: 0.7em 1.2em;text-decoration: none;
             text-align: center;cursor: pointer;user-select: none;color: white;border-radius: 10px;margin-left: 10px; margin-bottom: 12px;background: linear-gradient(to right, #0088cc 0%, #33ccff 100%);">Year</a>
-    </div>
+        </div>
 </div>
 <!-- jQuery cdn -->
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
@@ -156,7 +183,7 @@ while($row = mysqli_fetch_array($sqlSun)){
                             <td class='capital tablaLista'>".$row['company']."</td>
                             <td class='tablaLista'>".$row['email']."</td>
                             <td class='capital tablaLista'>".$row['preferences']."</td>
-                            <td class='tablaLista' style=''>".$row['date']."</td>
+                            <td class='tablaLista'>".$row['date']."</td>
                           </tr>";
                 }
             }
@@ -172,7 +199,7 @@ while($row = mysqli_fetch_array($sqlSun)){
     var ctx = document.getElementById("Chart");
     var data = {
         datasets: [{
-            data: [<?php echo $mSubs; ?>,<?php echo $tSubs; ?>,<?php echo $wSubs; ?>,<?php echo $thSubs; ?>,<?php echo $fSubs; ?>,<?php echo $sSubs; ?>,<?php echo $suSubs; ?>],
+            data: [<?php echo $Jan; ?>,<?php echo $Feb; ?>,<?php echo $Mar; ?>,<?php echo $Apr; ?>,<?php echo $May; ?>,<?php echo $Jul; ?>,<?php echo $Jun; ?>,<?php echo $Aug; ?>,<?php echo $Sep; ?>,<?php echo $Oct; ?>,<?php echo $Nov; ?>,<?php echo $Dec; ?>],
             //backgroundColor: 'transparent',
             backgroundColor: 'rgba(1, 173, 50, 0.5)',
             //backgroundColor: 'rgba(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ', 0.4)',
@@ -181,7 +208,7 @@ while($row = mysqli_fetch_array($sqlSun)){
             borderWidth: 2,
             label: 'Subscribed' // for legend
         },{
-            data: [<?php echo $mUnsubs; ?>,<?php echo $tUnsubs; ?>,<?php echo $wUnsubs; ?>,<?php echo $thUnsubs; ?>,<?php echo $fUnsubs; ?>,<?php echo $sUnsubs; ?>,<?php echo $suUnsubs; ?>],
+            data: [<?php echo $JanU; ?>,<?php echo $FebU; ?>,<?php echo $MarU; ?>,<?php echo $AprU; ?>,<?php echo $MayU; ?>,<?php echo $JulU; ?>,<?php echo $JunU; ?>,<?php echo $AugU; ?>,<?php echo $SepU; ?>,<?php echo $OctU; ?>,<?php echo $NovU; ?>,<?php echo $DecU; ?>],
             backgroundColor: 'rgba(236, 3, 50, 0.5)',
             borderColor: "#ff5050",
             borderWidth: 2,
@@ -190,7 +217,7 @@ while($row = mysqli_fetch_array($sqlSun)){
             label: 'Unsubscribed' // for legend
         }],
         labels: [
-            'Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'
+            'Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'
         ]
     };
 

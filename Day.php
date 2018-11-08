@@ -9,53 +9,29 @@ if (mysqli_connect_errno()) {
     exit();
 }
 //initialize variables
-$mUnsubs = $tUnsubs = $wUnsubs = $thUnsubs = $fUnsubs = $sUnsubs = $suUnsubs = "";
-$mSubs  = $tSubs = $wSubs = $thSubs = $fSubs = $sSubs = $suSubs = "";
+$mUnsubs = "";
+$mSubs  = "";
+$dates= "";
 
-
-$sqlMon = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE week(date) = week(CURDATE()) AND weekday(date) = '0'");
+$sqlMon = mysqli_query($db_conx, "SELECT dayname(date) as dayname, SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE date = curdate()");
 while($row = mysqli_fetch_array($sqlMon)){
     $mSubs	= $row['sub'];
     $mUnsubs	= $row['unsub'];
+    $date = $row['dayname'];
+    $dates = $dates.'"'.$date.'",';
 }
-$sqlTue = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE week(date) = week(CURDATE()) AND weekday(date) = '1'");
-while($row = mysqli_fetch_array($sqlTue)){
-    $tSubs	= $row['sub'];
-    $tUnsubs	= $row['unsub'];
-}
-$sqlWed = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE week(date) = week(CURDATE()) AND weekday(date) = '2'");
-while($row = mysqli_fetch_array($sqlWed)){
-    $wSubs	= $row['sub'];
-    $wUnsubs	= $row['unsub'];
-}
-$sqlThu = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE week(date) = week(CURDATE()) AND weekday(date) = '3'");
-while($row = mysqli_fetch_array($sqlThu)){
-    $thSubs	= $row['sub'];
-    $thUnsubs	= $row['unsub'];
-}
-$sqlFri = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE week(date) = week(CURDATE()) AND weekday(date) = '4'");
-while($row = mysqli_fetch_array($sqlFri)){
-    $fSubs	= $row['sub'];
-    $fUnsubs	= $row['unsub'];
-}
-$sqlSat = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE week(date) = week(CURDATE()) AND weekday(date) = '5'");
-while($row = mysqli_fetch_array($sqlSat)){
-    $sSubs	= $row['sub'];
-    $sUnsubs	= $row['unsub'];
-}
-$sqlSun = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE week(date) = week(CURDATE()) AND weekday(date) = '6'");
-while($row = mysqli_fetch_array($sqlSun)){
-    $suSubs	= $row['sub'];
-    $suUnsubs	= $row['unsub'];
-}
+$dates = trim($dates, ",");
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <style>
@@ -87,7 +63,7 @@ while($row = mysqli_fetch_array($sqlSun)){
 </div>
 <div class="row"  style="width: 100%">
     <div class="column">
-    <canvas id="Chart" ></canvas>
+        <canvas id="Chart" ></canvas>
     </div>
     <div class="column2">
         <div>
@@ -104,7 +80,6 @@ while($row = mysqli_fetch_array($sqlSun)){
             <h2 style="color: #08c;font-family: 'Nunito', sans-serif;">Total subscribers: <?php echo $total ?></h2>
             <h4 style="color: #ff5050;font-family: 'Nunito', sans-serif;">Total unsubscribed: <?php echo $totalU ?></h4>
         </div>
-
         <a href="Day.php" data-title="Awesome Button" style="position: relative;display: inline-block;padding: 0.7em 1.2em;text-decoration: none;
             text-align: center;cursor: pointer;user-select: none;color: white;border-radius: 10px;margin-left: 10px;margin-bottom: 12px;background: linear-gradient(to right, #0088cc 0%, #33ccff 100%);">Day</a>
         <a href="index.php" data-title="Awesome Button" style="position: relative;display: inline-block;padding: 0.7em 1.2em;text-decoration: none;
@@ -156,7 +131,7 @@ while($row = mysqli_fetch_array($sqlSun)){
                             <td class='capital tablaLista'>".$row['company']."</td>
                             <td class='tablaLista'>".$row['email']."</td>
                             <td class='capital tablaLista'>".$row['preferences']."</td>
-                            <td class='tablaLista' style=''>".$row['date']."</td>
+                            <td class='tablaLista'>".$row['date']."</td>
                           </tr>";
                 }
             }
@@ -172,7 +147,7 @@ while($row = mysqli_fetch_array($sqlSun)){
     var ctx = document.getElementById("Chart");
     var data = {
         datasets: [{
-            data: [<?php echo $mSubs; ?>,<?php echo $tSubs; ?>,<?php echo $wSubs; ?>,<?php echo $thSubs; ?>,<?php echo $fSubs; ?>,<?php echo $sSubs; ?>,<?php echo $suSubs; ?>],
+            data: [<?php echo $mSubs; ?>],
             //backgroundColor: 'transparent',
             backgroundColor: 'rgba(1, 173, 50, 0.5)',
             //backgroundColor: 'rgba(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ', 0.4)',
@@ -181,7 +156,7 @@ while($row = mysqli_fetch_array($sqlSun)){
             borderWidth: 2,
             label: 'Subscribed' // for legend
         },{
-            data: [<?php echo $mUnsubs; ?>,<?php echo $tUnsubs; ?>,<?php echo $wUnsubs; ?>,<?php echo $thUnsubs; ?>,<?php echo $fUnsubs; ?>,<?php echo $sUnsubs; ?>,<?php echo $suUnsubs; ?>],
+            data: [<?php echo $mUnsubs; ?>],
             backgroundColor: 'rgba(236, 3, 50, 0.5)',
             borderColor: "#ff5050",
             borderWidth: 2,
@@ -190,7 +165,7 @@ while($row = mysqli_fetch_array($sqlSun)){
             label: 'Unsubscribed' // for legend
         }],
         labels: [
-            'Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'
+            <?php echo $dates; ?>
         ]
     };
 

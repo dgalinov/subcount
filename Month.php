@@ -87,7 +87,7 @@ while($row = mysqli_fetch_array($sqlSun)){
 </div>
 <div class="row"  style="width: 100%">
     <div class="column">
-    <canvas id="Chart" ></canvas>
+        <canvas id="Chart" ></canvas>
     </div>
     <div class="column2">
         <div>

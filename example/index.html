@@ -113,7 +113,7 @@
                 count(case when WEEKDAY(i.date)=5 THEN i.date END) as Sat,
                 sum(case when subscribed then 1 else 0 end) as sub
             FROM information as i
-            WHERE i.date BETWEEN '2018-01-01' AND '2020-11-11'
+            WHERE i.date BETWEEN Mon AND Sun
             GROUP BY i.date
             ORDER BY i.date DESC";
                 if ($result = $conn->query($query)) {
