@@ -13,37 +13,37 @@ $mUnsubs = $tUnsubs = $wUnsubs = $thUnsubs = $fUnsubs = $sUnsubs = $suUnsubs = "
 $mSubs  = $tSubs = $wSubs = $thSubs = $fSubs = $sSubs = $suSubs = "";
 
 
-$sqlMon = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE week(date) = week(CURDATE()) AND weekday(date) = '0'");
+$sqlMon = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND week(date) = week(CURDATE()) AND weekday(date) = '0'");
 while($row = mysqli_fetch_array($sqlMon)){
     $mSubs	= $row['sub'];
     $mUnsubs	= $row['unsub'];
 }
-$sqlTue = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE week(date) = week(CURDATE()) AND weekday(date) = '1'");
+$sqlTue = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND week(date) = week(CURDATE()) AND weekday(date) = '1'");
 while($row = mysqli_fetch_array($sqlTue)){
     $tSubs	= $row['sub'];
     $tUnsubs	= $row['unsub'];
 }
-$sqlWed = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE week(date) = week(CURDATE()) AND weekday(date) = '2'");
+$sqlWed = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND week(date) = week(CURDATE()) AND weekday(date) = '2'");
 while($row = mysqli_fetch_array($sqlWed)){
     $wSubs	= $row['sub'];
     $wUnsubs	= $row['unsub'];
 }
-$sqlThu = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE week(date) = week(CURDATE()) AND weekday(date) = '3'");
+$sqlThu = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND week(date) = week(CURDATE()) AND weekday(date) = '3'");
 while($row = mysqli_fetch_array($sqlThu)){
     $thSubs	= $row['sub'];
     $thUnsubs	= $row['unsub'];
 }
-$sqlFri = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE week(date) = week(CURDATE()) AND weekday(date) = '4'");
+$sqlFri = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND week(date) = week(CURDATE()) AND weekday(date) = '4'");
 while($row = mysqli_fetch_array($sqlFri)){
     $fSubs	= $row['sub'];
     $fUnsubs	= $row['unsub'];
 }
-$sqlSat = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE week(date) = week(CURDATE()) AND weekday(date) = '5'");
+$sqlSat = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND week(date) = week(CURDATE()) AND weekday(date) = '5'");
 while($row = mysqli_fetch_array($sqlSat)){
     $sSubs	= $row['sub'];
     $sUnsubs	= $row['unsub'];
 }
-$sqlSun = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE week(date) = week(CURDATE()) AND weekday(date) = '6'");
+$sqlSun = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND week(date) = week(CURDATE()) AND weekday(date) = '6'");
 while($row = mysqli_fetch_array($sqlSun)){
     $suSubs	= $row['sub'];
     $suUnsubs	= $row['unsub'];
@@ -113,6 +113,10 @@ while($row = mysqli_fetch_array($sqlSun)){
             text-align: center;cursor: pointer;user-select: none;color: white;border-radius: 10px;margin-left: 10px; margin-bottom: 12px;background: linear-gradient(to right, #0088cc 0%, #33ccff 100%);">Month</a>
         <a href="Year.php" data-title="Awesome Button" style="position: relative;display: inline-block;padding: 0.7em 1.2em;text-decoration: none;
             text-align: center;cursor: pointer;user-select: none;color: white;border-radius: 10px;margin-left: 10px; margin-bottom: 12px;background: linear-gradient(to right, #0088cc 0%, #33ccff 100%);">Year</a>
+        <div>
+			
+        
+        </div>
     </div>
 </div>
 <!-- jQuery cdn -->
@@ -122,8 +126,26 @@ while($row = mysqli_fetch_array($sqlSun)){
 <div>
     <br><br>
 </div>
-<div>
-    <table>
+<form action="export.php" method="post" name="export_excel">
+<?php
+/*
+* iTech Empires:  Export Data from MySQL to CSV Script
+* Version: 1.0.0
+* Page: Index
+*/
+ 
+// Database Connection
+require("db_connection.php");
+ 
+// List Users
+$query = "SELECT firstname, lastname, title, company, email, preferences, date FROM information WHERE week(date) = week(CURDATE())";
+if (!$result = mysqli_query($con, $query)) {
+    exit(mysqli_error($con));
+}
+ 
+if (mysqli_num_rows($result) > 0) {
+    $number = 1;
+    $users = '<table class="table table-bordered">
         <tr>
             <th>FirstName</th>
             <th>LastName</th>
@@ -131,25 +153,11 @@ while($row = mysqli_fetch_array($sqlSun)){
             <th>Company</th>
             <th>E-Mail</th>
             <th>Preferences</th>
-            <th>Date Subscribed</th>
+            <th>DateSubscribed</th>
         </tr>
-        <?php
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "bd_leads";
-
-        $conn = new mysqli($servername, $username, $password, $dbname);
-        $cat_names = array();
-
-        if (mysqli_connect_errno()) {
-            echo "Failed to connect to MySQL: " . mysqli_connect_error();
-        } else {
-            $query = "SELECT * FROM information AS i ORDER BY i.date DESC";
-
-            if ($result = $conn->query($query)) {
-                while($row = $result->fetch_assoc()){
-                    echo "<tr>
+    ';
+    while ($row = mysqli_fetch_assoc($result)) {
+        $users .= "<tr>
                             <td class='capital tablaLista'>".$row['firstname']."</td>
                             <td class='capital tablaLista'>".$row['lastname']."</td>
                             <td class='capital tablaLista'>".$row['title']."</td>
@@ -158,12 +166,35 @@ while($row = mysqli_fetch_array($sqlSun)){
                             <td class='capital tablaLista'>".$row['preferences']."</td>
                             <td class='tablaLista' style=''>".$row['date']."</td>
                           </tr>";
-                }
-            }
+    }
+    $users .= '</table>';
+}
+ 
+?>
+<div class="container">
+    <!--  Header  -->
+    <div>
+		<div class="form-group" style="float:right">
+			<button onclick="Export()" class="btn btn-primary">Export to CSV File</button>
+		</div>
+    </div>
+    <!--  /Header  -->
+ 
+    <!--  Content   -->
+    <div class="form-group">
+        <?php echo $users ?>
+    </div>
+    
+    <!--  /Content   -->
+ 
+    <script>
+        function Export()
+        {
+            window.open("export.php", '_self');
         }
-        ?>
-    </table>
+    </script>
 </div>
+</form>
 </body>
 </html>
 <script>
@@ -172,7 +203,7 @@ while($row = mysqli_fetch_array($sqlSun)){
     var ctx = document.getElementById("Chart");
     var data = {
         datasets: [{
-            data: [<?php echo $mSubs; ?>,<?php echo $tSubs; ?>,<?php echo $wSubs; ?>,<?php echo $thSubs; ?>,<?php echo $fSubs; ?>,<?php echo $sSubs; ?>,<?php echo $suSubs; ?>],
+            data: [<?php echo $suSubs; ?>, <?php echo $mSubs; ?>,<?php echo $tSubs; ?>,<?php echo $wSubs; ?>,<?php echo $thSubs; ?>,<?php echo $fSubs; ?>,<?php echo $sSubs; ?>],
             //backgroundColor: 'transparent',
             backgroundColor: 'rgba(1, 173, 50, 0.5)',
             //backgroundColor: 'rgba(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ', 0.4)',
@@ -181,7 +212,7 @@ while($row = mysqli_fetch_array($sqlSun)){
             borderWidth: 2,
             label: 'Subscribed' // for legend
         },{
-            data: [<?php echo $mUnsubs; ?>,<?php echo $tUnsubs; ?>,<?php echo $wUnsubs; ?>,<?php echo $thUnsubs; ?>,<?php echo $fUnsubs; ?>,<?php echo $sUnsubs; ?>,<?php echo $suUnsubs; ?>],
+            data: [<?php echo $suUnsubs; ?>,<?php echo $mUnsubs; ?>,<?php echo $tUnsubs; ?>,<?php echo $wUnsubs; ?>,<?php echo $thUnsubs; ?>,<?php echo $fUnsubs; ?>,<?php echo $sUnsubs; ?>],
             backgroundColor: 'rgba(236, 3, 50, 0.5)',
             borderColor: "#ff5050",
             borderWidth: 2,
@@ -190,7 +221,7 @@ while($row = mysqli_fetch_array($sqlSun)){
             label: 'Unsubscribed' // for legend
         }],
         labels: [
-            'Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday'
+            'Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'
         ]
     };
 
@@ -210,7 +241,7 @@ while($row = mysqli_fetch_array($sqlSun)){
                 }
             },
             tooltips: {
-                mode: 'n'
+                mode: 'y'
             },
             scales: {
                 yAxes: [{

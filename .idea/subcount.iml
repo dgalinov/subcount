@@ -5,6 +5,6 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="form" />
-    <orderEntry type="module" module-name="gentelella-master" />
+    <orderEntry type="module" module-name="auditview" />
   </component>
 </module>

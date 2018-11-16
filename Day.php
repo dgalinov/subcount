@@ -97,8 +97,26 @@ $dates = trim($dates, ",");
 <div>
     <br><br>
 </div>
-<div>
-    <table>
+<form action="export.php" method="post" name="export_excel">
+<?php
+/*
+* iTech Empires:  Export Data from MySQL to CSV Script
+* Version: 1.0.0
+* Page: Index
+*/
+ 
+// Database Connection
+require("db_connection.php");
+ 
+// List Users
+$query = "SELECT firstname, lastname, title, company, email, preferences, date FROM information WHERE year(date) = year(CURDATE()) AND date = curdate()";
+if (!$result = mysqli_query($con, $query)) {
+    exit(mysqli_error($con));
+}
+ 
+if (mysqli_num_rows($result) > 0) {
+    $number = 1;
+    $users = '<table class="table table-bordered">
         <tr>
             <th>FirstName</th>
             <th>LastName</th>
@@ -106,39 +124,48 @@ $dates = trim($dates, ",");
             <th>Company</th>
             <th>E-Mail</th>
             <th>Preferences</th>
-            <th>Date Subscribed</th>
+            <th>DateSubscribed</th>
         </tr>
-        <?php
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "bd_leads";
-
-        $conn = new mysqli($servername, $username, $password, $dbname);
-        $cat_names = array();
-
-        if (mysqli_connect_errno()) {
-            echo "Failed to connect to MySQL: " . mysqli_connect_error();
-        } else {
-            $query = "SELECT * FROM information AS i ORDER BY i.date DESC";
-
-            if ($result = $conn->query($query)) {
-                while($row = $result->fetch_assoc()){
-                    echo "<tr>
+    ';
+    while ($row = mysqli_fetch_assoc($result)) {
+        $users .= "<tr>
                             <td class='capital tablaLista'>".$row['firstname']."</td>
                             <td class='capital tablaLista'>".$row['lastname']."</td>
                             <td class='capital tablaLista'>".$row['title']."</td>
                             <td class='capital tablaLista'>".$row['company']."</td>
                             <td class='tablaLista'>".$row['email']."</td>
                             <td class='capital tablaLista'>".$row['preferences']."</td>
-                            <td class='tablaLista'>".$row['date']."</td>
+                            <td class='tablaLista' style=''>".$row['date']."</td>
                           </tr>";
-                }
-            }
+    }
+    $users .= '</table>';
+}
+ 
+?>
+<div class="container">
+    <!--  Header  -->
+    <div>
+		<div class="form-group" style="float:right">
+			<button onclick="Export()" class="btn btn-primary">Export to CSV File</button>
+		</div>
+    </div>
+    <!--  /Header  -->
+ 
+    <!--  Content   -->
+    <div class="form-group">
+        <?php echo $users ?>
+    </div>
+    
+    <!--  /Content   -->
+ 
+    <script>
+        function Export()
+        {
+            window.open("export.php", '_selft');
         }
-        ?>
-    </table>
+    </script>
 </div>
+</form>
 </body>
 </html>
 <script>
@@ -185,7 +212,7 @@ $dates = trim($dates, ",");
                 }
             },
             tooltips: {
-                mode: 'n'
+                mode: 'y'
             },
             scales: {
                 yAxes: [{

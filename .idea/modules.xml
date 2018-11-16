@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../auditview/.idea/auditview.iml" filepath="$PROJECT_DIR$/../auditview/.idea/auditview.iml" />
       <module fileurl="file://$PROJECT_DIR$/../form/.idea/form.iml" filepath="$PROJECT_DIR$/../form/.idea/form.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../gentelella-master/.idea/gentelella-master.iml" filepath="$PROJECT_DIR$/../gentelella-master/.idea/gentelella-master.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/subcount.iml" filepath="$PROJECT_DIR$/.idea/subcount.iml" />
     </modules>
   </component>
