@@ -28,11 +28,36 @@
     <a href="webinars.php">Webinars</a>
     <a href="blog.php">Blog</a>
 </div>
-<div class="editor">
-    <textarea class="ckeditor" name="editor"></textarea>
-    <script>
-        CKEDITOR.replace( 'editor1' );
-    </script>
+<div>
+    <div class="vertical-menu">
+        <a class="active" href="#" class="circle">+</a>
+        <a href="#">Step 1</a>
+        <a href="#">Step 2</a>
+        <a href="#">Step 3</a>
+    </div>
+    <form action="" method="post">
+        <textarea class="ckeditor" name="editor"></textarea>
+        <input type="submit" value="INSERT">
+    </form>
 </div>
+
 </body>
 </html>
+<?php
+    if(isset($_POST['editor'])){
+        $text = $_POST['editor'];
+
+        // connect to db
+
+        $conn = mysqli_connect('localhost','root','','bd_leads') OR DIE("ERROR WITH THE CONNECT");
+
+        // insert the data
+
+        $query = mysqli_query($conn, "INSERT INTO mails(text) VALUES ('$text')");
+        if($query){
+            echo "ADDED INTO DB";
+        } else {
+            echo "ERROR WHILE INSERTING";
+        }
+    }
+?>

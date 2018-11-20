@@ -221,3 +221,29 @@ td {
 .topnavS a.active:hover {
     background-color: #0077b3;
 }
+.vertical-menu {
+    width: 100px;
+    text-align: center;
+}
+
+.vertical-menu a {
+    background:#08c;
+    color: white;
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+}
+
+.vertical-menu a:hover {
+    background-color: #0077b3;
+    text-decoration: none;
+    color: white;
+}
+
+.vertical-menu a.active {
+    background-color: #006699;
+    color: white;
+}
+.vertical-menu a.active:hover {
+    background-color: #0077b3;
+}
