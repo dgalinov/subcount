@@ -1,153 +1,223 @@
-html,body,#myChart { height:100%; width:100%;}
+html, body, #myChart {
+    height: 100%;
+    width: 100%;
+}
+
 body {
-  margin: 0;
-  font-family: 'Nunito', sans-serif;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
 }
 
 .topnav {
-  overflow: hidden;
-  background-color: #08c;
+    overflow: hidden;
+    background-color: #08c;
+    border-bottom: 2px solid white;
 }
 
 .topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+    background-color: #cceeff;
+    text-decoration: none;
+    color: black;
 }
 
 .topnav a.active {
-  background-color: #006699;
-  color: white;
+    background-color: #006699;
+    color: white;
 }
+
+.topnav a.active:hover {
+    background-color: #0077b3;
+}
+
 th {
-  background-color: #006699;
+    background-color: #006699;
 
 }
+
 table, tr, td {
-  border: 1px solid white;
+    border: 1px solid white;
 }
+
 table {
-  border-collapse: collapse;
-  width: 100%
+    border-collapse: collapse;
+    width: 100%
 }
+
 th, td {
-  padding: 15px;
-  color: white;
+    padding: 15px;
+    color: white;
 }
+
 td {
-  background-color: #0088cc;
+    background-color: #0088cc;
 }
+
 .capital {
-  text-transform:capitalize;
+    text-transform: capitalize;
 }
+
 .pagination {
-  display: inline-block;
-  float: right;
+    display: inline-block;
+    float: right;
 }
 
 .pagination a {
-  color: black;
-  float: left;
-  padding: 8px 16px;
-  text-decoration: none;
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
 }
 
 .pagination a.active {
-  background-color: #006699;
-  color: white;
+    background-color: #006699;
+    color: white;
 }
 
-.pagination a:hover:not(.active) {background-color: #0088cc;color:white;}
+.pagination a:hover:not(.active) {
+    background-color: #0088cc;
+    color: white;
+}
+
 .calendar-day {
-  width: 100px;
-  min-width: 100px;
-  max-width: 100px;
-  height: 80px;
+    width: 100px;
+    min-width: 100px;
+    max-width: 100px;
+    height: 80px;
 }
+
 .calendar-table {
-  margin: 0 auto;
-  width: 700px;
+    margin: 0 auto;
+    width: 700px;
 }
+
 .selected {
-  background-color: #eee;
+    background-color: #eee;
 }
+
 .outside .date {
-  color: #ccc;
+    color: #ccc;
 }
+
 .timetitle {
-  white-space: nowrap;
-  text-align: right;
+    white-space: nowrap;
+    text-align: right;
 }
+
 .event {
-  border-top: 1px solid #b2dba1;
-  border-bottom: 1px solid #b2dba1;
-  background-image: linear-gradient(to bottom, #dff0d8 0px, #c8e5bc 100%);
-  background-repeat: repeat-x;
-  color: #3c763d;
-  border-width: 1px;
-  font-size: .75em;
-  padding: 0 .75em;
-  line-height: 2em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  margin-bottom: 1px;
+    border-top: 1px solid #b2dba1;
+    border-bottom: 1px solid #b2dba1;
+    background-image: linear-gradient(to bottom, #dff0d8 0px, #c8e5bc 100%);
+    background-repeat: repeat-x;
+    color: #3c763d;
+    border-width: 1px;
+    font-size: .75em;
+    padding: 0 .75em;
+    line-height: 2em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-bottom: 1px;
 }
+
 .event.begin {
-  border-left: 1px solid #b2dba1;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
+    border-left: 1px solid #b2dba1;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
 }
+
 .event.end {
-  border-right: 1px solid #b2dba1;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
+    border-right: 1px solid #b2dba1;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
+
 .event.all-day {
-  border-top: 1px solid #9acfea;
-  border-bottom: 1px solid #9acfea;
-  background-image: linear-gradient(to bottom, #d9edf7 0px, #b9def0 100%);
-  background-repeat: repeat-x;
-  color: #31708f;
-  border-width: 1px;
+    border-top: 1px solid #9acfea;
+    border-bottom: 1px solid #9acfea;
+    background-image: linear-gradient(to bottom, #d9edf7 0px, #b9def0 100%);
+    background-repeat: repeat-x;
+    color: #31708f;
+    border-width: 1px;
 }
+
 .event.all-day.begin {
-  border-left: 1px solid #9acfea;
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
+    border-left: 1px solid #9acfea;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
 }
+
 .event.all-day.end {
-  border-right: 1px solid #9acfea;
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
+    border-right: 1px solid #9acfea;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
 }
+
 .event.clear {
-  background: none;
-  border: 1px solid transparent;
+    background: none;
+    border: 1px solid transparent;
 }
+
 .table-tight > thead > tr > th,
 .table-tight > tbody > tr > th,
 .table-tight > tfoot > tr > th,
 .table-tight > thead > tr > td,
 .table-tight > tbody > tr > td,
 .table-tight > tfoot > tr > td {
-  padding-left: 0;
-  padding-right: 0;
+    padding-left: 0;
+    padding-right: 0;
 }
+
 .table-tight-vert > thead > tr > th,
 .table-tight-vert > tbody > tr > th,
 .table-tight-vert > tfoot > tr > th,
 .table-tight-vert > thead > tr > td,
 .table-tight-vert > tbody > tr > td,
 .table-tight-vert > tfoot > tr > td {
-  padding-top: 0;
-  padding-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.editor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.topnavS {
+    overflow: hidden;
+    background-color: #08c;
+    border-bottom: 2px solid white;
+}
+
+.topnavS a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnavS a:hover {
+    background-color: #cceeff;
+    text-decoration: none;
+    color: black;
+}
+
+.topnavS a.active {
+    background-color: #006699;
+    color: white;
+}
+
+.topnavS a.active:hover {
+    background-color: #0077b3;
 }

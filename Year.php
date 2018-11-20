@@ -9,73 +9,22 @@ if (mysqli_connect_errno()) {
     exit();
 }
 //initialize variables
-$Jan = $Feb = $Mar = $Apr = $May = $Jun = $Jul = $Aug = $Sep = $Oct = $Nov = $Dec = "";
-$JanU = $FebU = $MarU = $AprU = $MayU = $JunU = $JulU = $AugU = $SepU = $OctU = $NovU = $DecU = "";
+$lastYear = $currentYear = "";
+$lastYearU = $currentYearU = "";
 
-
-$sql1 = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND month(date) = '01'");
+$sql1 = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE YEAR(date) = YEAR(DATE_SUB(CURDATE(), INTERVAL 1 YEAR))");
 while($row = mysqli_fetch_array($sql1)){
-    $Jan	= $row['sub'];
-    $JanU	= $row['unsub'];
+    $lastYear	= $row['sub'];
+    $lastYearU	= $row['unsub'];
 }
-$sql2 = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND month(date) = '02'");
-while($row = mysqli_fetch_array($sql2)){
-    $Feb	= $row['sub'];
-    $FebU	= $row['unsub'];
-}
-$sql3 = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND month(date) = '03'");
-while($row = mysqli_fetch_array($sql3)){
-    $Mar	= $row['sub'];
-    $MarU	= $row['unsub'];
-}
-$sql4 = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND month(date) = '04'");
-while($row = mysqli_fetch_array($sql4)){
-    $Apr	= $row['sub'];
-    $AprU	= $row['unsub'];
-}
-$sql5 = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND month(date) = '05'");
-while($row = mysqli_fetch_array($sql5)){
-    $May	= $row['sub'];
-    $MayU	= $row['unsub'];
-}
-$sql6 = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND month(date) = '06'");
-while($row = mysqli_fetch_array($sql6)){
-    $Jun	= $row['sub'];
-    $JunU	= $row['unsub'];
-}
-$sql7 = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND month(date) = '07'");
-while($row = mysqli_fetch_array($sql7)){
-    $Jul	= $row['sub'];
-    $JulU	= $row['unsub'];
-}
-$sql8 = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND month(date) = '08'");
-while($row = mysqli_fetch_array($sql8)){
-    $Aug	= $row['sub'];
-    $AugU	= $row['unsub'];
-}
-$sql9 = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND month(date) = '09'");
-while($row = mysqli_fetch_array($sql9)){
-    $Sep	= $row['sub'];
-    $SepU	= $row['unsub'];
-}
-$sql10 = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND month(date) = '10'");
-while($row = mysqli_fetch_array($sql10)){
-    $Oct	= $row['sub'];
-    $OctU	= $row['unsub'];
-}
-$sql11 = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND month(date) = '11'");
-while($row = mysqli_fetch_array($sql11)){
-    $Nov	= $row['sub'];
-    $NovU	= $row['unsub'];
-}
-$sql12 = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND month(date) = '12'");
-while($row = mysqli_fetch_array($sql12)){
-    $Dec	= $row['sub'];
-    $DecU	= $row['unsub'];
+$sql1 = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE YEAR(date) = YEAR(CURDATE())");
+while($row = mysqli_fetch_array($sql1)){
+    $currentYear	= $row['sub'];
+    $currentYearU	= $row['unsub'];
 }
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset='utf-8'>
@@ -108,7 +57,7 @@ while($row = mysqli_fetch_array($sql12)){
 <body style="font-family: 'Nunito', sans-serif;background:#d9d9d9">
 <div class="topnav">
     <a class="active" href="index.php">Dashboard</a>
-    <a href="#Sequences">Sequences</a>
+    <a href="Sequences.php">Sequences</a>
 </div>
 <div>
     <br><br>
@@ -161,7 +110,7 @@ while($row = mysqli_fetch_array($sql12)){
 require("db_connection.php");
  
 // List Users
-$query = "SELECT firstname, lastname, title, company, email, preferences, date FROM information WHERE year(date) = year(CURDATE())";
+$query = "SELECT firstname, lastname, title, company, email,industry, preferences, date FROM information ORDER BY date desc";
 if (!$result = mysqli_query($con, $query)) {
     exit(mysqli_error($con));
 }
@@ -175,6 +124,7 @@ if (mysqli_num_rows($result) > 0) {
             <th>Title</th>
             <th>Company</th>
             <th>E-Mail</th>
+            <th>Industry</th>
             <th>Preferences</th>
             <th>DateSubscribed</th>
         </tr>
@@ -186,6 +136,7 @@ if (mysqli_num_rows($result) > 0) {
                             <td class='capital tablaLista'>".$row['title']."</td>
                             <td class='capital tablaLista'>".$row['company']."</td>
                             <td class='tablaLista'>".$row['email']."</td>
+                            <td class='capital tablaLista'>".$row['industry']."</td>
                             <td class='capital tablaLista'>".$row['preferences']."</td>
                             <td class='tablaLista' style=''>".$row['date']."</td>
                           </tr>";
@@ -226,7 +177,7 @@ if (mysqli_num_rows($result) > 0) {
     var ctx = document.getElementById("Chart");
     var data = {
         datasets: [{
-            data: [<?php echo $Jan; ?>,<?php echo $Feb; ?>,<?php echo $Mar; ?>,<?php echo $Apr; ?>,<?php echo $May; ?>,<?php echo $Jul; ?>,<?php echo $Jun; ?>,<?php echo $Aug; ?>,<?php echo $Sep; ?>,<?php echo $Oct; ?>,<?php echo $Nov; ?>,<?php echo $Dec; ?>],
+            data: [<?php echo $lastYear; ?>,<?php echo $currentYear; ?>],
             //backgroundColor: 'transparent',
             backgroundColor: 'rgba(1, 173, 50, 0.5)',
             //backgroundColor: 'rgba(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ', 0.4)',
@@ -235,7 +186,7 @@ if (mysqli_num_rows($result) > 0) {
             borderWidth: 2,
             label: 'Subscribed' // for legend
         },{
-            data: [<?php echo $JanU; ?>,<?php echo $FebU; ?>,<?php echo $MarU; ?>,<?php echo $AprU; ?>,<?php echo $MayU; ?>,<?php echo $JulU; ?>,<?php echo $JunU; ?>,<?php echo $AugU; ?>,<?php echo $SepU; ?>,<?php echo $OctU; ?>,<?php echo $NovU; ?>,<?php echo $DecU; ?>],
+            data: [<?php echo $lastYearU; ?>,<?php echo $currentYearU; ?>],
             backgroundColor: 'rgba(236, 3, 50, 0.5)',
             borderColor: "#ff5050",
             borderWidth: 2,
@@ -244,7 +195,7 @@ if (mysqli_num_rows($result) > 0) {
             label: 'Unsubscribed' // for legend
         }],
         labels: [
-            'Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'
+            'Last Year', 'Current Year'
         ]
     };
 

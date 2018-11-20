@@ -22,8 +22,8 @@ while($row = mysqli_fetch_array($sqlMon)){
 }
 $dates = trim($dates, ",");
 ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset='utf-8'>
@@ -56,7 +56,7 @@ $dates = trim($dates, ",");
 <body style="font-family: 'Nunito', sans-serif;background:#d9d9d9">
 <div class="topnav">
     <a class="active" href="index.php">Dashboard</a>
-    <a href="#Sequences">Sequences</a>
+    <a href="Sequences.php">Sequences</a>
 </div>
 <div>
     <br><br>
@@ -109,7 +109,7 @@ $dates = trim($dates, ",");
 require("db_connection.php");
  
 // List Users
-$query = "SELECT firstname, lastname, title, company, email, preferences, date FROM information WHERE year(date) = year(CURDATE()) AND date = curdate()";
+$query = "SELECT firstname, lastname, title, company, email,industry, preferences, date FROM information WHERE year(date) = year(CURDATE()) AND date = curdate() ORDER BY date desc";
 if (!$result = mysqli_query($con, $query)) {
     exit(mysqli_error($con));
 }
@@ -123,6 +123,7 @@ if (mysqli_num_rows($result) > 0) {
             <th>Title</th>
             <th>Company</th>
             <th>E-Mail</th>
+            <th>Industry</th>
             <th>Preferences</th>
             <th>DateSubscribed</th>
         </tr>
@@ -134,6 +135,7 @@ if (mysqli_num_rows($result) > 0) {
                             <td class='capital tablaLista'>".$row['title']."</td>
                             <td class='capital tablaLista'>".$row['company']."</td>
                             <td class='tablaLista'>".$row['email']."</td>
+                            <td class='capital tablaLista'>".$row['industry']."</td>
                             <td class='capital tablaLista'>".$row['preferences']."</td>
                             <td class='tablaLista' style=''>".$row['date']."</td>
                           </tr>";

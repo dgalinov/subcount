@@ -24,7 +24,7 @@ if (mysqli_num_rows($result) > 0) {
 header('Content-Type: text/csv; charset=utf-8');
 header('Content-Disposition: attachment; filename=Information.csv');
 $output = fopen('php://output', 'w');
-fputcsv($output, array('ID', 'First Name', 'Last Name', 'Title', 'Company', 'Email', 'Preferences', 'Date', 'Subscribed'));
+fputcsv($output, array('ID', 'First Name', 'Last Name', 'Title', 'Company', 'Email','Industry' ,'Preferences', 'Date', 'Subscribed'));
 
 if (count($users) > 0) {
     foreach ($users as $row) {
