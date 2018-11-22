@@ -222,7 +222,6 @@ td {
     background-color: #0077b3;
 }
 .vertical-menu {
-    width: 100px;
     text-align: center;
 }
 
@@ -246,4 +245,10 @@ td {
 }
 .vertical-menu a.active:hover {
     background-color: #0077b3;
+}
+.indent-1 {width: 100%;float: left;}
+.indent-1 section { float: left;}
+.boxInfo {
+    width: 100%;
+
 }
