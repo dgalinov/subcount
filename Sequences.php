@@ -6,23 +6,6 @@
  * Time: 12:54
  */
 
-function creationJavascriptFunction()
-{
-    $con = mysqli_connect('localhost', 'root', '', 'bd_leads') OR DIE("ERROR WITH THE CONNECT");
-
-    $query = "SELECT id FROM newslettermail";
-
-    if (!$result = mysqli_query($con, $query)) {
-        exit(mysqli_error($con));
-    }
-
-    if (mysqli_num_rows($result) > 0) {
-        while ($row = mysqli_fetch_assoc($result)) {
-            $id_unico = $row['id'];
-            echo "<script type='text/javascript'> desactivar($id_unico) </script>";
-        }
-    }
-}
 
 ?>
     <!DOCTYPE html>
@@ -36,6 +19,7 @@ function creationJavascriptFunction()
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"
               id="bootstrap-css">
         <script src="ckeditor/ckeditor.js"></script>
+
     </head>
     <body style="font-family: 'Nunito', sans-serif;background:#d9d9d9">
     <div class="topnav">
@@ -63,14 +47,15 @@ function creationJavascriptFunction()
                 if (mysqli_num_rows($result) > 0) {
                     while ($row = mysqli_fetch_assoc($result)) {
                         $idComparado = $row['id'];
-                        echo "<a href='' onclick='desactivar(".$idComparado.")'>" . $row['name'] . "</a>";
+                        echo "<a  onclick='onStepClicked($idComparado)'>" . $row['name'] . "</a>";
                     }
+                    echo "<input type='hidden' id='stepsNum' value='".mysqli_num_rows($result)."'>";
                 }
                 ?>
-                <a class="active" onclick='activar()'>+</a>
+                <a class="active" onclick='newStep()'>+</a>
             </div>
         </section>
-        <section style='width: 90%' id='1'>
+        <section style='width: 90%' id='new'>
             <form action="" method="post">
                 <p>Name of Sequence</p>
                 <textarea class="boxInfo" name="nameSequence"></textarea>
@@ -94,10 +79,10 @@ function creationJavascriptFunction()
                 while ($row = mysqli_fetch_assoc($result)) {
                     $idComparar = $row['id'];
                     echo "
-                        <section>
+                        <section style='width: 90%' id='".$idComparar."'>
                             <form action=\"\" method=\"post\">
-                                <div style='width: 90%;display:none;' id='".$idComparar."'>
-                                    <p>Name of Sequence ANUSEFINAWEI</p>
+                                <div style='width: 90%;' id='".$idComparar."'>
+                                    <p>Name of Sequence </p>
                                     <textarea class='boxInfo' name='nameSequence'>" . $row['name'] . "</textarea>
                                     <p>Email Subject</p>
                                     <textarea class='boxInfo' name='subject'>" . $row['subject'] . "</textarea>
@@ -107,36 +92,36 @@ function creationJavascriptFunction()
                                 </div>
                             </form>
                         </section> ";
+
                 }
             }
         }
 
         ?>
+<script>
+    var stepsNum = document.getElementById("stepsNum").value;
+    onStepClicked("new");
+    function onStepClicked(id){
+        if(id != "new"){
+            document.getElementById("new").style.display = "none";
+        }
 
+        var i;
+        for (i = 1; i < stepsNum+1; i++) {
+            if(i != id){
+                document.getElementById(i).style.display = "none";
+            }else{
+                document.getElementById(i).style.display = "block";
+            }
+        }
+    }
+    function newStep(){
+        document.getElementById("new").style.display = "block";
+
+    }
+</script>
     </section>
-    <script>
-        var idCo = <?php echo $idComparado; ?>
-        var idC = <?php echo $idComparar; ?>
-        function activar() {
-            var x = document.getElementById("1");
-            var y = document.getElementById(idC);
-            if (x.style.display = "none") {
-                x.style.display = "block";
-                y.style.display = "none";
-            }
-        }
 
-        function desactivar() {
-            var x = document.getElementById("1");
-            var y = document.getElementById(idC);
-            if(idCo == idC) {
-                if (y.style.display = "none") {
-                    y.style.display = "block";
-                    x.style.display = "none";
-                }
-            }
-        }
-    </script>
     </body>
     </html>
 <?php
@@ -147,7 +132,7 @@ if (isset($_POST['nameSequence'])) {
             $subject = $_POST['subject'];
             $nameSequence = $_POST['nameSequence'];
 
-            $conn = mysqli_connect('localhost', 'root', '', 'bd_leads') OR DIE("ERROR WITH THE CONNECT");
+            $conn = mysqli_connect('localhost', 'mytelanto', 'npT4KE5Z', 'bd_leads') OR DIE("ERROR WITH THE CONNECT");
 
             $query = mysqli_query($conn, "INSERT INTO newslettermail(name, content, subject) VALUES ('$nameSequence', '$content', '$subject')");
             if ($query) {
@@ -157,4 +142,5 @@ if (isset($_POST['nameSequence'])) {
         }
     }
 }
+
 ?>
