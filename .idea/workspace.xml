@@ -2,21 +2,94 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ba90ca5-96cf-451d-89fe-c2adbe3b3f67" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../auditview/conectar.php" beforeDir="false" afterPath="$PROJECT_DIR$/../auditview/conectar.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../auditview/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/../auditview/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../form/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../form/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../form/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../form/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../form/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../form/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../form/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/../form/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../form/thanks.php" beforeDir="false" afterPath="$PROJECT_DIR$/../form/thanks.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/subcount.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/subcount.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Day.php" beforeDir="false" afterPath="$PROJECT_DIR$/Day.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Month.php" beforeDir="false" afterPath="$PROJECT_DIR$/Month.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sequences.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sequences.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Year.php" beforeDir="false" afterPath="$PROJECT_DIR$/Year.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/challengeaudit.php" beforeDir="false" afterPath="$PROJECT_DIR$/challengeaudit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/CHANGES.md" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/CHANGES.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/contents.css" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/contents.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/scayt/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/plugins/scayt/CHANGELOG.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/scayt/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/plugins/scayt/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/scayt/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/plugins/scayt/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/scayt/dialogs/dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/plugins/scayt/dialogs/dialog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/scayt/dialogs/toolbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/plugins/scayt/dialogs/toolbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/tableselection/styles/tableselection.css" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/plugins/tableselection/styles/tableselection.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/wsc/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/plugins/wsc/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/wsc/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/plugins/wsc/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/wsc/dialogs/ciframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/plugins/wsc/dialogs/ciframe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/wsc/dialogs/wsc.css" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/plugins/wsc/dialogs/wsc.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/samples/css/samples.css" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/css/samples.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/samples/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/samples/js/sample.js" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/js/sample.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/samples/old/ajax.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/old/ajax.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/samples/old/api.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/old/api.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/samples/old/appendto.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/old/appendto.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/samples/old/assets/outputxhtml/outputxhtml.css" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/old/assets/outputxhtml/outputxhtml.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/samples/old/assets/posteddata.php" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/old/assets/posteddata.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/samples/old/datafiltering.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/old/datafiltering.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/samples/old/dialog/assets/my_dialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/old/dialog/assets/my_dialog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/samples/old/dialog/dialog.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/old/dialog/dialog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/samples/old/divreplace.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/old/divreplace.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/samples/old/enterkey/enterkey.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/old/enterkey/enterkey.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/samples/old/htmlwriter/outputforflash.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/old/htmlwriter/outputforflash.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/samples/old/htmlwriter/outputhtml.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/old/htmlwriter/outputhtml.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/samples/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/old/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/samples/old/inlineall.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/old/inlineall.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/samples/old/inlinebycode.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/old/inlinebycode.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/samples/old/inlinetextarea.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/old/inlinetextarea.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/samples/old/jquery.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/old/jquery.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/samples/old/magicline/magicline.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/old/magicline/magicline.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/samples/old/readonly.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/old/readonly.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/samples/old/replacebyclass.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/old/replacebyclass.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/samples/old/replacebycode.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/old/replacebycode.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/samples/old/sample.css" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/old/sample.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/samples/old/sample.js" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/old/sample.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/samples/old/sample_posteddata.php" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/old/sample_posteddata.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/samples/old/tabindex.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/old/tabindex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/samples/old/toolbar/toolbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/old/toolbar/toolbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/samples/old/uicolor.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/old/uicolor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/samples/old/uilanguages.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/old/uilanguages.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/samples/old/wysiwygarea/fullpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/old/wysiwygarea/fullpage.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/samples/old/xhtmlstyle.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/old/xhtmlstyle.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/css/fontello.css" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/css/fontello.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/font/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/font/LICENSE.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.css" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.css" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/skins/moono-lisa/dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/skins/moono-lisa/dialog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/skins/moono-lisa/dialog_ie.css" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/skins/moono-lisa/dialog_ie.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/skins/moono-lisa/dialog_ie8.css" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/skins/moono-lisa/dialog_ie8.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/skins/moono-lisa/dialog_iequirks.css" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/skins/moono-lisa/dialog_iequirks.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/skins/moono-lisa/editor.css" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/skins/moono-lisa/editor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/skins/moono-lisa/editor_gecko.css" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/skins/moono-lisa/editor_gecko.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/skins/moono-lisa/editor_ie.css" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/skins/moono-lisa/editor_ie.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/skins/moono-lisa/editor_ie8.css" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/skins/moono-lisa/editor_ie8.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/skins/moono-lisa/editor_iequirks.css" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/skins/moono-lisa/editor_iequirks.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/skins/moono-lisa/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/skins/moono-lisa/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ckeditor/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/ckeditor/styles.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_connection.php" beforeDir="false" afterPath="$PROJECT_DIR$/db_connection.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/example/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/example/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/excel/export.php" beforeDir="false" afterPath="$PROJECT_DIR$/excel/export.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/excel/import.php" beforeDir="false" afterPath="$PROJECT_DIR$/excel/import.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/export.php" beforeDir="false" afterPath="$PROJECT_DIR$/export.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/chart.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/chart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webinars.php" beforeDir="false" afterPath="$PROJECT_DIR$/webinars.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,92 +97,28 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="-1044257553">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="16" />
-          <entry key="project.open.time.0" value="3" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.13" value="1" />
-          <entry key="project.open.time.15" value="1" />
-          <entry key="project.open.time.17" value="1" />
-          <entry key="project.open.time.43" value="1" />
-          <entry key="project.open.time.44" value="1" />
-          <entry key="project.open.time.46" value="1" />
-          <entry key="project.open.time.51" value="1" />
-          <entry key="project.open.time.54" value="1" />
-          <entry key="project.open.time.55" value="1" />
-          <entry key="project.open.time.61" value="1" />
-          <entry key="project.open.time.63" value="1" />
-          <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="16" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="css" value="22" />
-          <entry key="html" value="12" />
-          <entry key="js" value="24" />
-          <entry key="md" value="1" />
-          <entry key="php" value="53" />
-          <entry key="scss" value="3" />
-          <entry key="sql" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="CSS" value="22" />
-          <entry key="HTML" value="12" />
-          <entry key="JavaScript" value="24" />
-          <entry key="Markdown" value="1" />
-          <entry key="PHP" value="53" />
-          <entry key="SCSS" value="3" />
-          <entry key="SQL" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="css" value="210" />
-          <entry key="html" value="590" />
-          <entry key="js" value="141" />
-          <entry key="php" value="10882" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="CSS" value="210" />
-          <entry key="HTML" value="603" />
-          <entry key="JavaScript" value="141" />
-          <entry key="PHP" value="10868" />
-          <entry key="SQL" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.php.composer.actions" />
-      <usages-collector id="statistics.php.rename.constructor" />
-      <usages-collector id="statistics.js.language.service.starts" />
-      <usages-collector id="statistics.php.new.class" />
-      <usages-collector id="statistics.php.composer.command.options" />
-      <usages-collector id="statistics.vcs.git.usages" />
-      <usages-collector id="statistics.php.new.test" />
-    </session>
-  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../auditview/index.php">
+        <entry file="file://$PROJECT_DIR$/Sequences.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="69" column="68" selection-start-line="69" selection-start-column="68" selection-end-line="69" selection-end-column="68" />
+            <state relative-caret-position="493">
+              <caret line="49" column="59" lean-forward="true" selection-start-line="49" selection-start-column="59" selection-end-line="49" selection-end-column="59" />
+              <folding>
+                <element signature="e#6#97#0#PHP" expanded="true" />
+                <element signature="e#724#784#0#HTML" expanded="true" />
+                <element signature="e#1209#1227#0#HTML" expanded="true" />
+                <element signature="e#2098#2116#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../auditview/conectar.php">
+        <entry file="file://$PROJECT_DIR$/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="17" column="20" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+            <state relative-caret-position="817">
+              <caret line="254" column="19" selection-start-line="254" selection-start-column="19" selection-end-line="254" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -148,7 +157,8 @@
     </replaceStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../auditview" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -166,7 +176,6 @@
         <option value="$PROJECT_DIR$/../gentelella-master/production/chartjs.js" />
         <option value="$PROJECT_DIR$/../gentelella-master/production/chartjs.php" />
         <option value="$PROJECT_DIR$/graph.php" />
-        <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$PROJECT_DIR$/../ControlEx1.php" />
         <option value="$PROJECT_DIR$/js/chart.js" />
         <option value="$PROJECT_DIR$/index.html" />
@@ -175,22 +184,17 @@
         <option value="$PROJECT_DIR$/Month.php" />
         <option value="$PROJECT_DIR$/Year.php" />
         <option value="$PROJECT_DIR$/Day.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/../auditview/conectar.php" />
         <option value="$PROJECT_DIR$/../auditview/index.php" />
+        <option value="$PROJECT_DIR$/db_connection.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/challengeaudit.php" />
+        <option value="$PROJECT_DIR$/webinars.php" />
+        <option value="$PROJECT_DIR$/blog.php" />
+        <option value="$PROJECT_DIR$/css/styles.css" />
+        <option value="$PROJECT_DIR$/Sequences.php" />
       </list>
     </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/../form/fastselect-master/package.json" />
-    </packageJsonPaths>
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/../gentelella-master/package.json" />
@@ -199,9 +203,10 @@
     <servers />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="676" />
-    <option name="width" value="697" />
-    <option name="height" value="745" />
+    <option name="x" value="1827" />
+    <option name="y" value="246" />
+    <option name="width" value="1318" />
+    <option name="height" value="522" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -209,7 +214,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -219,22 +223,21 @@
             </path>
             <path>
               <item name="subcount" type="b2602c69:ProjectViewProjectNode" />
-              <item name="auditview" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="subcount" type="b2602c69:ProjectViewProjectNode" />
-              <item name="form" type="462c0819:PsiDirectoryNode" />
+              <item name="subcount" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="ChangesTree.GroupingKeys" value="directory&#10;repository" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../auditview" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -256,19 +259,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
-    <configuration name="bar.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/subcount/vendors/Chart.js/samples/bar.html">
+  <component name="RunManager" selected="PHP Script.Sequences.php">
+    <configuration name="bar.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/subcount/vendors/Chart.js/samples/bar.html">
       <method v="2" />
     </configuration>
-    <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/subcount/index.html">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/subcount/index.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="Sequences.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/Sequences.php">
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="JavaScript Debug.bar.html" />
       <item itemvalue="JavaScript Debug.index.html" />
+      <item itemvalue="PHP Script.Sequences.php" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="PHP Script.Sequences.php" />
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.bar.html" />
       </list>
@@ -300,19 +308,21 @@
       <workItem from="1541664370686" duration="13791000" />
       <workItem from="1541750756106" duration="12000" />
       <workItem from="1541755735574" duration="1089000" />
+      <workItem from="1542962428066" duration="323000" />
+      <workItem from="1542963060244" duration="11241000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96797000" />
+    <option name="totallyTimeSpent" value="108547000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="1358" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" weight="0.37670198" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.1098081" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32903227" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -323,7 +333,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.21451613" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.2141707" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -355,41 +365,7 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../gentelella-master/docs/css/shCoreDefault.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="45" column="6" selection-start-line="45" selection-start-column="6" selection-end-line="45" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gentelella-master/src/scss/daterangepicker.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="10" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gentelella-master/src/scss/custom.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gentelella-master/vendors/animate.css/animate.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../gentelella-master/build/css/custom.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="39487" selection-start-column="39481" selection-end-column="39487" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../gentelella-master/vendors/animate.css/animate.min.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -472,33 +448,14 @@
     <entry file="file://$PROJECT_DIR$/../calendar-1.0/src/SSC/Calendar.php" />
     <entry file="file://$PROJECT_DIR$/../calendar-1.0/examples/example1.php" />
     <entry file="file://$PROJECT_DIR$/index-1541416130550.html" />
-    <entry file="file://$PROJECT_DIR$/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="127" column="33" selection-start-line="127" selection-start-column="33" selection-end-line="127" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/ControlEx1.php" />
     <entry file="file://$USER_HOME$/Desktop/ControlEx2.php" />
     <entry file="file://$USER_HOME$/Desktop/ControlEx3.php" />
     <entry file="file://$USER_HOME$/Desktop/ControlEx4.php" />
-    <entry file="file://$PROJECT_DIR$/../ControlEx1.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="85" column="133" selection-start-line="85" selection-start-column="133" selection-end-line="85" selection-end-column="133" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ControlEx2.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ControlEx3.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ControlEx4.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../ControlEx1.php" />
+    <entry file="file://$PROJECT_DIR$/../ControlEx2.php" />
+    <entry file="file://$PROJECT_DIR$/../ControlEx3.php" />
+    <entry file="file://$PROJECT_DIR$/../ControlEx4.php" />
     <entry file="file://$PROJECT_DIR$/js/chart.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
@@ -508,30 +465,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html" />
     <entry file="file://$PROJECT_DIR$/charts.php" />
-    <entry file="file://$PROJECT_DIR$/chart.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="46" column="43" lean-forward="true" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../form/thanks.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="122" column="40" lean-forward="true" selection-start-line="122" selection-start-column="40" selection-end-line="122" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../form/unsubSuccesfully.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-680" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../form/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5324" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/chart.sql" />
+    <entry file="file://$PROJECT_DIR$/../form/thanks.php" />
+    <entry file="file://$PROJECT_DIR$/../form/unsubSuccesfully.php" />
+    <entry file="file://$PROJECT_DIR$/../form/index.php" />
     <entry file="file://$PROJECT_DIR$/../c4c/results.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3230" />
@@ -541,13 +478,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="134" column="6" lean-forward="true" selection-start-line="131" selection-end-line="134" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="138" column="52" lean-forward="true" selection-start-line="138" selection-start-column="52" selection-end-line="138" selection-end-column="52" />
         </state>
       </provider>
     </entry>
@@ -579,13 +509,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../c4c/adminpanel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3774">
-          <caret line="222" column="71" lean-forward="true" selection-start-line="222" selection-start-column="71" selection-end-line="223" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../auditview/conectar.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -604,6 +527,81 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="69" column="68" selection-start-line="69" selection-start-column="68" selection-end-line="69" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db_connection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204">
+          <caret line="73" column="44" lean-forward="true" selection-start-line="73" selection-start-column="44" selection-end-line="73" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webinars.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="150" column="57" selection-start-line="150" selection-start-column="57" selection-end-line="150" selection-end-column="57" />
+          <folding>
+            <element signature="e#6#97#0#PHP" expanded="true" />
+            <element signature="e#2101#2119#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1667">
+          <caret line="150" column="53" selection-start-line="150" selection-start-column="53" selection-end-line="150" selection-end-column="53" />
+          <folding>
+            <element signature="e#6#97#0#PHP" expanded="true" />
+            <element signature="e#2101#2119#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/challengeaudit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="69" column="47" selection-start-line="69" selection-start-column="47" selection-end-line="69" selection-end-column="47" />
+          <folding>
+            <element signature="e#6#97#0#PHP" expanded="true" />
+            <element signature="e#1209#1227#0#HTML" expanded="true" />
+            <element signature="e#2101#2119#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../c4c/adminpanel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="681">
+          <caret line="200" column="43" lean-forward="true" selection-start-line="200" selection-start-column="43" selection-end-line="200" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="817">
+          <caret line="254" column="19" selection-start-line="254" selection-start-column="19" selection-end-line="254" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sequences.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="49" column="59" lean-forward="true" selection-start-line="49" selection-start-column="59" selection-end-line="49" selection-end-column="59" />
+          <folding>
+            <element signature="e#6#97#0#PHP" expanded="true" />
+            <element signature="e#724#784#0#HTML" expanded="true" />
+            <element signature="e#1209#1227#0#HTML" expanded="true" />
+            <element signature="e#2098#2116#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -250,5 +250,7 @@ td {
 .indent-1 section { float: left;}
 .boxInfo {
     width: 100%;
-
+}
+.sequenceDay {
+    margin: 0 auto;
 }

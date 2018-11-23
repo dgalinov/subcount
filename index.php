@@ -2,6 +2,8 @@
 ob_start();
 error_reporting(0);
 // connection
+// $db_conx = mysqli_connect("localhost", "mytelanto", "npT4KE5Z", "bd_leads");
+// connection
 $db_conx = mysqli_connect("localhost", "root", "", "bd_leads");
 // Evaluate the connection
 if (mysqli_connect_errno()) {
@@ -94,6 +96,7 @@ while ($row = mysqli_fetch_array($sqlSun)) {
         <div>
             <h1 style="color: #08c;font-family: 'Nunito', sans-serif;">DASHBOARD</h1>
             <?php
+            // $db_conn = mysqli_connect("localhost", "mytelanto", "npT4KE5Z", "bd_leads");
             $db_conn = mysqli_connect("localhost", "root", "", "bd_leads");
 
             $result = mysqli_query($db_conn, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information");
