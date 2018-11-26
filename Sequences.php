@@ -22,6 +22,7 @@
 
     </head>
     <body style="font-family: 'Nunito', sans-serif;background:#d9d9d9">
+
     <div class="topnav">
         <a href="index.php">Dashboard</a>
         <a class="active" href="Sequences.php">Sequences</a>
@@ -77,45 +78,43 @@
                 <a class="active" onclick='newStep()'>+</a>
             </div>
         </section>
-        <section style='width: 90%' id='new'>
-            <form action="" method="post">
+        <form action="Sequences.php" method="post">
+            <section style='width: 90%' id='new'>
                 <p>Email Subject</p>
                 <textarea class="boxInfo" name="subject"></textarea>
                 <p>Email Content</p>
                 <textarea class="ckeditor" name="content"></textarea>
                 <input type="submit" name="action" value="Start">
-            </form>
-        </section>
-        <?php
-        $idComparar = "";
-        require("db_connection.php");
-        $query = "SELECT * FROM newslettermail ";
+            </section>
 
-        if (!$result = mysqli_query($con, $query)) {
-            exit(mysqli_error($con));
-        } else {
+            <?php
+            $idComparar = "";
+            require("db_connection.php");
+            $query = "SELECT * FROM newslettermail ";
 
-            if (mysqli_num_rows($result) > 0) {
-                while ($row = mysqli_fetch_assoc($result)) {
-                    $idComparar = $row['id'];
-                    echo "
+            if (!$result = mysqli_query($con, $query)) {
+                exit(mysqli_error($con));
+            } else {
+                if (mysqli_num_rows($result) > 0) {
+                    while ($row = mysqli_fetch_assoc($result)) {
+                        $idComparar = $row['id'];
+                        echo "
                         <section style='width: 90%;display:none;' id='" . $idComparar . "'>
-                            <form action=\"\" method=\"post\">
                                 <div id='" . $idComparar . "'>
                                     <p>Email Subject</p>
                                     <textarea class='boxInfo' name='subject2'>" . $row['subject'] . "</textarea>
                                     <p>Email Content</p>
                                     <textarea class='ckeditor' name='content2'>" . $row['content'] . "</textarea>
-                                    <input type='submit' name='save' value='Save'>
+                                    <input type='submit' name='action' value='Save'>
                                 </div>
-                            </form>
                         </section> ";
-
+                    }
                 }
             }
-        }
 
-        ?>
+            ?>
+            <input type="hidden" value="" id="actualStep" name="actualStep">
+        </form>
         <script>
             var stepsNum = document.getElementById("stepsNum").value;
             onStepClicked("new");
@@ -124,13 +123,13 @@
                 if (id != "new") {
                     document.getElementById("new").style.display = "none";
                 }
-
                 var i;
                 for (i = 1; i < stepsNum + 1; i++) {
                     if (i != id) {
                         document.getElementById(i).style.display = "none";
                     } else {
                         document.getElementById(i).style.display = "block";
+                        document.getElementById("actualStep").value = i;
                     }
                 }
             }
@@ -149,50 +148,35 @@
     </html>
 <?php
 
-
 if ($_POST) {
-    if ($_POST['action'] = 'Start') {
+    if ($_POST['action'] == 'Start') {
         if (isset($_POST['subject'])) {
             if (isset($_POST['content'])) {
                 $content = $_POST['content'];
                 $subject = $_POST['subject'];
-
                 // $conn = mysqli_connect('localhost', 'mytelanto', 'npT4KE5Z', 'bd_leads') OR DIE("ERROR WITH THE CONNECT");
                 $conn = mysqli_connect('localhost', 'root', '', 'bd_leads') OR DIE("ERROR WITH THE CONNECT");
-
                 $query = mysqli_query($conn, "INSERT INTO newslettermail(content, subject) VALUES ('$content', '$subject')");
                 if ($query) {
-                } else {
-                    echo "ERROR WHILE INSERTING";
                 }
             }
         }
-    } else {
-        echo "THE ACTION POST DONT WORK";
     }
-
-    if ($_POST['save']) {
+    if ($_POST['action'] == 'Save') {
         if (isset($_POST['subject2'])) {
             if (isset($_POST['content2'])) {
                 $content = $_POST['content2'];
                 $subject = $_POST['subject2'];
-
+                $actualStep = $_POST['actualStep'];
                 // $conn = mysqli_connect('localhost', 'mytelanto', 'npT4KE5Z', 'bd_leads') OR DIE("ERROR WITH THE CONNECT");
                 $conn = mysqli_connect('localhost', 'root', '', 'bd_leads') OR DIE("ERROR WITH THE CONNECT");
-
-                $query = mysqli_query($conn, "UPDATE newslettermail SET subject = " . $content . ", content = " . $subject . " ");
+                $query = mysqli_query($conn, "UPDATE newslettermail SET subject = " . $subject . ", content = " . $content . " WHERE id = " . $actualStep . " ");
                 if ($query) {
                 } else {
-                    echo "ERROR WHILE INSERTING bbb";
+                    echo "ERROR WHILE UPDATING";
                 }
-            } else {
-                echo "POST CONTENT 2 DONT WORK";
             }
-        } else {
-            echo "POST SUBJECT 2 DONT WORK";
         }
-    } else {
-        echo "THE ACTION B POST DONT WORK";
     }
 }
 
