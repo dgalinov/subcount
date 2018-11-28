@@ -6,19 +6,24 @@
  * Time: 12:54
  */
 
-
 ?>
     <!DOCTYPE html>
-    <html>
+    <html lang="en">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="utf-8">
+        <meta name="author" content="colorlib.com">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito"/>
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"
               id="bootstrap-css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+              integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+              crossorigin="anonymous">
         <script src="ckeditor/ckeditor.js"></script>
+        <title>Sequencial</title>
 
     </head>
     <body style="font-family: 'Nunito', sans-serif;background:#d9d9d9">
@@ -36,22 +41,34 @@
     <div>
         <table>
             <tr>
-                <td class="sequenceDay">Mon</td>
-                <td class="sequenceDay">Tue</td>
-                <td class="sequenceDay">Wed</td>
-                <td class="sequenceDay">Thu</td>
-                <td class="sequenceDay">Fri</td>
-                <td class="sequenceDay">Sat</td>
-                <td class="sequenceDay">Sun</td>
+                <td>Mon</td>
+                <td>Tue</td>
+                <td>Wed</td>
+                <td>Thu</td>
+                <td>Fri</td>
+                <td>Sat</td>
+                <td>Sun</td>
+                <td rowspan="2">_ _ : _ _</td>
+                <td rowspan="2">
+                    <ul style="list-style-type: none;">
+                        <li><input type="checkbox"> newsletter@telanto.com</li>
+                        <li><input type="checkbox"> challengeaudit@telanto.com</li>
+                        <li><input type="checkbox"> webinars@telanto.com</li>
+                        <li><input type="checkbox"> blog@telanto.com</li>
+                    </ul>
+                </td>
+                <td rowspan="2">
+                    <button>SaveAll</button>
+                </td>
             </tr>
             <tr>
-                <td><input type="checkbox" name="mon"></td>
-                <td><input type="checkbox" name="tue"></td>
-                <td><input type="checkbox" name="wed"></td>
-                <td><input type="checkbox" name="thu"></td>
-                <td><input type="checkbox" name="fri"></td>
-                <td><input type="checkbox" name="sat"></td>
-                <td><input type="checkbox" name="sun"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
+                <td><input type="checkbox"></td>
             </tr>
         </table>
     </div>
@@ -66,7 +83,6 @@
                 if (!$result = mysqli_query($con, $query)) {
                     exit(mysqli_error($con));
                 }
-
                 if (mysqli_num_rows($result) > 0) {
                     while ($row = mysqli_fetch_assoc($result)) {
                         $idComparado = $row['id'];
@@ -102,18 +118,20 @@
                         <section style='width: 90%;display:none;' id='" . $idComparar . "'>
                                 <div id='" . $idComparar . "'>
                                     <p>Email Subject</p>
-                                    <textarea class='boxInfo' name='subject2'>" . $row['subject'] . "</textarea>
+                                    <textarea class='boxInfo' name='subject_" . $row['id'] . "'>" . $row['subject'] . "</textarea>
                                     <p>Email Content</p>
-                                    <textarea class='ckeditor' name='content2'>" . $row['content'] . "</textarea>
-                                    <input type='submit' name='action' value='Save'>
+                                    <textarea class='ckeditor' name='content_" . $row['id'] . "'>" . $row['content'] . "</textarea>
+                                    <input type='submit' name='action' value='" . $row['id'] . "'>
                                 </div>
-                        </section> ";
+                        </section>
+                         ";
                     }
+                    echo "<input type='hidden' value='" . mysqli_num_rows($result) . "' id='actualStep' name='actualStep'>";
                 }
             }
 
             ?>
-            <input type="hidden" value="" id="actualStep" name="actualStep">
+
         </form>
         <script>
             var stepsNum = document.getElementById("stepsNum").value;
@@ -129,7 +147,7 @@
                         document.getElementById(i).style.display = "none";
                     } else {
                         document.getElementById(i).style.display = "block";
-                        document.getElementById("actualStep").value = i;
+                        document.getElementById("actualStep").value = id;
                     }
                 }
             }
@@ -162,23 +180,19 @@ if ($_POST) {
             }
         }
     }
-    if ($_POST['action'] == 'Save') {
-        if (isset($_POST['subject2'])) {
-            if (isset($_POST['content2'])) {
-                $content = $_POST['content2'];
-                $subject = $_POST['subject2'];
-                $actualStep = $_POST['actualStep'];
-                // $conn = mysqli_connect('localhost', 'mytelanto', 'npT4KE5Z', 'bd_leads') OR DIE("ERROR WITH THE CONNECT");
-                $conn = mysqli_connect('localhost', 'root', '', 'bd_leads') OR DIE("ERROR WITH THE CONNECT");
-                $query = mysqli_query($conn, "UPDATE newslettermail SET subject = " . $subject . ", content = " . $content . " WHERE id = " . $actualStep . " ");
-                if ($query) {
-                } else {
-                    echo "ERROR WHILE UPDATING";
-                }
-            }
+    if ($_POST['action'] == $_POST['actualStep']) {
+        $actualStep = $_POST['actualStep'];
+        // $conn = mysqli_connect('localhost', 'mytelanto', 'npT4KE5Z', 'bd_leads') OR DIE("ERROR WITH THE CONNECT");
+        $conn = mysqli_connect('localhost', 'root', '', 'bd_leads') OR DIE("ERROR WITH THE CONNECT");
+        $query = "UPDATE newslettermail SET subject = '" . $_POST['subject'] . "', content = '" . $_POST['content'] . "' WHERE id = " . $actualStep;
+        if ($result = mysqli_query($conn, $query)) {
+            var_dump($query);
+        } else {
+            echo "ERROR WHILE UPDATING" . mysqli_error($conn);
+            var_dump($query);
         }
+
     }
 }
-
 
 ?>

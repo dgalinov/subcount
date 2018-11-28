@@ -1,5 +1,6 @@
 <?php
-$conectar = new mysqli("localhost","root","","db_leads");
+require("db_connection.php");
+require("Sequences.php");
 
 $fecha = date('Y-m-d');
 if($fecha == '2018-01-19'){
