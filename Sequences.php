@@ -15,16 +15,29 @@
         <meta charset="utf-8">
         <meta name="author" content="colorlib.com">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Telanto</title>
         <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito"/>
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"
               id="bootstrap-css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
               integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
               crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/js/bootstrap-multiselect.js"></script>
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css"/>
         <script src="ckeditor/ckeditor.js"></script>
-        <title>Sequencial</title>
-
+        <link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900&subset=latin,latin-ext' rel='stylesheet'
+              type='text/css'>
+        <script src="https://rawgit.com/dbrekalo/fastsearch/master/dist/fastsearch.min.js"></script>
+        <link rel="stylesheet" href="intl-tel-input-master/build/css/intlTelInput.css">
+        <link rel="stylesheet" href="intl-tel-input-master/build/css/demo.css">
+        <link rel="stylesheet" href="fastselect-master/dist/fastselect.css">
     </head>
     <body style="font-family: 'Nunito', sans-serif;background:#d9d9d9">
 
@@ -38,40 +51,43 @@
         <a href="webinars.php">Webinars</a>
         <a href="blog.php">Blog</a>
     </div>
-    <div>
-        <table>
-            <tr>
-                <td>Mon</td>
-                <td>Tue</td>
-                <td>Wed</td>
-                <td>Thu</td>
-                <td>Fri</td>
-                <td>Sat</td>
-                <td>Sun</td>
-                <td rowspan="2">_ _ : _ _</td>
-                <td rowspan="2">
-                    <ul style="list-style-type: none;">
-                        <li><input type="checkbox"> newsletter@telanto.com</li>
-                        <li><input type="checkbox"> challengeaudit@telanto.com</li>
-                        <li><input type="checkbox"> webinars@telanto.com</li>
-                        <li><input type="checkbox"> blog@telanto.com</li>
-                    </ul>
-                </td>
-                <td rowspan="2">
-                    <button>SaveAll</button>
-                </td>
-            </tr>
-            <tr>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-                <td><input type="checkbox"></td>
-            </tr>
-        </table>
+
+    <div class="wrapper" style="float:right">
+        <form id="form" name="form" method="post" action="Sequences.php"
+              style="height:100%;font-family: 'Nunito', sans-serif;">
+            <div class="form-row" style="margin-bottom:20px;">
+                <div class="form-holder">
+                    <select class="multipleSelect form-control1-3 required" id="logistics"
+                            onchange="validateList('logistics')" multiple name="logistics[]" queryInputClass="Search"
+                            placeholder="Logistics, Supply Chain & Operations">
+                        <option></option>
+                        <option value="Logistics & Transportation">Logistics & Transportation</option>
+                        <option value="Closed-loop supply chain & Remanufacturing">Closed-loop supply chain &
+                            Remanufacturing
+                        </option>
+                        <option value="Forecast - Demand - Inventory">Forecast - Demand - Inventory</option>
+                        <option value="Supply Chain Management">Supply Chain Management</option>
+                        <option value="Operations & Plant simulation">Operations & Plant simulation</option>
+                        <option value="Supplier Networks">Supplier Networks</option>
+                    </select>
+                    <script>
+                        $('.multipleSelect').fastselect();
+                    </script>
+                    <i class="zmdi zmdi-caret-down"></i>
+                </div>
+            </div>
+        </form>
     </div>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <!-- JQUERY STEP -->
+    <script src="js/jquery.steps.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="fastselect-master/dist/fastselect.js"></script>
+    <script src="fastselect-master/dist/fastselect.standalone.js"></script>
+    <script src="fastselect-master/dist/fastselect.min.js"></script>
     <section class="indent-1">
         <section style="width: 10%">
             <div class="vertical-menu">
@@ -102,37 +118,40 @@
                 <textarea class="ckeditor" name="content"></textarea>
                 <input type="submit" name="action" value="Start">
             </section>
+        </form>
+        <?php
+        $idComparar = "";
+        require("db_connection.php");
+        $query = "SELECT * FROM newslettermail ";
 
-            <?php
-            $idComparar = "";
-            require("db_connection.php");
-            $query = "SELECT * FROM newslettermail ";
-
-            if (!$result = mysqli_query($con, $query)) {
-                exit(mysqli_error($con));
-            } else {
-                if (mysqli_num_rows($result) > 0) {
-                    while ($row = mysqli_fetch_assoc($result)) {
-                        $idComparar = $row['id'];
-                        echo "
+        if (!$result = mysqli_query($con, $query)) {
+            exit(mysqli_error($con));
+        } else {
+            if (mysqli_num_rows($result) > 0) {
+                while ($row = mysqli_fetch_assoc($result)) {
+                    $idComparar = $row['id'];
+                    echo "
+                        <form action='Sequences.php' method='post'>
                         <section style='width: 90%;display:none;' id='" . $idComparar . "'>
                                 <div id='" . $idComparar . "'>
                                     <p>Email Subject</p>
                                     <textarea class='boxInfo' name='subject_" . $row['id'] . "'>" . $row['subject'] . "</textarea>
                                     <p>Email Content</p>
                                     <textarea class='ckeditor' name='content_" . $row['id'] . "'>" . $row['content'] . "</textarea>
-                                    <input type='submit' name='action' value='" . $row['id'] . "'>
+                                    <input type='submit' name='action' value='Save'>
+                                    <input type='hidden' name='action' value='" . $row['id'] . "'>
                                 </div>
                         </section>
+                        </form>
                          ";
-                    }
-                    echo "<input type='hidden' value='" . mysqli_num_rows($result) . "' id='actualStep' name='actualStep'>";
                 }
+                echo "<input type='hidden' value='" . mysqli_num_rows($result) . "' id='actualStep' name='actualStep'>";
             }
+        }
 
-            ?>
+        ?>
 
-        </form>
+
         <script>
             var stepsNum = document.getElementById("stepsNum").value;
             onStepClicked("new");
@@ -164,6 +183,35 @@
 
     </body>
     </html>
+    <script>
+        $(document).ready(function () {
+            $('#framework').multiselect({
+                nonSelectedText: 'Select Framework',
+                enableFiltering: true,
+                enableCaseInsensitiveFiltering: true,
+                buttonWidth: '400px'
+            });
+
+            $('#framework_form').on('submit', function (event) {
+                event.preventDefault();
+                var form_data = $(this).serialize();
+                $.ajax({
+                    url: "insert.php",
+                    method: "POST",
+                    data: form_data,
+                    success: function (data) {
+                        $('#framework option:selected').each(function () {
+                            $(this).prop('selected', false);
+                        });
+                        $('#framework').multiselect('refresh');
+                        alert(data);
+                    }
+                });
+            });
+
+
+        });
+    </script>
 <?php
 
 if ($_POST) {
@@ -180,11 +228,12 @@ if ($_POST) {
             }
         }
     }
-    if ($_POST['action'] == $_POST['actualStep']) {
-        $actualStep = $_POST['actualStep'];
+    if ($_POST['action']) {
+
+        $actualStep = $_POST['action'];
         // $conn = mysqli_connect('localhost', 'mytelanto', 'npT4KE5Z', 'bd_leads') OR DIE("ERROR WITH THE CONNECT");
         $conn = mysqli_connect('localhost', 'root', '', 'bd_leads') OR DIE("ERROR WITH THE CONNECT");
-        $query = "UPDATE newslettermail SET subject = '" . $_POST['subject'] . "', content = '" . $_POST['content'] . "' WHERE id = " . $actualStep;
+        $query = "UPDATE newslettermail SET subject = '" . $_POST['subject_' . $actualStep] . "', content = '" . $_POST['content_' . $actualStep] . "' WHERE id = " . $actualStep;
         if ($result = mysqli_query($conn, $query)) {
             var_dump($query);
         } else {
