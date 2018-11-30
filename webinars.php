@@ -49,7 +49,7 @@
             <a class="active" onclick='newStep()'>+</a>
         </div>
     </section>
-    <form action="Sequences.php" method="post">
+    <form action="webinars.php" method="post">
         <section style='width: 90%' id='new'>
             <p>Email Subject</p>
             <label class='labelEmail'>
@@ -74,7 +74,7 @@
             while ($row = mysqli_fetch_assoc($result)) {
                 $idComparar = $row['id'];
                 echo "
-                        <form action='Sequences.php' method='post'>
+                        <form action='webinars.php' method='post'>
                         <section style='width: 90%;display:none;' id='" . $idComparar . "'>
                                 <div id='" . $idComparar . "'>
                                     <p>Email Subject</p>

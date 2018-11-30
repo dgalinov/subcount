@@ -159,7 +159,6 @@ table {
     height: 50px;
     justify-content: center;
     display: flex;
-    margin-left: 42%;
 }
 .column {
     float: left;
@@ -176,4 +175,7 @@ table {
 }
 .sectionMails {
     padding: 10px;
+}
+.titleTH {
+    background: #006699;
 }

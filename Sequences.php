@@ -26,7 +26,9 @@
         <a href="webinars.php">Webinars</a>
         <a href="blog.php">Blog</a>
     </div>
+    <div>
 
+    </div>
     <section class="indent-1">
         <section style="width: 10%">
             <div class="vertical-menu">

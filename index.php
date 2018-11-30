@@ -1,8 +1,7 @@
 <?php
 ob_start();
 error_reporting(0);
-// $db_conx = mysqli_connect("localhost", "mytelanto", "npT4KE5Z", "bd_leads");
-$db_conx = mysqli_connect("localhost", "root", "", "bd_leads");
+require("db_connection.php");
 if (mysqli_connect_errno()) {
     echo mysqli_connect_error("Our database server is down at the moment. :(");
     exit();
@@ -10,37 +9,37 @@ if (mysqli_connect_errno()) {
 $mUnsubs = $tUnsubs = $wUnsubs = $thUnsubs = $fUnsubs = $sUnsubs = $suUnsubs = "";
 $mSubs = $tSubs = $wSubs = $thSubs = $fSubs = $sSubs = $suSubs = "";
 
-$sqlMon = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND week(date) = week(CURDATE()) AND weekday(date) = '0'");
+$sqlMon = mysqli_query($con, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND week(date) = week(CURDATE()) AND weekday(date) = '0'");
 while ($row = mysqli_fetch_array($sqlMon)) {
     $mSubs = $row['sub'];
     $mUnsubs = $row['unsub'];
 }
-$sqlTue = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND week(date) = week(CURDATE()) AND weekday(date) = '1'");
+$sqlTue = mysqli_query($con, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND week(date) = week(CURDATE()) AND weekday(date) = '1'");
 while ($row = mysqli_fetch_array($sqlTue)) {
     $tSubs = $row['sub'];
     $tUnsubs = $row['unsub'];
 }
-$sqlWed = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND week(date) = week(CURDATE()) AND weekday(date) = '2'");
+$sqlWed = mysqli_query($con, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND week(date) = week(CURDATE()) AND weekday(date) = '2'");
 while ($row = mysqli_fetch_array($sqlWed)) {
     $wSubs = $row['sub'];
     $wUnsubs = $row['unsub'];
 }
-$sqlThu = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND week(date) = week(CURDATE()) AND weekday(date) = '3'");
+$sqlThu = mysqli_query($con, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND week(date) = week(CURDATE()) AND weekday(date) = '3'");
 while ($row = mysqli_fetch_array($sqlThu)) {
     $thSubs = $row['sub'];
     $thUnsubs = $row['unsub'];
 }
-$sqlFri = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND week(date) = week(CURDATE()) AND weekday(date) = '4'");
+$sqlFri = mysqli_query($con, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND week(date) = week(CURDATE()) AND weekday(date) = '4'");
 while ($row = mysqli_fetch_array($sqlFri)) {
     $fSubs = $row['sub'];
     $fUnsubs = $row['unsub'];
 }
-$sqlSat = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND week(date) = week(CURDATE()) AND weekday(date) = '5'");
+$sqlSat = mysqli_query($con, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND week(date) = week(CURDATE()) AND weekday(date) = '5'");
 while ($row = mysqli_fetch_array($sqlSat)) {
     $sSubs = $row['sub'];
     $sUnsubs = $row['unsub'];
 }
-$sqlSun = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND week(date) = week(CURDATE()) AND weekday(date) = '6'");
+$sqlSun = mysqli_query($con, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND week(date) = week(CURDATE()) AND weekday(date) = '6'");
 while ($row = mysqli_fetch_array($sqlSun)) {
     $suSubs = $row['sub'];
     $suUnsubs = $row['unsub'];
@@ -54,10 +53,8 @@ while ($row = mysqli_fetch_array($sqlSun)) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Telanto</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito"/>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 </head>
-
 <body>
 <div class="topnav">
     <a class="active" href="index.php">Dashboard</a>
@@ -74,10 +71,12 @@ while ($row = mysqli_fetch_array($sqlSun)) {
         <div>
             <h1>DASHBOARD</h1>
             <?php
-            // $db_conn = mysqli_connect("localhost", "mytelanto", "npT4KE5Z", "bd_leads");
-            $db_conn = mysqli_connect("localhost", "root", "", "bd_leads");
+            require("db_connection.php");
 
-            $result = mysqli_query($db_conn, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information");
+            $query = "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information";
+
+            $result = mysqli_query($con, $query);
+
             while ($row = $result->fetch_assoc()) {
                 $total = $row['sub'];
                 $totalU = $row['unsub'];
@@ -114,7 +113,7 @@ while ($row = mysqli_fetch_array($sqlSun)) {
     if (mysqli_num_rows($result) > 0) {
         $number = 1;
         $users = '<table class="table table-bordered">
-        <tr>
+        <tr class="titleTH">
             <th>FirstName</th>
             <th>LastName</th>
             <th>Title</th>
