@@ -1,19 +1,14 @@
 <?php
 ob_start();
 error_reporting(0);
-// connection
 // $db_conx = mysqli_connect("localhost", "mytelanto", "npT4KE5Z", "bd_leads");
-// connection
 $db_conx = mysqli_connect("localhost", "root", "", "bd_leads");
-// Evaluate the connection
 if (mysqli_connect_errno()) {
     echo mysqli_connect_error("Our database server is down at the moment. :(");
     exit();
 }
-//initialize variables
 $mUnsubs = $tUnsubs = $wUnsubs = $thUnsubs = $fUnsubs = $sUnsubs = $suUnsubs = "";
 $mSubs = $tSubs = $wSubs = $thSubs = $fSubs = $sSubs = $suSubs = "";
-
 
 $sqlMon = mysqli_query($db_conx, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND week(date) = week(CURDATE()) AND weekday(date) = '0'");
 while ($row = mysqli_fetch_array($sqlMon)) {
@@ -52,35 +47,18 @@ while ($row = mysqli_fetch_array($sqlSun)) {
 }
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Telanto</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito"/>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <style>
-        .column {
-            float: left;
-            width: 70%;
-        }
-
-        .column2 {
-            float: left;
-            width: 30%;
-        }
-
-        /* Clear floats after the columns */
-        .row:after {
-            content: "";
-            display: table;
-            clear: both;
-        }
-    </style>
 </head>
 
-<body style="font-family: 'Nunito', sans-serif;background:#d9d9d9">
+<body>
 <div class="topnav">
     <a class="active" href="index.php">Dashboard</a>
     <a href="Sequences.php">Sequences</a>
@@ -94,7 +72,7 @@ while ($row = mysqli_fetch_array($sqlSun)) {
     </div>
     <div class="column2">
         <div>
-            <h1 style="color: #08c;font-family: 'Nunito', sans-serif;">DASHBOARD</h1>
+            <h1>DASHBOARD</h1>
             <?php
             // $db_conn = mysqli_connect("localhost", "mytelanto", "npT4KE5Z", "bd_leads");
             $db_conn = mysqli_connect("localhost", "root", "", "bd_leads");
@@ -105,8 +83,8 @@ while ($row = mysqli_fetch_array($sqlSun)) {
                 $totalU = $row['unsub'];
             }
             ?>
-            <h2 style="color: #08c;font-family: 'Nunito', sans-serif;">Total subscribers: <?php echo $total ?></h2>
-            <h4 style="color: #ff5050;font-family: 'Nunito', sans-serif;">Total unsubscribed: <?php echo $totalU ?></h4>
+            <h2>Total subscribers: <?php echo $total ?></h2>
+            <h4>Total unsubscribed: <?php echo $totalU ?></h4>
         </div>
 
         <a href="Day.php" data-title="Awesome Button" style="position: relative;display: inline-block;padding: 0.7em 1.2em;text-decoration: none;
@@ -117,32 +95,17 @@ while ($row = mysqli_fetch_array($sqlSun)) {
             text-align: center;cursor: pointer;user-select: none;color: white;border-radius: 10px;margin-left: 10px; margin-bottom: 12px;background: linear-gradient(to right, #0088cc 0%, #33ccff 100%);">Month</a>
         <a href="Year.php" data-title="Awesome Button" style="position: relative;display: inline-block;padding: 0.7em 1.2em;text-decoration: none;
             text-align: center;cursor: pointer;user-select: none;color: white;border-radius: 10px;margin-left: 10px; margin-bottom: 12px;background: linear-gradient(to right, #0088cc 0%, #33ccff 100%);">Year</a>
-        <div>
-
-
-        </div>
     </div>
 </div>
-<!-- jQuery cdn -->
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<!-- Chart.js cdn -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.6.0/Chart.bundle.min.js"></script>
 <div>
     <br><br>
 </div>
 <form action="export.php" method="post" name="export_excel">
     <?php
-    /*
-    * iTech Empires:  Export Data from MySQL to CSV Script
-    * Version: 1.0.0
-    * Page: Index
-    */
-
-    // Database Connection
     require("db_connection.php");
 
-    // List Users
     $query = "SELECT firstname, lastname, title, company, email,industry, preferences, date FROM information WHERE week(date) = week(CURDATE()) ORDER BY date desc";
     if (!$result = mysqli_query($con, $query)) {
         exit(mysqli_error($con));
@@ -179,21 +142,14 @@ while ($row = mysqli_fetch_array($sqlSun)) {
 
     ?>
     <div class="container">
-        <!--  Header  -->
         <div>
             <div class="form-group" style="float:right">
                 <button onclick="Export()" class="btn btn-primary">Export to CSV File</button>
             </div>
         </div>
-        <!--  /Header  -->
-
-        <!--  Content   -->
         <div class="form-group">
             <?php echo $users ?>
         </div>
-
-        <!--  /Content   -->
-
         <script>
             function Export() {
                 window.open("export.php", '_self');
@@ -204,25 +160,19 @@ while ($row = mysqli_fetch_array($sqlSun)) {
 </body>
 </html>
 <script>
-
-    // chart DOM Element
     var ctx = document.getElementById("Chart");
     var data = {
         datasets: [{
             data: [<?php echo $suSubs; ?>, <?php echo $mSubs; ?>,<?php echo $tSubs; ?>,<?php echo $wSubs; ?>,<?php echo $thSubs; ?>,<?php echo $fSubs; ?>,<?php echo $sSubs; ?>],
-            //backgroundColor: 'transparent',
             backgroundColor: 'rgba(1, 173, 50, 0.5)',
-            //backgroundColor: 'rgba(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ', 0.4)',
-            //backgroundColor: "",
             borderColor: "#00cc66",
             borderWidth: 2,
-            label: 'Subscribed' // for legend
+            label: 'Subscribed'
         }, {
             data: [<?php echo $suUnsubs; ?>,<?php echo $mUnsubs; ?>,<?php echo $tUnsubs; ?>,<?php echo $wUnsubs; ?>,<?php echo $thUnsubs; ?>,<?php echo $fUnsubs; ?>,<?php echo $sUnsubs; ?>],
             backgroundColor: 'rgba(236, 3, 50, 0.5)',
             borderColor: "#ff5050",
             borderWidth: 2,
-            // Changes this dataset to become a line
             type: 'bar',
             label: 'Unsubscribed' // for legend
         }],
@@ -232,18 +182,14 @@ while ($row = mysqli_fetch_array($sqlSun)) {
     };
 
     var xChart = new Chart(ctx, {
-        // The type of chart we want to create
         type: 'bar',
-        // The data for our dataset
         data: data,
-        // Configuration options go here
         options: {
             legend: {
                 display: true,
                 position: 'left',
                 labels: {
                     fontColor: 'black'
-                    //fontColor: 'rgb(255, 99, 132)'
                 }
             },
             tooltips: {

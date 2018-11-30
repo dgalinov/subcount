@@ -2,19 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ba90ca5-96cf-451d-89fe-c2adbe3b3f67" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SendMails.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jquery-timepicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../formtelanto/images/form-wizard-bg.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../formtelanto/images/form-wizard.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../formtelanto/images/form-wizard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../formtelanto/images/item-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../formtelanto/images/item-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../formtelanto/images/prueba.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../formtelanto/images/smiley face.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../formtelanto/thanks.php" beforeDir="false" afterPath="$PROJECT_DIR$/../formtelanto/thanks.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/subcount.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/subcount.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sequences.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sequences.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/challengeaudit.php" beforeDir="false" afterPath="$PROJECT_DIR$/challengeaudit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/application.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap-button.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/chart.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/html5shiv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/jquery-1.9.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastselect-master/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastselect-master/.jscsrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastselect-master/.jshintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastselect-master/Gruntfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastselect-master/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastselect-master/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastselect-master/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastselect-master/demo/data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastselect-master/demo/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastselect-master/demo/sections/about.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastselect-master/demo/sections/apiAndOptions.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastselect-master/demo/sections/examples.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastselect-master/demo/sections/installation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastselect-master/demo/snippets/attireAssets.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastselect-master/demo/snippets/attireFooter.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastselect-master/demo/snippets/author.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastselect-master/demo/snippets/githubRibbon.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastselect-master/demo/snippets/googleAnalytics.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastselect-master/demo/snippets/pageMeta.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastselect-master/dist/fastselect.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastselect-master/dist/fastselect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastselect-master/dist/fastselect.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastselect-master/dist/fastselect.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastselect-master/dist/fastselect.standalone.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastselect-master/dist/fastselect.standalone.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastselect-master/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastselect-master/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastselect-master/src/fastselect.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastselect-master/src/fastselect.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery-3.3.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/jquery.steps.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webinars.php" beforeDir="false" afterPath="$PROJECT_DIR$/webinars.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,15 +63,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sequences.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="25" column="96" selection-start-line="25" selection-start-column="96" selection-end-line="25" selection-end-column="96" />
+            <state relative-caret-position="119">
+              <caret line="52" column="60" selection-start-line="52" selection-start-column="60" selection-end-line="52" selection-end-column="60" />
               <folding>
-                <element signature="e#6#97#0#PHP" expanded="true" />
-                <element signature="e#1098#1158#0#HTML" expanded="true" />
-                <element signature="e#2779#2797#0#HTML" expanded="true" />
+                <element signature="e#4010#4028#0#HTML" expanded="true" />
+                <element signature="e#7128#7146#0#HTML" expanded="true" />
                 <element signature="n#style#0;n#section#0;n#form#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -40,34 +78,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../formtelanto/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="349" column="29" selection-start-line="349" selection-start-column="29" selection-end-line="349" selection-end-column="29" />
-              <folding>
-                <element signature="e#6#97#0#PHP" expanded="true" />
-                <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#29158#30552#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../formtelanto/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="483" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="294" column="29" lean-forward="true" selection-start-line="294" selection-start-column="29" selection-end-line="294" selection-end-column="29" />
+            <state relative-caret-position="457">
+              <caret line="177" column="18" selection-start-line="177" selection-start-column="18" selection-end-line="177" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -103,6 +117,13 @@
       <find>multi</find>
       <find>indu</find>
       <find>input</find>
+      <find>multiple</find>
+      <find>multipleSelect</find>
+      <find>fastselect</find>
+      <find>industr</find>
+      <find>industry</find>
+      <find>editor</find>
+      <find>inde</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -139,14 +160,18 @@
         <option value="$PROJECT_DIR$/../auditview/conectar.php" />
         <option value="$PROJECT_DIR$/../auditview/index.php" />
         <option value="$PROJECT_DIR$/db_connection.php" />
-        <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/challengeaudit.php" />
-        <option value="$PROJECT_DIR$/webinars.php" />
-        <option value="$PROJECT_DIR$/blog.php" />
         <option value="$PROJECT_DIR$/cron.php" />
+        <option value="$PROJECT_DIR$/../c4c/index.php" />
+        <option value="$PROJECT_DIR$/js/jquery-timepicker.js" />
         <option value="$PROJECT_DIR$/../formtelanto/thanks.php" />
-        <option value="$PROJECT_DIR$/Sequences.php" />
+        <option value="$PROJECT_DIR$/SendMails.php" />
+        <option value="$PROJECT_DIR$/js/JQuery-multi.js" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/webinars.php" />
+        <option value="$PROJECT_DIR$/challengeaudit.php" />
+        <option value="$PROJECT_DIR$/blog.php" />
         <option value="$PROJECT_DIR$/css/styles.css" />
+        <option value="$PROJECT_DIR$/Sequences.php" />
       </list>
     </option>
   </component>
@@ -154,7 +179,7 @@
     <servers />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="246" />
+    <option name="x" value="380" />
     <option name="y" value="-8" />
     <option name="width" value="1318" />
     <option name="height" value="522" />
@@ -222,8 +247,8 @@
     <list>
       <item itemvalue="JavaScript Debug.bar.html" />
       <item itemvalue="JavaScript Debug.index.html" />
-      <item itemvalue="PHP Script.Sequences.php" />
       <item itemvalue="JavaScript Debug.index.html (1)" />
+      <item itemvalue="PHP Script.Sequences.php" />
     </list>
     <recent_temporary>
       <list>
@@ -267,18 +292,22 @@
       <workItem from="1543308448885" duration="12043000" />
       <workItem from="1543328488881" duration="594000" />
       <workItem from="1543394658161" duration="13384000" />
+      <workItem from="1543409673549" duration="91000" />
+      <workItem from="1543481041762" duration="11414000" />
+      <workItem from="1543566490856" duration="6518000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144485000" />
+    <option name="totallyTimeSpent" value="162508000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.16641453" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.1732224" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32903227" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -299,7 +328,7 @@
     <layout-to-restore>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.16641453" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.1732224" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32903227" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -310,7 +339,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.2141707" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2141707" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -322,47 +351,7 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/app.js" />
-    <entry file="file://$PROJECT_DIR$/js/JavaScript.js" />
-    <entry file="file://$PROJECT_DIR$/../gentelella-master/production/chartjs.js" />
-    <entry file="file://$PROJECT_DIR$/graph.php" />
-    <entry file="file://$PROJECT_DIR$/../php-calendar-master/install.php" />
-    <entry file="file://$PROJECT_DIR$/../calendar-1.0/src/SSC/Calendar.php" />
-    <entry file="file://$PROJECT_DIR$/../calendar-1.0/examples/example1.php" />
-    <entry file="file://$PROJECT_DIR$/index-1541416130550.html" />
-    <entry file="file://$USER_HOME$/Desktop/ControlEx1.php" />
-    <entry file="file://$USER_HOME$/Desktop/ControlEx2.php" />
-    <entry file="file://$USER_HOME$/Desktop/ControlEx3.php" />
-    <entry file="file://$USER_HOME$/Desktop/ControlEx4.php" />
-    <entry file="file://$PROJECT_DIR$/../ControlEx1.php" />
-    <entry file="file://$PROJECT_DIR$/../ControlEx2.php" />
-    <entry file="file://$PROJECT_DIR$/../ControlEx3.php" />
-    <entry file="file://$PROJECT_DIR$/../ControlEx4.php" />
-    <entry file="file://$PROJECT_DIR$/js/chart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" column="3" selection-start-line="44" selection-start-column="3" selection-end-line="44" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html" />
-    <entry file="file://$PROJECT_DIR$/charts.php" />
-    <entry file="file://$PROJECT_DIR$/chart.sql" />
-    <entry file="file://$PROJECT_DIR$/../form/thanks.php" />
-    <entry file="file://$PROJECT_DIR$/../form/unsubSuccesfully.php" />
-    <entry file="file://$PROJECT_DIR$/../form/index.php" />
-    <entry file="file://$PROJECT_DIR$/../c4c/results.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3230" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="134" column="6" lean-forward="true" selection-start-line="131" selection-end-line="134" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/example/index.html" />
     <entry file="file://$PROJECT_DIR$/Month.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -406,69 +395,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db_connection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
-          <caret line="73" column="44" lean-forward="true" selection-start-line="73" selection-start-column="44" selection-end-line="73" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webinars.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="150" column="57" selection-start-line="150" selection-start-column="57" selection-end-line="150" selection-end-column="57" />
-          <folding>
-            <element signature="e#6#97#0#PHP" expanded="true" />
-            <element signature="e#2101#2119#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1667">
-          <caret line="150" column="53" selection-start-line="150" selection-start-column="53" selection-end-line="150" selection-end-column="53" />
-          <folding>
-            <element signature="e#6#97#0#PHP" expanded="true" />
-            <element signature="e#2101#2119#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/challengeaudit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
-          <caret line="69" column="47" selection-start-line="69" selection-start-column="47" selection-end-line="69" selection-end-column="47" />
-          <folding>
-            <element signature="e#6#97#0#PHP" expanded="true" />
-            <element signature="e#1209#1227#0#HTML" expanded="true" />
-            <element signature="e#2101#2119#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../c4c/adminpanel.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="681">
           <caret line="200" column="43" lean-forward="true" selection-start-line="200" selection-start-column="43" selection-end-line="200" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../formtelanto/thanks.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="56" />
-          <folding>
-            <element signature="e#6#97#0#PHP" expanded="true" />
-            <element signature="e#152#186#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -497,16 +427,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../c4c/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="234" column="42" selection-start-line="234" selection-start-column="42" selection-end-line="234" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#div#2;n#section#1;n#div#1;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cron.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -514,53 +434,210 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fastselect-master/dist/fastselect.js">
+    <entry file="file://$PROJECT_DIR$/fastselect-master/dist/fastselect.js" />
+    <entry file="file://$PROJECT_DIR$/../c4c/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-340" />
+        <state relative-caret-position="-476">
+          <caret line="12" column="24" lean-forward="true" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/multiple/jquery.dropdown.min.js" />
+    <entry file="file://$PROJECT_DIR$/multiple/jquery.dropdown.css" />
+    <entry file="file://$PROJECT_DIR$/multiple/jquery.dropdown.min.css" />
+    <entry file="file://$PROJECT_DIR$/multiple/jquery.dropdown.js" />
+    <entry file="file://$PROJECT_DIR$/fastselect-master/dist/fastselect.min.css" />
+    <entry file="file://$PROJECT_DIR$/fastselect-master/dist/fastselect.standalone.min.js" />
+    <entry file="file://$PROJECT_DIR$/fastselect-master/dist/fastselect.css" />
+    <entry file="file://$PROJECT_DIR$/fastselect-master/src/fastselect.scss" />
+    <entry file="file://$PROJECT_DIR$/fastselect-master/src/fastselect.js" />
+    <entry file="file://$PROJECT_DIR$/css/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../formtelanto/css/style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../formtelanto/fastselect-master/dist/fastselect.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../formtelanto/fastselect-master/dist/fastselect.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../formtelanto/fastselect-master/dist/fastselect.standalone.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../formtelanto/fastselect-master/dist/fastselect.standalone.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../formtelanto/fastselect-master/dist/fastselect.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../formtelanto/fastselect-master/src/fastselect.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="149">
           <caret line="119" column="48" selection-start-line="119" selection-start-column="48" selection-end-line="119" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../formtelanto/fastselect-master/src/fastselect.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
+        <state relative-caret-position="140">
           <caret line="135" column="13" selection-start-line="135" selection-start-column="13" selection-end-line="135" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../formtelanto/css/style.css">
+    <entry file="file://$PROJECT_DIR$/../formtelanto/js/jquery-3.3.1.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret selection-end-line="483" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../formtelanto/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../formtelanto/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../formtelanto/css/style.css.map">
+      <provider selected="true" editor-type-id="text-editor" />
+      <provider editor-type-id="sourcemapFileViewerProvider" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../formtelanto/js/jquery.steps.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="524" column="37" selection-start-line="524" selection-start-column="29" selection-end-line="524" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jquery-timepicker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="636" lean-forward="true" selection-start-line="636" selection-end-line="636" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../formtelanto/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="2129">
           <caret line="349" column="29" selection-start-line="349" selection-start-column="29" selection-end-line="349" selection-end-column="29" />
           <folding>
             <element signature="e#6#97#0#PHP" expanded="true" />
-            <element signature="n#style#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="e#29158#30552#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sequences.php">
+    <entry file="file://$PROJECT_DIR$/../formtelanto/thanks.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="25" column="96" selection-start-line="25" selection-start-column="96" selection-end-line="25" selection-end-column="96" />
+        <state relative-caret-position="-2260">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="e#6#97#0#PHP" expanded="true" />
-            <element signature="e#1098#1158#0#HTML" expanded="true" />
-            <element signature="e#2779#2797#0#HTML" expanded="true" />
+            <element signature="e#152#186#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SendMails.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="32" column="51" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
+          <folding>
+            <element signature="e#151#185#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Rar$DRa0.680/jqyery-bootstrap-multiselect-search/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="17" selection-start-line="17" selection-end-line="24" selection-end-column="9" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/JQuery-multi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11373">
+          <caret line="669" lean-forward="true" selection-start-line="669" selection-end-line="669" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1260">
+          <caret line="76" column="91" lean-forward="true" selection-start-line="76" selection-start-column="91" selection-end-line="76" selection-end-column="91" />
+          <folding>
+            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#1;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#2;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#3;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db_connection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/challengeaudit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="46" lean-forward="true" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webinars.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+          <folding>
+            <element signature="e#1166#1184#0#HTML" expanded="true" />
+            <element signature="e#2117#2135#0#HTML" expanded="true" />
             <element signature="n#style#0;n#section#0;n#form#0;n#!!top" expanded="true" />
           </folding>
         </state>
@@ -568,8 +645,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="294" column="29" lean-forward="true" selection-start-line="294" selection-start-column="29" selection-end-line="294" selection-end-column="29" />
+        <state relative-caret-position="457">
+          <caret line="177" column="18" selection-start-line="177" selection-start-column="18" selection-end-line="177" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sequences.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="52" column="60" selection-start-line="52" selection-start-column="60" selection-end-line="52" selection-end-column="60" />
+          <folding>
+            <element signature="e#4010#4028#0#HTML" expanded="true" />
+            <element signature="e#7128#7146#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#section#0;n#form#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
