@@ -149,6 +149,7 @@ table {
 .indent-1 section { float: left;}
 .labelEmail {
     width: 100%;
+    resize: none;
 }
 .buttonStartSave {
     color: white;
@@ -159,6 +160,15 @@ table {
     height: 50px;
     justify-content: center;
     display: flex;
+}
+.buttonSaveSequence {
+    color: white;
+    font-size: 15px;
+    background: #08c;
+    border: 2px solid white;
+    width: 100px;
+    height: 50px;
+    justify-content: center;
 }
 .column {
     float: left;
@@ -178,4 +188,27 @@ table {
 }
 .titleTH {
     background: #006699;
+}
+.insertNewEmail {
+    border: 2px solid #08c;
+    color: #08c;
+}
+.error {
+    color: red !important;
+}
+.labelNewEmail {
+    resize: none;
+    display: flex;
+}
+.labelLabel {
+}
+textarea {
+    outline: none;
+    width: 100%;
+    overflow: auto;
+}
+div.justified {
+    display: flex !important;
+    justify-content: center;
+    align-content: center;
 }
