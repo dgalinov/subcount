@@ -212,3 +212,54 @@ div.justified {
     justify-content: center;
     align-content: center;
 }
+#checkbox-dropdown-container {
+    background: #99d3de;
+    padding: 20px;
+}
+.custom-select {
+    display: inline-block;
+    padding: 5px 15px;
+    border: #80b2bb 1px solid;
+    color: #3892a2;
+    border-radius: 2px;
+    width: 100%;
+    cursor:pointer;
+
+}
+div#custom-select-option-box {
+    background: #FFF;
+    border: #80b2bb 1px solid;
+    color: #3892a2;
+    border-radius: 2px;
+    width: 100%;
+    z-index:1;
+    display:none;
+}
+button.search.btn {
+    background: #4c4c4c;
+    border: #353535 1px solid;
+    color: #ffffff;
+    border-radius: 2px;
+    padding: 8px 40px;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+.custom-select-option {
+    width: 100%;
+    padding: 5px 15px;
+    margin: 1px 0px;
+    cursor: pointer;
+}
+.custom-select-option:hover {
+
+}
+.result-list {
+    padding-bottom: 20px;
+    color: #4d4d4d;
+    line-height: 25px;
+}
+.result-list-heading {
+    font-style: italic;
+    color: #717171;
+    text-decoration: underline;
+}

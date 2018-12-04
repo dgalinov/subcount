@@ -38,65 +38,73 @@ if ($_POST) {
 </div>
 <div class="justified">
     <form method="post" action="Sequences.php">
-        <?php
-        $checked = "";
-        require("db_connection.php");
-        $query = "SELECT days FROM crontab WHERE name = 'Newsletter'";
-        if (!$result = mysqli_query($con, $query)) {
-            exit(mysqli_error($con));
-        }
-        if (mysqli_num_rows($result) > 0) {
-            while ($row = mysqli_fetch_assoc($result)) {
-                $emails = $row['emails'];
-                $preferencesE = array(
-                    implode(",", $emails)
-                );
-                foreach ($preferencesE AS $arrayD) {
-                    if ($arrayD == "Monday") {
-                        $checked = "checked = checked";
-                    }
-                    if ($arrayD == "Tuesday") {
-                        $checked = "checked = checked";
-                    }
-                    if ($arrayD == "Wednesday") {
-                        $checked = "checked = checked";
-                    }
-                    if ($arrayD == "Thursday") {
-                        $checked = "checked = checked";
-                    }
-                    if ($arrayD == "Friday") {
-                        $checked = "checked = checked";
-                    }
-                    if ($arrayD == "Saturday") {
-                        $checked = "checked = checked";
-                    }
-                    if ($arrayD == "Sunday") {
-                        $checked = "checked = checked";
-                    }
+        <label for="dias"><select id="dias" name="dias[]" class="selectpicker" multiple data-live-search="true">
+                <?php
+                require("db_connection.php");
+                $query = "SELECT days FROM crontab WHERE name = 'Newsletter'";
+                $result = mysqli_query($con, $query);
+                $row = mysqli_fetch_assoc($result);
+                $row = implode(",", $row);
+                $row = explode(",", $row);
+                $arrayDias = array($row);
+                if (in_array("Monday", $arrayDias)) {
+                    echo "<option selected value='Monday'>Monday</option>";
+                } else {
+                    echo "<option value='Monday'>Monday</option>";
                 }
-            }
-        }
-        ?>
-        <select id="dias" name="dias[]" class="selectpicker" multiple data-live-search="true">
-            <option <?php echo $checked ?> >Monday</option>
-            <option <?php echo $checked ?> >Tuesday</option>
-            <option <?php echo $checked ?> >Wednesday</option>
-            <option <?php echo $checked ?> >Thursday</option>
-            <option <?php echo $checked ?> >Friday</option>
-            <option <?php echo $checked ?> >Saturday</option>
-            <option <?php echo $checked ?> >Sunday</option>
-        </select>
+                if (in_array("Tuesday", $arrayDias)) {
+                    echo "<option selected value='Tuesday'>Tuesday</option>";
+                } else {
+                    echo "<option value='Tuesday'>Tuesday</option>";
+                }
+                if (in_array("Wednesday", $arrayDias)) {
+                    echo "<option selected value='Wednesday'>Wednesday</option>";
+                } else {
+                    echo "<option value='Wednesday'>Wednesday</option>";
+                }
+                if (in_array("Thursday", $arrayDias)) {
+                    echo "<option selected value='Thursday'>Thursday</option>";
+                } else {
+                    echo "<option value='Thursday'>Thursday</option>";
+                }
+                if (in_array("Friday", $arrayDias)) {
+                    echo "<option selected value='Friday'>Friday</option>";
+                } else {
+                    echo "<option value='Friday'>Friday</option>";
+                }
+                if (in_array("Saturday", $arrayDias)) {
+                    echo "<option selected value='Saturday'>Saturday</option>";
+                } else {
+                    echo "<option value='Saturday'>Saturday</option>";
+                }
+                if (in_array("Sunday", $arrayDias)) {
+                    echo "<option selected value='Sunday'>Sunday</option>";
+                } else {
+                    echo "<option value='Sunday'>Sunday</option>";
+                }
+                ?>
+            </select>
+        </label>
         <select id="mails" name="mails[]" class="selectpicker" multiple data-live-search="true">
             <?php
             require("db_connection.php");
 
             $query = "SELECT * FROM emails ORDER BY id DESC";
+            $query2 = "SELECT emails FROM crontab WHERE name = 'Newsletter'";
             if (!$result = mysqli_query($con, $query)) {
                 exit(mysqli_error($con));
             }
+            $result2 = mysqli_query($con, $query2);
+            $row2 = mysqli_fetch_assoc($result2);
+            $row2 = implode(",", $row2);
+            $arrayEmails = array(explode(",", $row2));
             if (mysqli_num_rows($result) > 0) {
                 while ($row = mysqli_fetch_assoc($result)) {
-                    echo "<option>" . $row['email'] . "</option>";
+                    if (in_array($row['email'], $arrayEmails, TRUE)) {
+                        echo "<option selected>" . $row['email'] . "</option>";
+                    } else {
+                        echo "<option selected>" . $row['email'] . "</option>";
+                    }
                 }
             }
             ?>
