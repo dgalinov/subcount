@@ -198,7 +198,7 @@ table {
 }
 .labelNewEmail {
     resize: none;
-    display: flex;
+    width: 25%;
 }
 .labelLabel {
 }
@@ -208,9 +208,6 @@ textarea {
     overflow: auto;
 }
 div.justified {
-    display: flex !important;
-    justify-content: center;
-    align-content: center;
 }
 #checkbox-dropdown-container {
     background: #99d3de;
@@ -262,4 +259,17 @@ button.search.btn {
     font-style: italic;
     color: #717171;
     text-decoration: underline;
+}
+label {
+    display: contents !important;
+    margin-bottom: 0px !important;
+}
+input[type=text], select {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }

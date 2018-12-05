@@ -85,38 +85,35 @@ if ($_POST) {
                 ?>
             </select>
         </label>
-        <select id="mails" name="mails[]" class="selectpicker" multiple data-live-search="true">
-            <?php
-            require("db_connection.php");
+        <label for="mails">
+            <select id="mails" name="mails[]" class="selectpicker" multiple data-live-search="true">
+                <?php
+                require("db_connection.php");
 
-            $query = "SELECT * FROM emails ORDER BY id DESC";
-            $query2 = "SELECT emails FROM crontab WHERE name = 'Newsletter'";
-            if (!$result = mysqli_query($con, $query)) {
-                exit(mysqli_error($con));
-            }
-            $result2 = mysqli_query($con, $query2);
-            $row2 = mysqli_fetch_assoc($result2);
-            $row2 = implode(",", $row2);
-            $arrayEmails = array(explode(",", $row2));
-            if (mysqli_num_rows($result) > 0) {
-                while ($row = mysqli_fetch_assoc($result)) {
-                    if (in_array($row['email'], $arrayEmails, TRUE)) {
-                        echo "<option selected>" . $row['email'] . "</option>";
-                    } else {
-                        echo "<option selected>" . $row['email'] . "</option>";
+                $query = "SELECT * FROM emails ORDER BY id DESC";
+                $query2 = "SELECT emails FROM crontab WHERE name = 'Newsletter'";
+                if (!$result = mysqli_query($con, $query)) {
+                    exit(mysqli_error($con));
+                }
+                $result2 = mysqli_query($con, $query2);
+                $row2 = mysqli_fetch_assoc($result2);
+                $row2 = implode(",", $row2);
+                $arrayEmails = array(explode(",", $row2));
+                if (mysqli_num_rows($result) > 0) {
+                    while ($row = mysqli_fetch_assoc($result)) {
+                        if (in_array($row['email'], $arrayEmails)) {
+                            echo "<option selected>" . $row['email'] . "</option>";
+                        } else {
+                            echo "<option>" . $row['email'] . "</option>";
+                        }
                     }
                 }
-            }
-            ?>
-        </select>
+                ?>
+            </select>
+        </label>
         <input type="submit" class="buttonSaveSequence" name="action" value="SaveAll">
-        <label class="labelLabel">
-            <textarea placeholder="Input email" cols="50" rows="2" class='labelNewEmail' name="emailSS"></textarea>
-        </label>
-        <label class="labelLabel">
-            <textarea placeholder="Input password" cols="50" rows="2" class='labelNewEmail'
-                      name="passwordSS"></textarea>
-        </label>
+        <input type="text" id="fname" name="emailSS" placeholder="Input email">
+        <input type="text" id="fname" name="passwordSS" placeholder="Input password">
         <input type="submit" class="buttonSaveSequence" name="action" value="New">
     </form>
 </div>
