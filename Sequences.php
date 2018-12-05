@@ -111,7 +111,7 @@ if ($_POST) {
                 ?>
             </select>
         </label>
-        <input type="submit" class="buttonSaveSequence" name="action" value="SaveAll">
+        <input type="submit" class="buttonSaveSequence" name="action" value="Update">
         <input type="text" id="fname" name="emailSS" placeholder="Input email">
         <input type="text" id="fname" name="passwordSS" placeholder="Input password">
         <input type="submit" class="buttonSaveSequence" name="action" value="New">
@@ -137,6 +137,7 @@ if ($_POST) {
             }
             ?>
             <a class="active" onclick='newStep()'>+</a>
+            <input type="submit" class="buttonSaveSequence" name="action" value="START">
         </div>
     </section>
     <form action="Sequences.php" method="post">
@@ -149,7 +150,7 @@ if ($_POST) {
             <label class='labelEmail'>
                 <textarea class="ckeditor" name="content"></textarea>
             </label>
-            <input type="submit" class="buttonStartSave" name="action" value="Start">
+            <input type="submit" class="buttonStartSave" name="action" value="Create">
         </section>
     </form>
     <?php
@@ -219,7 +220,7 @@ if ($_POST) {
 </html>
 <?php
 if ($_POST) {
-    if ($_POST['action'] == 'Start') {
+    if ($_POST['action'] == 'Create') {
         if (!empty($_POST['subject'])) {
             if (!empty($_POST['content'])) {
                 $content = $_POST['content'];
