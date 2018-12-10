@@ -77,7 +77,7 @@ if (!$result = mysqli_query($con, $query)) {
 }
 if (mysqli_num_rows($result) > 0) {
     $number = 1;
-    $users = '<table class="table table-bordered">
+    $users = '<table class="table table-bordered tablaCSV">
         <tr class="titleTH">
             <th>FirstName</th>
             <th>LastName</th>

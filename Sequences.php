@@ -17,7 +17,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
-
+    <link rel="stylesheet" type="text/css" media="screen" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="./css/prettify-1.0.css" rel="stylesheet">
+    <link href="./css/base.css" rel="stylesheet">
+    <link href="//cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/build/css/bootstrap-datetimepicker.css" rel="stylesheet">
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
+    <script src="//cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js"></script>
 </head>
 <body>
 <?php
@@ -111,9 +121,30 @@ if ($_POST) {
                 ?>
             </select>
         </label>
+        <div class="container">
+            <div class="row">
+                <div class='col-sm-6'>
+                    <div class="form-group">
+                        <div class='input-group date' id='datetimepicker3'>
+                            <input type='text' id="timename" name="tpick" class="form-control" />
+                            <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-time"></span>
+                    </span>
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    $(function () {
+                        $('#datetimepicker3').datetimepicker({
+                            format: 'LT'
+                        });
+                    });
+                </script>
+            </div>
+        </div>
         <input type="submit" class="buttonSaveSequence" name="action" value="Update">
-        <input type="text" id="fname" name="emailSS" placeholder="Input email">
-        <input type="text" id="fname" name="passwordSS" placeholder="Input password">
+        <input type="text" id="fname" name="emailSS" placeholder="Input email" style="padding-left: 10px">
+        <input type="text" id="fname" name="passwordSS" placeholder="Input password" style="padding-left: 10px">
         <input type="submit" class="buttonSaveSequence" name="action" value="New">
     </form>
 </div>
@@ -137,7 +168,7 @@ if ($_POST) {
             }
             ?>
             <a class="active" onclick='newStep()'>+</a>
-            <input type="submit" class="buttonSaveSequence" name="action" value="START">
+            <input type="submit" class="buttonSaveSequence" name="action" value="START" style="width: 100%;background: #00b6ff;border-radius: 0px">
         </div>
     </section>
     <form action="Sequences.php" method="post">
@@ -256,10 +287,9 @@ if ($_POST) {
             var_dump($query);
         }
     }
-    if ($_POST['action'] == 'SaveAll') {
+    if ($_POST['action'] == 'Update') {
         require("db_connection.php");
-
-
+        $timeP = $_POST['tpick'];
         $preferences = array(
             implode(",", $_POST['dias'])
         );
@@ -273,9 +303,13 @@ if ($_POST) {
         $preferences = implode(",", $preferences);
         $preferencesEmails = implode(",", $preferencesEmails);
 
-        $query = "UPDATE crontab SET days = '$preferences', emails = '$preferencesEmails' WHERE name = 'Newsletter';";
+        $query = "UPDATE crontab SET days = '$preferences', timePicker = '$timeP', emails = '$preferencesEmails' WHERE name = 'Newsletter';";
 
         $query = mysqli_query($con, $query);
+    }
+    else {
+        var_dump($con);
+        echo "No funciona";
     }
 }
 if ($_POST) {

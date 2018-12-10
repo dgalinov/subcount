@@ -27,13 +27,10 @@ html, body, #myChart {
 .topnav a.active:hover {
     background-color: #0077b3;
 }
-table, tr, td {
+.tablaCSV {
     border: 2px solid white;
     text-align: center;
     background-color: #0088cc;
-    color: white;
-}
-table {
     border-collapse: collapse;
     width: 100%
 }
@@ -78,24 +75,6 @@ table {
     white-space: nowrap;
     text-align: right;
 }
-.table-tight > thead > tr > th,
-.table-tight > tbody > tr > th,
-.table-tight > tfoot > tr > th,
-.table-tight > thead > tr > td,
-.table-tight > tbody > tr > td,
-.table-tight > tfoot > tr > td {
-    padding-left: 0;
-    padding-right: 0;
-}
-.table-tight-vert > thead > tr > th,
-.table-tight-vert > tbody > tr > th,
-.table-tight-vert > tfoot > tr > th,
-.table-tight-vert > thead > tr > td,
-.table-tight-vert > tbody > tr > td,
-.table-tight-vert > tfoot > tr > td {
-    padding-top: 0;
-    padding-bottom: 0;
-}
 .topnavS {
     overflow: hidden;
     background-color: #08c;
@@ -123,12 +102,11 @@ table {
 }
 .vertical-menu {
     text-align: center;
-    border-bottom: 2px solid white;
-    border-right: 2px solid white;
 }
 .vertical-menu a {
-    background:#08c;
-    color: white !important;
+    background: white;
+    border: 2px solid #08c;
+    color: #08c !important;
     display: block;
     padding: 12px;
     text-decoration: none;
@@ -136,14 +114,17 @@ table {
 .vertical-menu a:hover {
     background-color: #0077b3;
     text-decoration: none;
-    color: white;
+    color: white !important;
 }
 .vertical-menu a.active {
-    background-color: #006699;
-    color: white;
+    background-color: #0e90d2;
+    color: white !important;
+    font-weight: bolder;
 }
 .vertical-menu a.active:hover {
     background-color: #0077b3;
+    color: white !important;
+    font-weight: bolder;
 }
 .indent-1 {width: 100%;float: left;}
 .indent-1 section { float: left;}
@@ -152,23 +133,48 @@ table {
     resize: none;
 }
 .buttonStartSave {
-    color: white;
+    color: #08c;
     font-size: 20px;
-    background: #08c;
-    border: 2px solid white;
+    background: white;
+    border: 2px solid #08c;
     width: 200px;
     height: 50px;
     justify-content: center;
     display: flex;
+    border-radius: 4px;
+}
+.buttonStartSave:hover {
+    color: white;
+    font-size: 20px;
+    background: #08c;
+    border: 2px solid #08c;
+    width: 200px;
+    height: 50px;
+    justify-content: center;
+    display: flex;
+    border-radius: 4px;
 }
 .buttonSaveSequence {
-    color: white;
+    color: #08c;
     font-size: 15px;
-    background: #08c;
-    border: 2px solid white;
+    background: white;
+    border: 2px solid #08c;
     width: 100px;
     height: 50px;
     justify-content: center;
+    border-radius: 4px;
+    font-weight: bolder;
+}
+.buttonSaveSequence:hover {
+    color: white;
+    font-size: 15px;
+    background: #08c !important;
+    border: 2px solid #08c;
+    width: 100px;
+    height: 50px;
+    justify-content: center;
+    border-radius: 4px;
+    font-weight: bolder;
 }
 .column {
     float: left;
@@ -201,13 +207,6 @@ table {
     width: 25%;
 }
 .labelLabel {
-}
-textarea {
-    outline: none;
-    width: 100%;
-    overflow: auto;
-}
-div.justified {
 }
 #checkbox-dropdown-container {
     background: #99d3de;
@@ -265,11 +264,11 @@ label {
     margin-bottom: 0px !important;
 }
 input[type=text], select {
-    width: 25%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
+    border: 1px solid #bebcbb;
+    height: 38px;
     border-radius: 4px;
     box-sizing: border-box;
+}
+div.justified {
+    margin-bottom: 10px;
 }
