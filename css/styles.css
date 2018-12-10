@@ -271,4 +271,5 @@ input[type=text], select {
 }
 div.justified {
     margin-bottom: 10px;
+    justify-items: ;
 }
