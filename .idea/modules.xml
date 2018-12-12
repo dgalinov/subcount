@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../formtelanto/.idea/formtelanto.iml" filepath="$PROJECT_DIR$/../formtelanto/.idea/formtelanto.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/subcount.iml" filepath="$PROJECT_DIR$/.idea/subcount.iml" />
     </modules>
   </component>
