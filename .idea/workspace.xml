@@ -10,6 +10,8 @@
       <change beforePath="$PROJECT_DIR$/../formtelanto/images/prueba.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../formtelanto/images/smiley face.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../formtelanto/thanks.php" beforeDir="false" afterPath="$PROJECT_DIR$/../formtelanto/thanks.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sequences.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sequences.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,27 +22,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sequences.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="53" column="78" lean-forward="true" selection-start-line="53" selection-start-column="78" selection-end-line="53" selection-end-column="78" />
-              <folding>
-                <element signature="e#7442#7468#0#HTML" expanded="true" />
-                <element signature="e#7555#7581#0#HTML" expanded="true" />
-                <element signature="e#5670#5688#0#HTML" expanded="true" />
-                <element signature="e#8531#8589#0#HTML" expanded="true" />
-                <element signature="e#6626#6644#0#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="238">
+              <caret line="44" column="6" lean-forward="true" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="273" column="19" selection-start-line="273" selection-start-column="19" selection-end-line="273" selection-end-column="19" />
+            <state relative-caret-position="596">
+              <caret line="262" column="37" lean-forward="true" selection-start-line="262" selection-start-column="37" selection-end-line="262" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -132,8 +127,8 @@
         <option value="$PROJECT_DIR$/Day.php" />
         <option value="$PROJECT_DIR$/Year.php" />
         <option value="$PROJECT_DIR$/Month.php" />
-        <option value="$PROJECT_DIR$/Sequences.php" />
         <option value="$PROJECT_DIR$/css/styles.css" />
+        <option value="$PROJECT_DIR$/Sequences.php" />
       </list>
     </option>
   </component>
@@ -141,9 +136,9 @@
     <servers />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="380" />
+    <option name="x" value="1358" />
     <option name="y" value="-8" />
-    <option name="width" value="1318" />
+    <option name="width" value="784" />
     <option name="height" value="522" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -152,7 +147,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -160,10 +154,16 @@
               <item name="subcount" type="b2602c69:ProjectViewProjectNode" />
               <item name="subcount" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="subcount" type="b2602c69:ProjectViewProjectNode" />
+              <item name="subcount" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -265,20 +265,20 @@
       <workItem from="1543846471007" duration="1056000" />
       <workItem from="1543910886069" duration="12942000" />
       <workItem from="1543996010733" duration="11619000" />
-      <workItem from="1544431385433" duration="10789000" />
+      <workItem from="1544431385433" duration="11127000" />
+      <workItem from="1544465505057" duration="5522000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="219885000" />
+    <option name="totallyTimeSpent" value="225745000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
+    <frame x="1358" y="-8" width="1936" height="1066" extended-state="6" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.18381241" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.13166311" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32903227" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -289,7 +289,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.2141707" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.21329047" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -391,8 +391,8 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../formtelanto/css/style.css.map">
-      <provider selected="true" editor-type-id="text-editor" />
       <provider editor-type-id="sourcemapFileViewerProvider" />
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/../formtelanto/js/jquery.steps.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -541,13 +541,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/MDB-Free_4.5.16/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Downloads/MDB-Free_4.5.16/index.html" />
     <entry file="file://$PROJECT_DIR$/js/bootstrap-datetimepicker.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1190" />
@@ -559,16 +553,8 @@
     <entry file="file://$PROJECT_DIR$/js/bootstrap-datetimepicker.min.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/bootstrap-datetimepicker-master/test/screen-capture/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/Downloads/bootstrap-datetimepicker-master/docs/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-221">
-          <caret line="27" column="8" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Downloads/bootstrap-datetimepicker-master/test/screen-capture/index.js" />
+    <entry file="file://$USER_HOME$/Downloads/bootstrap-datetimepicker-master/docs/index.html" />
     <entry file="file://$PROJECT_DIR$/Year.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="219">
@@ -597,24 +583,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sequences.php">
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="53" column="78" lean-forward="true" selection-start-line="53" selection-start-column="78" selection-end-line="53" selection-end-column="78" />
-          <folding>
-            <element signature="e#7442#7468#0#HTML" expanded="true" />
-            <element signature="e#7555#7581#0#HTML" expanded="true" />
-            <element signature="e#5670#5688#0#HTML" expanded="true" />
-            <element signature="e#8531#8589#0#HTML" expanded="true" />
-            <element signature="e#6626#6644#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="596">
+          <caret line="262" column="37" lean-forward="true" selection-start-line="262" selection-start-column="37" selection-end-line="262" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles.css">
+    <entry file="file://$PROJECT_DIR$/Sequences.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="273" column="19" selection-start-line="273" selection-start-column="19" selection-end-line="273" selection-end-column="19" />
+        <state relative-caret-position="238">
+          <caret line="44" column="6" lean-forward="true" selection-start-line="44" selection-start-column="6" selection-end-line="44" selection-end-column="6" />
         </state>
       </provider>
     </entry>

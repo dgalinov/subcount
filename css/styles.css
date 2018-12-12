@@ -260,7 +260,7 @@ button.search.btn {
     text-decoration: underline;
 }
 label {
-    display: contents !important;
+    display: inline-block !important;
     margin-bottom: 0px !important;
 }
 input[type=text], select {
@@ -271,5 +271,4 @@ input[type=text], select {
 }
 div.justified {
     margin-bottom: 10px;
-    justify-items: ;
 }
