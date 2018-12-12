@@ -6,14 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Telanto</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="ckeditor/ckeditor.js"></script>
     <script src="js/multiselect.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
@@ -48,6 +45,7 @@ if ($_POST) {
 </div>
 <div class="justified">
     <form method="post" action="Sequences.php">
+        <div class="container">
         <label for="dias"><select id="dias" name="dias[]" class="selectpicker" multiple data-live-search="true">
                 <?php
                 require("db_connection.php");
@@ -121,7 +119,7 @@ if ($_POST) {
                 ?>
             </select>
         </label>
-        <div class="container">
+
             <div class="row">
                 <div class='col-sm-6'>
                     <div class="form-group">
