@@ -43,107 +43,124 @@ if ($_POST) {
     <a href="webinars.php">Webinars</a>
     <a href="blog.php">Blog</a>
 </div>
-<div class="justified">
+<div class="container">
     <form method="post" action="Sequences.php">
-        <div class="container">
-        <label for="dias"><select id="dias" name="dias[]" class="selectpicker" multiple data-live-search="true">
-                <?php
-                require("db_connection.php");
-                $query = "SELECT days FROM crontab WHERE name = 'Newsletter'";
-                $result = mysqli_query($con, $query);
-                $row = mysqli_fetch_assoc($result);
-                $row = implode(",", $row);
-                $row = explode(",", $row);
-                $arrayDias = array($row);
-                if (in_array("Monday", $arrayDias)) {
-                    echo "<option selected value='Monday'>Monday</option>";
-                } else {
-                    echo "<option value='Monday'>Monday</option>";
-                }
-                if (in_array("Tuesday", $arrayDias)) {
-                    echo "<option selected value='Tuesday'>Tuesday</option>";
-                } else {
-                    echo "<option value='Tuesday'>Tuesday</option>";
-                }
-                if (in_array("Wednesday", $arrayDias)) {
-                    echo "<option selected value='Wednesday'>Wednesday</option>";
-                } else {
-                    echo "<option value='Wednesday'>Wednesday</option>";
-                }
-                if (in_array("Thursday", $arrayDias)) {
-                    echo "<option selected value='Thursday'>Thursday</option>";
-                } else {
-                    echo "<option value='Thursday'>Thursday</option>";
-                }
-                if (in_array("Friday", $arrayDias)) {
-                    echo "<option selected value='Friday'>Friday</option>";
-                } else {
-                    echo "<option value='Friday'>Friday</option>";
-                }
-                if (in_array("Saturday", $arrayDias)) {
-                    echo "<option selected value='Saturday'>Saturday</option>";
-                } else {
-                    echo "<option value='Saturday'>Saturday</option>";
-                }
-                if (in_array("Sunday", $arrayDias)) {
-                    echo "<option selected value='Sunday'>Sunday</option>";
-                } else {
-                    echo "<option value='Sunday'>Sunday</option>";
-                }
-                ?>
-            </select>
-        </label>
-        <label for="mails">
-            <select id="mails" name="mails[]" class="selectpicker" multiple data-live-search="true">
-                <?php
-                require("db_connection.php");
-
-                $query = "SELECT * FROM emails ORDER BY id DESC";
-                $query2 = "SELECT emails FROM crontab WHERE name = 'Newsletter'";
-                if (!$result = mysqli_query($con, $query)) {
-                    exit(mysqli_error($con));
-                }
-                $result2 = mysqli_query($con, $query2);
-                $row2 = mysqli_fetch_assoc($result2);
-                $row2 = implode(",", $row2);
-                $arrayEmails = array(explode(",", $row2));
-                if (mysqli_num_rows($result) > 0) {
-                    while ($row = mysqli_fetch_assoc($result)) {
-                        if (in_array($row['email'], $arrayEmails)) {
-                            echo "<option selected>" . $row['email'] . "</option>";
+        <div class="row">
+            <div class="col-">
+                <label for="dias"><select id="dias" name="dias[]" class="selectpicker" multiple data-live-search="true" style="height: 50px;line-height: 4;">
+                        <?php
+                        require("db_connection.php");
+                        $query = "SELECT days FROM crontab WHERE name = 'Newsletter'";
+                        $result = mysqli_query($con, $query);
+                        $row = mysqli_fetch_assoc($result);
+                        $row = implode(",", $row);
+                        $row = explode(",", $row);
+                        $arrayDias = array($row);
+                        if (in_array("Monday", $arrayDias)) {
+                            echo "<option selected value='Monday'>Monday</option>";
                         } else {
-                            echo "<option>" . $row['email'] . "</option>";
+                            echo "<option value='Monday'>Monday</option>";
                         }
-                    }
-                }
-                ?>
-            </select>
-        </label>
-
-            <div class="row">
-                <div class='col-sm-6'>
-                    <div class="form-group">
-                        <div class='input-group date' id='datetimepicker3'>
-                            <input type='text' id="timename" name="tpick" class="form-control" />
-                            <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-time"></span>
-                    </span>
+                        if (in_array("Tuesday", $arrayDias)) {
+                            echo "<option selected value='Tuesday'>Tuesday</option>";
+                        } else {
+                            echo "<option value='Tuesday'>Tuesday</option>";
+                        }
+                        if (in_array("Wednesday", $arrayDias)) {
+                            echo "<option selected value='Wednesday'>Wednesday</option>";
+                        } else {
+                            echo "<option value='Wednesday'>Wednesday</option>";
+                        }
+                        if (in_array("Thursday", $arrayDias)) {
+                            echo "<option selected value='Thursday'>Thursday</option>";
+                        } else {
+                            echo "<option value='Thursday'>Thursday</option>";
+                        }
+                        if (in_array("Friday", $arrayDias)) {
+                            echo "<option selected value='Friday'>Friday</option>";
+                        } else {
+                            echo "<option value='Friday'>Friday</option>";
+                        }
+                        if (in_array("Saturday", $arrayDias)) {
+                            echo "<option selected value='Saturday'>Saturday</option>";
+                        } else {
+                            echo "<option value='Saturday'>Saturday</option>";
+                        }
+                        if (in_array("Sunday", $arrayDias)) {
+                            echo "<option selected value='Sunday'>Sunday</option>";
+                        } else {
+                            echo "<option value='Sunday'>Sunday</option>";
+                        }
+                        ?>
+                    </select>
+                </label>
+            </div>
+            <div class="col-">
+                        <div class="form-group">
+                            <div class='input-group date' id='datetimepicker3'>
+                                <input type='text' id="timename" name="tpick" class="form-control" />
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-time"></span>
+                                </span>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <script type="text/javascript">
-                    $(function () {
-                        $('#datetimepicker3').datetimepicker({
-                            format: 'LT'
+                    <script type="text/javascript">
+                        $(function () {
+                            $('#datetimepicker3').datetimepicker({
+                                format: 'LT'
+                            });
                         });
-                    });
-                </script>
+                    </script>
+            </div>
+            <div class="col-">
+                <label for="mails">
+                    <select id="mails" name="mails[]" class="selectpicker" multiple data-live-search="true">
+                        <?php
+                        require("db_connection.php");
+
+                        $query = "SELECT * FROM emails ORDER BY id DESC";
+                        $query2 = "SELECT emails FROM crontab WHERE name = 'Newsletter'";
+                        if (!$result = mysqli_query($con, $query)) {
+                            exit(mysqli_error($con));
+                        }
+                        $result2 = mysqli_query($con, $query2);
+                        $row2 = mysqli_fetch_assoc($result2);
+                        $row2 = implode(",", $row2);
+                        $arrayEmails = array(explode(",", $row2));
+                        if (mysqli_num_rows($result) > 0) {
+                            while ($row = mysqli_fetch_assoc($result)) {
+                                if (in_array($row['email'], $arrayEmails)) {
+                                    echo "<option selected>" . $row['email'] . "</option>";
+                                } else {
+                                    echo "<option>" . $row['email'] . "</option>";
+                                }
+                            }
+                        }
+                        ?>
+                    </select>
+                </label>
+            </div>
+            <div class="col-">
+                <input type="submit" class="buttonSaveSequence" name="action" value="Update">
+            </div>
+            <div class="col-">
+                <input type="text" id="fname" name="emailSS" placeholder="Input email" style="padding-left: 10px">
+            </div>
+            <div class="col-">
+                <input type="text" id="fname" name="passwordSS" placeholder="Input password" style="padding-left: 10px">
+            </div>
+            <div class="col-">
+                <input type="submit" class="buttonSaveSequence" name="action" value="New">
             </div>
         </div>
-        <input type="submit" class="buttonSaveSequence" name="action" value="Update">
-        <input type="text" id="fname" name="emailSS" placeholder="Input email" style="padding-left: 10px">
-        <input type="text" id="fname" name="passwordSS" placeholder="Input password" style="padding-left: 10px">
-        <input type="submit" class="buttonSaveSequence" name="action" value="New">
+
+
+
+
+
+
+
+
     </form>
 </div>
 <section class="indent-1">

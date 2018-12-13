@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ba90ca5-96cf-451d-89fe-c2adbe3b3f67" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sequences.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sequences.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,24 +13,30 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cron.php">
+        <entry file="file://$PROJECT_DIR$/Sequences.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+            <state relative-caret-position="135">
+              <caret line="48" column="30" lean-forward="true" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
+              <folding>
+                <element signature="e#3104#3140#0#HTML" expanded="true" />
+                <element signature="e#8282#8308#0#HTML" expanded="true" />
+                <element signature="e#8453#8479#0#HTML" expanded="true" />
+                <element signature="e#7696#7714#0#HTML" expanded="true" />
+                <element signature="e#8556#8614#0#HTML" expanded="true" />
+                <element signature="e#8711#8729#0#HTML" expanded="true" />
+                <element signature="n#style#0;n#section#0;n#form#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SendMails.php">
+        <entry file="file://$PROJECT_DIR$/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="40" lean-forward="true" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
-              <folding>
-                <element signature="e#27#61#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="502">
+              <caret line="278" column="22" selection-start-line="278" selection-start-column="22" selection-end-line="278" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -46,7 +53,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>form</find>
       <find>x_content</find>
       <find>x_</find>
       <find>canvas</find>
@@ -74,6 +80,9 @@
       <find>inde</find>
       <find>label</find>
       <find>column</find>
+      <find>select</find>
+      <find>am</find>
+      <find>pm</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -122,6 +131,7 @@
         <option value="$PROJECT_DIR$/Year.php" />
         <option value="$PROJECT_DIR$/Month.php" />
         <option value="$PROJECT_DIR$/Sequences.php" />
+        <option value="$PROJECT_DIR$/js/moment-with-locales.js" />
         <option value="$PROJECT_DIR$/css/styles.css" />
       </list>
     </option>
@@ -147,6 +157,16 @@
             <path>
               <item name="subcount" type="b2602c69:ProjectViewProjectNode" />
               <item name="subcount" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="subcount" type="b2602c69:ProjectViewProjectNode" />
+              <item name="subcount" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="subcount" type="b2602c69:ProjectViewProjectNode" />
+              <item name="subcount" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -263,14 +283,16 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="221651000" />
+    <option name="totallyTimeSpent" value="225513000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1299" height="743" extended-state="6" />
+    <frame x="0" y="25" width="1366" height="743" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.19313647" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.16439395" />
+      <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32903227" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -319,9 +341,6 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/fastselect-master/dist/fastselect.css" />
-    <entry file="file://$PROJECT_DIR$/fastselect-master/src/fastselect.scss" />
-    <entry file="file://$PROJECT_DIR$/fastselect-master/src/fastselect.js" />
     <entry file="file://$PROJECT_DIR$/../formtelanto/css/style.scss" />
     <entry file="file://$PROJECT_DIR$/../formtelanto/fastselect-master/dist/fastselect.css" />
     <entry file="file://$PROJECT_DIR$/../formtelanto/fastselect-master/dist/fastselect.min.js" />
@@ -440,20 +459,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="273" column="1" lean-forward="true" selection-start-line="273" selection-start-column="1" selection-end-line="273" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sequences.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="53" column="78" selection-start-line="53" selection-start-column="78" selection-end-line="53" selection-end-column="78" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cron.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -468,6 +473,55 @@
           <folding>
             <element signature="e#27#61#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../audit_abc/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="695" column="61" lean-forward="true" selection-start-line="695" selection-start-column="61" selection-end-line="695" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/respond.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/moment-with-locales.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="982" column="43" selection-start-line="982" selection-start-column="41" selection-end-line="982" selection-end-column="43" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sequences.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="48" column="30" lean-forward="true" selection-start-line="48" selection-start-column="30" selection-end-line="48" selection-end-column="30" />
+          <folding>
+            <element signature="e#3104#3140#0#HTML" expanded="true" />
+            <element signature="e#8282#8308#0#HTML" expanded="true" />
+            <element signature="e#8453#8479#0#HTML" expanded="true" />
+            <element signature="e#7696#7714#0#HTML" expanded="true" />
+            <element signature="e#8556#8614#0#HTML" expanded="true" />
+            <element signature="e#8711#8729#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#section#0;n#form#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="278" column="22" selection-start-line="278" selection-start-column="22" selection-end-line="278" selection-end-column="22" />
         </state>
       </provider>
     </entry>

@@ -259,16 +259,22 @@ button.search.btn {
     color: #717171;
     text-decoration: underline;
 }
-label {
-    display: inline-block !important;
-    margin-bottom: 0px !important;
-}
 input[type=text], select {
     border: 1px solid #bebcbb;
-    height: 38px;
     border-radius: 4px;
     box-sizing: border-box;
+    height: 50px;
 }
-div.justified {
-    margin-bottom: 10px;
+.btn {
+    line-height: 2.6 !important;
+}
+.container {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+.form-control {
+    height: 50px !important;
+}
+.col- {
+    margin-right: 10px;
 }
