@@ -1,6 +1,5 @@
 <?php
 /*
-* iTech Empires:  Export Data from MySQL to CSV Script
 * Version: 1.0.0
 * Page: DB Connection
 */

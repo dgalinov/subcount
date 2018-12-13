@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="ckeditor/ckeditor.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <script src="js/multiselect.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css"/>
@@ -147,20 +148,9 @@ if ($_POST) {
                 <input type="text" id="fname" name="emailSS" placeholder="Input email" style="padding-left: 10px">
             </div>
             <div class="col-">
-                <input type="text" id="fname" name="passwordSS" placeholder="Input password" style="padding-left: 10px">
-            </div>
-            <div class="col-">
                 <input type="submit" class="buttonSaveSequence" name="action" value="New">
             </div>
         </div>
-
-
-
-
-
-
-
-
     </form>
 </div>
 <section class="indent-1">
@@ -183,14 +173,14 @@ if ($_POST) {
             }
             ?>
             <a class="active" onclick='newStep()'>+</a>
-            <input type="submit" class="buttonSaveSequence" name="action" value="START" style="width: 100%;background: #00b6ff;border-radius: 0px">
+            <input type="submit" class="buttonStartSequence" name="action" value="START">
         </div>
     </section>
     <form action="Sequences.php" method="post">
         <section style='width: 90%' class='sectionMails' id='new'>
             <p>Email Subject</p>
             <label class='labelEmail'>
-                <textarea class='labelEmail' name="subject"></textarea>
+                <textarea class='labelEmail' name="subject" style="border: 1px solid #bebcbb;border-radius: 4px;"></textarea>
             </label>
             <p>Email Content</p>
             <label class='labelEmail'>
@@ -293,10 +283,9 @@ if ($_POST) {
     }
     if ($_POST['action'] == 'New') {
         $emailA = $_POST['emailSS'];
-        $passwordA = $_POST['passwordSS'];
         var_dump($emailA);
         require("db_connection.php");
-        $query = "INSERT INTO `emails`(`email`, `password`) VALUES ('$emailA', '$passwordA');";
+        $query = "INSERT INTO `emails`(`email`) VALUES ('$emailA');";
         if ($result = mysqli_query($con, $query)) {
             echo "New email succesfully created";
             var_dump($query);

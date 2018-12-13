@@ -1,6 +1,7 @@
 html, body, #myChart {
     height: 100%;
     width: 100%;
+    font-family: 'Nunito', sans-serif !important;
 }
 .topnav {
     overflow: hidden;
@@ -102,28 +103,32 @@ html, body, #myChart {
 }
 .vertical-menu {
     text-align: center;
+    border: 2px solid #08c;
+    border-radius: 4px;
 }
 .vertical-menu a {
-    background: white;
-    border: 2px solid #08c;
-    color: #08c !important;
+    background: #08c;
+    color: white !important;
+    border-bottom:2px solid #08c;
     display: block;
     padding: 12px;
     text-decoration: none;
 }
 .vertical-menu a:hover {
-    background-color: #0077b3;
+    background-color: white;
     text-decoration: none;
-    color: white !important;
+    cursor: pointer;
+    color: #08c !important;
 }
 .vertical-menu a.active {
-    background-color: #0e90d2;
+    background-color: #0088cc;
     color: white !important;
     font-weight: bolder;
 }
 .vertical-menu a.active:hover {
-    background-color: #0077b3;
-    color: white !important;
+    background-color: white;
+    color: #08c !important;
+    cursor: pointer;
     font-weight: bolder;
 }
 .indent-1 {width: 100%;float: left;}
@@ -158,23 +163,37 @@ html, body, #myChart {
     color: #08c;
     font-size: 15px;
     background: white;
-    border: 2px solid #08c;
+    border: 1px solid #08c;
     width: 100px;
     height: 50px;
     justify-content: center;
     border-radius: 4px;
-    font-weight: bolder;
 }
 .buttonSaveSequence:hover {
     color: white;
     font-size: 15px;
     background: #08c !important;
-    border: 2px solid #08c;
     width: 100px;
     height: 50px;
     justify-content: center;
     border-radius: 4px;
-    font-weight: bolder;
+}
+.buttonStartSequence {
+    color: white;
+    font-size: 15px;
+    background: #08c !important;
+    border: none;
+    height: 50px;
+    justify-content: center;
+    width: 100%;
+}
+.buttonStartSequence:hover {
+    color: #08c;
+    font-size: 15px;
+    background: white !important;
+    width: 100px;
+    height: 50px;
+    justify-content: center;
 }
 .column {
     float: left;
@@ -271,6 +290,7 @@ input[type=text], select {
 .container {
     max-width: 100% !important;
     width: 100% !important;
+    justify-content: center !important;
 }
 .form-control {
     height: 50px !important;
