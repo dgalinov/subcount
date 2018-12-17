@@ -38,12 +38,10 @@ if (!$resultNewsletter = mysqli_query($con, $queryN)) {
                     } else {
                         $hour = (int)$hourExplode['0'];
                     }
-                }
-            }
-            for ($x = 0; $x < sizeof($dayNum); $x++) {
-                if ($dayNum[$x] == $dayNumNOW) {
-                    if ($hour == $hourNow) {
-                        if ($minutes = $minutesNow) {
+                    for ($x = 0; $x < sizeof($dayNum); $x++) {
+                        if ($dayNum[$x] == $dayNumNOW) {
+                            /*if ($hour == $hourNow) {
+                                if ($minutes = $minutesNow) {*/
                             if (mysqli_num_rows($resultInfo) > 0) {
                                 while ($row3 = mysqli_fetch_assoc($resultInfo)) {
                                     if (mysqli_num_rows($resultNewsletter) > 0) {
@@ -69,7 +67,10 @@ if (!$resultNewsletter = mysqli_query($con, $queryN)) {
                                                     $mail->Body = $body;
                                                     $mail->AltBody = strip_tags($body);
 
-                                                    if ($mail->send()) {} else {echo $mail->ErrorInfo;}
+                                                    if ($mail->send()) {
+                                                    } else {
+                                                        echo $mail->ErrorInfo;
+                                                    }
                                                     echo 'Message has been sent';
                                                 } catch (Exception $e) {
                                                     echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
@@ -78,6 +79,8 @@ if (!$resultNewsletter = mysqli_query($con, $queryN)) {
                                         }
                                     }
                                 }
+                                /*}
+                            }*/
                             }
                         }
                     }
