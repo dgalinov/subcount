@@ -148,6 +148,9 @@ if ($_POST) {
                 <input type="text" id="fname" name="emailSS" placeholder="Input email" style="padding-left: 10px">
             </div>
             <div class="col-">
+                <input type="text" id="fname" name="passwordSS" placeholder="Input password" style="padding-left: 10px">
+            </div>
+            <div class="col-">
                 <input type="submit" class="buttonSaveSequence" name="action" value="New">
             </div>
         </div>
@@ -283,12 +286,13 @@ if ($_POST) {
     }
     if ($_POST['action'] == 'New') {
         $emailA = $_POST['emailSS'];
-        var_dump($emailA);
+        $passwordA = $_POST['passwordSS'];
+        //var_dump($emailA);
         require("db_connection.php");
-        $query = "INSERT INTO `emails`(`email`) VALUES ('$emailA');";
+        $query = "INSERT INTO `emails`(`email`,`password`) VALUES ('$emailA','$passwordA');";
         if ($result = mysqli_query($con, $query)) {
             echo "New email succesfully created";
-            var_dump($query);
+            //var_dump($query);
         }
     }
     if ($_POST['action'] == 'Update') {

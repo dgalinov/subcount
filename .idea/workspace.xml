@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ba90ca5-96cf-451d-89fe-c2adbe3b3f67" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/subcount.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/subcount.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SendMails.php" beforeDir="false" afterPath="$PROJECT_DIR$/SendMails.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sequences.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sequences.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,7 +12,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
   <component name="FileEditorManager">
@@ -22,8 +20,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sequences.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1162">
-              <caret line="308" selection-start-line="308" selection-end-line="308" />
+            <state relative-caret-position="-97">
+              <caret line="288" column="42" lean-forward="true" selection-start-line="288" selection-start-column="42" selection-end-line="288" selection-end-column="42" />
+              <folding>
+                <element signature="e#8298#8324#0#HTML" expanded="true" />
+                <element signature="e#8463#8489#0#HTML" expanded="true" />
+                <element signature="e#9517#9535#0#HTML" expanded="true" />
+                <element signature="e#9699#9752#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -31,8 +35,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SendMails.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="88" column="9" selection-start-line="88" selection-start-column="9" selection-end-line="88" selection-end-column="9" />
+            <state relative-caret-position="412">
+              <caret line="74" column="61" lean-forward="true" selection-start-line="74" selection-start-column="61" selection-end-line="74" selection-end-column="61" />
               <folding>
                 <element signature="e#185#219#0#PHP" expanded="true" />
               </folding>
@@ -128,10 +132,10 @@
         <option value="$PROJECT_DIR$/Month.php" />
         <option value="$PROJECT_DIR$/js/moment-with-locales.js" />
         <option value="$PROJECT_DIR$/css/styles.css" />
-        <option value="$PROJECT_DIR$/Sequences.php" />
         <option value="$PROJECT_DIR$/db_connection.php" />
         <option value="$PROJECT_DIR$/../formtelanto/thanks.php" />
         <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/Sequences.php" />
         <option value="$PROJECT_DIR$/SendMails.php" />
       </list>
     </option>
@@ -156,6 +160,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -167,7 +172,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -275,12 +279,14 @@
       <workItem from="1544537074979" duration="28000" />
       <workItem from="1544605882508" duration="1482000" />
       <workItem from="1544776160127" duration="14098000" />
-      <workItem from="1545039013567" duration="1265000" />
+      <workItem from="1545039013567" duration="1299000" />
+      <workItem from="1545051177407" duration="161000" />
+      <workItem from="1545206737478" duration="6772000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="249661000" />
+    <option name="totallyTimeSpent" value="256628000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="743" extended-state="6" />
@@ -288,7 +294,7 @@
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.1689394" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.17348485" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32903227" />
@@ -521,13 +527,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/PHPMailer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="1129" column="34" selection-start-line="1129" selection-start-column="33" selection-end-line="1129" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -537,15 +536,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sequences.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1162">
-          <caret line="308" selection-start-line="308" selection-end-line="308" />
+        <state relative-caret-position="-97">
+          <caret line="288" column="42" lean-forward="true" selection-start-line="288" selection-start-column="42" selection-end-line="288" selection-end-column="42" />
+          <folding>
+            <element signature="e#8298#8324#0#HTML" expanded="true" />
+            <element signature="e#8463#8489#0#HTML" expanded="true" />
+            <element signature="e#9517#9535#0#HTML" expanded="true" />
+            <element signature="e#9699#9752#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/PHPMailer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-174">
+          <caret line="1127" column="36" selection-start-line="1127" selection-start-column="36" selection-end-line="1127" selection-end-column="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SendMails.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="88" column="9" selection-start-line="88" selection-start-column="9" selection-end-line="88" selection-end-column="9" />
+        <state relative-caret-position="412">
+          <caret line="74" column="61" lean-forward="true" selection-start-line="74" selection-start-column="61" selection-end-line="74" selection-end-column="61" />
           <folding>
             <element signature="e#185#219#0#PHP" expanded="true" />
           </folding>

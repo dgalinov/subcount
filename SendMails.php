@@ -1,7 +1,7 @@
 <?php
 //error_reporting(0);
 ini_set('display_errors', 'On');
-$hourExplode = $minutes = $hour = $timeExplode = $dayNumNow = $dayNum = "";
+$hourExplode = $minutes = $hour = $timeExplode = $dayNumNow = $dayNum = $emailsArray = "";
 $hourNow = date("G");
 $minutesNow = date("i");
 
@@ -29,10 +29,12 @@ if (!$resultNewsletter = mysqli_query($con, $queryN)) {
                 while ($rowCronExplode = mysqli_fetch_assoc($resultCron)) {
 
                     $dayNumNOW = date("w");
+                    echo $dayNumNow;
                     $dayNum = array(date("w", strtotime($rowCronExplode['days'])));
                     $timeExplode = explode(" ", $rowCronExplode['timePicker']);
                     $hourExplode = explode(":", $timeExplode['0']);
                     $minutes = $hourExplode['1'];
+                    $emailsArray = explode(",", $rowCronExplode['emails']);
                     if ($timeExplode['1'] == "PM") {
                         $hour = (int)$hourExplode['0'] + 12;
                     } else {
@@ -40,48 +42,52 @@ if (!$resultNewsletter = mysqli_query($con, $queryN)) {
                     }
                     for ($x = 0; $x < sizeof($dayNum); $x++) {
                         if ($dayNum[$x] == $dayNumNOW) {
-                            /*if ($hour == $hourNow) {
-                                if ($minutes = $minutesNow) {*/
-                            if (mysqli_num_rows($resultInfo) > 0) {
-                                while ($row3 = mysqli_fetch_assoc($resultInfo)) {
-                                    if (mysqli_num_rows($resultNewsletter) > 0) {
-                                        while ($row = mysqli_fetch_assoc($resultNewsletter)) {
-                                            if ($row3['counter'] == $row['id']) {
-                                                try {
-                                                    $mail->SMTPDebug = 0;
-                                                    $mail->isSMTP();
-                                                    $mail->Host = 'smtp.gmail.com';
-                                                    $mail->SMTPAuth = true;
-                                                    $mail->Username = 'success@telanto.com';
-                                                    $mail->Password = 'successFOREVER';
-                                                    $mail->SMTPSecure = 'ssl';
-                                                    $mail->Port = 465;
+                            if (($hour == $hourNow) && ($minutes == $minutesNow)) {
+                                if (mysqli_num_rows($resultInfo) > 0) {
+                                    while ($rowInfo = mysqli_fetch_assoc($resultInfo)) {
+                                        if (mysqli_num_rows($resultNewsletter) > 0) {
+                                            while ($rowNewsletter = mysqli_fetch_assoc($resultNewsletter)) {
+                                                if ($rowInfo['counter'] == $rowNewsletter['id']) {
+                                                    for ($k = 0; $k < sizeof($emailsArray); $k++) {
+                                                        try {
+                                                            $mail->SMTPDebug = 0;
+                                                            $mail->isSMTP();
+                                                            $mail->Host = 'smtp.gmail.com';
+                                                            $mail->SMTPAuth = true;
+                                                            $mail->Username = $emailsArray[$k];
+                                                            $mail->Password = 'successFOREVER';
+                                                            $mail->SMTPSecure = 'ssl';
+                                                            $mail->Port = 465;
 
-                                                    $mail->setFrom('success@telanto.com', 'Telanto');
-                                                    $mail->addAddress($row3['email'], $row3['firstname']);
+                                                            $mail->setFrom('newsletter@telanto.com', 'Telanto');
+                                                            $mail->addAddress($rowInfo['email'], $rowInfo['firstname']);
 
-                                                    $body = $row2['content'];
+                                                            $body = $rowNewsletter['content'];
 
-                                                    $mail->isHTML(true);
-                                                    $mail->Subject = $row2['subject'];
-                                                    $mail->Body = $body;
-                                                    $mail->AltBody = strip_tags($body);
+                                                            $mail->isHTML(true);
+                                                            $mail->Subject = $rowNewsletter['subject'];
+                                                            $mail->Body = $body;
+                                                            $mail->AltBody = strip_tags($body);
 
-                                                    if ($mail->send()) {
-                                                    } else {
-                                                        echo $mail->ErrorInfo;
+                                                            if ($mail->send()) {
+                                                            } else {
+                                                                echo $mail->ErrorInfo;
+                                                            }
+                                                            echo 'Message has been sent';
+                                                        } catch (Exception $e) {
+                                                            echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
+                                                        }
                                                     }
-                                                    echo 'Message has been sent';
-                                                } catch (Exception $e) {
-                                                    echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
                                                 }
                                             }
                                         }
                                     }
                                 }
-                                /*}
-                            }*/
+                            } else {
+                                echo "No funciona TIME";
                             }
+                        } else {
+                            echo "No funciona DATE";
                         }
                     }
                 }
