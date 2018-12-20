@@ -1,31 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Telanto</title>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="robots" content="noindex">
+
+    <title>TELANTO</title>
+
+    <meta property="og:title" content="TELANTO - The Global Academic Business Network">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://telanto.com">
+    <meta property="og:image" content="https://abc.telanto.com/assets/img/telanto_shareimage.jpg">
+    <meta property="og:description" content="Connecting company projects to students anywhere in the world">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://telanto.com">
+    <meta name="twitter:title" content="TELANTO - The Global Academic Business Network">
+    <meta name="twitter:description" content="Connecting company projects to students anywhere in the world">
+    <meta name="twitter:image" content="https://abc.telanto.com/assets/img/telanto_shareimage.jpg">
+    <meta name="twitter:site" content="@telanto">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="https://abc.telanto.com/assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="https://abc.telanto.com/assets/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://abc.telanto.com/assets/img/favicon-194x194.png" sizes="194x194">
+    <link rel="icon" type="image/png" href="https://abc.telanto.com/assets/img/android-chrome-192x192.png"
+          sizes="192x192 /">
+    <link rel="icon" type="image/png" href="https://abc.telanto.com/assets/img/favicon-16x16.png" sizes="16x16">
+
+    <link rel="manifest" href="https://abc.telanto.com/assets/img/manifest.json">
+    <link rel="mask-icon" href="https://abc.telanto.com/assets/img/safari-pinned-tab.svg" color="#5677fc">
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#5677fc">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#5677fc">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-startup-image" href="ihttps://abc.telanto.com/assets/img/android-chrome-192x192.png">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#5677fc">
+    <link rel="shortcut icon" type="image/x-icon" href="https://abc.telanto.com/assets/img/favicon.ico">
+
+
+
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="ckeditor/ckeditor.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <script src="js/multiselect.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css"/>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
-    <link rel="stylesheet" type="text/css" media="screen" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen"
+          href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link href="./css/prettify-1.0.css" rel="stylesheet">
     <link href="./css/base.css" rel="stylesheet">
-    <link href="//cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/build/css/bootstrap-datetimepicker.css" rel="stylesheet">
+    <link href="//cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/build/css/bootstrap-datetimepicker.css"
+          rel="stylesheet">
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
     <script src="//cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js"></script>
+
 </head>
 <body>
 <?php
@@ -34,10 +79,6 @@ if ($_POST) {
     header("Location: " . $url);
 }
 ?>
-<div class="topnav">
-    <a href="index.php">Dashboard</a>
-    <a class="active" href="Sequences.php">Sequences</a>
-</div>
 <div class="topnavS">
     <a class="active" href="Sequences.php">Newsletter</a>
     <a href="challengeaudit.php">Challenge Audit</a>
@@ -48,7 +89,8 @@ if ($_POST) {
     <form method="post" action="Sequences.php">
         <div class="row">
             <div class="col-">
-                <label for="dias"><select id="dias" name="dias[]" class="selectpicker" multiple data-live-search="true" style="height: 50px;line-height: 4;">
+                <label for="dias"><select id="dias" name="dias[]" class="selectpicker" multiple data-live-search="true"
+                                          style="height: 50px;line-height: 4;">
                         <?php
                         require("db_connection.php");
                         $query = "SELECT days FROM crontab WHERE name = 'Newsletter'";
@@ -97,21 +139,21 @@ if ($_POST) {
                 </label>
             </div>
             <div class="col-">
-                        <div class="form-group">
-                            <div class='input-group date' id='datetimepicker3'>
-                                <input type='text' id="timename" name="tpick" class="form-control" />
-                                <span class="input-group-addon">
+                <div class="form-group">
+                    <div class='input-group date' id='datetimepicker3'>
+                        <input type='text' id="timename" name="tpick" class="form-control"/>
+                        <span class="input-group-addon">
                                     <span class="glyphicon glyphicon-time"></span>
                                 </span>
-                            </div>
-                        </div>
-                    <script type="text/javascript">
-                        $(function () {
-                            $('#datetimepicker3').datetimepicker({
-                                format: 'LT'
-                            });
+                    </div>
+                </div>
+                <script type="text/javascript">
+                    $(function () {
+                        $('#datetimepicker3').datetimepicker({
+                            format: 'LT'
                         });
-                    </script>
+                    });
+                </script>
             </div>
             <div class="col-">
                 <label for="mails">
@@ -176,14 +218,14 @@ if ($_POST) {
             }
             ?>
             <a class="active" onclick='newStep()'>+</a>
-            <input type="submit" class="buttonStartSequence" name="action" value="START">
         </div>
     </section>
     <form action="Sequences.php" method="post">
         <section style='width: 90%' class='sectionMails' id='new'>
             <p>Email Subject</p>
             <label class='labelEmail'>
-                <textarea class='labelEmail' name="subject" style="border: 1px solid #bebcbb;border-radius: 4px;"></textarea>
+                <textarea class='labelEmail' name="subject"
+                          style="border: 1px solid #bebcbb;border-radius: 4px;"></textarea>
             </label>
             <p>Email Content</p>
             <label class='labelEmail'>
@@ -314,8 +356,7 @@ if ($_POST) {
         $query = "UPDATE crontab SET days = '$preferences', timePicker = '$timeP', emails = '$preferencesEmails' WHERE name = 'Newsletter';";
 
         $query = mysqli_query($con, $query);
-    }
-    else {
+    } else {
         var_dump($con);
         echo "No funciona";
     }

@@ -2,36 +2,12 @@ html, body, #myChart {
     height: 100%;
     width: 100%;
     font-family: 'Nunito', sans-serif !important;
-}
-.topnav {
-    overflow: hidden;
-    background-color: #08c;
-    border-bottom: 2px solid white;
-}
-.topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-.topnav a:hover {
-    background-color: #cceeff;
-    text-decoration: none;
-    color: black;
-}
-.topnav a.active {
-    background-color: #006699;
-    color: white;
-}
-.topnav a.active:hover {
-    background-color: #0077b3;
+    overflow:hidden;
 }
 .tablaCSV {
     border: 2px solid white;
     text-align: center;
-    background-color: #0088cc;
+    background-color: #5677fc;
     border-collapse: collapse;
     width: 100%
 }
@@ -49,11 +25,11 @@ html, body, #myChart {
     text-decoration: none;
 }
 .pagination a.active {
-    background-color: #006699;
+    background-color: #5677fc;
     color: white;
 }
 .pagination a:hover:not(.active) {
-    background-color: #0088cc;
+    background-color: #5677fc;
     color: white;
 }
 .calendar-day {
@@ -67,10 +43,10 @@ html, body, #myChart {
     width: 700px;
 }
 .selected {
-    background-color: #eee;
+    background-color: white;
 }
 .outside .date {
-    color: #ccc;
+    color: white;
 }
 .timetitle {
     white-space: nowrap;
@@ -78,39 +54,42 @@ html, body, #myChart {
 }
 .topnavS {
     overflow: hidden;
-    background-color: #08c;
+    background-color: #5677fc;
     border-bottom: 2px solid white;
 }
 .topnavS a {
     float: left;
-    color: #f2f2f2;
+    color: white;
     text-align: center;
     padding: 12px 14px;
     text-decoration: none;
     font-size: 17px;
 }
 .topnavS a:hover {
-    background-color: #cceeff;
+    background-color: white;
     text-decoration: none;
     color: black;
 }
 .topnavS a.active {
-    background-color: #006699;
+    background-color: #005498;
     color: white;
 }
 .topnavS a.active:hover {
-    background-color: #0077b3;
+    background-color: white;
+    color: black;
 }
 .vertical-menu {
     text-align: center;
-    border: 2px solid #08c;
     border-radius: 4px;
+    border: 2px solid #5677fc;
+    margin-top: 10px;
+    margin-left: 5px;
 }
 .vertical-menu a {
-    background: #08c;
+    background: #5677fc;
     color: white !important;
-    border-bottom:2px solid #08c;
     display: block;
+
     padding: 12px;
     text-decoration: none;
 }
@@ -118,18 +97,20 @@ html, body, #myChart {
     background-color: white;
     text-decoration: none;
     cursor: pointer;
-    color: #08c !important;
+    color: #5677fc !important;
+    font-size: 17px;
 }
 .vertical-menu a.active {
-    background-color: #0088cc;
+    background-color: #5677fc;
     color: white !important;
     font-weight: bolder;
 }
 .vertical-menu a.active:hover {
-    background-color: white;
-    color: #08c !important;
+    background-color: #5677fc;
+    color: white !important;
     cursor: pointer;
     font-weight: bolder;
+    font-size: 20px;
 }
 .indent-1 {width: 100%;float: left;}
 .indent-1 section { float: left;}
@@ -138,10 +119,10 @@ html, body, #myChart {
     resize: none;
 }
 .buttonStartSave {
-    color: #08c;
+    color: #5677fc;
     font-size: 20px;
     background: white;
-    border: 2px solid #08c;
+    border: 2px solid #5677fc;
     width: 200px;
     height: 50px;
     justify-content: center;
@@ -151,8 +132,8 @@ html, body, #myChart {
 .buttonStartSave:hover {
     color: white;
     font-size: 20px;
-    background: #08c;
-    border: 2px solid #08c;
+    background: #5677fc;
+    border: 2px solid #5677fc;
     width: 200px;
     height: 50px;
     justify-content: center;
@@ -160,10 +141,10 @@ html, body, #myChart {
     border-radius: 4px;
 }
 .buttonSaveSequence {
-    color: #08c;
+    color: #5677fc;
     font-size: 15px;
     background: white;
-    border: 1px solid #08c;
+    border: 1px solid #5677fc;
     width: 100px;
     height: 50px;
     justify-content: center;
@@ -172,7 +153,7 @@ html, body, #myChart {
 .buttonSaveSequence:hover {
     color: white;
     font-size: 15px;
-    background: #08c !important;
+    background: #5677fc !important;
     width: 100px;
     height: 50px;
     justify-content: center;
@@ -181,14 +162,14 @@ html, body, #myChart {
 .buttonStartSequence {
     color: white;
     font-size: 15px;
-    background: #08c !important;
+    background: #5677fc !important;
     border: none;
     height: 50px;
     justify-content: center;
     width: 100%;
 }
 .buttonStartSequence:hover {
-    color: #08c;
+    color: #5677fc;
     font-size: 15px;
     background: white !important;
     width: 100px;
@@ -212,11 +193,11 @@ html, body, #myChart {
     padding: 10px;
 }
 .titleTH {
-    background: #006699;
+    background: #5677fc;
 }
 .insertNewEmail {
-    border: 2px solid #08c;
-    color: #08c;
+    border: 2px solid #5677fc;
+    color: #5677fc;
 }
 .error {
     color: red !important;
@@ -228,14 +209,14 @@ html, body, #myChart {
 .labelLabel {
 }
 #checkbox-dropdown-container {
-    background: #99d3de;
+    background: white;
     padding: 20px;
 }
 .custom-select {
     display: inline-block;
     padding: 5px 15px;
-    border: #80b2bb 1px solid;
-    color: #3892a2;
+    border: white 1px solid;
+    color: #5677fc;
     border-radius: 2px;
     width: 100%;
     cursor:pointer;
@@ -243,8 +224,8 @@ html, body, #myChart {
 }
 div#custom-select-option-box {
     background: #FFF;
-    border: #80b2bb 1px solid;
-    color: #3892a2;
+    border: white 1px solid;
+    color: #5677fc;
     border-radius: 2px;
     width: 100%;
     z-index:1;
@@ -253,7 +234,7 @@ div#custom-select-option-box {
 button.search.btn {
     background: #4c4c4c;
     border: #353535 1px solid;
-    color: #ffffff;
+    color: white;
     border-radius: 2px;
     padding: 8px 40px;
     margin-top: 20px;
@@ -291,6 +272,8 @@ input[type=text], select {
     max-width: 100% !important;
     width: 100% !important;
     justify-content: center !important;
+    margin-top: 10px !important;
+    margin-left: 5px !important;
 }
 .form-control {
     height: 50px !important;

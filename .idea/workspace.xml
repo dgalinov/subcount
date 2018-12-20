@@ -3,8 +3,32 @@
   <component name="ChangeListManager">
     <list default="true" id="5ba90ca5-96cf-451d-89fe-c2adbe3b3f67" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SendMails.php" beforeDir="false" afterPath="$PROJECT_DIR$/SendMails.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sequences.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sequences.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/challengeaudit.php" beforeDir="false" afterPath="$PROJECT_DIR$/challengeaudit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/excel/css/bootstrap-custom.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/excel/css/bootstrap-responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/excel/css/bootstrap-responsive.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/excel/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/excel/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/excel/export.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/excel/img/Thumbs.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/excel/img/glyphicons-halflings-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/excel/img/glyphicons-halflings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/excel/import.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/excel/index.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/excel/js/application.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/excel/js/bootstrap-button.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/excel/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/excel/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/excel/js/html5shiv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/excel/js/jquery-1.9.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuget/Bootstrap.v3.Datetimepicker.CSS.nuspec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuget/Bootstrap.v3.Datetimepicker.nuspec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuget/NuGet.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/nuget/install.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webinars.php" beforeDir="false" afterPath="$PROJECT_DIR$/webinars.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,31 +39,41 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sequences.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-97">
-              <caret line="288" column="42" lean-forward="true" selection-start-line="288" selection-start-column="42" selection-end-line="288" selection-end-column="42" />
+            <state relative-caret-position="270">
+              <caret line="18" column="60" lean-forward="true" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
               <folding>
-                <element signature="e#8298#8324#0#HTML" expanded="true" />
-                <element signature="e#8463#8489#0#HTML" expanded="true" />
-                <element signature="e#9517#9535#0#HTML" expanded="true" />
-                <element signature="e#9699#9752#0#HTML" expanded="true" />
+                <element signature="e#11055#11073#0#HTML" expanded="true" />
+                <element signature="e#12012#12030#0#HTML" expanded="true" />
+                <element signature="e#12220#12273#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SendMails.php">
+        <entry file="file://$PROJECT_DIR$/webinars.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="74" column="61" lean-forward="true" selection-start-line="74" selection-start-column="61" selection-end-line="74" selection-end-column="61" />
-              <folding>
-                <element signature="e#185#219#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="-262">
+              <caret line="318" column="45" selection-start-line="318" selection-start-column="45" selection-end-line="318" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -56,9 +90,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>x_content</find>
-      <find>x_</find>
-      <find>canvas</find>
       <find>col_md</find>
       <find>col-md</find>
       <find>col-md-6</find>
@@ -86,6 +117,9 @@
       <find>select</find>
       <find>am</find>
       <find>pm</find>
+      <find>boddu</find>
+      <find>active</find>
+      <find>topnav</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -123,20 +157,22 @@
         <option value="$PROJECT_DIR$/js/JQuery-multi.js" />
         <option value="$PROJECT_DIR$/js/multiselect.js" />
         <option value="$PROJECT_DIR$/cron.php" />
-        <option value="$PROJECT_DIR$/webinars.php" />
-        <option value="$PROJECT_DIR$/challengeaudit.php" />
-        <option value="$PROJECT_DIR$/blog.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/Day.php" />
         <option value="$PROJECT_DIR$/Year.php" />
         <option value="$PROJECT_DIR$/Month.php" />
         <option value="$PROJECT_DIR$/js/moment-with-locales.js" />
-        <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$PROJECT_DIR$/db_connection.php" />
         <option value="$PROJECT_DIR$/../formtelanto/thanks.php" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/Sequences.php" />
         <option value="$PROJECT_DIR$/SendMails.php" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/css/D02F/styles.css" />
+        <option value="$PROJECT_DIR$/Sequences.php" />
+        <option value="$PROJECT_DIR$/css/styles.css" />
+        <option value="$PROJECT_DIR$/challengeaudit.php" />
+        <option value="$PROJECT_DIR$/blog.php" />
+        <option value="$PROJECT_DIR$/webinars.php" />
       </list>
     </option>
   </component>
@@ -150,8 +186,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="41" />
     <option name="y" value="25" />
-    <option name="width" value="1366" />
+    <option name="width" value="1325" />
     <option name="height" value="743" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -178,7 +215,7 @@
     <property name="ChangesTree.GroupingKeys" value="directory&#10;repository" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SequenceFrame" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -281,20 +318,21 @@
       <workItem from="1544776160127" duration="14098000" />
       <workItem from="1545039013567" duration="1299000" />
       <workItem from="1545051177407" duration="161000" />
-      <workItem from="1545206737478" duration="6772000" />
+      <workItem from="1545206737478" duration="13257000" />
+      <workItem from="1545293013267" duration="6939000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="256628000" />
+    <option name="totallyTimeSpent" value="270052000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="25" width="1366" height="743" extended-state="6" />
+    <frame x="41" y="25" width="1325" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.17348485" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.17435497" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32903227" />
@@ -311,12 +349,12 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32994527" />
     </layout>
     <layout-to-restore>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.16439395" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.17513682" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32903227" />
@@ -327,13 +365,13 @@
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32899022" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.21335505" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32994527" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -355,8 +393,6 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../formtelanto/fastselect-master/dist/fastselect.standalone.min.js" />
-    <entry file="file://$PROJECT_DIR$/../formtelanto/fastselect-master/dist/fastselect.min.css" />
     <entry file="file://$PROJECT_DIR$/../formtelanto/fastselect-master/src/fastselect.js" />
     <entry file="file://$PROJECT_DIR$/../formtelanto/fastselect-master/src/fastselect.scss" />
     <entry file="file://$PROJECT_DIR$/../formtelanto/js/jquery-3.3.1.min.js" />
@@ -398,27 +434,6 @@
     <entry file="file://$PROJECT_DIR$/../c4c/calculator.php" />
     <entry file="file://$PROJECT_DIR$/../c4c/constants.php" />
     <entry file="file://$PROJECT_DIR$/../c4c/index.php" />
-    <entry file="file://$PROJECT_DIR$/blog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="115" column="85" selection-start-line="115" selection-start-column="85" selection-end-line="115" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/challengeaudit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="115" column="85" selection-start-line="115" selection-start-column="85" selection-end-line="115" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webinars.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="115" column="85" selection-start-line="115" selection-start-column="85" selection-end-line="115" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/MDB-Free_4.5.16/index.html" />
     <entry file="file://$PROJECT_DIR$/js/bootstrap-datetimepicker.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -480,13 +495,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="130" column="20" selection-start-line="130" selection-start-column="20" selection-end-line="130" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db_connection.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -534,19 +542,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sequences.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-97">
-          <caret line="288" column="42" lean-forward="true" selection-start-line="288" selection-start-column="42" selection-end-line="288" selection-end-column="42" />
-          <folding>
-            <element signature="e#8298#8324#0#HTML" expanded="true" />
-            <element signature="e#8463#8489#0#HTML" expanded="true" />
-            <element signature="e#9517#9535#0#HTML" expanded="true" />
-            <element signature="e#9699#9752#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/PHPMailer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-174">
@@ -556,11 +551,68 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SendMails.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="74" column="61" lean-forward="true" selection-start-line="74" selection-start-column="61" selection-end-line="74" selection-end-column="61" />
+        <state relative-caret-position="307">
+          <caret line="40" column="55" lean-forward="true" selection-start-line="40" selection-start-column="55" selection-end-line="40" selection-end-column="55" />
           <folding>
             <element signature="e#185#219#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/D02F/styles.css" />
+    <entry file="file://$PROJECT_DIR$/css/style.css" />
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/challengeaudit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="355" column="142" selection-start-line="355" selection-start-column="142" selection-end-line="355" selection-end-column="142" />
+          <folding>
+            <element signature="e#5587#5623#0#HTML" expanded="true" />
+            <element signature="e#10622#10648#0#HTML" expanded="true" />
+            <element signature="e#10793#10819#0#HTML" expanded="true" />
+            <element signature="e#11055#11073#0#HTML" expanded="true" />
+            <element signature="e#11922#11940#0#HTML" expanded="true" />
+            <element signature="e#12130#12183#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#section#0;n#form#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-217">
+          <caret line="318" column="41" selection-start-line="318" selection-start-column="41" selection-end-line="318" selection-end-column="41" />
+          <folding>
+            <element signature="e#11055#11073#0#HTML" expanded="true" />
+            <element signature="e#11922#11940#0#HTML" expanded="true" />
+            <element signature="e#12130#12183#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#section#0;n#form#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sequences.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="60" lean-forward="true" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
+          <folding>
+            <element signature="e#11055#11073#0#HTML" expanded="true" />
+            <element signature="e#12012#12030#0#HTML" expanded="true" />
+            <element signature="e#12220#12273#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webinars.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-262">
+          <caret line="318" column="45" selection-start-line="318" selection-start-column="45" selection-end-line="318" selection-end-column="45" />
         </state>
       </provider>
     </entry>
