@@ -1,3 +1,7 @@
+<?php
+$styleStart = "style='display: block'";
+$styleEnd = "style='display: none'";
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -71,7 +75,6 @@
     <script src="//cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js"></script>
 
 </head>
-<body>
 <?php
 /*if ($_POST) {
     $url = "http" . (($_SERVER['SERVER_PORT'] == 443) ? "s" : "") . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
@@ -85,79 +88,84 @@
     <a href="blog.php">Blog</a>
     <a class="active" href="Now.php">Now</a>
 </div>
-<div class="container">
-    <form method="post" action="Sequences.php">
-        <div class="row">
-            <div class="col-">
-                <label for="mails">
-                    <select id="mails" name="mails[]" class="selectpicker" multiple data-live-search="true">
-                        <?php
-                        require("db_connection.php");
+<?php
+echo "<div '.$styleStart.' >"
+?>
+    <div class="container">
+        <form method="post" action="Sequences.php">
+            <div class="row">
+                <div class="col-">
+                    <label for="mails">
+                        <select id="mails" name="mails[]" class="selectpicker" multiple data-live-search="true">
+                            <?php
+                            require("db_connection.php");
 
-                        $query = "SELECT * FROM emails ORDER BY id DESC";
-                        $query2 = "SELECT emails FROM crontab WHERE name = 'Newsletter'";
-                        if (!$result = mysqli_query($con, $query)) {
-                            exit(mysqli_error($con));
-                        }
-                        $result2 = mysqli_query($con, $query2);
-                        $row2 = mysqli_fetch_assoc($result2);
-                        $row2 = implode(",", $row2);
-                        $arrayEmails = array(explode(",", $row2));
-                        if (mysqli_num_rows($result) > 0) {
-                            while ($row = mysqli_fetch_assoc($result)) {
-                                if (in_array($row['email'], $arrayEmails)) {
-                                    echo "<option selected>" . $row['email'] . "</option>";
-                                } else {
-                                    echo "<option>" . $row['email'] . "</option>";
+                            $query = "SELECT * FROM emails ORDER BY id DESC";
+                            $query2 = "SELECT emails FROM crontab WHERE name = 'Newsletter'";
+                            if (!$result = mysqli_query($con, $query)) {
+                                exit(mysqli_error($con));
+                            }
+                            $result2 = mysqli_query($con, $query2);
+                            $row2 = mysqli_fetch_assoc($result2);
+                            $row2 = implode(",", $row2);
+                            $arrayEmails = array(explode(",", $row2));
+                            if (mysqli_num_rows($result) > 0) {
+                                while ($row = mysqli_fetch_assoc($result)) {
+                                    if (in_array($row['email'], $arrayEmails)) {
+                                        echo "<option selected>" . $row['email'] . "</option>";
+                                    } else {
+                                        echo "<option>" . $row['email'] . "</option>";
+                                    }
                                 }
                             }
-                        }
-                        ?>
-                    </select>
-                </label>
+                            ?>
+                        </select>
+                    </label>
+                </div>
+                <div class="col-">
+                    <input type="submit" class="buttonSaveSequence" name="action" value="Add Filter">
+                </div>
+                <div class="col-">
+                    <input type="text" id="fname" name="emailSS" placeholder="Input email"
+                           style="padding-left: 10px">
+                </div>
+                <div class="col-">
+                    <input type="text" id="fname" name="passwordSS" placeholder="Input password"
+                           style="padding-left: 10px">
+                </div>
+                <div class="col-">
+                    <input type="submit" class="buttonSaveSequence" name="action" value="New">
+                </div>
             </div>
-            <div class="col-">
-                <input type="submit" class="buttonSaveSequence" name="action" value="Update">
-            </div>
-            <div class="col-">
-                <input type="text" id="fname" name="emailSS" placeholder="Input email" style="padding-left: 10px">
-            </div>
-            <div class="col-">
-                <input type="text" id="fname" name="passwordSS" placeholder="Input password" style="padding-left: 10px">
-            </div>
-            <div class="col-">
-                <input type="submit" class="buttonSaveSequence" name="action" value="New">
-            </div>
-        </div>
-    </form>
-</div>
-<section class="indent-1">
-    <form action="Sequences.php" method="post">
-        <section style='width: 100%' class='sectionMails' id='new'>
-            <p>Email Subject</p>
-            <label class='labelEmail'>
+        </form>
+    </div>
+    <section class="indent-1">
+        <form action="Sequences.php" method="post">
+            <section style='width: 100%' class='sectionMails' id='new'>
+                <p>Email Subject</p>
+                <label class='labelEmail'>
                 <textarea class='labelEmail' name="subject"
                           style="border: 1px solid #bebcbb;border-radius: 4px;"></textarea>
-            </label>
-            <p>Email Content</p>
-            <label class='labelEmail'>
-                <textarea class="ckeditor" name="content"></textarea>
-            </label>
-            <input type="submit" class="buttonStartSave" name="action" value="Create">
-        </section>
-    </form>
-    <?php
-    $idComparar = "";
-    require("db_connection.php");
-    $query = "SELECT * FROM newslettermail ";
+                </label>
+                <p>Email Content</p>
+                <label class='labelEmail'>
+                    <textarea class="ckeditor" name="content"></textarea>
+                </label>
+                <input type="submit" class="buttonStartSave" name="action" value="Send">
+            </section>
+        </form>
+        <?php
+        $idComparar = "";
+        require("db_connection.php");
+        $query = "SELECT * FROM newslettermail ";
 
-    if (!$result = mysqli_query($con, $query)) {
-        exit(mysqli_error($con));
-    } else {
-        if (mysqli_num_rows($result) > 0) {
-            while ($row = mysqli_fetch_assoc($result)) {
-                $idComparar = $row['id'];
-                echo "
+        if (!$result = mysqli_query($con, $query)) {
+            exit(mysqli_error($con));
+        } else {
+            if (mysqli_num_rows($result) > 0) {
+                while ($row = mysqli_fetch_assoc($result)) {
+                    $idComparar = $row['id'];
+                    echo "
                         <form action='Sequences.php' method='post'>
                         <section style='width: 90%;display:none;' class='sectionMails' id='" . $idComparar . "'>
                                 <div id='" . $idComparar . "'>
@@ -176,39 +184,40 @@
                         </section>
                         </form>
                          ";
+                }
+                echo "<input type='hidden' value='" . mysqli_num_rows($result) . "' id='actualStep' name='actualStep'>";
             }
-            echo "<input type='hidden' value='" . mysqli_num_rows($result) . "' id='actualStep' name='actualStep'>";
         }
-    }
-    ?>
-    <script>
-        var stepsNum = document.getElementById("stepsNum").value;
-        onStepClicked("new");
+        ?>
+        <script>
+            var stepsNum = document.getElementById("stepsNum").value;
+            onStepClicked("new");
 
-        function onStepClicked(id) {
-            if (id != "new") {
-                document.getElementById("new").style.display = "none";
-            }
-            var i;
-            for (i = 1; i < stepsNum + 1; i++) {
-                if (i != id) {
-                    document.getElementById(i).style.display = "none";
-                } else {
-                    document.getElementById(i).style.display = "block";
-                    document.getElementById("actualStep").value = id;
+            function onStepClicked(id) {
+                if (id != "new") {
+                    document.getElementById("new").style.display = "none";
+                }
+                var i;
+                for (i = 1; i < stepsNum + 1; i++) {
+                    if (i != id) {
+                        document.getElementById(i).style.display = "none";
+                    } else {
+                        document.getElementById(i).style.display = "block";
+                        document.getElementById("actualStep").value = id;
+                    }
                 }
             }
-        }
 
-        function newStep() {
-            document.getElementById("new").style.display = "block";
-            var i;
-            for (i = 1; i < stepsNum + 1; i++) {
-                document.getElementById(i).style.display = "none";
+            function newStep() {
+                document.getElementById("new").style.display = "block";
+                var i;
+                for (i = 1; i < stepsNum + 1; i++) {
+                    document.getElementById(i).style.display = "none";
+                }
             }
-        }
-    </script>
-</section>
+        </script>
+    </section>
+</div>
 </body>
 </html>
 <?php
@@ -220,21 +229,8 @@ if ($_POST) {
                 $subject = $_POST['subject'];
                 require("db_connection.php");
                 $query = mysqli_query($con, "INSERT INTO newslettermail(content, subject) VALUES ('$content', '$subject')");
-            }
-        }
-    }
-    if ($_POST['action']) {
-        if (!empty($_POST['subject_' . $_POST['action']])) {
-            if (!empty($_POST['content_' . $_POST['action']])) {
-                $actualStep = $_POST['action'];
-                require("db_connection.php");
-                $query = "UPDATE newslettermail SET subject = '" . $_POST['subject_' . $actualStep] . "', content = '" . $_POST['content_' . $actualStep] . "' WHERE id = " . $actualStep;
-                if ($result = mysqli_query($con, $query)) {
-                    // var_dump($query);
-                } else {
-                    echo "ERROR WHILE UPDATING" . mysqli_error($con);
-                    // var_dump($query);
-                }
+                $styleStart = "style='display:none;'";
+                $styleEnd = "style='display:block'";
             }
         }
     }
