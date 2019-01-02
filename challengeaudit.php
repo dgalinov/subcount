@@ -84,6 +84,7 @@ if ($_POST) {
     <a class="active" href="challengeaudit.php">Challenge Audit</a>
     <a href="webinars.php">Webinars</a>
     <a href="blog.php">Blog</a>
+    <a href="Now.php">Now</a>
 </div>
 <div class="container">
     <form method="post" action="challengeaudit.php">

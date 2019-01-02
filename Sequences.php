@@ -74,16 +74,17 @@
 </head>
 <body>
 <?php
-if ($_POST) {
+/*if ($_POST) {
     $url = "http" . (($_SERVER['SERVER_PORT'] == 443) ? "s" : "") . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
     header("Location: " . $url);
-}
+}*/
 ?>
 <div class="topnavS">
     <a class="active" href="Sequences.php">Newsletter</a>
     <a href="challengeaudit.php">Challenge Audit</a>
     <a href="webinars.php">Webinars</a>
     <a href="blog.php">Blog</a>
+    <a href="Now.php">Now</a>
 </div>
 <div class="container">
     <form method="post" action="Sequences.php">
@@ -361,7 +362,7 @@ if ($_POST) {
         echo "No funciona";
     }
 }
-if ($_POST) {
+/*if ($_POST) {
     header('Location: ' . $_SERVER['PHP_SELF']);
-}
+}*/
 ?>

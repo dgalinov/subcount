@@ -6,44 +6,6 @@ if (mysqli_connect_errno()) {
     echo mysqli_connect_error("Our database server is down at the moment. :(");
     exit();
 }
-$mUnsubs = $tUnsubs = $wUnsubs = $thUnsubs = $fUnsubs = $sUnsubs = $suUnsubs = "";
-$mSubs = $tSubs = $wSubs = $thSubs = $fSubs = $sSubs = $suSubs = "";
-
-$sqlMon = mysqli_query($con, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND week(date) = week(CURDATE()) AND weekday(date) = '0'");
-while ($row = mysqli_fetch_array($sqlMon)) {
-    $mSubs = $row['sub'];
-    $mUnsubs = $row['unsub'];
-}
-$sqlTue = mysqli_query($con, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND week(date) = week(CURDATE()) AND weekday(date) = '1'");
-while ($row = mysqli_fetch_array($sqlTue)) {
-    $tSubs = $row['sub'];
-    $tUnsubs = $row['unsub'];
-}
-$sqlWed = mysqli_query($con, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND week(date) = week(CURDATE()) AND weekday(date) = '2'");
-while ($row = mysqli_fetch_array($sqlWed)) {
-    $wSubs = $row['sub'];
-    $wUnsubs = $row['unsub'];
-}
-$sqlThu = mysqli_query($con, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND week(date) = week(CURDATE()) AND weekday(date) = '3'");
-while ($row = mysqli_fetch_array($sqlThu)) {
-    $thSubs = $row['sub'];
-    $thUnsubs = $row['unsub'];
-}
-$sqlFri = mysqli_query($con, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND week(date) = week(CURDATE()) AND weekday(date) = '4'");
-while ($row = mysqli_fetch_array($sqlFri)) {
-    $fSubs = $row['sub'];
-    $fUnsubs = $row['unsub'];
-}
-$sqlSat = mysqli_query($con, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND week(date) = week(CURDATE()) AND weekday(date) = '5'");
-while ($row = mysqli_fetch_array($sqlSat)) {
-    $sSubs = $row['sub'];
-    $sUnsubs = $row['unsub'];
-}
-$sqlSun = mysqli_query($con, "SELECT SUM(subscribed = 1) as sub,SUM(subscribed = 0) as unsub FROM information WHERE year(date) = year(CURDATE()) AND week(date) = week(CURDATE()) AND weekday(date) = '6'");
-while ($row = mysqli_fetch_array($sqlSun)) {
-    $suSubs = $row['sub'];
-    $suUnsubs = $row['unsub'];
-}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -56,13 +18,6 @@ while ($row = mysqli_fetch_array($sqlSun)) {
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 </head>
 <body>
-<div class="topnav">
-    <a class="active" href="index.php">Dashboard</a>
-    <a href="Sequences.php">Sequences</a>
-</div>
-<div>
-    <br><br>
-</div>
 <div class="row" style="width: 100%">
     <div class="column">
         <canvas id="Chart"></canvas>
@@ -158,55 +113,3 @@ while ($row = mysqli_fetch_array($sqlSun)) {
 </form>
 </body>
 </html>
-<script>
-    var ctx = document.getElementById("Chart");
-    var data = {
-        datasets: [{
-            data: [<?php echo $suSubs; ?>, <?php echo $mSubs; ?>,<?php echo $tSubs; ?>,<?php echo $wSubs; ?>,<?php echo $thSubs; ?>,<?php echo $fSubs; ?>,<?php echo $sSubs; ?>],
-            backgroundColor: 'rgba(1, 173, 50, 0.5)',
-            borderColor: "#00cc66",
-            borderWidth: 2,
-            label: 'Subscribed'
-        }, {
-            data: [<?php echo $suUnsubs; ?>,<?php echo $mUnsubs; ?>,<?php echo $tUnsubs; ?>,<?php echo $wUnsubs; ?>,<?php echo $thUnsubs; ?>,<?php echo $fUnsubs; ?>,<?php echo $sUnsubs; ?>],
-            backgroundColor: 'rgba(236, 3, 50, 0.5)',
-            borderColor: "#ff5050",
-            borderWidth: 2,
-            type: 'bar',
-            label: 'Unsubscribed' // for legend
-        }],
-        labels: [
-            'Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'
-        ]
-    };
-
-    var xChart = new Chart(ctx, {
-        type: 'bar',
-        data: data,
-        options: {
-            legend: {
-                display: true,
-                position: 'left',
-                labels: {
-                    fontColor: 'black'
-                }
-            },
-            tooltips: {
-                mode: 'y'
-            },
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        beginAtZero: true
-                    }
-                }],
-                xAxes: [{
-                    ticks: {
-                        autoskip: true,
-                        maxTicksLimit: 20
-                    }
-                }]
-            }
-        }
-    });
-</script>
