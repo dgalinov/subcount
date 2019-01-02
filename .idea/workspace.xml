@@ -3,32 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5ba90ca5-96cf-451d-89fe-c2adbe3b3f67" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sequences.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sequences.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challengeaudit.php" beforeDir="false" afterPath="$PROJECT_DIR$/challengeaudit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/excel/css/bootstrap-custom.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/excel/css/bootstrap-responsive.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/excel/css/bootstrap-responsive.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/excel/css/bootstrap.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/excel/css/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/excel/export.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/excel/img/Thumbs.db" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/excel/img/glyphicons-halflings-white.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/excel/img/glyphicons-halflings.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/excel/import.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/excel/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/excel/js/application.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/excel/js/bootstrap-button.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/excel/js/bootstrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/excel/js/bootstrap.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/excel/js/html5shiv.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/excel/js/jquery-1.9.1.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuget/Bootstrap.v3.Datetimepicker.CSS.nuspec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuget/Bootstrap.v3.Datetimepicker.nuspec" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuget/NuGet.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nuget/install.ps1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/webinars.php" beforeDir="false" afterPath="$PROJECT_DIR$/webinars.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SendMails.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,25 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Sequences.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="60" lean-forward="true" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
-              <folding>
-                <element signature="e#11055#11073#0#HTML" expanded="true" />
-                <element signature="e#12012#12030#0#HTML" expanded="true" />
-                <element signature="e#12220#12273#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/webinars.php">
+        <entry file="file://$PROJECT_DIR$/SendMailsBlog.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-262">
-              <caret line="318" column="45" selection-start-line="318" selection-start-column="45" selection-end-line="318" selection-end-column="45" />
+            <state relative-caret-position="360">
+              <caret line="61" column="80" selection-start-line="61" selection-start-column="80" selection-end-line="61" selection-end-column="80" />
             </state>
           </provider>
         </entry>
@@ -173,6 +134,9 @@
         <option value="$PROJECT_DIR$/challengeaudit.php" />
         <option value="$PROJECT_DIR$/blog.php" />
         <option value="$PROJECT_DIR$/webinars.php" />
+        <option value="$PROJECT_DIR$/SendMailsChallengeAudit.php" />
+        <option value="$PROJECT_DIR$/SendMailsWebinars.php" />
+        <option value="$PROJECT_DIR$/SendMailsBlog.php" />
       </list>
     </option>
   </component>
@@ -215,7 +179,7 @@
     <property name="ChangesTree.GroupingKeys" value="directory&#10;repository" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SequenceFrame" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -319,12 +283,13 @@
       <workItem from="1545039013567" duration="1299000" />
       <workItem from="1545051177407" duration="161000" />
       <workItem from="1545206737478" duration="13257000" />
-      <workItem from="1545293013267" duration="6939000" />
+      <workItem from="1545293013267" duration="7053000" />
+      <workItem from="1546418703214" duration="456000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="270052000" />
+    <option name="totallyTimeSpent" value="270622000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="41" y="25" width="1325" height="743" extended-state="6" />
@@ -332,7 +297,7 @@
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.17435497" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.17748241" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32903227" />
@@ -393,9 +358,6 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../formtelanto/fastselect-master/src/fastselect.js" />
-    <entry file="file://$PROJECT_DIR$/../formtelanto/fastselect-master/src/fastselect.scss" />
-    <entry file="file://$PROJECT_DIR$/../formtelanto/js/jquery-3.3.1.min.js" />
     <entry file="file://$PROJECT_DIR$/../formtelanto/js/main.js" />
     <entry file="file://$PROJECT_DIR$/../formtelanto/css/style.css" />
     <entry file="file://$PROJECT_DIR$/../formtelanto/css/style.css.map" />
@@ -549,16 +511,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SendMails.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="40" column="55" lean-forward="true" selection-start-line="40" selection-start-column="55" selection-end-line="40" selection-end-column="55" />
-          <folding>
-            <element signature="e#185#219#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/D02F/styles.css" />
     <entry file="file://$PROJECT_DIR$/css/style.css" />
     <entry file="file://$PROJECT_DIR$/css/styles.css">
@@ -597,22 +549,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sequences.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="60" lean-forward="true" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
-          <folding>
-            <element signature="e#11055#11073#0#HTML" expanded="true" />
-            <element signature="e#12012#12030#0#HTML" expanded="true" />
-            <element signature="e#12220#12273#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/webinars.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-262">
           <caret line="318" column="45" selection-start-line="318" selection-start-column="45" selection-end-line="318" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SendMails.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="40" column="55" lean-forward="true" selection-start-line="40" selection-start-column="55" selection-end-line="40" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sequences.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="192" column="57" selection-start-line="192" selection-start-column="57" selection-end-line="192" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SendMailsWebinars.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="61" column="84" selection-start-line="61" selection-start-column="84" selection-end-line="61" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SendMailsChallengeAudit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="61" column="90" selection-start-line="61" selection-start-column="90" selection-end-line="61" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SendMailsBlog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="61" column="80" selection-start-line="61" selection-start-column="80" selection-end-line="61" selection-end-column="80" />
         </state>
       </provider>
     </entry>
