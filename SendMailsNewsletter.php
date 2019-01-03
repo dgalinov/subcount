@@ -13,7 +13,7 @@ $mail = new PHPMailer();
 require("db_connection.php");
 $queryN = "SELECT * FROM newslettermail";
 $queryC = "SELECT * FROM crontab WHERE name = 'Newsletter'";
-$queryI = "SELECT * FROM information WHE";
+$queryI = "SELECT * FROM information WHERE newsletterSub == 1";
 
 
 if (!$resultNewsletter = mysqli_query($con, $queryN)) {
@@ -69,6 +69,10 @@ if (!$resultNewsletter = mysqli_query($con, $queryN)) {
                                                             $mail->Body = $body;
                                                             $mail->AltBody = strip_tags($body);
 
+                                                            // Cuando se envia un email se suma +1 al contador
+
+                                                            $queryCounter = "UPDATE information SET newsletterCounter = ".$rowInfo['newsletterCounter']."+1 WHERE ".$rowInfo['newsletterCounter']." = ".$rowNewsletter['id']." ";
+
                                                             if ($mail->send()) {
                                                             } else {
                                                                 echo $mail->ErrorInfo;
@@ -78,6 +82,7 @@ if (!$resultNewsletter = mysqli_query($con, $queryN)) {
                                                             echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
                                                         }
                                                     }
+                                                    $queryCounter = mysqli_query($con, $queryCounter);
                                                 }
                                             }
                                         }

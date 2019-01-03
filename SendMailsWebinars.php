@@ -13,7 +13,7 @@ $mail = new PHPMailer();
 require("db_connection.php");
 $queryN = "SELECT * FROM webinarsmail";
 $queryC = "SELECT * FROM crontab WHERE name = 'Webinars'";
-$queryI = "SELECT * FROM information";
+$queryI = "SELECT * FROM information WHERE webinarsSub == 1";
 
 
 if (!$resultNewsletter = mysqli_query($con, $queryN)) {
@@ -47,7 +47,7 @@ if (!$resultNewsletter = mysqli_query($con, $queryN)) {
                                     while ($rowInfo = mysqli_fetch_assoc($resultInfo)) {
                                         if (mysqli_num_rows($resultNewsletter) > 0) {
                                             while ($rowNewsletter = mysqli_fetch_assoc($resultNewsletter)) {
-                                                if ($rowInfo['counter'] == $rowNewsletter['id']) {
+                                                if ($rowInfo['webinarsCounter'] == $rowNewsletter['id']) {
                                                     for ($k = 0; $k < sizeof($emailsArray); $k++) {
                                                         try {
                                                             $mail->SMTPDebug = 0;

@@ -185,7 +185,7 @@
                 </label>
             </div>
             <div class="col-">
-                <input type="submit" class="buttonSaveSequence" name="action" value="Update">
+                <input type="submit" class="buttonSaveSequence" name="action" value="Add Filter">
             </div>
             <div class="col-">
                 <input type="text" id="fname" name="emailSS" placeholder="Input email" style="padding-left: 10px">
@@ -194,7 +194,7 @@
                 <input type="text" id="fname" name="passwordSS" placeholder="Input password" style="padding-left: 10px">
             </div>
             <div class="col-">
-                <input type="submit" class="buttonSaveSequence" name="action" value="New">
+                <input type="submit" class="buttonSaveSequence" name="action" value="New Email">
             </div>
         </div>
     </form>
@@ -327,7 +327,7 @@ if ($_POST) {
             }
         }
     }
-    if ($_POST['action'] == 'New') {
+    if ($_POST['action'] == 'New Email') {
         $emailA = $_POST['emailSS'];
         $passwordA = $_POST['passwordSS'];
         //var_dump($emailA);
@@ -338,7 +338,7 @@ if ($_POST) {
             //var_dump($query);
         }
     }
-    if ($_POST['action'] == 'Update') {
+    if ($_POST['action'] == 'Add Filter') {
         require("db_connection.php");
         $timeP = $_POST['tpick'];
         $preferences = array(
