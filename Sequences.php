@@ -10,12 +10,18 @@
 
     <title>TELANTO</title>
 
+    <?php
+    $done = false;
+    do {
+        echo "<meta http-equiv='refresh' content='1'>";
+    } while($done != true);
+    ?>
+
     <meta property="og:title" content="TELANTO - The Global Academic Business Network">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://telanto.com">
     <meta property="og:image" content="https://abc.telanto.com/assets/img/telanto_shareimage.jpg">
     <meta property="og:description" content="Connecting company projects to students anywhere in the world">
-
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://telanto.com">
     <meta name="twitter:title" content="TELANTO - The Global Academic Business Network">
@@ -85,6 +91,55 @@
     <a href="webinars.php">Webinars</a>
     <a href="blog.php">Blog</a>
     <a href="Now.php">Now</a>
+    <a id="myBtn" style="float: right">New Email</a>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Email Register</h2>
+                <span class="close" style="color: white;">&times;</span>
+
+            </div>
+            <div class="modal-body">
+                <input type="text" id="fname" name="emailSS" placeholder="Input email" style="padding-left: 10px; padding-right: 10px">
+                <input type="text" id="fname" name="passwordSS" placeholder="Input password" style="padding-left: 10px; padding-right: 10px">
+                <input type="submit" class="buttonSaveSequence" name="action" value="New Email">
+            </div>
+            <div class="modal-footer">
+                <h3></h3>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </div>
 <div class="container">
     <form method="post" action="Sequences.php">
@@ -159,6 +214,7 @@
             <div class="col-">
                 <label for="mails">
                     <select id="mails" name="mails[]" class="selectpicker" multiple data-live-search="true">
+                        <option selected="selected">newsletter@telanto.com</option>
                         <?php
                         require("db_connection.php");
 
@@ -174,7 +230,7 @@
                         if (mysqli_num_rows($result) > 0) {
                             while ($row = mysqli_fetch_assoc($result)) {
                                 if (in_array($row['email'], $arrayEmails)) {
-                                    echo "<option selected>" . $row['email'] . "</option>";
+                                    echo "<option selected='selected'>" . $row['email'] . "</option>";
                                 } else {
                                     echo "<option>" . $row['email'] . "</option>";
                                 }
@@ -187,14 +243,6 @@
             <div class="col-">
                 <input type="submit" class="buttonSaveSequence" name="action" value="Add Filter">
             </div>
-            <div class="col-">
-                <input type="text" id="fname" name="emailSS" placeholder="Input email" style="padding-left: 10px">
-            </div>
-            <div class="col-">
-                <input type="text" id="fname" name="passwordSS" placeholder="Input password" style="padding-left: 10px">
-            </div>
-            <div class="col-">
-                <input type="submit" class="buttonSaveSequence" name="action" value="New Email">
             </div>
         </div>
     </form>
@@ -205,7 +253,6 @@
             <?php
             $idComparado = "";
             require("db_connection.php");
-
             $query = "SELECT * FROM newslettermail";
             if (!$result = mysqli_query($con, $query)) {
                 exit(mysqli_error($con));

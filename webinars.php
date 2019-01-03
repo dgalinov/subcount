@@ -85,6 +85,55 @@ if ($_POST) {
     <a class="active" href="webinars.php">Webinars</a>
     <a href="blog.php">Blog</a>
     <a href="Now.php">Now</a>
+    <a id="myBtn" style="float: right">New Email</a>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Email Register</h2>
+                <span class="close" style="color: white;">&times;</span>
+
+            </div>
+            <div class="modal-body">
+                <input type="text" id="fname" name="emailSS" placeholder="Input email" style="padding-left: 10px; padding-right: 10px">
+                <input type="text" id="fname" name="passwordSS" placeholder="Input password" style="padding-left: 10px; padding-right: 10px">
+                <input type="submit" class="buttonSaveSequence" name="action" value="New Email">
+            </div>
+            <div class="modal-footer">
+                <h3></h3>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </div>
 <div class="container">
     <form method="post" action="webinars.php">
@@ -159,6 +208,7 @@ if ($_POST) {
             <div class="col-">
                 <label for="mails">
                     <select id="mails" name="mails[]" class="selectpicker" multiple data-live-search="true">
+                        <option selected="selected">webinars@telanto.com</option>
                         <?php
                         require("db_connection.php");
 
@@ -185,16 +235,8 @@ if ($_POST) {
                 </label>
             </div>
             <div class="col-">
-                <input type="submit" class="buttonSaveSequence" name="action" value="Update">
+                <input type="submit" class="buttonSaveSequence" name="action" value="Add Filter">
             </div>
-            <div class="col-">
-                <input type="text" id="fname" name="emailSS" placeholder="Input email" style="padding-left: 10px">
-            </div>
-            <div class="col-">
-                <input type="text" id="fname" name="passwordSS" placeholder="Input password" style="padding-left: 10px">
-            </div>
-            <div class="col-">
-                <input type="submit" class="buttonSaveSequence" name="action" value="New">
             </div>
         </div>
     </form>
@@ -338,7 +380,7 @@ if ($_POST) {
             //var_dump($query);
         }
     }
-    if ($_POST['action'] == 'Update') {
+    if ($_POST['action'] == 'Add Filter') {
         require("db_connection.php");
         $timeP = $_POST['tpick'];
         $preferences = array(

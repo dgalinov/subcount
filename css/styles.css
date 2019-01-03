@@ -2,7 +2,7 @@ html, body, #myChart {
     height: 100%;
     width: 100%;
     font-family: 'Nunito', sans-serif !important;
-    overflow:hidden;
+    overflow: hidden;
 }
 .tablaCSV {
     border: 2px solid white;
@@ -55,11 +55,11 @@ html, body, #myChart {
 .topnavS {
     overflow: hidden;
     background-color: #5677fc;
-    border-bottom: 2px solid white;
+    cursor: pointer;
 }
 .topnavS a {
     float: left;
-    color: white;
+    color: white !important;
     text-align: center;
     padding: 12px 14px;
     text-decoration: none;
@@ -68,7 +68,8 @@ html, body, #myChart {
 .topnavS a:hover {
     background-color: white;
     text-decoration: none;
-    color: black;
+    cursor: pointer;
+    color: black !important;
 }
 .topnavS a.active {
     background-color: #005498;
@@ -89,31 +90,35 @@ html, body, #myChart {
     background: #5677fc;
     color: white !important;
     display: block;
-
     padding: 12px;
     text-decoration: none;
 }
 .vertical-menu a:hover {
     background-color: white;
+    padding: 12px;
     text-decoration: none;
     cursor: pointer;
     color: #5677fc !important;
-    font-size: 17px;
 }
 .vertical-menu a.active {
     background-color: #5677fc;
+    padding: 12px;
     color: white !important;
-    font-weight: bolder;
+    font-size: 12px;
 }
 .vertical-menu a.active:hover {
-    background-color: #5677fc;
-    color: white !important;
+    background-color: white;
+    padding: 12px;
+    color: #5677fc !important;
     cursor: pointer;
-    font-weight: bolder;
-    font-size: 20px;
 }
-.indent-1 {width: 100%;float: left;}
-.indent-1 section { float: left;}
+.indent-1 {
+    width: 100%;
+    float: left;
+}
+.indent-1 section {
+    float: left;
+}
 .labelEmail {
     width: 100%;
     resize: none;
@@ -122,7 +127,7 @@ html, body, #myChart {
     color: #5677fc;
     font-size: 20px;
     background: white;
-    border: 2px solid #5677fc;
+    border: 1px solid #5677fc;
     width: 200px;
     height: 50px;
     justify-content: center;
@@ -133,7 +138,7 @@ html, body, #myChart {
     color: white;
     font-size: 20px;
     background: #5677fc;
-    border: 2px solid #5677fc;
+    border: 1px solid #5677fc;
     width: 200px;
     height: 50px;
     justify-content: center;
@@ -147,17 +152,17 @@ html, body, #myChart {
     border: 1px solid #5677fc;
     width: 100px;
     height: 50px;
-    justify-content: center;
     border-radius: 4px;
+    justify-content: center;
 }
 .buttonSaveSequence:hover {
     color: white;
     font-size: 15px;
     background: #5677fc !important;
     width: 100px;
+    border-radius: 4px;
     height: 50px;
     justify-content: center;
-    border-radius: 4px;
 }
 .buttonStartSequence {
     color: white;
@@ -167,6 +172,7 @@ html, body, #myChart {
     height: 50px;
     justify-content: center;
     width: 100%;
+    border-radius: 4px;
 }
 .buttonStartSequence:hover {
     color: #5677fc;
@@ -174,6 +180,7 @@ html, body, #myChart {
     background: white !important;
     width: 100px;
     height: 50px;
+    border-radius: 4px;
     justify-content: center;
 }
 .column {
@@ -219,7 +226,7 @@ html, body, #myChart {
     color: #5677fc;
     border-radius: 2px;
     width: 100%;
-    cursor:pointer;
+    cursor: pointer;
 
 }
 div#custom-select-option-box {
@@ -228,8 +235,8 @@ div#custom-select-option-box {
     color: #5677fc;
     border-radius: 2px;
     width: 100%;
-    z-index:1;
-    display:none;
+    z-index: 1;
+    display: none;
 }
 button.search.btn {
     background: #4c4c4c;
@@ -261,8 +268,8 @@ button.search.btn {
 }
 input[type=text], select {
     border: 1px solid #bebcbb;
-    border-radius: 4px;
     box-sizing: border-box;
+    border-radius: 4px;
     height: 50px;
 }
 .btn {
@@ -280,4 +287,111 @@ input[type=text], select {
 }
 .col- {
     margin-right: 10px;
+}
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+/* Modal Content */
+.modal-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s;
+    margin-left: 30%;
+    margin-right: 30%;
+    width:40% !important;
+    margin-top: 12%;
+}
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5677fc;
+    color: white;
+}
+.modal-body {
+    padding: 2px 16px;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5677fc;
+    color: white;
+}
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+@keyframes slideIn {
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+h2 {
+    font-size: 1.5em !important;
+}
+.table .thead-dark th {
+    background-color: #5677fc !important;
+    border-color: #5677fc !important;
+
+}
+.table > tbody + tbody {
+    border-top: 2px solid #5677fc !important;
 }

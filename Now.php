@@ -84,12 +84,56 @@
     <a href="webinars.php">Webinars</a>
     <a href="blog.php">Blog</a>
     <a class="active" href="Now.php">Now</a>
-    <input type="submit" class="buttonSaveSequence" name="action" value="New Email" style="float: right">
-    <input type="text" id="fname" name="passwordSS" placeholder="Input password"
-           style="padding-left: 10px; float: right">
-    <input type="text" id="fname" name="emailSS" placeholder="Input email"
-           style="padding-left: 10px; float: right">
 
+    <a id="myBtn" style="float: right">New Email</a>
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Email Register</h2>
+                <span class="close" style="color: white;">&times;</span>
+
+            </div>
+            <div class="modal-body">
+                <input type="text" id="fname" name="emailSS" placeholder="Input email" style="padding-left: 10px; padding-right: 10px">
+                <input type="text" id="fname" name="passwordSS" placeholder="Input password" style="padding-left: 10px; padding-right: 10px">
+                <input type="submit" class="buttonSaveSequence" name="action" value="New Email">
+            </div>
+            <div class="modal-footer">
+                <h3></h3>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks the button, open the modal
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </div>
 <div class="container">
     <form method="post" action="Now.php">
@@ -129,7 +173,43 @@
     </form>
 </div>
 <section class="indent-1">
-    selction
+        <table class='table'>
+            <thead class="thead-dark">
+                <tr>
+                    <th scope='col'>ID</th>
+                    <th scope='col'>TIME</th>
+                    <th scope='col'>FROM</th>
+                    <th scope='col'>TO</th>
+                    <th scope='col'>SUBJECT</th>
+                    <th scope='col'>CONTENT</th>
+                </tr>
+            </thead>
+            <?php
+            require("db_connection.php");
+            $queryShow = "SELECT * FROM NowRecords";
+
+            if (!$resultShow = mysqli_query($con, $queryShow)) {
+                exit(mysqli_error($con));
+            } else {
+                while ($rowShow = mysqli_fetch_assoc($resultShow)) {
+                    echo "
+                
+                    <tbody>
+                        <tr>
+                            <th scope='row'>" . $rowShow['id'] . "</th>
+                            <td>" . $rowShow['timeInserted'] . "</td>
+                            <td>" . $rowShow['sendFrom'] . "</td>
+                            <td>" . $rowShow['sendTo'] . "</td>
+                            <td>" . $rowShow['subject'] . "</td>
+                            <td>" . $rowShow['content'] . "</td>
+                        </tr>
+                    
+                ";
+                }
+            }
+            ?>
+            </tbody>
+        </table>
     <form action="Now.php" method="post">
         <section style='width: 100%' class='sectionMails' id='new'>
             <p>Email Subject</p>
@@ -178,7 +258,9 @@ if ($_POST) {
                                 while ($rowCronExplode = mysqli_fetch_assoc($resultCron)) {
                                     $emailsArray = explode(",", $rowCronExplode['emails']);
                                     $emailsInfoArray = $rowInfo['email'];
-                                    for ($k = 0; $k < sizeof($emailsArray); $k++) {
+                                    for ($k = 0;
+                                         $k < sizeof($emailsArray);
+                                         $k++) {
                                         try {
                                             $mail->SMTPDebug = 0;
                                             $mail->isSMTP();
@@ -221,12 +303,12 @@ if ($_POST) {
     if ($_POST['action'] == 'New Email') {
         $emailA = $_POST['emailSS'];
         $passwordA = $_POST['passwordSS'];
-        //var_dump($emailA);
+//var_dump($emailA);
         require("db_connection.php");
         $query = "INSERT INTO `emails`(`email`,`password`) VALUES ('$emailA','$passwordA');";
         if ($result = mysqli_query($con, $query)) {
             echo "New email succesfully created";
-            //var_dump($query);
+//var_dump($query);
         }
     }
     if ($_POST['action'] == 'Add Filter') {
