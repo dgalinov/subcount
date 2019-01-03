@@ -10,13 +10,6 @@
 
     <title>TELANTO</title>
 
-    <?php
-    $done = false;
-    do {
-        echo "<meta http-equiv='refresh' content='1'>";
-    } while($done != true);
-    ?>
-
     <meta property="og:title" content="TELANTO - The Global Academic Business Network">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://telanto.com">
@@ -48,7 +41,6 @@
     <link rel="apple-touch-startup-image" href="ihttps://abc.telanto.com/assets/img/android-chrome-192x192.png">
     <meta name="apple-mobile-web-app-status-bar-style" content="#5677fc">
     <link rel="shortcut icon" type="image/x-icon" href="https://abc.telanto.com/assets/img/favicon.ico">
-
 
 
     <link rel="stylesheet" href="css/styles.css">
@@ -103,8 +95,10 @@
 
             </div>
             <div class="modal-body">
-                <input type="text" id="fname" name="emailSS" placeholder="Input email" style="padding-left: 10px; padding-right: 10px">
-                <input type="text" id="fname" name="passwordSS" placeholder="Input password" style="padding-left: 10px; padding-right: 10px">
+                <input type="text" id="fname" name="emailSS" placeholder="Input email"
+                       style="padding-left: 10px; padding-right: 10px">
+                <input type="text" id="fname" name="passwordSS" placeholder="Input password"
+                       style="padding-left: 10px; padding-right: 10px">
                 <input type="submit" class="buttonSaveSequence" name="action" value="New Email">
             </div>
             <div class="modal-footer">
@@ -124,17 +118,17 @@
         var span = document.getElementsByClassName("close")[0];
 
         // When the user clicks the button, open the modal
-        btn.onclick = function() {
+        btn.onclick = function () {
             modal.style.display = "block";
         }
 
         // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
+        span.onclick = function () {
             modal.style.display = "none";
         }
 
         // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
+        window.onclick = function (event) {
             if (event.target == modal) {
                 modal.style.display = "none";
             }
@@ -229,11 +223,7 @@
                         $arrayEmails = array(explode(",", $row2));
                         if (mysqli_num_rows($result) > 0) {
                             while ($row = mysqli_fetch_assoc($result)) {
-                                if (in_array($row['email'], $arrayEmails)) {
-                                    echo "<option selected='selected'>" . $row['email'] . "</option>";
-                                } else {
-                                    echo "<option>" . $row['email'] . "</option>";
-                                }
+                                echo "<option>" . $row['email'] . "</option>";
                             }
                         }
                         ?>
@@ -243,9 +233,9 @@
             <div class="col-">
                 <input type="submit" class="buttonSaveSequence" name="action" value="Add Filter">
             </div>
-            </div>
         </div>
-    </form>
+</div>
+</form>
 </div>
 <section class="indent-1">
     <section style="width: 10%">

@@ -84,6 +84,92 @@
     <a href="webinars.php">Webinars</a>
     <a href="blog.php">Blog</a>
     <a class="active" href="Now.php">Now</a>
+    <a id="myBtn2" style="float: right">Show History</a>
+
+
+    <!-- The Modal -->
+    <div id="myModal2" class="modal2" >
+
+        <!-- Modal content -->
+        <div class="modal2-content" style="margin-left: 1%;margin-right: 1%;width: 98% !important;margin-top: 20px;">
+            <div class="modal2-header">
+                <span class="close2">&times;</span>
+                <h2>History</h2>
+            </div>
+            <div class="modal2-body">
+                <table class='table'>
+                    <thead class="thead-dark">
+                    <tr>
+                        <th scope='col'>ID</th>
+                        <th scope='col'>TIME</th>
+                        <th scope='col'>FROM</th>
+                        <th scope='col'>TO</th>
+                        <th scope='col'>SUBJECT</th>
+                        <th scope='col'>CONTENT</th>
+                    </tr>
+                    </thead>
+                    <?php
+                    require("db_connection.php");
+                    $queryShow = "SELECT * FROM NowRecords";
+
+                    if (!$resultShow = mysqli_query($con, $queryShow)) {
+                        exit(mysqli_error($con));
+                    } else {
+                        while ($rowShow = mysqli_fetch_assoc($resultShow)) {
+                            echo "
+                
+                    <tbody>
+                        <tr>
+                            <th scope='row'>" . $rowShow['id'] . "</th>
+                            <td>" . $rowShow['timeInserted'] . "</td>
+                            <td>" . $rowShow['sendFrom'] . "</td>
+                            <td>" . $rowShow['sendTo'] . "</td>
+                            <td>" . $rowShow['subject'] . "</td>
+                            <td>" . $rowShow['content'] . "</td>
+                        </tr>
+                    
+                ";
+                        }
+                    }
+                    ?>
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal2-footer">
+                <h3></h3>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // Get the modal
+        var modal2 = document.getElementById('myModal2');
+
+        // Get the button that opens the modal
+        var btn2 = document.getElementById("myBtn2");
+
+        // Get the <span> element that closes the modal
+        var span2 = document.getElementsByClassName("close2")[0];
+
+        // When the user clicks the button, open the modal
+        btn2.onclick = function () {
+            modal2.style.display = "block";
+        }
+
+        // When the user clicks on <span> (x), close the modal
+        span2.onclick = function () {
+            modal2.style.display = "none";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal2) {
+                modal2.style.display = "none";
+            }
+        }
+    </script>
+
 
     <a id="myBtn" style="float: right">New Email</a>
     <!-- The Modal -->
@@ -97,8 +183,10 @@
 
             </div>
             <div class="modal-body">
-                <input type="text" id="fname" name="emailSS" placeholder="Input email" style="padding-left: 10px; padding-right: 10px">
-                <input type="text" id="fname" name="passwordSS" placeholder="Input password" style="padding-left: 10px; padding-right: 10px">
+                <input type="text" id="fname" name="emailSS" placeholder="Input email"
+                       style="padding-left: 10px; padding-right: 10px">
+                <input type="text" id="fname" name="passwordSS" placeholder="Input password"
+                       style="padding-left: 10px; padding-right: 10px">
                 <input type="submit" class="buttonSaveSequence" name="action" value="New Email">
             </div>
             <div class="modal-footer">
@@ -118,22 +206,23 @@
         var span = document.getElementsByClassName("close")[0];
 
         // When the user clicks the button, open the modal
-        btn.onclick = function() {
+        btn.onclick = function () {
             modal.style.display = "block";
         }
 
         // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
+        span.onclick = function () {
             modal.style.display = "none";
         }
 
         // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
+        window.onclick = function (event) {
             if (event.target == modal) {
                 modal.style.display = "none";
             }
         }
     </script>
+
 </div>
 <div class="container">
     <form method="post" action="Now.php">
@@ -145,7 +234,7 @@
                         require("db_connection.php");
 
                         $query = "SELECT * FROM emails ORDER BY id DESC";
-                        $query2 = "SELECT emails FROM crontab WHERE name = 'Newsletter'";
+                        $query2 = "SELECT emails FROM crontab WHERE name = 'Now'";
                         if (!$result = mysqli_query($con, $query)) {
                             exit(mysqli_error($con));
                         }
@@ -173,43 +262,6 @@
     </form>
 </div>
 <section class="indent-1">
-        <table class='table'>
-            <thead class="thead-dark">
-                <tr>
-                    <th scope='col'>ID</th>
-                    <th scope='col'>TIME</th>
-                    <th scope='col'>FROM</th>
-                    <th scope='col'>TO</th>
-                    <th scope='col'>SUBJECT</th>
-                    <th scope='col'>CONTENT</th>
-                </tr>
-            </thead>
-            <?php
-            require("db_connection.php");
-            $queryShow = "SELECT * FROM NowRecords";
-
-            if (!$resultShow = mysqli_query($con, $queryShow)) {
-                exit(mysqli_error($con));
-            } else {
-                while ($rowShow = mysqli_fetch_assoc($resultShow)) {
-                    echo "
-                
-                    <tbody>
-                        <tr>
-                            <th scope='row'>" . $rowShow['id'] . "</th>
-                            <td>" . $rowShow['timeInserted'] . "</td>
-                            <td>" . $rowShow['sendFrom'] . "</td>
-                            <td>" . $rowShow['sendTo'] . "</td>
-                            <td>" . $rowShow['subject'] . "</td>
-                            <td>" . $rowShow['content'] . "</td>
-                        </tr>
-                    
-                ";
-                }
-            }
-            ?>
-            </tbody>
-        </table>
     <form action="Now.php" method="post">
         <section style='width: 100%' class='sectionMails' id='new'>
             <p>Email Subject</p>
@@ -224,6 +276,8 @@
             <input type="submit" class="buttonStartSave" name="action" value="Send">
         </section>
     </form>
+    <!-- Trigger/Open The Modal -->
+
 </section>
 </body>
 </html>
@@ -282,9 +336,9 @@ if ($_POST) {
                                             $mail->AltBody = strip_tags($body);
                                             if ($mail->send()) {
                                             } else {
-                                                echo $mail->ErrorInfo;
+                                                //echo $mail->ErrorInfo;
                                             }
-                                            echo 'Message has been sent';
+                                            //echo 'Message has been sent';
                                         } catch (Exception $e) {
                                             echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
                                         }

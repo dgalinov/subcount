@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ba90ca5-96cf-451d-89fe-c2adbe3b3f67" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Now.php" beforeDir="false" afterPath="$PROJECT_DIR$/Now.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sequences.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sequences.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challengeaudit.php" beforeDir="false" afterPath="$PROJECT_DIR$/challengeaudit.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webinars.php" beforeDir="false" afterPath="$PROJECT_DIR$/webinars.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,17 +32,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sequences.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="5" selection-start-line="15" selection-start-column="54" selection-end-line="16" selection-end-column="5" />
+            <state relative-caret-position="-337">
+              <caret line="273" column="9" selection-start-line="273" selection-start-column="9" selection-end-line="273" selection-end-column="9" />
               <folding>
-                <element signature="e#5341#5361#0#HTML" expanded="true" />
-                <element signature="e#5619#5640#0#HTML" expanded="true" />
-                <element signature="e#5641#5648#1#HTML" expanded="true" />
-                <element signature="e#5800#5847#0#HTML" expanded="true" />
-                <element signature="e#5942#5989#0#HTML" expanded="true" />
+                <element signature="e#5036#5213#0#PHP" expanded="true" />
+                <element signature="e#5748#5769#0#HTML" expanded="true" />
+                <element signature="e#5770#5777#1#HTML" expanded="true" />
+                <element signature="e#5929#5976#0#HTML" expanded="true" />
+                <element signature="e#6071#6118#0#HTML" expanded="true" />
+                <element signature="e#12610#12628#0#HTML" expanded="true" />
+                <element signature="n#style#0;n#section#0;n#form#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -55,13 +55,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="188">
               <caret line="210" column="60" selection-start-line="210" selection-start-column="60" selection-end-line="210" selection-end-column="60" />
-              <folding>
-                <element signature="e#5337#5357#0#HTML" expanded="true" />
-                <element signature="e#5615#5636#0#HTML" expanded="true" />
-                <element signature="e#5637#5644#1#HTML" expanded="true" />
-                <element signature="e#5796#5843#0#HTML" expanded="true" />
-                <element signature="e#5938#5985#0#HTML" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -69,15 +62,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="210" column="56" selection-start-line="210" selection-start-column="56" selection-end-line="210" selection-end-column="56" />
-              <folding>
-                <element signature="e#5337#5357#0#HTML" expanded="true" />
-                <element signature="e#5615#5636#0#HTML" expanded="true" />
-                <element signature="e#5637#5644#1#HTML" expanded="true" />
-                <element signature="e#5796#5843#0#HTML" expanded="true" />
-                <element signature="e#5938#5985#0#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="728">
+              <caret line="156" column="62" lean-forward="true" selection-start-line="156" selection-start-column="62" selection-end-line="156" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -86,33 +72,23 @@
         <entry file="file://$PROJECT_DIR$/challengeaudit.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="128">
-              <caret line="212" column="53" lean-forward="true" selection-start-line="212" selection-start-column="53" selection-end-line="212" selection-end-column="53" />
-              <folding>
-                <element signature="e#5337#5357#0#HTML" expanded="true" />
-                <element signature="e#5615#5636#0#HTML" expanded="true" />
-                <element signature="e#5637#5644#1#HTML" expanded="true" />
-                <element signature="e#5796#5843#0#HTML" expanded="true" />
-                <element signature="e#5938#5985#0#HTML" expanded="true" />
-              </folding>
+              <caret line="212" column="53" selection-start-line="212" selection-start-column="53" selection-end-line="212" selection-end-column="53" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Now.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="176" column="32" lean-forward="true" selection-start-line="176" selection-start-column="32" selection-end-line="176" selection-end-column="36" />
+            <state relative-caret-position="331">
+              <caret line="86" column="39" selection-start-line="86" selection-start-column="39" selection-end-line="86" selection-end-column="39" />
               <folding>
-                <element signature="e#5267#5456#0#PHP" expanded="true" />
-                <element signature="e#5344#5379#0#HTML" expanded="true" />
-                <element signature="e#5582#5603#0#HTML" expanded="true" />
-                <element signature="e#5562#5569#1#HTML" expanded="true" />
-                <element signature="e#5760#5807#0#HTML" expanded="true" />
-                <element signature="e#5902#5949#0#HTML" expanded="true" />
-                <element signature="e#8805#8824#0#HTML" expanded="true" />
-                <element signature="e#9014#9067#0#HTML" expanded="true" />
-                <element signature="e#9479#9513#0#PHP" expanded="true" />
+                <element signature="e#5344#5364#0#HTML" expanded="true" />
+                <element signature="e#5518#5598#0#HTML" expanded="true" />
+                <element signature="e#5677#5684#1#HTML" expanded="true" />
+                <element signature="e#5344#5364#0#HTML" expanded="true" />
+                <element signature="e#8944#8963#0#HTML" expanded="true" />
+                <element signature="e#9153#9206#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -121,8 +97,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="391" column="36" selection-start-line="391" selection-start-column="36" selection-end-line="391" selection-end-column="36" />
+            <state relative-caret-position="3241">
+              <caret line="493" column="26" selection-start-line="493" selection-start-column="26" selection-end-line="493" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -224,9 +200,9 @@
         <option value="$PROJECT_DIR$/webinars.php" />
         <option value="$PROJECT_DIR$/blog.php" />
         <option value="$PROJECT_DIR$/challengeaudit.php" />
-        <option value="$PROJECT_DIR$/Now.php" />
-        <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$PROJECT_DIR$/Sequences.php" />
+        <option value="$PROJECT_DIR$/css/styles.css" />
+        <option value="$PROJECT_DIR$/Now.php" />
       </list>
     </option>
   </component>
@@ -239,11 +215,11 @@
       <path value="$PROJECT_DIR$/vendor/phpmailer/phpmailer" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="41" />
-    <option name="y" value="25" />
-    <option name="width" value="1325" />
-    <option name="height" value="743" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1407" />
+    <option name="y" value="-2" />
+    <option name="width" value="1879" />
+    <option name="height" value="1082" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -251,6 +227,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -267,7 +244,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -382,20 +358,21 @@
       <workItem from="1546418703214" duration="5909000" />
       <workItem from="1546435425443" duration="4809000" />
       <workItem from="1546440574642" duration="115000" />
-      <workItem from="1546503116918" duration="15110000" />
+      <workItem from="1546503116918" duration="15209000" />
+      <workItem from="1546520366746" duration="7704000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="296109000" />
+    <option name="totallyTimeSpent" value="303912000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="41" y="25" width="1325" height="743" extended-state="7" />
+    <frame x="1407" y="-2" width="1879" height="1082" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.18608288" />
+      <window_info content_ui="combo" id="Project" order="2" weight="0.18921033" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32903227" />
@@ -407,7 +384,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32899022" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.21301155" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.21172638" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -417,7 +394,7 @@
     <layout-to-restore>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.13038734" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.18921033" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32903227" />
@@ -429,7 +406,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32899022" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.21335505" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.21172638" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -642,30 +619,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/blog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="728">
+          <caret line="156" column="62" lean-forward="true" selection-start-line="156" selection-start-column="62" selection-end-line="156" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/webinars.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="188">
           <caret line="210" column="60" selection-start-line="210" selection-start-column="60" selection-end-line="210" selection-end-column="60" />
-          <folding>
-            <element signature="e#5337#5357#0#HTML" expanded="true" />
-            <element signature="e#5615#5636#0#HTML" expanded="true" />
-            <element signature="e#5637#5644#1#HTML" expanded="true" />
-            <element signature="e#5796#5843#0#HTML" expanded="true" />
-            <element signature="e#5938#5985#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog.php">
+    <entry file="file://$PROJECT_DIR$/Sequences.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="210" column="56" selection-start-line="210" selection-start-column="56" selection-end-line="210" selection-end-column="56" />
+        <state relative-caret-position="-337">
+          <caret line="273" column="9" selection-start-line="273" selection-start-column="9" selection-end-line="273" selection-end-column="9" />
           <folding>
-            <element signature="e#5337#5357#0#HTML" expanded="true" />
-            <element signature="e#5615#5636#0#HTML" expanded="true" />
-            <element signature="e#5637#5644#1#HTML" expanded="true" />
-            <element signature="e#5796#5843#0#HTML" expanded="true" />
-            <element signature="e#5938#5985#0#HTML" expanded="true" />
+            <element signature="e#5036#5213#0#PHP" expanded="true" />
+            <element signature="e#5748#5769#0#HTML" expanded="true" />
+            <element signature="e#5770#5777#1#HTML" expanded="true" />
+            <element signature="e#5929#5976#0#HTML" expanded="true" />
+            <element signature="e#6071#6118#0#HTML" expanded="true" />
+            <element signature="e#12610#12628#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#section#0;n#form#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -673,52 +652,28 @@
     <entry file="file://$PROJECT_DIR$/challengeaudit.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
-          <caret line="212" column="53" lean-forward="true" selection-start-line="212" selection-start-column="53" selection-end-line="212" selection-end-column="53" />
-          <folding>
-            <element signature="e#5337#5357#0#HTML" expanded="true" />
-            <element signature="e#5615#5636#0#HTML" expanded="true" />
-            <element signature="e#5637#5644#1#HTML" expanded="true" />
-            <element signature="e#5796#5843#0#HTML" expanded="true" />
-            <element signature="e#5938#5985#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Now.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="176" column="32" lean-forward="true" selection-start-line="176" selection-start-column="32" selection-end-line="176" selection-end-column="36" />
-          <folding>
-            <element signature="e#5267#5456#0#PHP" expanded="true" />
-            <element signature="e#5344#5379#0#HTML" expanded="true" />
-            <element signature="e#5582#5603#0#HTML" expanded="true" />
-            <element signature="e#5562#5569#1#HTML" expanded="true" />
-            <element signature="e#5760#5807#0#HTML" expanded="true" />
-            <element signature="e#5902#5949#0#HTML" expanded="true" />
-            <element signature="e#8805#8824#0#HTML" expanded="true" />
-            <element signature="e#9014#9067#0#HTML" expanded="true" />
-            <element signature="e#9479#9513#0#PHP" expanded="true" />
-          </folding>
+          <caret line="212" column="53" selection-start-line="212" selection-start-column="53" selection-end-line="212" selection-end-column="53" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="391" column="36" selection-start-line="391" selection-start-column="36" selection-end-line="391" selection-end-column="36" />
+        <state relative-caret-position="3241">
+          <caret line="493" column="26" selection-start-line="493" selection-start-column="26" selection-end-line="493" selection-end-column="26" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sequences.php">
+    <entry file="file://$PROJECT_DIR$/Now.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="5" selection-start-line="15" selection-start-column="54" selection-end-line="16" selection-end-column="5" />
+        <state relative-caret-position="331">
+          <caret line="86" column="39" selection-start-line="86" selection-start-column="39" selection-end-line="86" selection-end-column="39" />
           <folding>
-            <element signature="e#5341#5361#0#HTML" expanded="true" />
-            <element signature="e#5619#5640#0#HTML" expanded="true" />
-            <element signature="e#5641#5648#1#HTML" expanded="true" />
-            <element signature="e#5800#5847#0#HTML" expanded="true" />
-            <element signature="e#5942#5989#0#HTML" expanded="true" />
+            <element signature="e#5344#5364#0#HTML" expanded="true" />
+            <element signature="e#5518#5598#0#HTML" expanded="true" />
+            <element signature="e#5677#5684#1#HTML" expanded="true" />
+            <element signature="e#5344#5364#0#HTML" expanded="true" />
+            <element signature="e#8944#8963#0#HTML" expanded="true" />
+            <element signature="e#9153#9206#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
