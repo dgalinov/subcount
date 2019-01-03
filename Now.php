@@ -184,9 +184,9 @@
             </div>
             <div class="modal-body">
                 <input type="text" id="fname" name="emailSS" placeholder="Input email"
-                       style="padding-left: 10px; padding-right: 10px">
+                       style="padding-left: 10px; padding-right: 10px; margin-bottom: 15px;margin-right: 15px;margin-top: 15px">
                 <input type="text" id="fname" name="passwordSS" placeholder="Input password"
-                       style="padding-left: 10px; padding-right: 10px">
+                       style="padding-left: 10px; padding-right: 10px;margin-right: 15px;margin-bottom: 15px;">
                 <input type="submit" class="buttonSaveSequence" name="action" value="New Email">
             </div>
             <div class="modal-footer">
@@ -291,10 +291,7 @@ if ($_POST) {
     if ($_POST['action'] == 'Send') {
         if (!empty($_POST['subject'])) {
             if (!empty($_POST['content'])) {
-                $content = $_POST['content'];
-                $subject = $_POST['subject'];
                 require("db_connection.php");
-                $query = mysqli_query($con, "INSERT INTO newslettermail(content, subject) VALUES ('$content', '$subject')");
                 require './vendor/autoload.php';
                 $mail = new PHPMailer();
                 require("db_connection.php");
