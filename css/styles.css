@@ -511,3 +511,6 @@ p {
     word-wrap: break-word;
     width: 1em;
 }
+.form-control {
+    z-index: 0 !important;
+}

@@ -13,7 +13,7 @@ $mail = new PHPMailer();
 require("db_connection.php");
 $queryN = "SELECT * FROM webinarsmail";
 $queryC = "SELECT * FROM crontab WHERE name = 'Webinars'";
-$queryI = "SELECT * FROM information WHERE webinarsSub == 1";
+$queryI = "SELECT * FROM information WHERE webinarsSub = 1";
 
 
 if (!$resultNewsletter = mysqli_query($con, $queryN)) {
@@ -48,6 +48,7 @@ if (!$resultNewsletter = mysqli_query($con, $queryN)) {
                                         if (mysqli_num_rows($resultNewsletter) > 0) {
                                             while ($rowNewsletter = mysqli_fetch_assoc($resultNewsletter)) {
                                                 if ($rowInfo['webinarsCounter'] == $rowNewsletter['id']) {
+                                                    $emailsInfoArray = $rowInfo['email'];
                                                     for ($k = 0; $k < sizeof($emailsArray); $k++) {
                                                         try {
                                                             $mail->SMTPDebug = 0;
@@ -69,6 +70,10 @@ if (!$resultNewsletter = mysqli_query($con, $queryN)) {
                                                             $mail->Body = $body;
                                                             $mail->AltBody = strip_tags($body);
 
+                                                            // Cuando se envia un email se suma +1 al contador
+
+                                                            $queryCounter = "UPDATE information SET webinarsCounter = ".$rowInfo['webinarsCounter']."+1 WHERE ".$rowInfo['webinarsCounter']." = ".$rowNewsletter['id']." ";
+
                                                             if ($mail->send()) {
                                                             } else {
                                                                 echo $mail->ErrorInfo;
@@ -78,7 +83,12 @@ if (!$resultNewsletter = mysqli_query($con, $queryN)) {
                                                             echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
                                                         }
                                                     }
+                                                    $queryZ = "INSERT INTO WebinarsRecords (timeInserted, subject, content, sendFrom, sendTo) VALUES (NOW(), '" . $rowNewsletter['subject'] . "','" . $rowNewsletter['content'] . "', '" . $rowCronExplode['emails'] . "','" . $emailsInfoArray . "')";
+                                                    $queryCounter = mysqli_query($con, $queryCounter);
+                                                } else {
+                                                    echo "There is no content to send";
                                                 }
+                                                $queryZ = mysqli_query($con, $queryZ);
                                             }
                                         }
                                     }
