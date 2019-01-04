@@ -33,16 +33,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sequences.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="333" column="67" lean-forward="true" selection-start-line="333" selection-start-column="50" selection-end-line="333" selection-end-column="67" />
+            <state relative-caret-position="106">
+              <caret line="328" column="35" selection-start-line="328" selection-start-column="35" selection-end-line="328" selection-end-column="35" />
               <folding>
                 <element signature="e#4905#5082#0#PHP" expanded="true" />
                 <element signature="e#8566#8587#0#HTML" expanded="true" />
                 <element signature="e#8831#8935#0#HTML" expanded="true" />
                 <element signature="e#9065#9211#0#HTML" expanded="true" />
+                <element signature="e#16117#16135#0#HTML" expanded="true" />
+                <element signature="e#17472#17566#0#HTML" expanded="true" />
+                <element signature="n#style#0;n#textarea#0;n#label#0;n#div#0;n#section#0;n#form#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -51,11 +54,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/challengeaudit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="356" column="14" selection-start-line="356" selection-start-column="14" selection-end-line="356" selection-end-column="14" />
+            <state relative-caret-position="518">
+              <caret line="390" column="162" selection-start-line="390" selection-start-column="162" selection-end-line="390" selection-end-column="162" />
               <folding>
                 <element signature="e#8706#8810#0#HTML" expanded="true" />
                 <element signature="e#8940#9086#0#HTML" expanded="true" />
+                <element signature="e#17737#17829#0#HTML" expanded="true" />
+                <element signature="n#style#0;n#textarea#0;n#label#0;n#div#0;n#section#0;n#form#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,37 +69,28 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webinars.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="340" column="55" selection-start-line="340" selection-start-column="55" selection-end-line="340" selection-end-column="55" />
+            <state relative-caret-position="3">
+              <caret line="353" column="17" lean-forward="true" selection-start-line="353" selection-start-column="17" selection-end-line="353" selection-end-column="17" />
               <folding>
                 <element signature="e#8700#8804#0#HTML" expanded="true" />
                 <element signature="e#8934#9080#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/blog.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="340" column="55" selection-start-line="340" selection-start-column="55" selection-end-line="340" selection-end-column="55" />
-              <folding>
-                <element signature="e#8696#8800#0#HTML" expanded="true" />
-                <element signature="e#8930#9076#0#HTML" expanded="true" />
+                <element signature="e#17687#17779#0#HTML" expanded="true" />
+                <element signature="n#style#0;n#textarea#0;n#label#0;n#div#0;n#section#0;n#form#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Now.php">
+        <entry file="file://$PROJECT_DIR$/blog.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="184" column="36" lean-forward="true" selection-start-line="184" selection-start-column="36" selection-end-line="184" selection-end-column="36" />
+            <state relative-caret-position="626">
+              <caret line="389" column="161" selection-start-line="389" selection-start-column="161" selection-end-line="389" selection-end-column="161" />
               <folding>
-                <element signature="e#8885#8989#0#HTML" expanded="true" />
-                <element signature="e#9119#9265#0#HTML" expanded="true" />
+                <element signature="e#8696#8800#0#HTML" expanded="true" />
+                <element signature="e#8930#9076#0#HTML" expanded="true" />
+                <element signature="e#17654#17746#0#HTML" expanded="true" />
+                <element signature="n#style#0;n#textarea#0;n#label#0;n#div#0;n#section#0;n#form#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -195,11 +191,11 @@
         <option value="$PROJECT_DIR$/SendMailsChallengeAudit.php" />
         <option value="$PROJECT_DIR$/SendMailsWebinars.php" />
         <option value="$PROJECT_DIR$/SendMailsBlog.php" />
-        <option value="$PROJECT_DIR$/Now.php" />
-        <option value="$PROJECT_DIR$/Sequences.php" />
         <option value="$PROJECT_DIR$/challengeaudit.php" />
         <option value="$PROJECT_DIR$/webinars.php" />
         <option value="$PROJECT_DIR$/blog.php" />
+        <option value="$PROJECT_DIR$/Now.php" />
+        <option value="$PROJECT_DIR$/Sequences.php" />
       </list>
     </option>
   </component>
@@ -213,10 +209,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1886" />
-    <option name="y" value="275" />
-    <option name="width" value="1315" />
-    <option name="height" value="555" />
+    <option name="x" value="41" />
+    <option name="y" value="25" />
+    <option name="width" value="1325" />
+    <option name="height" value="743" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -352,20 +348,20 @@
       <workItem from="1546440574642" duration="115000" />
       <workItem from="1546503116918" duration="15209000" />
       <workItem from="1546520366746" duration="10059000" />
-      <workItem from="1546587934650" duration="12297000" />
+      <workItem from="1546587934650" duration="14411000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="318564000" />
+    <option name="totallyTimeSpent" value="320678000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1407" y="-2" width="1879" height="1082" extended-state="6" />
+    <frame x="41" y="25" width="1325" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.132024" />
+      <window_info content_ui="combo" id="Project" order="2" weight="0.18921033" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32903227" />
@@ -631,59 +627,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Now.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="184" column="36" lean-forward="true" selection-start-line="184" selection-start-column="36" selection-end-line="184" selection-end-column="36" />
-          <folding>
-            <element signature="e#8885#8989#0#HTML" expanded="true" />
-            <element signature="e#9119#9265#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sequences.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="333" column="67" lean-forward="true" selection-start-line="333" selection-start-column="50" selection-end-line="333" selection-end-column="67" />
-          <folding>
-            <element signature="e#4905#5082#0#PHP" expanded="true" />
-            <element signature="e#8566#8587#0#HTML" expanded="true" />
-            <element signature="e#8831#8935#0#HTML" expanded="true" />
-            <element signature="e#9065#9211#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/challengeaudit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="356" column="14" selection-start-line="356" selection-start-column="14" selection-end-line="356" selection-end-column="14" />
+        <state relative-caret-position="518">
+          <caret line="390" column="162" selection-start-line="390" selection-start-column="162" selection-end-line="390" selection-end-column="162" />
           <folding>
             <element signature="e#8706#8810#0#HTML" expanded="true" />
             <element signature="e#8940#9086#0#HTML" expanded="true" />
+            <element signature="e#17737#17829#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#label#0;n#div#0;n#section#0;n#form#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webinars.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="340" column="55" selection-start-line="340" selection-start-column="55" selection-end-line="340" selection-end-column="55" />
+        <state relative-caret-position="3">
+          <caret line="353" column="17" lean-forward="true" selection-start-line="353" selection-start-column="17" selection-end-line="353" selection-end-column="17" />
           <folding>
             <element signature="e#8700#8804#0#HTML" expanded="true" />
             <element signature="e#8934#9080#0#HTML" expanded="true" />
+            <element signature="e#17687#17779#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#label#0;n#div#0;n#section#0;n#form#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blog.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="340" column="55" selection-start-line="340" selection-start-column="55" selection-end-line="340" selection-end-column="55" />
+        <state relative-caret-position="626">
+          <caret line="389" column="161" selection-start-line="389" selection-start-column="161" selection-end-line="389" selection-end-column="161" />
           <folding>
             <element signature="e#8696#8800#0#HTML" expanded="true" />
             <element signature="e#8930#9076#0#HTML" expanded="true" />
+            <element signature="e#17654#17746#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#label#0;n#div#0;n#section#0;n#form#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Now.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="277" column="20" lean-forward="true" selection-start-line="277" selection-start-column="20" selection-end-line="277" selection-end-column="20" />
+          <folding>
+            <element signature="e#8885#8989#0#HTML" expanded="true" />
+            <element signature="e#9119#9265#0#HTML" expanded="true" />
+            <element signature="e#12389#12481#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sequences.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="328" column="35" selection-start-line="328" selection-start-column="35" selection-end-line="328" selection-end-column="35" />
+          <folding>
+            <element signature="e#4905#5082#0#PHP" expanded="true" />
+            <element signature="e#8566#8587#0#HTML" expanded="true" />
+            <element signature="e#8831#8935#0#HTML" expanded="true" />
+            <element signature="e#9065#9211#0#HTML" expanded="true" />
+            <element signature="e#16117#16135#0#HTML" expanded="true" />
+            <element signature="e#17472#17566#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#label#0;n#div#0;n#section#0;n#form#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

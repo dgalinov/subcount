@@ -87,7 +87,7 @@
 
 
     <!-- The Modal -->
-    <div id="myModal2" class="modal2" >
+    <div id="myModal2" class="modal2">
 
         <!-- Modal content -->
         <div class="modal2-content" style="margin-left: 1%;margin-right: 1%;width: 98% !important;margin-top: 20px;">
@@ -350,7 +350,7 @@
             <p>Email Subject</p>
             <label class='labelEmail'>
                 <textarea class='labelEmail' name="subject"
-                          style="border: 1px solid #bebcbb;border-radius: 4px;"></textarea>
+                          style="border: 1px solid #bebcbb;border-radius: 4px;padding-left: 1.5em;padding-top: 2.2em;"></textarea>
             </label>
             <p>Email Content</p>
             <label class='labelEmail'>
@@ -376,7 +376,7 @@
                                 <div id='" . $idComparar . "'>
                                     <p>Email Subject</p>
                                     <label class='labelEmail'>
-                                        <textarea class='labelEmail' name='subject_" . $row['id'] . "'>" . $row['subject'] . "</textarea>
+                                        <textarea class='labelEmail' style='border: 1px solid #bebcbb;border-radius: 4px;padding-left: 1.5em;padding-top: 2.2em;' name='subject_" . $row['id'] . "'>" . $row['subject'] . "</textarea>
                                     </label>
                                     <p>Email Content</p>
                                     <label class='labelEmail'>

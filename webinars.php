@@ -362,7 +362,7 @@
             <p>Email Subject</p>
             <label class='labelEmail'>
                 <textarea class='labelEmail' name="subject"
-                          style="border: 1px solid #bebcbb;border-radius: 4px;"></textarea>
+                          style='border: 1px solid #bebcbb;border-radius: 4px;padding-left: 1.5em;padding-top: 2.2em;'></textarea>
             </label>
             <p>Email Content</p>
             <label class='labelEmail'>
@@ -388,7 +388,7 @@
                                 <div id='" . $idComparar . "'>
                                     <p>Email Subject</p>
                                     <label class='labelEmail'>
-                                        <textarea class='labelEmail' name='subject_" . $row['id'] . "'>" . $row['subject'] . "</textarea>
+                                        <textarea class='labelEmail' style='border: 1px solid #bebcbb;border-radius: 4px;padding-left: 1.5em;padding-top: 2.2em;' name='subject_" . $row['id'] . "'>" . $row['subject'] . "</textarea>
                                     </label>
                                     <p>Email Content</p>
                                     <label class='labelEmail'>
