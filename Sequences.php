@@ -84,15 +84,11 @@
     <a href="blog.php">Blog</a>
     <a href="Now.php">Now</a>
     <a id="myBtn" style="float: right">New Email</a>
-    <!-- The Modal -->
     <div id="myModal" class="modal">
-
-        <!-- Modal content -->
         <div class="modal-content">
             <div class="modal-header">
                 <h2>Email Register</h2>
                 <span class="close" style="color: white;">&times;</span>
-
             </div>
             <div class="modal-body">
                 <input type="text" id="fname" name="emailSS" placeholder="Input email"
@@ -105,29 +101,17 @@
                 <h3></h3>
             </div>
         </div>
-
     </div>
     <script>
-        // Get the modal
         var modal = document.getElementById('myModal');
-
-        // Get the button that opens the modal
         var btn = document.getElementById("myBtn");
-
-        // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
-
-        // When the user clicks the button, open the modal
         btn.onclick = function () {
             modal.style.display = "block";
         }
-
-        // When the user clicks on <span> (x), close the modal
         span.onclick = function () {
             modal.style.display = "none";
         }
-
-        // When the user clicks anywhere outside of the modal, close it
         window.onclick = function (event) {
             if (event.target == modal) {
                 modal.style.display = "none";
@@ -144,45 +128,49 @@
                         <?php
                         require("db_connection.php");
                         $query = "SELECT days FROM crontab WHERE name = 'Newsletter'";
-                        $result = mysqli_query($con, $query);
-                        $row = mysqli_fetch_assoc($result);
-                        $row = implode(",", $row);
-                        $row = explode(",", $row);
-                        $arrayDias = array($row);
-                        if (in_array("Monday", $arrayDias)) {
-                            echo "<option selected value='Monday'>Monday</option>";
+                        if (!$result = mysqli_query($con, $query)) {
+                            exit(mysqli_error($con));
                         } else {
-                            echo "<option value='Monday'>Monday</option>";
-                        }
-                        if (in_array("Tuesday", $arrayDias)) {
-                            echo "<option selected value='Tuesday'>Tuesday</option>";
-                        } else {
-                            echo "<option value='Tuesday'>Tuesday</option>";
-                        }
-                        if (in_array("Wednesday", $arrayDias)) {
-                            echo "<option selected value='Wednesday'>Wednesday</option>";
-                        } else {
-                            echo "<option value='Wednesday'>Wednesday</option>";
-                        }
-                        if (in_array("Thursday", $arrayDias)) {
-                            echo "<option selected value='Thursday'>Thursday</option>";
-                        } else {
-                            echo "<option value='Thursday'>Thursday</option>";
-                        }
-                        if (in_array("Friday", $arrayDias)) {
-                            echo "<option selected value='Friday'>Friday</option>";
-                        } else {
-                            echo "<option value='Friday'>Friday</option>";
-                        }
-                        if (in_array("Saturday", $arrayDias)) {
-                            echo "<option selected value='Saturday'>Saturday</option>";
-                        } else {
-                            echo "<option value='Saturday'>Saturday</option>";
-                        }
-                        if (in_array("Sunday", $arrayDias)) {
-                            echo "<option selected value='Sunday'>Sunday</option>";
-                        } else {
-                            echo "<option value='Sunday'>Sunday</option>";
+                            if (mysqli_num_rows($result) > 0) {
+                                while ($row = mysqli_fetch_assoc($result)) {
+                                    $arrayDias = explode(",", $row['days']);
+                                    if (in_array("Monday", $arrayDias)) {
+                                        echo "<option selected='selected' value='Monday'>Monday</option>";
+                                    } else {
+                                        echo "<option value='Monday'>Monday</option>";
+                                    }
+                                    if (in_array("Tuesday", $arrayDias)) {
+                                        echo "<option selected='selected' value='Tuesday'>Tuesday</option>";
+                                    } else {
+                                        echo "<option value='Tuesday'>Tuesday</option>";
+                                    }
+                                    if (in_array("Wednesday", $arrayDias)) {
+                                        echo "<option selected='selected' value='Wednesday'>Wednesday</option>";
+                                    } else {
+                                        echo "<option value='Wednesday'>Wednesday</option>";
+                                    }
+                                    if (in_array("Thursday", $arrayDias)) {
+                                        echo "<option selected='selected' value='Thursday'>Thursday</option>";
+                                    } else {
+                                        echo "<option value='Thursday'>Thursday</option>";
+                                    }
+                                    if (in_array("Friday", $arrayDias)) {
+                                        echo "<option selected='selected' value='Friday'>Friday</option>";
+                                    } else {
+                                        echo "<option value='Friday'>Friday</option>";
+                                    }
+                                    if (in_array("Saturday", $arrayDias)) {
+                                        echo "<option selected='selected' value='Saturday'>Saturday</option>";
+                                    } else {
+                                        echo "<option value='Saturday'>Saturday</option>";
+                                    }
+                                    if (in_array("Sunday", $arrayDias)) {
+                                        echo "<option selected='selected' value='Sunday'>Sunday</option>";
+                                    } else {
+                                        echo "<option value='Sunday'>Sunday</option>";
+                                    }
+                                }
+                            }
                         }
                         ?>
                     </select>
@@ -191,10 +179,23 @@
             <div class="col-">
                 <div class="form-group">
                     <div class='input-group date' id='datetimepicker3'>
-                        <input type='text' id="timename" name="tpick" class="form-control"/>
+                        <input type='text' id="timename" name="tpick" class="form-control" value="
+                        <?php
+                        require("db_connection.php");
+                        $query = "SELECT timePicker FROM crontab WHERE name = 'Newsletter'";
+                        if (!$result = mysqli_query($con, $query)) {
+                            exit(mysqli_error($con));
+                        } else {
+                            if (mysqli_num_rows($result) > 0) {
+                                while ($row = mysqli_fetch_assoc($result)) {
+                                    echo $row['timePicker'];
+                                }
+                            }
+                        }
+                        ?>"/>
                         <span class="input-group-addon">
-                                    <span class="glyphicon glyphicon-time"></span>
-                                </span>
+                            <span class="glyphicon glyphicon-time"></span>
+                        </span>
                     </div>
                 </div>
                 <script type="text/javascript">
@@ -208,24 +209,23 @@
             <div class="col-">
                 <label for="mails">
                     <select id="mails" name="mails[]" class="selectpicker" multiple data-live-search="true">
-                        <option selected="selected">newsletter@telanto.com</option>
                         <?php
                         require("db_connection.php");
-
                         $query = "SELECT * FROM emails ORDER BY id DESC";
-                        $query2 = "SELECT emails FROM crontab WHERE name = 'Newsletter'";
                         if (!$result = mysqli_query($con, $query)) {
                             exit(mysqli_error($con));
-                        }
-                        $result2 = mysqli_query($con, $query2);
-                        $row2 = mysqli_fetch_assoc($result2);
-                        $row2 = implode(",", $row2);
-                        $arrayEmails = array(explode(",", $row2));
-                        if (mysqli_num_rows($result) > 0) {
-                            while ($row = mysqli_fetch_assoc($result)) {
-                                echo "<option>" . $row['email'] . "</option>";
+                        } else {
+                            if (mysqli_num_rows($result) > 0) {
+                                while ($row = mysqli_fetch_assoc($result)) {
+                                    if ($row['email'] == "newsletter@telanto.com") {
+                                        echo "<option selected='selected'>" . $row['email'] . "</option>";
+                                    } else {
+                                        echo "<option>" . $row['email'] . "</option>";
+                                    }
+                                }
                             }
                         }
+
                         ?>
                     </select>
                 </label>
@@ -398,8 +398,5 @@ if ($_POST) {
         var_dump($con);
         echo "No funciona";
     }
+    //header('Location: ' . $_SERVER['PHP_SELF']);
 }
-/*if ($_POST) {
-    header('Location: ' . $_SERVER['PHP_SELF']);
-}*/
-?>

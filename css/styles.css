@@ -2,7 +2,7 @@ html, body, #myChart {
     height: 100%;
     width: 100%;
     font-family: 'Nunito', sans-serif !important;
-    /*overflow: hidden;*/
+    overflow: auto;
 }
 .tablaCSV {
     border: 2px solid white;
@@ -135,6 +135,7 @@ html, body, #myChart {
 .labelEmail {
     width: 100%;
     resize: none;
+    font-weight: normal !important;
 }
 .buttonStartSave {
     color: #5677fc;
@@ -505,4 +506,8 @@ p {
 }
 .bootstrap-select > .dropdown-toggle {
     z-index: 0 !important;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
+    word-wrap: break-word;
+    width: 1em;
 }
