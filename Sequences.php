@@ -322,8 +322,6 @@
             </div>
         </div>
 </div>
-</form>
-</div>
 <section class="indent-1">
     <section style="width: 10%">
         <div class="vertical-menu">
