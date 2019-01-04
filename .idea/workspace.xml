@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ba90ca5-96cf-451d-89fe-c2adbe3b3f67" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/SendMailsBlog.php" beforeDir="false" afterPath="$PROJECT_DIR$/SendMailsBlog.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SendMailsChallengeAudit.php" beforeDir="false" afterPath="$PROJECT_DIR$/SendMailsChallengeAudit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SendMailsNewsletter.php" beforeDir="false" afterPath="$PROJECT_DIR$/SendMailsNewsletter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SendMailsWebinars.php" beforeDir="false" afterPath="$PROJECT_DIR$/SendMailsWebinars.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Now.php" beforeDir="false" afterPath="$PROJECT_DIR$/Now.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sequences.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sequences.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/challengeaudit.php" beforeDir="false" afterPath="$PROJECT_DIR$/challengeaudit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webinars.php" beforeDir="false" afterPath="$PROJECT_DIR$/webinars.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,13 +36,52 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Sequences.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="84" column="29" lean-forward="true" selection-start-line="84" selection-start-column="29" selection-end-line="84" selection-end-column="29" />
+            <state relative-caret-position="271">
+              <caret line="333" column="67" lean-forward="true" selection-start-line="333" selection-start-column="50" selection-end-line="333" selection-end-column="67" />
               <folding>
                 <element signature="e#4905#5082#0#PHP" expanded="true" />
-                <element signature="e#5617#5638#0#HTML" expanded="true" />
-                <element signature="e#7031#7067#0#HTML" expanded="true" />
-                <element signature="e#12253#12271#0#HTML" expanded="true" />
+                <element signature="e#8566#8587#0#HTML" expanded="true" />
+                <element signature="e#8831#8935#0#HTML" expanded="true" />
+                <element signature="e#9065#9211#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/challengeaudit.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="413">
+              <caret line="356" column="14" selection-start-line="356" selection-start-column="14" selection-end-line="356" selection-end-column="14" />
+              <folding>
+                <element signature="e#8706#8810#0#HTML" expanded="true" />
+                <element signature="e#8940#9086#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webinars.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="123">
+              <caret line="340" column="55" selection-start-line="340" selection-start-column="55" selection-end-line="340" selection-end-column="55" />
+              <folding>
+                <element signature="e#8700#8804#0#HTML" expanded="true" />
+                <element signature="e#8934#9080#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/blog.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="251">
+              <caret line="340" column="55" selection-start-line="340" selection-start-column="55" selection-end-line="340" selection-end-column="55" />
+              <folding>
+                <element signature="e#8696#8800#0#HTML" expanded="true" />
+                <element signature="e#8930#9076#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -55,19 +90,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Now.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-60">
-              <caret line="309" column="36" lean-forward="true" selection-start-line="309" selection-start-column="36" selection-end-line="310" selection-end-column="73" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SendMailsBlog.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="79" column="61" lean-forward="true" selection-start-line="79" selection-start-column="61" selection-end-line="79" selection-end-column="61" />
+            <state relative-caret-position="360">
+              <caret line="184" column="36" lean-forward="true" selection-start-line="184" selection-start-column="36" selection-end-line="184" selection-end-column="36" />
               <folding>
-                <element signature="e#200#234#0#PHP" expanded="true" />
+                <element signature="e#8885#8989#0#HTML" expanded="true" />
+                <element signature="e#9119#9265#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -163,16 +190,16 @@
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/css/D02F/styles.css" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/Now.php" />
         <option value="$PROJECT_DIR$/css/styles.css" />
-        <option value="$PROJECT_DIR$/Sequences.php" />
-        <option value="$PROJECT_DIR$/challengeaudit.php" />
-        <option value="$PROJECT_DIR$/webinars.php" />
-        <option value="$PROJECT_DIR$/blog.php" />
         <option value="$PROJECT_DIR$/SendMailsNewsletter.php" />
         <option value="$PROJECT_DIR$/SendMailsChallengeAudit.php" />
         <option value="$PROJECT_DIR$/SendMailsWebinars.php" />
         <option value="$PROJECT_DIR$/SendMailsBlog.php" />
+        <option value="$PROJECT_DIR$/Now.php" />
+        <option value="$PROJECT_DIR$/Sequences.php" />
+        <option value="$PROJECT_DIR$/challengeaudit.php" />
+        <option value="$PROJECT_DIR$/webinars.php" />
+        <option value="$PROJECT_DIR$/blog.php" />
       </list>
     </option>
   </component>
@@ -325,12 +352,12 @@
       <workItem from="1546440574642" duration="115000" />
       <workItem from="1546503116918" duration="15209000" />
       <workItem from="1546520366746" duration="10059000" />
-      <workItem from="1546587934650" duration="9336000" />
+      <workItem from="1546587934650" duration="12297000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="315603000" />
+    <option name="totallyTimeSpent" value="318564000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1407" y="-2" width="1879" height="1082" extended-state="6" />
@@ -564,40 +591,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/challengeaudit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="107" column="62" selection-start-line="107" selection-start-column="62" selection-end-line="107" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="107" column="52" selection-start-line="107" selection-start-column="52" selection-end-line="107" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/webinars.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="107" column="56" selection-start-line="107" selection-start-column="56" selection-end-line="107" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sequences.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="84" column="29" lean-forward="true" selection-start-line="84" selection-start-column="29" selection-end-line="84" selection-end-column="29" />
-          <folding>
-            <element signature="e#4905#5082#0#PHP" expanded="true" />
-            <element signature="e#5617#5638#0#HTML" expanded="true" />
-            <element signature="e#7031#7067#0#HTML" expanded="true" />
-            <element signature="e#12253#12271#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SendMailsNewsletter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="647">
@@ -628,19 +621,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Now.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="309" column="36" lean-forward="true" selection-start-line="309" selection-start-column="36" selection-end-line="310" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SendMailsBlog.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="555">
           <caret line="79" column="61" lean-forward="true" selection-start-line="79" selection-start-column="61" selection-end-line="79" selection-end-column="61" />
           <folding>
             <element signature="e#200#234#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Now.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="184" column="36" lean-forward="true" selection-start-line="184" selection-start-column="36" selection-end-line="184" selection-end-column="36" />
+          <folding>
+            <element signature="e#8885#8989#0#HTML" expanded="true" />
+            <element signature="e#9119#9265#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sequences.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="333" column="67" lean-forward="true" selection-start-line="333" selection-start-column="50" selection-end-line="333" selection-end-column="67" />
+          <folding>
+            <element signature="e#4905#5082#0#PHP" expanded="true" />
+            <element signature="e#8566#8587#0#HTML" expanded="true" />
+            <element signature="e#8831#8935#0#HTML" expanded="true" />
+            <element signature="e#9065#9211#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/challengeaudit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="356" column="14" selection-start-line="356" selection-start-column="14" selection-end-line="356" selection-end-column="14" />
+          <folding>
+            <element signature="e#8706#8810#0#HTML" expanded="true" />
+            <element signature="e#8940#9086#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webinars.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="340" column="55" selection-start-line="340" selection-start-column="55" selection-end-line="340" selection-end-column="55" />
+          <folding>
+            <element signature="e#8700#8804#0#HTML" expanded="true" />
+            <element signature="e#8934#9080#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="340" column="55" selection-start-line="340" selection-start-column="55" selection-end-line="340" selection-end-column="55" />
+          <folding>
+            <element signature="e#8696#8800#0#HTML" expanded="true" />
+            <element signature="e#8930#9076#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

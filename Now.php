@@ -88,7 +88,7 @@
 
 
     <!-- The Modal -->
-    <div id="myModal2" class="modal2" >
+    <div id="myModal2" class="modal2">
 
         <!-- Modal content -->
         <div class="modal2-content" style="margin-left: 1%;margin-right: 1%;width: 98% !important;margin-top: 20px;">
@@ -183,11 +183,14 @@
 
             </div>
             <div class="modal-body">
-                <input type="text" id="fname" name="emailSS" placeholder="Input email"
-                       style="padding-left: 10px; padding-right: 10px; margin-bottom: 15px;margin-right: 15px;margin-top: 15px">
-                <input type="text" id="fname" name="passwordSS" placeholder="Input password"
-                       style="padding-left: 10px; padding-right: 10px;margin-right: 15px;margin-bottom: 15px;">
-                <input type="submit" class="buttonSaveSequence" name="action" value="New Email">
+                <form method="post" action="Now.php">
+                    <input type="text" id="fname" name="emailSS" placeholder="Input email"
+                           style="padding-left: 10px; padding-right: 10px; margin-bottom: 15px;margin-right: 15px;margin-top: 15px">
+                    <input type="password" id="fname" name="passwordSS" placeholder="Input password"
+                           style="padding-left: 10px; padding-right: 10px;margin-right: 15px;margin-bottom: 15px; height: 50px;border: 1px solid #bebcbb;border-radius: 4px;">
+                    <input type="submit" class="buttonSaveSequence" name="action" value="New Email">
+                </form>
+
             </div>
             <div class="modal-footer">
                 <h3></h3>
@@ -354,12 +357,26 @@ if ($_POST) {
     if ($_POST['action'] == 'New Email') {
         $emailA = $_POST['emailSS'];
         $passwordA = $_POST['passwordSS'];
-//var_dump($emailA);
         require("db_connection.php");
-        $query = "INSERT INTO `emails`(`email`,`password`) VALUES ('$emailA','$passwordA');";
-        if ($result = mysqli_query($con, $query)) {
-            echo "New email succesfully created";
-//var_dump($query);
+        if (!empty($emailA)) {
+            if (preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/", $emailA)) {
+                if (!empty($passwordA)) {
+                    if ((strlen($_POST["passwordSS"]) >= '8') && (preg_match("#[0-9]+#", $passwordA)) && (preg_match("#[A-Z]+#", $passwordA)) && (preg_match("#[a-z]+#", $passwordA))) {
+                        $query = "INSERT INTO `emails`(`email`,`password`) VALUES ('$emailA','$passwordA');";
+                        if ($result = mysqli_query($con, $query)) {
+                            echo "New email succesfully created";
+                        }
+                    } else {
+                        echo "Password must be valid!";
+                    }
+                } else {
+                    echo "Password can't be null!";
+                }
+            } else {
+                echo "Email is not valid!";
+            }
+        } else {
+            echo "Email can't be null!";
         }
     }
     if ($_POST['action'] == 'Add Filter') {
