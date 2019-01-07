@@ -68,7 +68,7 @@
     <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
     <script src="//cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <?php
@@ -84,13 +84,9 @@
     <a href="blog.php">Blog</a>
     <a href="Now.php">Now</a>
     <a id="myBtn2" style="float: right">Show History</a>
-
-
-    <!-- The Modal -->
     <div id="myModal2" class="modal2">
-
-        <!-- Modal content -->
-        <div class="modal2-content" style="margin-left: 1%;margin-right: 1%;width: 98% !important;margin-top: 20px;">
+        <div class="modal2-content"
+             style="margin-left: 1%;margin-right: 1%;width: 98% !important;margin-top: 20px;">
             <div class="modal2-header">
                 <span class="close2">&times;</span>
                 <h2>History</h2>
@@ -142,26 +138,15 @@
     </div>
 
     <script>
-        // Get the modal
         var modal2 = document.getElementById('myModal2');
-
-        // Get the button that opens the modal
         var btn2 = document.getElementById("myBtn2");
-
-        // Get the <span> element that closes the modal
         var span2 = document.getElementsByClassName("close2")[0];
-
-        // When the user clicks the button, open the modal
         btn2.onclick = function () {
             modal2.style.display = "block";
         }
-
-        // When the user clicks on <span> (x), close the modal
         span2.onclick = function () {
             modal2.style.display = "none";
         }
-
-        // When the user clicks anywhere outside of the modal, close it
         window.onclick = function (event) {
             if (event.target == modal2) {
                 modal2.style.display = "none";
@@ -206,175 +191,258 @@
         }
     </script>
 </div>
-<div class="container">
-    <form method="post" action="Sequences.php">
-        <div class="row">
-            <div class="col-">
-                <label for="dias"><select id="dias" name="dias[]" class="selectpicker" multiple data-live-search="true"
-                                          style="height: 50px;line-height: 4;">
-                        <?php
-                        require("db_connection.php");
-                        $query = "SELECT days FROM crontab WHERE name = 'Newsletter'";
-                        if (!$result = mysqli_query($con, $query)) {
-                            exit(mysqli_error($con));
-                        } else {
-                            if (mysqli_num_rows($result) > 0) {
-                                while ($row = mysqli_fetch_assoc($result)) {
-                                    $arrayDias = explode(",", $row['days']);
-                                    if (in_array("Monday", $arrayDias)) {
-                                        echo "<option selected='selected' value='Monday'>Monday</option>";
-                                    } else {
-                                        echo "<option value='Monday'>Monday</option>";
-                                    }
-                                    if (in_array("Tuesday", $arrayDias)) {
-                                        echo "<option selected='selected' value='Tuesday'>Tuesday</option>";
-                                    } else {
-                                        echo "<option value='Tuesday'>Tuesday</option>";
-                                    }
-                                    if (in_array("Wednesday", $arrayDias)) {
-                                        echo "<option selected='selected' value='Wednesday'>Wednesday</option>";
-                                    } else {
-                                        echo "<option value='Wednesday'>Wednesday</option>";
-                                    }
-                                    if (in_array("Thursday", $arrayDias)) {
-                                        echo "<option selected='selected' value='Thursday'>Thursday</option>";
-                                    } else {
-                                        echo "<option value='Thursday'>Thursday</option>";
-                                    }
-                                    if (in_array("Friday", $arrayDias)) {
-                                        echo "<option selected='selected' value='Friday'>Friday</option>";
-                                    } else {
-                                        echo "<option value='Friday'>Friday</option>";
-                                    }
-                                    if (in_array("Saturday", $arrayDias)) {
-                                        echo "<option selected='selected' value='Saturday'>Saturday</option>";
-                                    } else {
-                                        echo "<option value='Saturday'>Saturday</option>";
-                                    }
-                                    if (in_array("Sunday", $arrayDias)) {
-                                        echo "<option selected='selected' value='Sunday'>Sunday</option>";
-                                    } else {
-                                        echo "<option value='Sunday'>Sunday</option>";
-                                    }
-                                }
-                            }
-                        }
-                        ?>
-                    </select>
-                </label>
-            </div>
-            <div class="col-">
-                <div class="form-group">
-                    <div class='input-group date' id='datetimepicker3'>
-                        <input type='text' id="timename" name="tpick" class="form-control" value="
-                        <?php
-                        require("db_connection.php");
-                        $query = "SELECT timePicker FROM crontab WHERE name = 'Newsletter'";
-                        if (!$result = mysqli_query($con, $query)) {
-                            exit(mysqli_error($con));
-                        } else {
-                            if (mysqli_num_rows($result) > 0) {
-                                while ($row = mysqli_fetch_assoc($result)) {
-                                    echo $row['timePicker'];
-                                }
-                            }
-                        }
-                        ?>"/>
-                        <span class="input-group-addon">
-                            <span class="glyphicon glyphicon-time"></span>
-                        </span>
-                    </div>
-                </div>
-                <script type="text/javascript">
-                    $(function () {
-                        $('#datetimepicker3').datetimepicker({
-                            format: 'LT'
-                        });
-                    });
-                </script>
-            </div>
-            <div class="col-">
-                <label for="mails">
-                    <select id="mails" name="mails[]" class="selectpicker" multiple data-live-search="true">
-                        <?php
-                        require("db_connection.php");
-                        $query = "SELECT * FROM emails ORDER BY id DESC";
-                        if (!$result = mysqli_query($con, $query)) {
-                            exit(mysqli_error($con));
-                        } else {
-                            if (mysqli_num_rows($result) > 0) {
-                                while ($row = mysqli_fetch_assoc($result)) {
-                                    if ($row['email'] == "newsletter@telanto.com") {
-                                        echo "<option selected='selected'>" . $row['email'] . "</option>";
-                                    } else {
-                                        echo "<option>" . $row['email'] . "</option>";
-                                    }
-                                }
-                            }
-                        }
-
-                        ?>
-                    </select>
-                </label>
-            </div>
-            <div class="col-">
-                <input type="submit" class="buttonSaveSequence" name="action" value="Add Filter">
-            </div>
+<div id="myModal3" class="modal3">
+    <div class="modal3-content" style="margin-bottom: 40em;width: 27em !important;margin-left: 56em;">
+        <div class="modal3-header">
+            <span class="close3">&times;</span>
+            <h2>Create Event</h2>
         </div>
+        <div class="modal3-body">
+            <form method="post" action="Sequences.php">
+                <input type="text" id="fname" name="NameEvent" placeholder="Input Name Event"
+                       style="padding-left: 10px; padding-right: 10px; margin-bottom: 15px;margin-right: 15px;margin-top: 15px">
+                <input type="submit" class="buttonSaveSequence" name="action" value="New">
+            </form>
+        </div>
+        <div class="modal3-footer">
+            <h3></h3>
+        </div>
+    </div>
 </div>
-<section class="indent-1">
-    <section style="width: 10%">
-        <div class="vertical-menu">
-            <a class="active" onclick='newStep()'>+</a>
-            <?php
-            $idComparado = "";
-            require("db_connection.php");
-            $query = "SELECT * FROM newslettermail ORDER BY id DESC";
-            if (!$result = mysqli_query($con, $query)) {
-                exit(mysqli_error($con));
-            }
-            if (mysqli_num_rows($result) > 0) {
-                while ($row = mysqli_fetch_assoc($result)) {
-                    $idComparado = $row['id'];
-                    echo "<a  onclick='onStepClicked($idComparado)'>" . $row['subject'] . "</a>";
-                }
-                echo "<input type='hidden' id='stepsNum' value='" . mysqli_num_rows($result) . "'>";
-            }
-            ?>
-        </div>
-    </section>
-    <form action="Sequences.php" method="post">
-        <section style='width: 90%' class='sectionMails' id='new'>
-            <p>Email Subject</p>
-            <label class='labelEmail'>
-                <textarea class='labelEmail' name="subject"
-                          style="border: 1px solid #bebcbb;border-radius: 4px;padding-left: 1.5em;padding-top: 2.2em;"></textarea>
-            </label>
-            <p>Email Content</p>
-            <label class='labelEmail'>
-                <textarea class="ckeditor" name="content"></textarea>
-            </label>
-            <input type="submit" class="buttonStartSave" name="action" value="Create">
-        </section>
-    </form>
-    <?php
-    $idComparar = "";
-    require("db_connection.php");
-    $query = "SELECT * FROM newslettermail ";
+<div class="sidenav">
+    <a id="myBtn3" style="float: right">New Event</a>
 
-    if (!$result = mysqli_query($con, $query)) {
-        exit(mysqli_error($con));
-    } else {
+
+    <script>
+        var modal3 = document.getElementById('myModal3');
+        var btn3 = document.getElementById("myBtn3");
+        var span3 = document.getElementsByClassName("close3")[0];
+        btn3.onclick = function () {
+            modal3.style.display = "block";
+        }
+        span3.onclick = function () {
+            modal3.style.display = "none";
+        }
+        window.onclick = function (event) {
+            if (event.target == modal3) {
+                modal3.style.display = "none";
+            }
+        }
+    </script>
+    <button class="dropdown-btn">Campaign 1
+        <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <a class="active" onclick='newStep()'>+</a>
+        <?php
+        $idComparado = "";
+        require("db_connection.php");
+        $query = "SELECT * FROM newslettermail ORDER BY id DESC";
+        if (!$result = mysqli_query($con, $query)) {
+            exit(mysqli_error($con));
+        }
         if (mysqli_num_rows($result) > 0) {
             while ($row = mysqli_fetch_assoc($result)) {
-                $idComparar = $row['id'];
-                echo "
+                $idComparado = $row['id'];
+                echo "<a  onclick='onStepClicked($idComparado)'>" . $row['subject'] . "</a>";
+            }
+            echo "<input type='hidden' id='stepsNum' value='" . mysqli_num_rows($result) . "'>";
+        }
+        ?>
+    </div>
+    <button class="dropdown-btn">Campaign 2
+        <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+        <a class="active" onclick="newStep()">+</a>
+    </div>
+</div>
+<script>
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        });
+    }
+</script>
+<div class="main">
+    <div class="container">
+        <form method="post" action="Sequences.php">
+            <div class="row">
+                <div class="col-">
+                    <label for="dias"><select id="dias" name="dias[]" class="selectpicker" multiple
+                                              data-live-search="true"
+                                              style="height: 50px;line-height: 4;">
+                            <?php
+                            require("db_connection.php");
+                            $query = "SELECT days FROM crontab WHERE name = 'Newsletter'";
+                            if (!$result = mysqli_query($con, $query)) {
+                                exit(mysqli_error($con));
+                            } else {
+                                if (mysqli_num_rows($result) > 0) {
+                                    while ($row = mysqli_fetch_assoc($result)) {
+                                        $arrayDias = explode(",", $row['days']);
+                                        if (in_array("Monday", $arrayDias)) {
+                                            echo "<option selected='selected' value='Monday'>Monday</option>";
+                                        } else {
+                                            echo "<option value='Monday'>Monday</option>";
+                                        }
+                                        if (in_array("Tuesday", $arrayDias)) {
+                                            echo "<option selected='selected' value='Tuesday'>Tuesday</option>";
+                                        } else {
+                                            echo "<option value='Tuesday'>Tuesday</option>";
+                                        }
+                                        if (in_array("Wednesday", $arrayDias)) {
+                                            echo "<option selected='selected' value='Wednesday'>Wednesday</option>";
+                                        } else {
+                                            echo "<option value='Wednesday'>Wednesday</option>";
+                                        }
+                                        if (in_array("Thursday", $arrayDias)) {
+                                            echo "<option selected='selected' value='Thursday'>Thursday</option>";
+                                        } else {
+                                            echo "<option value='Thursday'>Thursday</option>";
+                                        }
+                                        if (in_array("Friday", $arrayDias)) {
+                                            echo "<option selected='selected' value='Friday'>Friday</option>";
+                                        } else {
+                                            echo "<option value='Friday'>Friday</option>";
+                                        }
+                                        if (in_array("Saturday", $arrayDias)) {
+                                            echo "<option selected='selected' value='Saturday'>Saturday</option>";
+                                        } else {
+                                            echo "<option value='Saturday'>Saturday</option>";
+                                        }
+                                        if (in_array("Sunday", $arrayDias)) {
+                                            echo "<option selected='selected' value='Sunday'>Sunday</option>";
+                                        } else {
+                                            echo "<option value='Sunday'>Sunday</option>";
+                                        }
+                                    }
+                                }
+                            }
+                            ?>
+                        </select>
+                    </label>
+                </div>
+                <div class="col-">
+                    <div class="form-group">
+                        <div class='input-group date' id='datetimepicker3'>
+                            <input type='text' id="timename" name="tpick" class="form-control" value="
+                        <?php
+                            require("db_connection.php");
+                            $query = "SELECT timePicker FROM crontab WHERE name = 'Newsletter'";
+                            if (!$result = mysqli_query($con, $query)) {
+                                exit(mysqli_error($con));
+                            } else {
+                                if (mysqli_num_rows($result) > 0) {
+                                    while ($row = mysqli_fetch_assoc($result)) {
+                                        echo $row['timePicker'];
+                                    }
+                                }
+                            }
+                            ?>"/>
+                            <span class="input-group-addon">
+                            <span class="glyphicon glyphicon-time"></span>
+                        </span>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                        $(function () {
+                            $('#datetimepicker3').datetimepicker({
+                                format: 'LT'
+                            });
+                        });
+                    </script>
+                </div>
+                <div class="col-">
+                    <label for="mails">
+                        <select id="mails" name="mails[]" class="selectpicker" multiple data-live-search="true">
+                            <?php
+                            require("db_connection.php");
+                            $query = "SELECT * FROM emails ORDER BY id DESC";
+                            if (!$result = mysqli_query($con, $query)) {
+                                exit(mysqli_error($con));
+                            } else {
+                                if (mysqli_num_rows($result) > 0) {
+                                    while ($row = mysqli_fetch_assoc($result)) {
+                                        if ($row['email'] == "newsletter@telanto.com") {
+                                            echo "<option selected='selected'>" . $row['email'] . "</option>";
+                                        } else {
+                                            echo "<option>" . $row['email'] . "</option>";
+                                        }
+                                    }
+                                }
+                            }
+
+                            ?>
+                        </select>
+                    </label>
+                </div>
+                <div class="col-">
+                    <input type="submit" class="buttonSaveSequence" name="action" value="Add Filter">
+                </div>
+            </div>
+    </div>
+    <section class="indent-1">
+        <!--<section style="width: 10%">
+            <div class="vertical-menu">
+                <a class="active" onclick='newStep()'>+</a>
+                <?php
+        /*$idComparado = "";
+        require("db_connection.php");
+        $query = "SELECT * FROM newslettermail ORDER BY id DESC";
+        if (!$result = mysqli_query($con, $query)) {
+            exit(mysqli_error($con));
+        }
+        if (mysqli_num_rows($result) > 0) {
+            while ($row = mysqli_fetch_assoc($result)) {
+                $idComparado = $row['id'];
+                echo "<a  onclick='onStepClicked($idComparado)'>" . $row['subject'] . "</a>";
+            }
+            echo "<input type='hidden' id='stepsNum' value='" . mysqli_num_rows($result) . "'>";
+        }*/
+        ?>
+            </div>
+        </section>-->
+        <form action="Sequences.php" method="post">
+            <section style='width: 90%' class='sectionMails' id='new'>
+                <p>Email Subject</p>
+                <label class='labelEmail'>
+                <textarea class='labelEmail' name="subject"
+                          style="border: 1px solid #bebcbb;border-radius: 4px;font-size: 0.72em;height: 2em;"></textarea>
+                </label>
+                <p>Email Content</p>
+                <label class='labelEmail'>
+                    <textarea class="ckeditor" name="content"></textarea>
+                </label>
+                <input type="submit" class="buttonStartSave" name="action" value="Create">
+            </section>
+        </form>
+        <?php
+        $idComparar = "";
+        require("db_connection.php");
+        $query = "SELECT * FROM newslettermail ";
+        if (!$result = mysqli_query($con, $query)) {
+            exit(mysqli_error($con));
+        } else {
+            if (mysqli_num_rows($result) > 0) {
+                while ($row = mysqli_fetch_assoc($result)) {
+                    $idComparar = $row['id'];
+                    echo "
                         <form action='Sequences.php' method='post'>
                         <section style='width: 90%;display:none;' class='sectionMails' id='" . $idComparar . "'>
                                 <div id='" . $idComparar . "'>
                                     <p>Email Subject</p>
                                     <label class='labelEmail'>
-                                        <textarea class='labelEmail' style='border: 1px solid #bebcbb;border-radius: 4px;padding-left: 1.5em;padding-top: 2.2em;' name='subject_" . $row['id'] . "'>" . $row['subject'] . "</textarea>
+                                        <textarea class='labelEmail' style='border: 1px solid #bebcbb;border-radius: 4px;font-size: 0.72em;height: 2em;' name='subject_" . $row['id'] . "'>" . $row['subject'] . "</textarea>
                                     </label>
                                     <p>Email Content</p>
                                     <label class='labelEmail'>
@@ -387,39 +455,40 @@
                         </section>
                         </form>
                          ";
+                }
+                echo "<input type='hidden' value='" . mysqli_num_rows($result) . "' id='actualStep' name='actualStep'>";
             }
-            echo "<input type='hidden' value='" . mysqli_num_rows($result) . "' id='actualStep' name='actualStep'>";
         }
-    }
-    ?>
-    <script>
-        var stepsNum = document.getElementById("stepsNum").value;
-        onStepClicked("new");
+        ?>
+        <script>
+            var stepsNum = document.getElementById("stepsNum").value;
+            onStepClicked("new");
 
-        function onStepClicked(id) {
-            if (id != "new") {
-                document.getElementById("new").style.display = "none";
-            }
-            var i;
-            for (i = 1; i < stepsNum + 1; i++) {
-                if (i != id) {
-                    document.getElementById(i).style.display = "none";
-                } else {
-                    document.getElementById(i).style.display = "block";
-                    document.getElementById("actualStep").value = id;
+            function onStepClicked(id) {
+                if (id != "new") {
+                    document.getElementById("new").style.display = "none";
+                }
+                var i;
+                for (i = 1; i < stepsNum + 1; i++) {
+                    if (i != id) {
+                        document.getElementById(i).style.display = "none";
+                    } else {
+                        document.getElementById(i).style.display = "block";
+                        document.getElementById("actualStep").value = id;
+                    }
                 }
             }
-        }
 
-        function newStep() {
-            document.getElementById("new").style.display = "block";
-            var i;
-            for (i = 1; i < stepsNum + 1; i++) {
-                document.getElementById(i).style.display = "none";
+            function newStep() {
+                document.getElementById("new").style.display = "block";
+                var i;
+                for (i = 1; i < stepsNum + 1; i++) {
+                    document.getElementById(i).style.display = "none";
+                }
             }
-        }
-    </script>
-</section>
+        </script>
+    </section>
+</div>
 </body>
 </html>
 <?php
@@ -493,9 +562,16 @@ if ($_POST) {
         $query = "UPDATE crontab SET days = '$preferences', timePicker = '$timeP', emails = '$preferencesEmails' WHERE name = 'Newsletter';";
 
         $query = mysqli_query($con, $query);
-    } else {
+    } /*else {
         var_dump($con);
         echo "No funciona";
+    }*/
+    if($_POST['action'] == 'New') {
+        if (!empty($_POST['NameEvent'])) {
+            $nameEvent = $_POST['NameEvent'];
+            require("db_connection.php");
+            $query = mysqli_query($con, "INSERT INTO newsletterEvents(evento) VALUES ('$nameEvent')");
+        }
     }
     //header('Location: ' . $_SERVER['PHP_SELF']);
 }

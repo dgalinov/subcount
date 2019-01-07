@@ -4,6 +4,7 @@
     <list default="true" id="5ba90ca5-96cf-451d-89fe-c2adbe3b3f67" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sequences.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sequences.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,21 +34,35 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sequences.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-345">
-              <caret line="94" column="51" lean-forward="true" selection-start-line="94" selection-start-column="51" selection-end-line="94" selection-end-column="51" />
+            <state relative-caret-position="413">
+              <caret line="572" column="102" lean-forward="true" selection-start-line="572" selection-start-column="102" selection-end-line="572" selection-end-column="102" />
               <folding>
                 <element signature="e#4905#5082#0#PHP" expanded="true" />
-                <element signature="e#16365#16383#0#HTML" expanded="true" />
+                <element signature="e#5340#5360#0#HTML" expanded="true" />
+                <element signature="e#5510#5590#0#HTML" expanded="true" />
+                <element signature="e#8342#8362#0#HTML" expanded="true" />
+                <element signature="e#8565#8586#0#HTML" expanded="true" />
+                <element signature="e#8836#8940#0#HTML" expanded="true" />
+                <element signature="e#9070#9216#0#HTML" expanded="true" />
+                <element signature="e#9824#9889#0#HTML" expanded="true" />
+                <element signature="e#10230#10334#0#HTML" expanded="true" />
+                <element signature="e#9798#9818#0#HTML" expanded="true" />
+                <element signature="e#10302#10338#0#HTML" expanded="true" />
+                <element signature="e#18157#18839#0#PHP" expanded="true" />
+                <element signature="e#17248#17266#0#HTML" expanded="true" />
+                <element signature="e#19204#19284#0#HTML" expanded="true" />
+                <element signature="n#style#0;n#section#0;n#form#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#textarea#0;n#label#0;n#div#0;n#section#0;n#form#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db_connection.php">
+        <entry file="file://$PROJECT_DIR$/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="2" lean-forward="true" selection-start-line="1" selection-start-column="2" selection-end-line="4" />
+            <state relative-caret-position="-23">
+              <caret line="664" column="17" lean-forward="true" selection-start-line="664" selection-start-column="17" selection-end-line="664" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -64,7 +79,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>x-pa</find>
       <find>x-panel</find>
       <find>x-</find>
       <find>mybar</find>
@@ -94,6 +108,7 @@
       <find>newsletter</find>
       <find>var_dump</find>
       <find>.label</find>
+      <find>z-index</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -142,7 +157,6 @@
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/css/D02F/styles.css" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$PROJECT_DIR$/SendMailsNewsletter.php" />
         <option value="$PROJECT_DIR$/SendMailsChallengeAudit.php" />
         <option value="$PROJECT_DIR$/SendMailsWebinars.php" />
@@ -151,8 +165,9 @@
         <option value="$PROJECT_DIR$/webinars.php" />
         <option value="$PROJECT_DIR$/blog.php" />
         <option value="$PROJECT_DIR$/Now.php" />
-        <option value="$PROJECT_DIR$/Sequences.php" />
         <option value="$PROJECT_DIR$/PruebaX.php" />
+        <option value="$PROJECT_DIR$/css/styles.css" />
+        <option value="$PROJECT_DIR$/Sequences.php" />
       </list>
     </option>
   </component>
@@ -305,12 +320,13 @@
       <workItem from="1546440574642" duration="115000" />
       <workItem from="1546503116918" duration="15209000" />
       <workItem from="1546520366746" duration="10059000" />
-      <workItem from="1546587934650" duration="21613000" />
+      <workItem from="1546587934650" duration="21643000" />
+      <workItem from="1546849637411" duration="11746000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="327880000" />
+    <option name="totallyTimeSpent" value="339656000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="41" y="25" width="1325" height="743" extended-state="6" />
@@ -318,7 +334,7 @@
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.18921033" />
+      <window_info content_ui="combo" id="Project" order="2" weight="0.19233777" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32903227" />
@@ -330,7 +346,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32899022" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.20846905" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.2068404" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -526,13 +542,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="514" column="26" selection-start-line="514" selection-start-column="26" selection-end-line="514" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SendMailsNewsletter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="647">
@@ -624,27 +633,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/PruebaX.php" />
     <entry file="file://$PROJECT_DIR$/db_connection.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" column="2" lean-forward="true" selection-start-line="1" selection-start-column="2" selection-end-line="4" />
+          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/PruebaX.php">
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="97" column="48" lean-forward="true" selection-start-line="97" selection-start-column="48" selection-end-line="97" selection-end-column="48" />
+        <state relative-caret-position="-23">
+          <caret line="664" column="17" lean-forward="true" selection-start-line="664" selection-start-column="17" selection-end-line="664" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sequences.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-345">
-          <caret line="94" column="51" lean-forward="true" selection-start-line="94" selection-start-column="51" selection-end-line="94" selection-end-column="51" />
+        <state relative-caret-position="413">
+          <caret line="572" column="102" lean-forward="true" selection-start-line="572" selection-start-column="102" selection-end-line="572" selection-end-column="102" />
           <folding>
             <element signature="e#4905#5082#0#PHP" expanded="true" />
-            <element signature="e#16365#16383#0#HTML" expanded="true" />
+            <element signature="e#5340#5360#0#HTML" expanded="true" />
+            <element signature="e#5510#5590#0#HTML" expanded="true" />
+            <element signature="e#8342#8362#0#HTML" expanded="true" />
+            <element signature="e#8565#8586#0#HTML" expanded="true" />
+            <element signature="e#8836#8940#0#HTML" expanded="true" />
+            <element signature="e#9070#9216#0#HTML" expanded="true" />
+            <element signature="e#9824#9889#0#HTML" expanded="true" />
+            <element signature="e#10230#10334#0#HTML" expanded="true" />
+            <element signature="e#9798#9818#0#HTML" expanded="true" />
+            <element signature="e#10302#10338#0#HTML" expanded="true" />
+            <element signature="e#18157#18839#0#PHP" expanded="true" />
+            <element signature="e#17248#17266#0#HTML" expanded="true" />
+            <element signature="e#19204#19284#0#HTML" expanded="true" />
+            <element signature="n#style#0;n#section#0;n#form#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#textarea#0;n#label#0;n#div#0;n#section#0;n#form#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

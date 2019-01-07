@@ -4,6 +4,7 @@ html, body, #myChart {
     font-family: 'Nunito', sans-serif !important;
     overflow: auto;
 }
+
 .tablaCSV {
     border: 2px solid white;
     text-align: center;
@@ -11,52 +12,64 @@ html, body, #myChart {
     border-collapse: collapse;
     width: 100%
 }
+
 .capital {
     text-transform: capitalize;
 }
+
 .pagination {
     display: inline-block;
     float: right;
 }
+
 .pagination a {
     color: black;
     float: left;
     padding: 8px 16px;
     text-decoration: none;
 }
+
 .pagination a.active {
     background-color: #5677fc;
     color: white;
 }
+
 .pagination a:hover:not(.active) {
     background-color: #5677fc;
     color: white;
 }
+
 .calendar-day {
     width: 100px;
     min-width: 100px;
     max-width: 100px;
     height: 80px;
 }
+
 .calendar-table {
     margin: 0 auto;
     width: 700px;
 }
+
 .selected {
     background-color: white;
 }
+
 .outside .date {
     color: white;
 }
+
 .timetitle {
     white-space: nowrap;
     text-align: right;
 }
+
 .topnavS {
     overflow: hidden;
     background-color: #5677fc;
     cursor: pointer;
 }
+
 .topnavS a {
     float: left;
     color: white !important;
@@ -65,20 +78,24 @@ html, body, #myChart {
     text-decoration: none;
     font-size: 17px;
 }
+
 .topnavS a:hover {
     background-color: white;
     text-decoration: none;
     cursor: pointer;
     color: black !important;
 }
+
 .topnavS a.active {
     background-color: #005498;
     color: white;
 }
+
 .topnavS a.active:hover {
     background-color: white;
     color: black;
 }
+
 .vertical-menu {
     text-align: center;
     border-radius: 4px;
@@ -87,6 +104,7 @@ html, body, #myChart {
     margin-left: 5px;
     background: #5677fc;
 }
+
 .vertical-menu a {
     background: #5677fc;
     color: white !important;
@@ -97,6 +115,7 @@ html, body, #myChart {
     -moz-border-radius: 4px;
     border-radius: 4px;
 }
+
 .vertical-menu a:hover {
     background-color: white;
     padding: 12px;
@@ -107,6 +126,7 @@ html, body, #myChart {
     -moz-border-radius: 4px;
     border-radius: 4px;
 }
+
 .vertical-menu a.active {
     background-color: #5677fc;
     padding: 12px;
@@ -116,6 +136,7 @@ html, body, #myChart {
     -moz-border-radius: 4px;
     border-radius: 4px;
 }
+
 .vertical-menu a.active:hover {
     background-color: white;
     padding: 12px;
@@ -125,18 +146,22 @@ html, body, #myChart {
     -moz-border-radius: 4px;
     border-radius: 4px;
 }
+
 .indent-1 {
     width: 100%;
     float: left;
 }
+
 .indent-1 section {
     float: left;
 }
+
 .labelEmail {
     width: 100%;
     resize: none;
     font-weight: normal !important;
 }
+
 .buttonStartSave {
     color: #5677fc;
     font-size: 20px;
@@ -148,6 +173,7 @@ html, body, #myChart {
     display: flex;
     border-radius: 4px;
 }
+
 .buttonStartSave:hover {
     color: white;
     font-size: 20px;
@@ -159,6 +185,7 @@ html, body, #myChart {
     display: flex;
     border-radius: 4px;
 }
+
 .buttonSaveSequence {
     color: #5677fc;
     font-size: 15px;
@@ -169,6 +196,7 @@ html, body, #myChart {
     border-radius: 4px;
     justify-content: center;
 }
+
 .buttonSaveSequence:hover {
     color: white;
     font-size: 15px;
@@ -178,6 +206,7 @@ html, body, #myChart {
     height: 50px;
     justify-content: center;
 }
+
 .buttonStartSequence {
     color: white;
     font-size: 15px;
@@ -188,6 +217,7 @@ html, body, #myChart {
     width: 100%;
     border-radius: 4px;
 }
+
 .buttonStartSequence:hover {
     color: #5677fc;
     font-size: 15px;
@@ -197,42 +227,50 @@ html, body, #myChart {
     border-radius: 4px;
     justify-content: center;
 }
+
 .column {
     float: left;
     width: 70%;
 }
+
 .column2 {
     float: left;
     width: 30%;
 }
+
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
+
 .sectionMails {
     padding: 10px;
 }
+
 .titleTH {
     background: #5677fc;
 }
+
 .insertNewEmail {
     border: 2px solid #5677fc;
     color: #5677fc;
 }
+
 .error {
     color: red !important;
 }
+
 .labelNewEmail {
     resize: none;
     width: 25%;
 }
-.labelLabel {
-}
+
 #checkbox-dropdown-container {
     background: white;
     padding: 20px;
 }
+
 .custom-select {
     display: inline-block;
     padding: 5px 15px;
@@ -241,8 +279,8 @@ html, body, #myChart {
     border-radius: 2px;
     width: 100%;
     cursor: pointer;
-
 }
+
 div#custom-select-option-box {
     background: #FFF;
     border: white 1px solid;
@@ -252,6 +290,7 @@ div#custom-select-option-box {
     z-index: 1;
     display: none;
 }
+
 button.search.btn {
     background: #4c4c4c;
     border: #353535 1px solid;
@@ -261,34 +300,37 @@ button.search.btn {
     margin-top: 20px;
     font-size: 0.9em;
 }
+
 .custom-select-option {
     width: 100%;
     padding: 5px 15px;
     margin: 1px 0px;
     cursor: pointer;
 }
-.custom-select-option:hover {
 
-}
 .result-list {
     padding-bottom: 20px;
     color: #4d4d4d;
     line-height: 25px;
 }
+
 .result-list-heading {
     font-style: italic;
     color: #717171;
     text-decoration: underline;
 }
+
 input[type=text], select {
     border: 1px solid #bebcbb;
     box-sizing: border-box;
     border-radius: 4px;
     height: 50px;
 }
+
 .btn {
     line-height: 2.6 !important;
 }
+
 .container {
     max-width: 100% !important;
     width: 100% !important;
@@ -296,30 +338,32 @@ input[type=text], select {
     margin-top: 10px !important;
     margin-left: 5px !important;
 }
+
 .form-control {
     height: 50px !important;
 }
+
 .col- {
     margin-right: 10px;
 }
-/* The Modal (background) */
+
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none;
+    position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0); /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
-    -webkit-animation-name: fadeIn; /* Fade in the background */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-animation-name: fadeIn;
     -webkit-animation-duration: 0.4s;
     animation-name: fadeIn;
     animation-duration: 0.4s
 }
-/* Modal Content */
+
 .modal-content {
     position: fixed;
     bottom: 0;
@@ -331,27 +375,30 @@ input[type=text], select {
     animation-duration: 0.4s;
     margin-left: 30%;
     margin-right: 30%;
-    width:40% !important;
+    width: 40% !important;
     margin-top: 12%;
 }
-/* The Close Button */
+
 .close {
     color: white;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
+
 .close:hover,
 .close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
 }
+
 .modal-header {
     padding: 2px 16px;
     background-color: #5677fc;
     color: white;
 }
+
 .modal-body {
     padding: 2px 16px;
 }
@@ -361,7 +408,7 @@ input[type=text], select {
     background-color: #5677fc;
     color: white;
 }
-/* Add Animation */
+
 @-webkit-keyframes slideIn {
     from {
         bottom: -300px;
@@ -372,6 +419,7 @@ input[type=text], select {
         opacity: 1
     }
 }
+
 @keyframes slideIn {
     from {
         bottom: -300px;
@@ -382,6 +430,7 @@ input[type=text], select {
         opacity: 1
     }
 }
+
 @-webkit-keyframes fadeIn {
     from {
         opacity: 0
@@ -390,6 +439,7 @@ input[type=text], select {
         opacity: 1
     }
 }
+
 @keyframes fadeIn {
     from {
         opacity: 0
@@ -398,17 +448,20 @@ input[type=text], select {
         opacity: 1
     }
 }
+
 h2 {
     font-size: 1.5em !important;
 }
+
 .table .thead-dark th {
     background-color: #5677fc !important;
     border-color: #5677fc !important;
-
 }
+
 .table > tbody + tbody {
     border-top: 2px solid #5677fc !important;
 }
+
 .table {
     /*margin-left: 10% !important;
     margin-right: 10% !important;
@@ -420,29 +473,29 @@ h2 {
     margin-right: 10px !important;
     margin-bottom: 10px !important;
 }
+
 p {
     word-wrap: break-word;
     width: 200px;
 }
-/* The Modal (background) */
+
 .modal2 {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none;
+    position: fixed;
+    z-index: 1;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    -webkit-animation-name: fadeIn; /* Fade in the background */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-animation-name: fadeIn;
     -webkit-animation-duration: 0.4s;
     animation-name: fadeIn;
     animation-duration: 0.4s
 }
 
-/* Modal Content */
 .modal-content2 {
     position: fixed;
     bottom: 0;
@@ -454,7 +507,6 @@ p {
     animation-duration: 0.4s
 }
 
-/* The Close Button */
 .close2 {
     color: white;
     float: right;
@@ -475,13 +527,17 @@ p {
     color: white;
 }
 
-.modal2-body {padding: 2px 16px;background-color: white}
+.modal2-body {
+    padding: 2px 16px;
+    background-color: white
+}
 
 .modal2-footer {
     padding: 2px 16px;
     background-color: #5677fc;
     color: white;
 }
+
 .buttonOpenRecord {
     color: #5677fc;
     font-size: 20px;
@@ -493,6 +549,7 @@ p {
     display: flex;
     border-radius: 4px;
 }
+
 .buttonOpenRecord:hover {
     color: white;
     font-size: 20px;
@@ -504,13 +561,148 @@ p {
     display: flex;
     border-radius: 4px;
 }
+
 .bootstrap-select > .dropdown-toggle {
     z-index: 0 !important;
 }
+
 .table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td {
     word-wrap: break-word;
     width: 1em;
 }
+
 .form-control {
     z-index: 0 !important;
+}
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    /*z-index: 1;*/
+    top: 0;
+    left: 0;
+    background-color: #5677fc;
+    overflow-x: hidden;
+    padding-top: 20px;
+    margin-top: 3.463em;
+}
+
+.sidenav a, .dropdown-btn {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff !important;
+    display: block;
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+.sidenav a:hover, .dropdown-btn:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    margin-left: 200px;
+    font-size: 20px;
+    padding: 0px 10px;
+}
+
+.active {
+    background-color: #005498;
+    color: white;
+}
+
+.dropdown-container {
+    display: none;
+    background-color: #87aafc;
+    padding-left: 8px;
+}
+
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.cke_chrome {
+    border: 1px solid #bebcbb !important;
+    -webkit-border-radius: 4px !important;
+    -moz-border-radius: 4px !important;
+    border-radius: 4px !important;
+}
+
+.modal3 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+.modal3-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s;
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 40% !important;
+    margin-top: 12%;
+}
+
+.close3 {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close3:hover,
+.close3:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal3-header {
+    padding: 2px 16px;
+    background-color: #5677fc;
+    color: white;
+}
+
+.modal3-body {
+    padding: 2px 16px;
+}
+
+.modal3-footer {
+    padding: 2px 16px;
+    background-color: #5677fc;
+    color: white;
 }
