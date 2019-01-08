@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ba90ca5-96cf-451d-89fe-c2adbe3b3f67" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sequences.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sequences.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,20 +30,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sequences.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="211" column="18" selection-start-line="211" selection-start-column="18" selection-end-line="211" selection-end-column="18" />
+            <state relative-caret-position="352">
+              <caret line="519" column="5" lean-forward="true" selection-start-line="519" selection-start-column="5" selection-end-line="519" selection-end-column="5" />
+              <folding>
+                <element signature="e#10599#10619#0#HTML" expanded="true" />
+                <element signature="e#20476#20494#0#HTML" expanded="true" />
+                <element signature="e#21074#21167#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="587" column="22" selection-start-line="587" selection-start-column="22" selection-end-line="587" selection-end-column="22" />
+            <state relative-caret-position="442">
+              <caret line="709" column="1" lean-forward="true" selection-start-line="709" selection-start-column="1" selection-end-line="709" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -59,7 +65,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>x-panel</find>
       <find>x-</find>
       <find>mybar</find>
       <find>myb</find>
@@ -89,6 +94,7 @@
       <find>.label</find>
       <find>z-index</find>
       <find>topnav</find>
+      <find>sidenav</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -146,8 +152,8 @@
         <option value="$PROJECT_DIR$/blog.php" />
         <option value="$PROJECT_DIR$/Now.php" />
         <option value="$PROJECT_DIR$/PruebaX.php" />
-        <option value="$PROJECT_DIR$/Sequences.php" />
         <option value="$PROJECT_DIR$/css/styles.css" />
+        <option value="$PROJECT_DIR$/Sequences.php" />
       </list>
     </option>
   </component>
@@ -302,12 +308,12 @@
       <workItem from="1546520366746" duration="10059000" />
       <workItem from="1546587934650" duration="21643000" />
       <workItem from="1546849637411" duration="12066000" />
-      <workItem from="1546934052265" duration="2064000" />
+      <workItem from="1546934052265" duration="11054000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="342040000" />
+    <option name="totallyTimeSpent" value="351030000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="41" y="25" width="1325" height="743" extended-state="6" />
@@ -622,17 +628,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sequences.php">
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="211" column="18" selection-start-line="211" selection-start-column="18" selection-end-line="211" selection-end-column="18" />
+        <state relative-caret-position="442">
+          <caret line="709" column="1" lean-forward="true" selection-start-line="709" selection-start-column="1" selection-end-line="709" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles.css">
+    <entry file="file://$PROJECT_DIR$/Sequences.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="587" column="22" selection-start-line="587" selection-start-column="22" selection-end-line="587" selection-end-column="22" />
+        <state relative-caret-position="352">
+          <caret line="519" column="5" lean-forward="true" selection-start-line="519" selection-start-column="5" selection-end-line="519" selection-end-column="5" />
+          <folding>
+            <element signature="e#10599#10619#0#HTML" expanded="true" />
+            <element signature="e#20476#20494#0#HTML" expanded="true" />
+            <element signature="e#21074#21167#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -211,8 +211,7 @@
 </div>
 <div class="sidenav">
     <a id="myBtn3" style="float: right">New Event</a>
-
-
+    <a id='myBtn3' onclick='newStep()'>New Step</a>
     <script>
         var modal3 = document.getElementById('myModal3');
         var btn3 = document.getElementById("myBtn3");
@@ -229,33 +228,34 @@
             }
         }
     </script>
-    <button class="dropdown-btn">Campaign 1
-        <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-container">
-        <a class="active" onclick='newStep()'>+</a>
-        <?php
-        $idComparado = "";
-        require("db_connection.php");
-        $query = "SELECT * FROM newslettermail ORDER BY id DESC";
-        if (!$result = mysqli_query($con, $query)) {
-            exit(mysqli_error($con));
-        }
-        if (mysqli_num_rows($result) > 0) {
-            while ($row = mysqli_fetch_assoc($result)) {
-                $idComparado = $row['id'];
-                echo "<a  onclick='onStepClicked($idComparado)'>" . $row['subject'] . "</a>";
+    <?php
+    require("db_connection.php");
+    $query = "SELECT * FROM newslettermail ORDER BY id DESC";
+    $queryButton = "SELECT * FROM newsletterEvents ORDER BY id DESC";
+    if (!$resultButton = mysqli_query($con, $queryButton)) {
+        exit(mysqli_error($con));
+    } else {
+        if (mysqli_num_rows($resultButton) > 0) {
+            while ($rowButton = mysqli_fetch_assoc($resultButton)) {
+                echo "<button class='dropdown-btn'>".$rowButton['evento']."<i class='fa fa-caret-down'></i> </button><div class='dropdown-container'>";
+                if (!$result = mysqli_query($con, $query)) {
+                    exit(mysqli_error($con));
+                } else {
+                    if (mysqli_num_rows($result) > 0) {
+                        while ($row = mysqli_fetch_assoc($result)) {
+                            $idComparado = $row['id'];
+                            if ($row['evento'] == $rowButton['evento']) {
+                                echo "<a  onclick='onStepClicked($idComparado)'>" . $row['subject'] . "</a>";
+                            }
+                        }
+                        echo "<input type='hidden' id='stepsNum' value='" . mysqli_num_rows($result) . "'>";
+                    }
+                }
+                echo "</div>";
             }
-            echo "<input type='hidden' id='stepsNum' value='" . mysqli_num_rows($result) . "'>";
         }
-        ?>
-    </div>
-    <button class="dropdown-btn">Campaign 2
-        <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-container">
-        <a class="active" onclick="newStep()">+</a>
-    </div>
+    }
+    ?>
 </div>
 <script>
     var dropdown = document.getElementsByClassName("dropdown-btn");
@@ -417,7 +417,22 @@
                 <p>Email Subject</p>
                 <label class='labelEmail'>
                 <textarea class='labelEmail' name="subject"
-                          style="border: 1px solid #bebcbb;border-radius: 4px;font-size: 0.72em;height: 2em;"></textarea>
+                          style="border: 1px solid #bebcbb;border-radius: 4px;font-size: 0.72em;height: 2em;width: 50%"></textarea>
+                    <select name="Eventos">
+                        <?php
+                        require ("db_connection.php");
+                        $query = "SELECT * FROM newsletterEvents";
+                        if (!$result = mysqli_query($con, $query)) {
+                                exit(mysqli_error($con));
+                            } else {
+                            if (mysqli_num_rows($result) > 0) {
+                                while ($row = mysqli_fetch_assoc($result)) {
+                                    echo "<option>".$row['evento']."</option>";
+                                }
+                            }
+                        }
+                        ?>
+                    </select>
                 </label>
                 <p>Email Content</p>
                 <label class='labelEmail'>
@@ -499,7 +514,7 @@ if ($_POST) {
                 $content = $_POST['content'];
                 $subject = $_POST['subject'];
                 require("db_connection.php");
-                $query = mysqli_query($con, "INSERT INTO newslettermail(content, subject) VALUES ('$content', '$subject')");
+                $query = mysqli_query($con, "INSERT INTO newslettermail(evento, content, subject) VALUES ('".$_POST['Eventos']."','$content', '$subject')");
             }
         }
     }
