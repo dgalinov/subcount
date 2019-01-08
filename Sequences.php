@@ -85,7 +85,7 @@
     <a href="Now.php">Now</a>
     <a id="myBtn2" style="float: right">Show History</a>
     <div id="myModal2" class="modal2">
-        <div class="modal2-content"
+        <div class="modal-content"
              style="margin-left: 1%;margin-right: 1%;width: 98% !important;margin-top: 20px;">
             <div class="modal2-header">
                 <span class="close2">&times;</span>
@@ -192,7 +192,7 @@
     </script>
 </div>
 <div id="myModal3" class="modal3">
-    <div class="modal3-content" style="margin-bottom: 40em;width: 27em !important;margin-left: 56em;">
+    <div class="modal-content" style="margin-bottom: 40em;width: 27em !important;margin-left: 56em;">
         <div class="modal3-header">
             <span class="close3">&times;</span>
             <h2>Create Event</h2>
