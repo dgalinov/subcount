@@ -68,6 +68,7 @@ html, body, #myChart {
     overflow: hidden;
     background-color: #5677fc;
     cursor: pointer;
+    border-bottom: 4px solid #005498;
 }
 
 .topnavS a {
@@ -584,8 +585,9 @@ p {
     left: 0;
     background-color: #5677fc;
     overflow-x: hidden;
-    padding-top: 20px;
-    margin-top: 3.463em;
+    padding-top: 0.9em;
+    margin-top: 3.7494em;
+    border-right: 4px solid #005498;
 }
 
 .sidenav a, .dropdown-btn {
