@@ -206,6 +206,7 @@ html, body, #myChart {
     border-radius: 4px;
     height: 50px;
     justify-content: center;
+    border: 1px solid white;
 }
 
 .buttonStartSequence {
@@ -254,7 +255,7 @@ html, body, #myChart {
 }
 
 .insertNewEmail {
-    border: 2px solid #5677fc;
+    border: 1px solid #5677fc;
     color: #5677fc;
 }
 
@@ -336,8 +337,9 @@ input[type=text], select {
     max-width: 100% !important;
     width: 100% !important;
     justify-content: center !important;
-    margin-top: 10px !important;
-    margin-left: 5px !important;
+    padding-top: 0.6em !important;
+    padding-left: 1.5em !important;
+    border-bottom: 4px solid #005498;
 }
 
 .form-control {
@@ -609,9 +611,8 @@ p {
 }
 
 .main {
-    margin-left: 200px;
+    margin-left: 10.024em;
     font-size: 20px;
-    padding: 0px 10px;
 }
 
 .active {
@@ -707,4 +708,41 @@ p {
     padding: 2px 16px;
     background-color: #5677fc;
     color: white;
+}
+.btn:not(:disabled):not(.disabled) {
+    background: none;
+
+    border: 1px solid white;
+
+    color: white;
+}
+.btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show > .btn-light.dropdown-toggle {
+    color: white !important;
+
+    background-color: #516ddd !important;
+
+    border-color: white !important;
+}
+.input-group-addon {
+    color: #5677fc !important;
+    background: white !important;
+}
+.form-control {
+    color: white !important;
+    background: none !important;
+    border: 1px solid white !important;
+}
+.open > .dropdown-menu {
+    background: #5677fc;
+}
+.dropdown-menu.show {
+    background: #5677fc;
+}
+.bootstrap-select .dropdown-menu.inner {
+    -webkit-border-radius: 8px !important;
+    -moz-border-radius: 8px !important;
+    border-radius: 8px !important;
+    background: white !important;
+}
+.form-control {
 }

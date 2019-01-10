@@ -7,9 +7,7 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
     <meta name="robots" content="noindex">
-
     <title>TELANTO</title>
-
     <meta property="og:title" content="TELANTO - The Global Academic Business Network">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://telanto.com">
@@ -21,28 +19,21 @@
     <meta name="twitter:description" content="Connecting company projects to students anywhere in the world">
     <meta name="twitter:image" content="https://abc.telanto.com/assets/img/telanto_shareimage.jpg">
     <meta name="twitter:site" content="@telanto">
-
     <link rel="apple-touch-icon" sizes="180x180" href="https://abc.telanto.com/assets/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" href="https://abc.telanto.com/assets/img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="https://abc.telanto.com/assets/img/favicon-194x194.png" sizes="194x194">
     <link rel="icon" type="image/png" href="https://abc.telanto.com/assets/img/android-chrome-192x192.png"
           sizes="192x192 /">
     <link rel="icon" type="image/png" href="https://abc.telanto.com/assets/img/favicon-16x16.png" sizes="16x16">
-
     <link rel="manifest" href="https://abc.telanto.com/assets/img/manifest.json">
     <link rel="mask-icon" href="https://abc.telanto.com/assets/img/safari-pinned-tab.svg" color="#5677fc">
-    <!-- Chrome, Firefox OS and Opera -->
     <meta name="theme-color" content="#5677fc">
-    <!-- Windows Phone -->
     <meta name="msapplication-navbutton-color" content="#5677fc">
-    <!-- iOS Safari -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="apple-touch-startup-image" href="ihttps://abc.telanto.com/assets/img/android-chrome-192x192.png">
     <meta name="apple-mobile-web-app-status-bar-style" content="#5677fc">
     <link rel="shortcut icon" type="image/x-icon" href="https://abc.telanto.com/assets/img/favicon.ico">
-
-
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
           integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -69,6 +60,15 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.9.0/moment-with-locales.js"></script>
     <script src="//cdn.rawgit.com/Eonasdan/bootstrap-datetimepicker/e8bddc60e73c1ec2475f827be36e1957af72e2ea/src/js/bootstrap-datetimepicker.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#datepicker" ).datepicker();
+        } );
+    </script>
 </head>
 <body>
 <?php
@@ -237,7 +237,7 @@
     } else {
         if (mysqli_num_rows($resultButton) > 0) {
             while ($rowButton = mysqli_fetch_assoc($resultButton)) {
-                echo "<button class='dropdown-btn'>".$rowButton['evento']."<i class='fa fa-caret-down'></i> </button><div class='dropdown-container'>";
+                echo "<button class='dropdown-btn'>" . $rowButton['evento'] . "<i class='fa fa-caret-down'></i> </button><div class='dropdown-container'>";
                 if (!$result = mysqli_query($con, $query)) {
                     exit(mysqli_error($con));
                 } else {
@@ -274,7 +274,7 @@
     }
 </script>
 <div class="main">
-    <div class="container">
+    <div class="container" style="background:#5677fc">
         <form method="post" action="Sequences.php">
             <div class="row">
                 <div class="col-">
@@ -363,6 +363,12 @@
                     </script>
                 </div>
                 <div class="col-">
+                    <label for="datepicker" style="border: 1px solid white; -webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;height: 2.47em;">
+                        <input type="text" id="datepicker" style="font-size: 0.70em; border:none;background: none;color: white;padding: 1em;width: 8.5em;">
+                        <img src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fedgefunders.org%2Fwp-content%2Fuploads%2F2016%2F07%2FICEF_icon-calendar.png&f=1" id="input_img" alt="icon" width="52em" height="44em">
+                    </label>
+                </div>
+                <div class="col-">
                     <label for="mails">
                         <select id="mails" name="mails[]" class="selectpicker" multiple data-live-search="true">
                             <?php
@@ -388,6 +394,23 @@
                 </div>
                 <div class="col-">
                     <input type="submit" class="buttonSaveSequence" name="action" value="Add Filter">
+                </div>
+                <div class="col-">
+                    <select name="Eventos">
+                        <?php
+                        require("db_connection.php");
+                        $query = "SELECT * FROM newsletterEvents";
+                        if (!$result = mysqli_query($con, $query)) {
+                            exit(mysqli_error($con));
+                        } else {
+                            if (mysqli_num_rows($result) > 0) {
+                                while ($row = mysqli_fetch_assoc($result)) {
+                                    echo "<option>" . $row['evento'] . "</option>";
+                                }
+                            }
+                        }
+                        ?>
+                    </select>
                 </div>
             </div>
     </div>
@@ -417,22 +440,7 @@
                 <p>Email Subject</p>
                 <label class='labelEmail'>
                 <textarea class='labelEmail' name="subject"
-                          style="border: 1px solid #bebcbb;border-radius: 4px;font-size: 0.72em;height: 2em;width: 50%"></textarea>
-                    <select name="Eventos">
-                        <?php
-                        require ("db_connection.php");
-                        $query = "SELECT * FROM newsletterEvents";
-                        if (!$result = mysqli_query($con, $query)) {
-                                exit(mysqli_error($con));
-                            } else {
-                            if (mysqli_num_rows($result) > 0) {
-                                while ($row = mysqli_fetch_assoc($result)) {
-                                    echo "<option>".$row['evento']."</option>";
-                                }
-                            }
-                        }
-                        ?>
-                    </select>
+                          style="border: 1px solid #bebcbb;border-radius: 4px;font-size: 0.72em;height: 2.6em; padding: 0.4em;width: 50%"></textarea>
                 </label>
                 <p>Email Content</p>
                 <label class='labelEmail'>
@@ -457,7 +465,7 @@
                                 <div id='" . $idComparar . "'>
                                     <p>Email Subject</p>
                                     <label class='labelEmail'>
-                                        <textarea class='labelEmail' style='border: 1px solid #bebcbb;border-radius: 4px;font-size: 0.72em;height: 2em;' name='subject_" . $row['id'] . "'>" . $row['subject'] . "</textarea>
+                                        <textarea class='labelEmail' style='border: 1px solid #bebcbb;border-radius: 4px;font-size: 0.72em;height: 2.6em; padding: 0.4em;' name='subject_" . $row['id'] . "'>" . $row['subject'] . "</textarea>
                                     </label>
                                     <p>Email Content</p>
                                     <label class='labelEmail'>
@@ -504,6 +512,23 @@
         </script>
     </section>
 </div>
+<script>
+    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+    var dropdown = document.getElementsByClassName("dropdown-btn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "block") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
+            }
+        });
+    }
+</script>
 </body>
 </html>
 <?php
@@ -514,7 +539,7 @@ if ($_POST) {
                 $content = $_POST['content'];
                 $subject = $_POST['subject'];
                 require("db_connection.php");
-                $query = mysqli_query($con, "INSERT INTO newslettermail(evento, content, subject) VALUES ('".$_POST['Eventos']."','$content', '$subject')");
+                $query = mysqli_query($con, "INSERT INTO newslettermail(evento, content, subject) VALUES ('" . $_POST['Eventos'] . "','$content', '$subject')");
             }
         }
     }
@@ -581,7 +606,7 @@ if ($_POST) {
         var_dump($con);
         echo "No funciona";
     }*/
-    if($_POST['action'] == 'New') {
+    if ($_POST['action'] == 'New') {
         if (!empty($_POST['NameEvent'])) {
             $nameEvent = $_POST['NameEvent'];
             require("db_connection.php");
