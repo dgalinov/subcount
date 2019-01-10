@@ -34,9 +34,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sequences.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1252">
-              <caret line="397" column="33" selection-start-line="397" selection-start-column="33" selection-end-line="397" selection-end-column="33" />
+            <state relative-caret-position="-30">
+              <caret line="70" column="13" lean-forward="true" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
               <folding>
+                <element signature="e#5457#5477#0#HTML" expanded="true" />
                 <element signature="e#10597#10617#0#HTML" expanded="true" />
                 <element signature="e#13139#13165#0#HTML" expanded="true" />
                 <element signature="e#13409#13445#0#HTML" expanded="true" />
@@ -52,8 +53,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="382">
-              <caret line="736" column="1" lean-forward="true" selection-start-line="736" selection-start-column="1" selection-end-line="736" selection-end-column="1" />
+            <state relative-caret-position="-7598">
+              <caret line="119" column="25" lean-forward="true" selection-start-line="119" selection-start-column="25" selection-end-line="119" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -77,7 +78,6 @@
       <find>all day</find>
       <find>multi</find>
       <find>indu</find>
-      <find>input</find>
       <find>multiple</find>
       <find>multipleSelect</find>
       <find>fastselect</find>
@@ -96,10 +96,11 @@
       <find>var_dump</find>
       <find>.label</find>
       <find>z-index</find>
-      <find>topnav</find>
       <find>sidenav</find>
       <find>container</find>
       <find>border</find>
+      <find>input</find>
+      <find>topnav</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -157,8 +158,8 @@
         <option value="$PROJECT_DIR$/blog.php" />
         <option value="$PROJECT_DIR$/Now.php" />
         <option value="$PROJECT_DIR$/PruebaX.php" />
-        <option value="$PROJECT_DIR$/Sequences.php" />
         <option value="$PROJECT_DIR$/css/styles.css" />
+        <option value="$PROJECT_DIR$/Sequences.php" />
       </list>
     </option>
   </component>
@@ -315,12 +316,12 @@
       <workItem from="1546849637411" duration="12066000" />
       <workItem from="1546934052265" duration="11452000" />
       <workItem from="1547107288148" duration="1046000" />
-      <workItem from="1547109027181" duration="8112000" />
+      <workItem from="1547109027181" duration="11354000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="360586000" />
+    <option name="totallyTimeSpent" value="363828000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="41" y="25" width="1325" height="743" extended-state="6" />
@@ -340,7 +341,7 @@
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32899022" />
-      <window_info anchor="bottom" id="Terminal" internal_type="SLIDING" order="11" type="SLIDING" weight="0.20616883" />
+      <window_info anchor="bottom" id="Terminal" internal_type="SLIDING" order="11" type="SLIDING" weight="0.2068404" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -637,16 +638,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="382">
-          <caret line="736" column="1" lean-forward="true" selection-start-line="736" selection-start-column="1" selection-end-line="736" selection-end-column="1" />
+        <state relative-caret-position="-7598">
+          <caret line="119" column="25" lean-forward="true" selection-start-line="119" selection-start-column="25" selection-end-line="119" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sequences.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1252">
-          <caret line="397" column="33" selection-start-line="397" selection-start-column="33" selection-end-line="397" selection-end-column="33" />
+        <state relative-caret-position="-30">
+          <caret line="70" column="13" lean-forward="true" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="13" />
           <folding>
+            <element signature="e#5457#5477#0#HTML" expanded="true" />
             <element signature="e#10597#10617#0#HTML" expanded="true" />
             <element signature="e#13139#13165#0#HTML" expanded="true" />
             <element signature="e#13409#13445#0#HTML" expanded="true" />

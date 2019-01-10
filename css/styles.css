@@ -96,6 +96,30 @@ html, body, #myChart {
     background-color: white;
     color: black;
 }
+.topnavS .icon {
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .topnavS a:not(:first-child) {display: none;}
+    .topnavS a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnavS.responsive {position: relative;}
+    .topnavS.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnavS.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
 
 .vertical-menu {
     text-align: center;
@@ -743,6 +767,4 @@ p {
     -moz-border-radius: 8px !important;
     border-radius: 8px !important;
     background: white !important;
-}
-.form-control {
 }

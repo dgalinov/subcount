@@ -77,7 +77,7 @@
     header("Location: " . $url);
 }*/
 ?>
-<div class="topnavS">
+<div class="topnavS" id="myTopnavS">
     <a class="active" href="Sequences.php">Newsletter</a>
     <a href="challengeaudit.php">Challenge Audit</a>
     <a href="webinars.php">Webinars</a>
@@ -190,6 +190,9 @@
             }
         }
     </script>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
 </div>
 <div id="myModal3" class="modal3">
     <div class="modal-content" style="margin-bottom: 40em;width: 27em !important;margin-left: 56em;">
@@ -273,6 +276,7 @@
         });
     }
 </script>
+
 <div class="main">
     <div class="container" style="background:#5677fc">
         <form method="post" action="Sequences.php">
@@ -440,7 +444,7 @@
                 <p>Email Subject</p>
                 <label class='labelEmail'>
                 <textarea class='labelEmail' name="subject"
-                          style="border: 1px solid #bebcbb;border-radius: 4px;font-size: 0.72em;height: 2.6em; padding: 0.4em;width: 50%"></textarea>
+                          style="border: 1px solid #bebcbb;border-radius: 4px;font-size: 0.72em;height: 2.6em; padding: 0.4em;"></textarea>
                 </label>
                 <p>Email Content</p>
                 <label class='labelEmail'>
@@ -513,20 +517,13 @@
     </section>
 </div>
 <script>
-    /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
-    var dropdown = document.getElementsByClassName("dropdown-btn");
-    var i;
-
-    for (i = 0; i < dropdown.length; i++) {
-        dropdown[i].addEventListener("click", function () {
-            this.classList.toggle("active");
-            var dropdownContent = this.nextElementSibling;
-            if (dropdownContent.style.display === "block") {
-                dropdownContent.style.display = "none";
-            } else {
-                dropdownContent.style.display = "block";
-            }
-        });
+    function myFunction() {
+        var x = document.getElementById("myTopnavS");
+        if (x.className === "topnavS") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnavS";
+        }
     }
 </script>
 </body>
