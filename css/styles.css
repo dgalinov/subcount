@@ -8,7 +8,7 @@ html, body, #myChart {
 .tablaCSV {
     border: 2px solid white;
     text-align: center;
-    background-color: #5677fc;
+    background-color: #08c;
     border-collapse: collapse;
     width: 100%
 }
@@ -30,12 +30,12 @@ html, body, #myChart {
 }
 
 .pagination a.active {
-    background-color: #5677fc;
+    background-color: #08c;
     color: white;
 }
 
 .pagination a:hover:not(.active) {
-    background-color: #5677fc;
+    background-color: #08c;
     color: white;
 }
 
@@ -66,9 +66,8 @@ html, body, #myChart {
 
 .topnavS {
     overflow: hidden;
-    background-color: #5677fc;
+    background-color: #08c;
     cursor: pointer;
-    border-bottom: 4px solid #005498;
 }
 
 .topnavS a {
@@ -88,7 +87,7 @@ html, body, #myChart {
 }
 
 .topnavS a.active {
-    background-color: #005498;
+    background-color: #08c;
     color: white;
 }
 
@@ -124,14 +123,14 @@ html, body, #myChart {
 .vertical-menu {
     text-align: center;
     border-radius: 4px;
-    border: 2px solid #5677fc;
+    /*border: 2px solid #08c;*/
     margin-top: 10px;
     margin-left: 5px;
-    background: #5677fc;
+    background: #08c;
 }
 
 .vertical-menu a {
-    background: #5677fc;
+    background: #08c;
     color: white !important;
     display: block;
     padding: 12px;
@@ -146,14 +145,14 @@ html, body, #myChart {
     padding: 12px;
     text-decoration: none;
     cursor: pointer;
-    color: #5677fc !important;
+    color: #08c !important;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
 }
 
 .vertical-menu a.active {
-    background-color: #5677fc;
+    background-color: #08c;
     padding: 12px;
     color: white !important;
     font-size: 12px;
@@ -165,7 +164,7 @@ html, body, #myChart {
 .vertical-menu a.active:hover {
     background-color: white;
     padding: 12px;
-    color: #5677fc !important;
+    color: #08c !important;
     cursor: pointer;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
@@ -188,10 +187,10 @@ html, body, #myChart {
 }
 
 .buttonStartSave {
-    color: #5677fc;
+    color: #08c;
     font-size: 20px;
     background: white;
-    border: 1px solid #5677fc;
+    border: 1px solid #08c;
     width: 200px;
     height: 50px;
     justify-content: center;
@@ -202,8 +201,8 @@ html, body, #myChart {
 .buttonStartSave:hover {
     color: white;
     font-size: 20px;
-    background: #5677fc;
-    border: 1px solid #5677fc;
+    background: #08c;
+    border: 1px solid #08c;
     width: 200px;
     height: 50px;
     justify-content: center;
@@ -212,10 +211,10 @@ html, body, #myChart {
 }
 
 .buttonSaveSequence {
-    color: #5677fc;
+    color: #08c;
     font-size: 15px;
     background: white;
-    border: 1px solid #5677fc;
+    border: 1px solid #08c;
     width: 100px;
     height: 50px;
     border-radius: 4px;
@@ -225,7 +224,7 @@ html, body, #myChart {
 .buttonSaveSequence:hover {
     color: white;
     font-size: 15px;
-    background: #5677fc !important;
+    background: #08c !important;
     width: 100px;
     border-radius: 4px;
     height: 50px;
@@ -236,7 +235,7 @@ html, body, #myChart {
 .buttonStartSequence {
     color: white;
     font-size: 15px;
-    background: #5677fc !important;
+    background: #08c !important;
     border: none;
     height: 50px;
     justify-content: center;
@@ -245,7 +244,7 @@ html, body, #myChart {
 }
 
 .buttonStartSequence:hover {
-    color: #5677fc;
+    color: #08c;
     font-size: 15px;
     background: white !important;
     width: 100px;
@@ -275,12 +274,12 @@ html, body, #myChart {
 }
 
 .titleTH {
-    background: #5677fc;
+    background: #08c;
 }
 
 .insertNewEmail {
-    border: 1px solid #5677fc;
-    color: #5677fc;
+    /*border: 1px solid #08c;*/
+    color: #08c;
 }
 
 .error {
@@ -301,7 +300,7 @@ html, body, #myChart {
     display: inline-block;
     padding: 5px 15px;
     border: white 1px solid;
-    color: #5677fc;
+    color: #08c;
     border-radius: 2px;
     width: 100%;
     cursor: pointer;
@@ -310,7 +309,7 @@ html, body, #myChart {
 div#custom-select-option-box {
     background: #FFF;
     border: white 1px solid;
-    color: #5677fc;
+    color: #08c;
     border-radius: 2px;
     width: 100%;
     z-index: 1;
@@ -319,7 +318,7 @@ div#custom-select-option-box {
 
 button.search.btn {
     background: #4c4c4c;
-    border: #353535 1px solid;
+    /*border: #353535 1px solid;*/
     color: white;
     border-radius: 2px;
     padding: 8px 40px;
@@ -363,7 +362,7 @@ input[type=text], select {
     justify-content: center !important;
     padding-top: 0.6em !important;
     padding-left: 1.5em !important;
-    border-bottom: 4px solid #005498;
+    /*border-bottom: 4px solid #08c;*/
 }
 
 .form-control {
@@ -422,7 +421,7 @@ input[type=text], select {
 
 .modal-header {
     padding: 2px 16px;
-    background-color: #5677fc;
+    background-color: #08c;
     color: white;
 }
 
@@ -432,7 +431,7 @@ input[type=text], select {
 
 .modal-footer {
     padding: 2px 16px;
-    background-color: #5677fc;
+    background-color: #08c;
     color: white;
 }
 
@@ -481,21 +480,21 @@ h2 {
 }
 
 .table .thead-dark th {
-    background-color: #5677fc !important;
-    border-color: #5677fc !important;
+    background-color: #08c !important;
+    /*border-color: #08c !important;*/
 }
 
 .table > tbody + tbody {
-    border-top: 2px solid #5677fc !important;
+    border-top: 2px solid #08c !important;
 }
 
 .table {
     /*margin-left: 10% !important;
     margin-right: 10% !important;
     width: 80% !important;*/
-    border-left: 2px solid #5677fc;
-    border-right: 2px solid #5677fc;
-    border-bottom: 2px solid #5677fc;
+    /*border-left: 2px solid #08c;*/
+    /*border-right: 2px solid #08c;*/
+    /*border-bottom: 2px solid #08c;*/
     margin-top: 10px;
     margin-right: 10px !important;
     margin-bottom: 10px !important;
@@ -550,7 +549,7 @@ p {
 
 .modal2-header {
     padding: 2px 16px;
-    background-color: #5677fc;
+    background-color: #08c;
     color: white;
 }
 
@@ -561,15 +560,15 @@ p {
 
 .modal2-footer {
     padding: 2px 16px;
-    background-color: #5677fc;
+    background-color: #08c;
     color: white;
 }
 
 .buttonOpenRecord {
-    color: #5677fc;
+    color: #08c;
     font-size: 20px;
     background: white;
-    border: 1px solid #5677fc;
+    border: 1px solid #08c;
     width: 200px;
     height: 50px;
     justify-content: center;
@@ -580,8 +579,8 @@ p {
 .buttonOpenRecord:hover {
     color: white;
     font-size: 20px;
-    background: #5677fc;
-    border: 1px solid #5677fc;
+    background: #08c;
+    border: 1px solid #08c;
     width: 200px;
     height: 50px;
     justify-content: center;
@@ -609,11 +608,11 @@ p {
     /*z-index: 1;*/
     top: 0;
     left: 0;
-    background-color: #5677fc;
+    background-color: #08c;
     overflow-x: hidden;
     padding-top: 0.9em;
-    margin-top: 3.7494em;
-    border-right: 4px solid #005498;
+    margin-top: 3.45em;
+    /*border-right: 4px solid #08c;*/
 }
 
 .sidenav a, .dropdown-btn {
@@ -635,18 +634,18 @@ p {
 }
 
 .main {
-    margin-left: 10.024em;
+    margin-left: 10em;
     font-size: 20px;
 }
 
 .active {
-    background-color: #005498;
+    background-color: #08c;
     color: white;
 }
 
 .dropdown-container {
     display: none;
-    background-color: #87aafc;
+    background-color: #46a4d4;
     padding-left: 8px;
 }
 
@@ -720,7 +719,7 @@ p {
 
 .modal3-header {
     padding: 2px 16px;
-    background-color: #5677fc;
+    background-color: #08c;
     color: white;
 }
 
@@ -730,26 +729,15 @@ p {
 
 .modal3-footer {
     padding: 2px 16px;
-    background-color: #5677fc;
-    color: white;
-}
-.btn:not(:disabled):not(.disabled) {
-    background: none;
-
-    border: 1px solid white;
-
+    background-color: #08c;
     color: white;
 }
 .btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show > .btn-light.dropdown-toggle {
     color: white !important;
 
-    background-color: #516ddd !important;
+    background-color: #08c !important;
 
     border-color: white !important;
-}
-.input-group-addon {
-    color: #5677fc !important;
-    background: white !important;
 }
 .form-control {
     color: white !important;
@@ -757,14 +745,17 @@ p {
     border: 1px solid white !important;
 }
 .open > .dropdown-menu {
-    background: #5677fc;
+    background: #08c;
 }
 .dropdown-menu.show {
-    background: #5677fc;
+    background: #08c;
 }
 .bootstrap-select .dropdown-menu.inner {
-    -webkit-border-radius: 8px !important;
+    /*-webkit-border-radius: 8px !important;
     -moz-border-radius: 8px !important;
-    border-radius: 8px !important;
+    border-radius: 8px !important;*/
     background: white !important;
+}
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
+    background-color: #46a4d4 !important;
 }

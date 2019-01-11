@@ -1,0 +1,13 @@
+/nbproject/private/
+/nbproject/
+~
+~*.*
+*.lock
+clover.xml
+*.sqlite
+*.sqlite3
+vendor
+build/logs/clover.xml
+tests/pdo/ez_test.sqlite
+tests/sqlite/ez_test.sqlite
+tests/sqlite/ez_test.sqlite3

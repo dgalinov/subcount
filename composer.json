@@ -1,6 +1,7 @@
 {
     "require": {
         "phpmailer/phpmailer": "^6.0",
-      "ext-mysqli": "*"
+      "ext-mysqli": "*",
+        "ezsql/ezsql": "^3.0"
     }
 }

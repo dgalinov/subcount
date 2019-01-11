@@ -6,6 +6,10 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit3649a01fa9f6bb4655b802ffb83519aa
 {
+    public static $files = array (
+        'bc1349d14d88e1b5f6d6cb6599d14504' => __DIR__ . '/..' . '/ezsql/ezsql/ez_sql_loader.php',
+    );
+
     public static $prefixLengthsPsr4 = array (
         'P' => 
         array (
