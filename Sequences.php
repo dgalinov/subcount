@@ -323,10 +323,10 @@ require("db_connection.php");
                     <div class="col-">
                         <div class="selectDateDay">
                             <label>
-                                <select id="hideDateDay"
+                                <select id="hideDateDay" name="dateDay"
                                         style="height: 50px;line-height: 4;">
-                                    <option onclick="hideAndShow()">Day</option>
-                                    <option onclick="hideAndShow()">Date</option>
+                                    <option onclick="hideAndShow()" value="DayChoose">Day</option>
+                                    <option onclick="hideAndShow()" value="DateChoose">Date</option>
                                 </select>
                             </label>
                         </div>
@@ -392,7 +392,7 @@ require("db_connection.php");
                         <div id="hiddenDate">
                             <label for="datepicker"
                                    style="border: 1px solid white; -webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;height: 2.47em;">
-                                <input type="text" id="datepicker"
+                                <input type="text" id="datepicker" name="dateBBB"
                                        style="font-size: 0.70em; border:none;background: none;color: white;padding: 1em;width: 8.5em;">
                                 <img src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fedgefunders.org%2Fwp-content%2Fuploads%2F2016%2F07%2FICEF_icon-calendar.png&f=1"
                                      id="input_img" alt="icon" width="52em" height="44em">
@@ -449,6 +449,167 @@ require("db_connection.php");
                                 }
 
                                 ?>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="col-">
+                        <label for="mails">
+                            <select id="industry" name="industry[]" class="selectpicker" multiple
+                                    data-live-search="true">
+                                <option value="Primary/Secondary Education">Primary/Secondary Education</option>
+                                <option value="Higher Education">Higher Education</option>
+                                <option value="Education Management">Education Management</option>
+                                <option value="Research">Research</option>
+                                <option value="E-Learning">E-Learning</option>
+                                <option value="Farming">Farming</option>
+                                <option value="Ranching">Ranching</option>
+                                <option value="Dairy">Dairy</option>
+                                <option value="Fishery">Fishery</option>
+                                <option value="Automotive">Automotive</option>
+                                <option value="Aviation & Aerospace">Aviation & Aerospace</option>
+                                <option value="Airlines/Aerospace">Airlines/Aerospace</option>
+                                <option value="Chemicals">Chemicals</option>
+                                <option value="Construction">Construction</option>
+                                <option value="Building Materials">Building Materials</option>
+                                <option value="Architecture & Planning">Architecture & Planning</option>
+                                <option value="Civil Engineering">Civil Engineering</option>
+                                <option value="Mechanical or Industrial Engineering">Mechanical or Industrial Engineering</option>
+                                <option value="Glass, Ceramics & Concrete">Glass, Ceramics & Concrete</option>
+                                <option value="Industrial Automation">Industrial Automation</option>
+                                <option value="Cosmetics">Cosmetics</option>
+                                <option value="Apparel & Fashion">Apparel & Fashion</option>
+                                <option value="Sporting Goods">Sporting Goods</option>
+                                <option value="Tobacco">Tobacco</option>
+                                <option value="Supermarkets">Supermarkets</option>
+                                <option value="Food Production">Food Production</option>
+                                <option value="Consumer Electronics">Consumer Electronics</option>
+                                <option value="Consumer Goods">Consumer Goods</option>
+                                <option value="Furniture">Furniture</option>
+                                <option value="Retail">Retail</option>
+                                <option value="Food & Beverages">Food & Beverages</option>
+                                <option value="Electrical/Electronic MAnufacturing">Electrical/Electronic MAnufacturing</option>
+                                <option value="Wholesale">Wholesale</option>
+                                <option value="Wine and Spirits">Wine and Spirits</option>
+                                <option value="Luxury Good & Jewelry">Luxury Good & Jewelry</option>
+                                <option value="Packaging and Containers">Packaging and Containers</option>
+                                <option value="Defense & Space">Defense & Space</option>
+                                <option value="Banking">Banking</option>
+                                <option value="Insurance">Insurance</option>
+                                <option value="Financial Services">Financial Services</option>
+                                <option value="Investment Banking">Investment Banking</option>
+                                <option value="Investment Management">Investment Management</option>
+                                <option value="Accounting">Accounting</option>
+                                <option value="Venture Capital & Private Equity">Venture Capital & Private Equity</option>
+                                <option value="Capital Markets">Capital Markets</option>
+                                <option value="Medical Practice">Medical Practice</option>
+                                <option value="Hospital & Health Care">Hospital & Health Care</option>
+                                <option value="Pharmaceuticals">Pharmaceuticals</option>
+                                <option value="Veterinary">Veterinary</option>
+                                <option value="Medical Devices">Medical Devices</option>
+                                <option value="Health,Wellness and Fitness">Health,Wellness and Fitness</option>
+                                <option value="Alternative Medicine">Alternative Medicine</option>
+                                <option value="Mental Health Care">Mental Health Care</option>
+                                <option value="Computer Hardware">Computer Hardware</option>
+                                <option value="Computer Software">Computer Software</option>
+                                <option value="Computer Networking">Computer Networking</option>
+                                <option value="Internet">Internet</option>
+                                <option value="Semiconductors">Semiconductors</option>
+                                <option value="Biotechnology">Biotechnology</option>
+                                <option value="Information Technology and Services">Information Technology and Services</option>
+                                <option value="Nanotechnology">Nanotechnology</option>
+                                <option value="Computer & Network Security">Computer & Network Security</option>
+                                <option value="Wireless">Wireless</option>
+                                <option value="Human Resources">Human Resources</option>
+                                <option value="Import and Export">Import and Export</option>
+                                <option value="Law Practice">Law Practice</option>
+                                <option value="Legal Services">Legal Services</option>
+                                <option value="Alternative Dispute Resolution">Alternative Dispute Resolution</option>
+                                <option value="Logistics and Supply Chain">Logistics and Supply Chain</option>
+                                <option value="Machinery">Machinery</option>
+                                <option value="Shipbuilding">Shipbuilding</option>
+                                <option value="Textiles">Textiles</option>
+                                <option value="Paper & Forest Products">Paper & Forest Products</option>
+                                <option value="Railroad Manufacture">Railroad Manufacture</option>
+                                <option value="Plastics">Plastics</option>
+                                <option value="Business Supplies and Equipment">Business Supplies and Equipment</option>
+                                <option value="Marketing and Advertising">Marketing and Advertising</option>
+                                <option value="Market Research">Market Research</option>
+                                <option value="Public Relations and Communications">Public Relations and Communications</option>
+                                <option value="Events Services">Events Services</option>
+                                <option value="Mining & Metals">Mining & Metals</option>
+                                <option value="Oil & Energy">Oil & Energy</option>
+                                <option value="Management Consulting">Management Consulting</option>
+                                <option value="Environment Services">Environment Services</option>
+                                <option value="Individual & Family Services">Individual & Family Services</option>
+                                <option value="Consumer Services">Consumer Services</option>
+                                <option value="Program Development">Program Development</option>
+                                <option value="Staffing and Recruiting">Staffing and Recruiting</option>
+                                <option value="Professional Training & Coaching">Professional Training & Coaching</option>
+                                <option value="Translation and Localization">Translation and Localization</option>
+                                <option value="Security and Investigations">Security and Investigations</option>
+                                <option value="Facilities Servies">Facilities Servies</option>
+                                <option value="Outsourcing/Offshoring">Outsourcing/Offshoring</option>
+                                <option value="Military">Military</option>
+                                <option value="Legislative Office">Legislative Office</option>
+                                <option value="Judiciary">Judiciary</option>
+                                <option value="International Affairs">International Affairs</option>
+                                <option value="Government Administration">Government Administration</option>
+                                <option value="Executive Office">Executive Office</option>
+                                <option value="Law Enforcement">Law Enforcement</option>
+                                <option value="Public Safety">Public Safety</option>
+                                <option value="Public Policy">Public Policy</option>
+                                <option value="Religious Institutions">Religious Institutions</option>
+                                <option value="Civic & Social Organization">Civic & Social Organization</option>
+                                <option value="Non-Profit Organization Management">Non-Profit Organization Management</option>
+                                <option value="Fund-Raising">Fund-Raising</option>
+                                <option value="Political Organization">Political Organization</option>
+                                <option value="Think Tanks">Think Tanks</option>
+                                <option value="Philanthropy">Philanthropy</option>
+                                <option value="International Trade and Development">International Trade and Development</option>
+                                <option value="Government Relations">Government Relations</option>
+                                <option value="Real Estate">Real Estate</option>
+                                <option value="Commercial Real Estate">Commercial Real Estate</option>
+                                <option value="Renewables & Environment">Renewables & Environment</option>
+                                <option value="Entertainment">Entertainment</option>
+                                <option value="Gambling & Casinos">Gambling & Casinos</option>
+                                <option value="Sports">Sports</option>
+                                <option value="Motion Pictures and Film">Motion Pictures and Film</option>
+                                <option value="Broadcast Media">Broadcast Media</option>
+                                <option value="Museums ad Institutions">Museums ad Institutions</option>
+                                <option value="Fine Art">Fine Art</option>
+                                <option value="Performing Arts">Performing Arts</option>
+                                <option value="Recreatingal Facilities and Services">Recreatingal Facilities and Services</option>
+                                <option value="Newspapers">Newspapers</option>
+                                <option value="Publishing">Publishing</option>
+                                <option value="Printing">Printing</option>
+                                <option value="Information Services">Information Services</option>
+                                <option value="Libraries">Libraries</option>
+                                <option value="Design">Design</option>
+                                <option value="Writing and Editing">Writing and Editing</option>
+                                <option value="Computer Games">Computer Games</option>
+                                <option value="Arts and Crafts">Arts and Crafts</option>
+                                <option value="Online Media">Online Media</option>
+                                <option value="Music">Music</option>
+                                <option value="Media Production">Media Production</option>
+                                <option value="Animation">Animation</option>
+                                <option value="Photography">Photography</option>
+                                <option value="Graphic Design">Graphic Design</option>
+                                <option value="Telecommunications">Telecommunications</option>
+                                <option value="Package/Freight Delivery">Package/Freight Delivery</option>
+                                <option value="Transportation/Trucking/Railroad">Transportation/Trucking/Railroad</option>
+                                <option value="Warehousing">Warehousing</option>
+                                <option value="Maritime">Maritime</option>
+                                <option value="Leisure, Travel & Tourism">Leisure, Travel & Tourism</option>
+                                <option value="Hospitality">Hospitality</option>
+                                <option value="Restaurants">Restaurants</option>
+                                <option value="Utilities">Utilities</option>
+                            </select>
+                        </label>
+                    </div>
+                    <div class="col-">
+                        <label for="mails">
+                            <select id="preferences" name="preferences[]" class="selectpicker" multiple data-live-search="true">
+                                <option>Preferences</option>
                             </select>
                         </label>
                     </div>
@@ -658,8 +819,15 @@ if ($_POST) {
         $preferences = implode(",", $preferences);
         $preferencesEmails = implode(",", $preferencesEmails);
 
-        $query = "UPDATE crontab SET days = '$preferences', timePicker = '$timeP', emails = '$preferencesEmails' WHERE name = 'Newsletter';";
+        $dateFormated = date("m-d-Y", strtotime($_POST['dateBBB']));
 
+        if ($_POST['dateDay'] == 'DayChoose') {
+            $query = "UPDATE crontab SET days = '$preferences', dateFormat='day', timePicker = '$timeP', emails = '$preferencesEmails' WHERE name = 'Newsletter';";
+        } else if ($_POST['dateDay'] == 'DateChoose') {
+            $query = "UPDATE crontab SET datePicker='$dateFormated', dateFormat='date', timePicker = '$timeP', emails = '$preferencesEmails' WHERE name = 'Newsletter';";
+        } else {
+            echo "ERROR WITH THE CHOICE";
+        }
         $query = mysqli_query($con, $query);
     } /*else {
         var_dump($con);

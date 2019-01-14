@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ba90ca5-96cf-451d-89fe-c2adbe3b3f67" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sequences.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sequences.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,8 +32,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sequences.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="651" column="41" lean-forward="true" selection-start-line="651" selection-start-column="41" selection-end-line="651" selection-end-column="41" />
+            <state relative-caret-position="136">
+              <caret line="610" column="51" selection-start-line="610" selection-start-column="51" selection-end-line="610" selection-end-column="51" />
               <folding>
                 <element signature="e#6#41#0#PHP" expanded="true" />
                 <element signature="e#16416#16439#0#HTML" expanded="true" />
@@ -45,6 +43,15 @@
                 <element signature="e#26563#26599#0#HTML" expanded="true" />
                 <element signature="e#26615#26726#0#HTML" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../formtelanto/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="900">
+              <caret line="356" column="144" lean-forward="true" selection-start-line="356" selection-start-column="144" selection-end-line="356" selection-end-column="144" />
             </state>
           </provider>
         </entry>
@@ -332,12 +339,12 @@
       <workItem from="1547107288148" duration="1046000" />
       <workItem from="1547109027181" duration="11606000" />
       <workItem from="1547193866743" duration="14786000" />
-      <workItem from="1547454919713" duration="5285000" />
+      <workItem from="1547454919713" duration="11321000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="384151000" />
+    <option name="totallyTimeSpent" value="390187000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1407" y="-2" width="1879" height="1082" extended-state="6" />
@@ -358,7 +365,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32899022" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" internal_type="SLIDING" order="12" type="SLIDING" weight="0.52117264" />
+      <window_info anchor="bottom" id="Terminal" internal_type="SLIDING" order="12" type="SLIDING" weight="0.521511" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -406,7 +413,6 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../auditview/parametros.php" />
     <entry file="file://$PROJECT_DIR$/../auditview/conectar.php" />
     <entry file="file://$PROJECT_DIR$/../auditview/index.php" />
     <entry file="file://$PROJECT_DIR$/../c4c/adminpanelC.php" />
@@ -685,10 +691,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../formtelanto/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="356" column="144" lean-forward="true" selection-start-line="356" selection-start-column="144" selection-end-line="356" selection-end-column="144" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Sequences.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="651" column="41" lean-forward="true" selection-start-line="651" selection-start-column="41" selection-end-line="651" selection-end-column="41" />
+        <state relative-caret-position="136">
+          <caret line="610" column="51" selection-start-line="610" selection-start-column="51" selection-end-line="610" selection-end-column="51" />
           <folding>
             <element signature="e#6#41#0#PHP" expanded="true" />
             <element signature="e#16416#16439#0#HTML" expanded="true" />
