@@ -31,6 +31,9 @@
 //            ?>
     <!--        --><?php //} ?>
     <!--    </table>-->
+<?php
+require("db_connection.php");
+?>
     <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -144,7 +147,6 @@
                         </tr>
                         </thead>
                         <?php
-                        require("db_connection.php");
                         $queryShow = "SELECT * FROM NewsletterRecords";
 
                         if (!$resultShow = mysqli_query($con, $queryShow)) {
@@ -270,7 +272,6 @@
             }
         </script>
         <?php
-        require("db_connection.php");
         $query = "SELECT * FROM newslettermail ORDER BY id DESC";
         $queryButton = "SELECT * FROM newsletterEvents ORDER BY id DESC";
         if (!$resultButton = mysqli_query($con, $queryButton)) {
@@ -320,66 +321,89 @@
             <form method="post" action="Sequences.php">
                 <div class="row">
                     <div class="col-">
-                        <label for="dias"><select id="dias" name="dias[]" class="selectpicker" multiple
-                                                  data-live-search="true"
-                                                  style="height: 50px;line-height: 4;">
-                                <?php
-                                require("db_connection.php");
-                                $query = "SELECT days FROM crontab WHERE name = 'Newsletter'";
-                                if (!$result = mysqli_query($con, $query)) {
-                                    exit(mysqli_error($con));
-                                } else {
-                                    if (mysqli_num_rows($result) > 0) {
-                                        while ($row = mysqli_fetch_assoc($result)) {
-                                            $arrayDias = explode(",", $row['days']);
-                                            if (in_array("Monday", $arrayDias)) {
-                                                echo "<option selected='selected' value='Monday'>Monday</option>";
-                                            } else {
-                                                echo "<option value='Monday'>Monday</option>";
-                                            }
-                                            if (in_array("Tuesday", $arrayDias)) {
-                                                echo "<option selected='selected' value='Tuesday'>Tuesday</option>";
-                                            } else {
-                                                echo "<option value='Tuesday'>Tuesday</option>";
-                                            }
-                                            if (in_array("Wednesday", $arrayDias)) {
-                                                echo "<option selected='selected' value='Wednesday'>Wednesday</option>";
-                                            } else {
-                                                echo "<option value='Wednesday'>Wednesday</option>";
-                                            }
-                                            if (in_array("Thursday", $arrayDias)) {
-                                                echo "<option selected='selected' value='Thursday'>Thursday</option>";
-                                            } else {
-                                                echo "<option value='Thursday'>Thursday</option>";
-                                            }
-                                            if (in_array("Friday", $arrayDias)) {
-                                                echo "<option selected='selected' value='Friday'>Friday</option>";
-                                            } else {
-                                                echo "<option value='Friday'>Friday</option>";
-                                            }
-                                            if (in_array("Saturday", $arrayDias)) {
-                                                echo "<option selected='selected' value='Saturday'>Saturday</option>";
-                                            } else {
-                                                echo "<option value='Saturday'>Saturday</option>";
-                                            }
-                                            if (in_array("Sunday", $arrayDias)) {
-                                                echo "<option selected='selected' value='Sunday'>Sunday</option>";
-                                            } else {
-                                                echo "<option value='Sunday'>Sunday</option>";
+                        <div class="selectDateDay">
+                            <label>
+                                <select id="hideDateDay"
+                                        style="height: 50px;line-height: 4;">
+                                    <option onclick="hideAndShow()">Day</option>
+                                    <option onclick="hideAndShow()">Date</option>
+                                </select>
+                            </label>
+                        </div>
+
+                    </div>
+                    <div class="col-">
+                        <div id="hiddenDay">
+                            <label for="dias"><select id="dias" name="dias[]" class="selectpicker" multiple
+                                                      data-live-search="true"
+                                                      style="height: 50px;line-height: 4;">
+                                    <?php
+                                    $query = "SELECT days FROM crontab WHERE name = 'Newsletter'";
+                                    if (!$result = mysqli_query($con, $query)) {
+                                        exit(mysqli_error($con));
+                                    } else {
+                                        if (mysqli_num_rows($result) > 0) {
+                                            while ($row = mysqli_fetch_assoc($result)) {
+                                                $arrayDias = explode(",", $row['days']);
+                                                if (in_array("Monday", $arrayDias)) {
+                                                    echo "<option selected='selected' value='Monday'>Monday</option>";
+                                                } else {
+                                                    echo "<option value='Monday'>Monday</option>";
+                                                }
+                                                if (in_array("Tuesday", $arrayDias)) {
+                                                    echo "<option selected='selected' value='Tuesday'>Tuesday</option>";
+                                                } else {
+                                                    echo "<option value='Tuesday'>Tuesday</option>";
+                                                }
+                                                if (in_array("Wednesday", $arrayDias)) {
+                                                    echo "<option selected='selected' value='Wednesday'>Wednesday</option>";
+                                                } else {
+                                                    echo "<option value='Wednesday'>Wednesday</option>";
+                                                }
+                                                if (in_array("Thursday", $arrayDias)) {
+                                                    echo "<option selected='selected' value='Thursday'>Thursday</option>";
+                                                } else {
+                                                    echo "<option value='Thursday'>Thursday</option>";
+                                                }
+                                                if (in_array("Friday", $arrayDias)) {
+                                                    echo "<option selected='selected' value='Friday'>Friday</option>";
+                                                } else {
+                                                    echo "<option value='Friday'>Friday</option>";
+                                                }
+                                                if (in_array("Saturday", $arrayDias)) {
+                                                    echo "<option selected='selected' value='Saturday'>Saturday</option>";
+                                                } else {
+                                                    echo "<option value='Saturday'>Saturday</option>";
+                                                }
+                                                if (in_array("Sunday", $arrayDias)) {
+                                                    echo "<option selected='selected' value='Sunday'>Sunday</option>";
+                                                } else {
+                                                    echo "<option value='Sunday'>Sunday</option>";
+                                                }
                                             }
                                         }
                                     }
-                                }
-                                ?>
-                            </select>
-                        </label>
+                                    ?>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-">
+                        <div id="hiddenDate">
+                            <label for="datepicker"
+                                   style="border: 1px solid white; -webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;height: 2.47em;">
+                                <input type="text" id="datepicker"
+                                       style="font-size: 0.70em; border:none;background: none;color: white;padding: 1em;width: 8.5em;">
+                                <img src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fedgefunders.org%2Fwp-content%2Fuploads%2F2016%2F07%2FICEF_icon-calendar.png&f=1"
+                                     id="input_img" alt="icon" width="52em" height="44em">
+                            </label>
+                        </div>
                     </div>
                     <div class="col-">
                         <div class="form-group">
                             <div class='input-group date' id='datetimepicker3'>
                                 <input type='text' id="timename" name="tpick" class="form-control" value="
                         <?php
-                                require("db_connection.php");
                                 $query = "SELECT timePicker FROM crontab WHERE name = 'Newsletter'";
                                 if (!$result = mysqli_query($con, $query)) {
                                     exit(mysqli_error($con));
@@ -404,20 +428,11 @@
                             });
                         </script>
                     </div>
-                    <div class="col-">
-                        <label for="datepicker"
-                               style="border: 1px solid white; -webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;height: 2.47em;">
-                            <input type="text" id="datepicker"
-                                   style="font-size: 0.70em; border:none;background: none;color: white;padding: 1em;width: 8.5em;">
-                            <img src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fedgefunders.org%2Fwp-content%2Fuploads%2F2016%2F07%2FICEF_icon-calendar.png&f=1"
-                                 id="input_img" alt="icon" width="52em" height="44em">
-                        </label>
-                    </div>
+
                     <div class="col-">
                         <label for="mails">
                             <select id="mails" name="mails[]" class="selectpicker" multiple data-live-search="true">
                                 <?php
-                                require("db_connection.php");
                                 $query = "SELECT * FROM emails ORDER BY id DESC";
                                 if (!$result = mysqli_query($con, $query)) {
                                     exit(mysqli_error($con));
@@ -439,25 +454,6 @@
                     </div>
                     <div class="col-">
                         <input type="submit" class="buttonSaveSequence" name="action" value="Add Filter">
-                    </div>
-                    <div class="col-" style="align-content: flex-end;">
-                            <label for="event"><select id="event" class="selectpicker" data-live-search="true"
-                                                       style="height: 50px;line-height: 4;">
-                                    <?php
-                                    require("db_connection.php");
-                                    $query = "SELECT * FROM newsletterEvents";
-                                    if (!$result = mysqli_query($con, $query)) {
-                                        exit(mysqli_error($con));
-                                    } else {
-                                        if (mysqli_num_rows($result) > 0) {
-                                            while ($row = mysqli_fetch_assoc($result)) {
-                                                echo "<option>" . $row['evento'] . "</option>";
-                                            }
-                                        }
-                                    }
-                                    ?>
-                                </select>
-                            </label>
                     </div>
                 </div>
         </div>
@@ -484,11 +480,28 @@
         </section>-->
             <form action="Sequences.php" method="post">
                 <section style='width: 90%' class='sectionMails' id='new'>
+                    <label for="event"><select id="event" class="selectpicker" data-live-search="true"
+                                               style="height: 50px;line-height: 4;">
+                            <?php
+                            $query = "SELECT * FROM newsletterEvents";
+                            if (!$result = mysqli_query($con, $query)) {
+                                exit(mysqli_error($con));
+                            } else {
+                                if (mysqli_num_rows($result) > 0) {
+                                    while ($row = mysqli_fetch_assoc($result)) {
+                                        echo "<option>" . $row['evento'] . "</option>";
+                                    }
+                                }
+                            }
+                            ?>
+                        </select>
+                    </label>
                     <p>Email Subject</p>
                     <label class='labelEmail'>
                 <textarea class='labelEmail' name="subject"
                           style="border: 1px solid #bebcbb;border-radius: 4px;font-size: 0.72em;height: 2.6em; padding: 0.4em;"></textarea>
                     </label>
+
                     <p>Email Content</p>
                     <label class='labelEmail'>
                         <textarea class="ckeditor" name="content"></textarea>
@@ -498,7 +511,6 @@
             </form>
             <?php
             $idComparar = "";
-            require("db_connection.php");
             $query = "SELECT * FROM newslettermail ";
             if (!$result = mysqli_query($con, $query)) {
                 exit(mysqli_error($con));
@@ -568,6 +580,18 @@
                 x.className = "topnavS";
             }
         }
+
+        function hideAndShow() {
+            var x = document.getElementById("hiddenDay");
+            var y = document.getElementById("hiddenDate");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+                y.style.display = "none";
+            } else {
+                x.style.display = "none";
+                y.style.display = "block";
+            }
+        }
     </script>
     </body>
     </html>
@@ -578,7 +602,6 @@ if ($_POST) {
             if (!empty($_POST['content'])) {
                 $content = $_POST['content'];
                 $subject = $_POST['subject'];
-                require("db_connection.php");
                 $query = mysqli_query($con, "INSERT INTO newslettermail(evento, content, subject) VALUES ('" . $_POST['Eventos'] . "','$content', '$subject')");
             }
         }
@@ -587,13 +610,11 @@ if ($_POST) {
         if (!empty($_POST['subject_' . $_POST['action']])) {
             if (!empty($_POST['content_' . $_POST['action']])) {
                 $actualStep = $_POST['action'];
-                require("db_connection.php");
                 $query = "UPDATE newslettermail SET subject = '" . $_POST['subject_' . $actualStep] . "', content = '" . $_POST['content_' . $actualStep] . "' WHERE id = " . $actualStep;
                 if ($result = mysqli_query($con, $query)) {
-                    // var_dump($query);
+
                 } else {
                     echo "ERROR WHILE UPDATING" . mysqli_error($con);
-                    // var_dump($query);
                 }
             }
         }
@@ -601,7 +622,6 @@ if ($_POST) {
     if ($_POST['action'] == 'New Email') {
         $emailA = $_POST['emailSS'];
         $passwordA = $_POST['passwordSS'];
-        require("db_connection.php");
         if (!empty($emailA)) {
             if (preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/", $emailA)) {
                 if (!empty($passwordA)) {
@@ -624,7 +644,6 @@ if ($_POST) {
         }
     }
     if ($_POST['action'] == 'Add Filter') {
-        require("db_connection.php");
         $timeP = $_POST['tpick'];
         $preferences = array(
             implode(",", $_POST['dias'])
@@ -649,7 +668,6 @@ if ($_POST) {
     if ($_POST['action'] == 'New') {
         if (!empty($_POST['NameEvent'])) {
             $nameEvent = $_POST['NameEvent'];
-            require("db_connection.php");
             $query = mysqli_query($con, "INSERT INTO newsletterEvents(evento) VALUES ('$nameEvent')");
         }
     }

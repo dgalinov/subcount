@@ -759,3 +759,28 @@ p {
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
     background-color: #46a4d4 !important;
 }
+#hiddenDay {}
+#hiddenDate {
+    display:none;}
+.selectDateDay {
+    width: 5.6em;
+    background: white;
+    border:none;
+    overflow:hidden;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    height: 2.6em;
+    padding-left: 0.7em;
+}
+.selectDateDay select {
+    display: block;
+    padding: 0em 3.6em 0em 0em;
+    border: none;
+    background: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png") right center no-repeat;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font-weight: normal;
+    font-size: 14px;
+}
