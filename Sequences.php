@@ -1,37 +1,4 @@
 <?php
-//require __DIR__.'/bootstrap.php';
-////$secuencesModel = new SecuencesModel;
-////$newsLetters = $secuencesModel->getNewsLetters();
-//$query = "SELECT * FROM NewsletterRecords";
-//$newsLetterArr = $DB->get_results($query, ARRAY_A);
-//$DB ->get_row($query)
-//?>
-    <!--    <table border="1">-->
-    <!--        --><?php //foreach ($newsLetterArr as $newsLetter) { ?>
-    <!--            <tr>-->
-    <!--                <th scope='row'>--><? ////=  $newsLetter->id ?><!--</th>-->
-    <!--                <th>--><? ////=  $newsLetter->timeInserted ?><!--</th>-->
-    <!--                <th>--><? ////=  $newsLetter->sendFrom ?><!--</th>-->
-    <!--                <th>--><? ////=  $newsLetter->sendTo ?><!--</th>-->
-    <!--                <th>--><? ////=  $newsLetter->subject ?><!--</th>-->
-    <!--                <th>--><? ////=  $newsLetter->content ?><!--</th>-->
-    <!--            </tr>-->
-    <!--            --><?php
-//            echo "
-//                    <tbody>
-//                        <tr>
-//                            <th scope='row'>" . $newsLetter['id'] . "</th>
-//                            <td>" . $newsLetter['timeInserted'] . "</td>
-//                            <td>" . $newsLetter['sendFrom'] . "</td>
-//                            <td>" . $newsLetter['sendTo'] . "</td>
-//                            <td>" . $newsLetter['subject'] . "</td>
-//                            <td>" . $newsLetter['content'] . "</td>
-//                        </tr>
-//                ";
-//            ?>
-    <!--        --><?php //} ?>
-    <!--    </table>-->
-<?php
 require("db_connection.php");
 ?>
     <!DOCTYPE html>
@@ -455,7 +422,7 @@ require("db_connection.php");
                     <div class="col-">
                         <label for="mails">
                             <select id="industry" name="industry[]" class="selectpicker" multiple
-                                    data-live-search="true">
+                                    data-live-search="true" title="Industry">
                                 <option value="Primary/Secondary Education">Primary/Secondary Education</option>
                                 <option value="Higher Education">Higher Education</option>
                                 <option value="Education Management">Education Management</option>
@@ -473,7 +440,9 @@ require("db_connection.php");
                                 <option value="Building Materials">Building Materials</option>
                                 <option value="Architecture & Planning">Architecture & Planning</option>
                                 <option value="Civil Engineering">Civil Engineering</option>
-                                <option value="Mechanical or Industrial Engineering">Mechanical or Industrial Engineering</option>
+                                <option value="Mechanical or Industrial Engineering">Mechanical or Industrial
+                                    Engineering
+                                </option>
                                 <option value="Glass, Ceramics & Concrete">Glass, Ceramics & Concrete</option>
                                 <option value="Industrial Automation">Industrial Automation</option>
                                 <option value="Cosmetics">Cosmetics</option>
@@ -487,7 +456,9 @@ require("db_connection.php");
                                 <option value="Furniture">Furniture</option>
                                 <option value="Retail">Retail</option>
                                 <option value="Food & Beverages">Food & Beverages</option>
-                                <option value="Electrical/Electronic MAnufacturing">Electrical/Electronic MAnufacturing</option>
+                                <option value="Electrical/Electronic MAnufacturing">Electrical/Electronic
+                                    MAnufacturing
+                                </option>
                                 <option value="Wholesale">Wholesale</option>
                                 <option value="Wine and Spirits">Wine and Spirits</option>
                                 <option value="Luxury Good & Jewelry">Luxury Good & Jewelry</option>
@@ -499,7 +470,8 @@ require("db_connection.php");
                                 <option value="Investment Banking">Investment Banking</option>
                                 <option value="Investment Management">Investment Management</option>
                                 <option value="Accounting">Accounting</option>
-                                <option value="Venture Capital & Private Equity">Venture Capital & Private Equity</option>
+                                <option value="Venture Capital & Private Equity">Venture Capital & Private Equity
+                                </option>
                                 <option value="Capital Markets">Capital Markets</option>
                                 <option value="Medical Practice">Medical Practice</option>
                                 <option value="Hospital & Health Care">Hospital & Health Care</option>
@@ -515,7 +487,9 @@ require("db_connection.php");
                                 <option value="Internet">Internet</option>
                                 <option value="Semiconductors">Semiconductors</option>
                                 <option value="Biotechnology">Biotechnology</option>
-                                <option value="Information Technology and Services">Information Technology and Services</option>
+                                <option value="Information Technology and Services">Information Technology and
+                                    Services
+                                </option>
                                 <option value="Nanotechnology">Nanotechnology</option>
                                 <option value="Computer & Network Security">Computer & Network Security</option>
                                 <option value="Wireless">Wireless</option>
@@ -534,7 +508,9 @@ require("db_connection.php");
                                 <option value="Business Supplies and Equipment">Business Supplies and Equipment</option>
                                 <option value="Marketing and Advertising">Marketing and Advertising</option>
                                 <option value="Market Research">Market Research</option>
-                                <option value="Public Relations and Communications">Public Relations and Communications</option>
+                                <option value="Public Relations and Communications">Public Relations and
+                                    Communications
+                                </option>
                                 <option value="Events Services">Events Services</option>
                                 <option value="Mining & Metals">Mining & Metals</option>
                                 <option value="Oil & Energy">Oil & Energy</option>
@@ -544,7 +520,8 @@ require("db_connection.php");
                                 <option value="Consumer Services">Consumer Services</option>
                                 <option value="Program Development">Program Development</option>
                                 <option value="Staffing and Recruiting">Staffing and Recruiting</option>
-                                <option value="Professional Training & Coaching">Professional Training & Coaching</option>
+                                <option value="Professional Training & Coaching">Professional Training & Coaching
+                                </option>
                                 <option value="Translation and Localization">Translation and Localization</option>
                                 <option value="Security and Investigations">Security and Investigations</option>
                                 <option value="Facilities Servies">Facilities Servies</option>
@@ -560,12 +537,15 @@ require("db_connection.php");
                                 <option value="Public Policy">Public Policy</option>
                                 <option value="Religious Institutions">Religious Institutions</option>
                                 <option value="Civic & Social Organization">Civic & Social Organization</option>
-                                <option value="Non-Profit Organization Management">Non-Profit Organization Management</option>
+                                <option value="Non-Profit Organization Management">Non-Profit Organization Management
+                                </option>
                                 <option value="Fund-Raising">Fund-Raising</option>
                                 <option value="Political Organization">Political Organization</option>
                                 <option value="Think Tanks">Think Tanks</option>
                                 <option value="Philanthropy">Philanthropy</option>
-                                <option value="International Trade and Development">International Trade and Development</option>
+                                <option value="International Trade and Development">International Trade and
+                                    Development
+                                </option>
                                 <option value="Government Relations">Government Relations</option>
                                 <option value="Real Estate">Real Estate</option>
                                 <option value="Commercial Real Estate">Commercial Real Estate</option>
@@ -578,7 +558,9 @@ require("db_connection.php");
                                 <option value="Museums ad Institutions">Museums ad Institutions</option>
                                 <option value="Fine Art">Fine Art</option>
                                 <option value="Performing Arts">Performing Arts</option>
-                                <option value="Recreatingal Facilities and Services">Recreatingal Facilities and Services</option>
+                                <option value="Recreatingal Facilities and Services">Recreatingal Facilities and
+                                    Services
+                                </option>
                                 <option value="Newspapers">Newspapers</option>
                                 <option value="Publishing">Publishing</option>
                                 <option value="Printing">Printing</option>
@@ -596,7 +578,8 @@ require("db_connection.php");
                                 <option value="Graphic Design">Graphic Design</option>
                                 <option value="Telecommunications">Telecommunications</option>
                                 <option value="Package/Freight Delivery">Package/Freight Delivery</option>
-                                <option value="Transportation/Trucking/Railroad">Transportation/Trucking/Railroad</option>
+                                <option value="Transportation/Trucking/Railroad">Transportation/Trucking/Railroad
+                                </option>
                                 <option value="Warehousing">Warehousing</option>
                                 <option value="Maritime">Maritime</option>
                                 <option value="Leisure, Travel & Tourism">Leisure, Travel & Tourism</option>
@@ -608,8 +591,100 @@ require("db_connection.php");
                     </div>
                     <div class="col-">
                         <label for="mails">
-                            <select id="preferences" name="preferences[]" class="selectpicker" multiple data-live-search="true">
-                                <option>Preferences</option>
+                            <select id="preferences" name="preferences[]" class="selectpicker" multiple
+                                    data-live-search="true" title="Preferences">
+                                <option disabled style="font-weight: bold;color: #000;">Management</option>
+                                <option value="Strategic / Digital Transformation">Strategic / Digital Transformation
+                                </option>
+                                <option value="New Business Development & Entrepreneurship">New Business Development &
+                                    Entrepreneurship
+                                </option>
+                                <option value="Business Model Innovation">Business Model Innovation</option>
+                                <option value="Innovation Management">Innovation Management</option>
+                                <option value="Business Planning & Consulting">Business Planning & Consulting</option>
+                                <option value="Industry 4.0">Industry 4.0</option>
+                                <option value="Internationalization & Growth Strategy">Internationalization & Growth
+                                    Strategy
+                                </option>
+                                <option value="Law & Tax">Law & Tax</option>
+                                <option disabled style="font-weight: bold;color: #000;">Sustainability</option>
+                                <option value="Circular Economy">Circular Economy</option>
+                                <option value="Social Enterprise / Innovation">Social Enterprise / Innovation</option>
+                                <option value="Sustainable Entrepreneurship">Sustainable Entrepreneurship</option>
+                                <option value="Smart City / Building">Smart City / Building</option>
+                                <option value="Environment & Corporate Social Responsibility">Environment & Corporate
+                                    Social Responsibility
+                                </option>
+                                <option disabled style="font-weight: bold;color: #000;">Marketing</option>
+                                <option value="New Product / Service Development">New Product / Service Development
+                                </option>
+                                <option value="Consumer Behaviour 4.0">Consumer Behaviour 4.0</option>
+                                <option value="Communication & Advertising">Communication & Advertising</option>
+                                <option value="New Market Entry / New Product Launch">New Market Entry / New Product
+                                    Launch
+                                </option>
+                                <option value="Brand Management">Brand Management</option>
+                                <option value="Media - Gaming - Entertainment">Media - Gaming - Entertainment</option>
+                                <option disabled style="font-weight: bold;color: #000;">Computer Science</option>
+                                <option value="Security - Cybersecurity & IT">Security - Cybersecurity & IT</option>
+                                <option value="Project & Service Management">Project & Service Management</option>
+                                <option value="Experience & Product Design">Experience & Product Design</option>
+                                <option value="App & Platform Development">App & Platform Development</option>
+                                <option value="Building Information Modeling">Building Information Modeling</option>
+                                <option value="Blockchain">Blockchain</option>
+                                <option value="Hard- & Software IoT">Hard- & Software IoT</option>
+                                <option value="Virtual & Augmented Reality">Virtual & Augmented Reality</option>
+                                <option disabled style="font-weight: bold;color: #000;">Human Resources</option>
+                                <option value="Future of Work">Future of Work</option>
+                                <option value="Learning & Development">Learning & Development</option>
+                                <option value="Employer Branding - Acquisition & Retention">Employer Branding -
+                                    Acquisition & Retention
+                                </option>
+                                <option value="Employee Engagement">Employee Engagement</option>
+                                <option value="Health & Safety">Health & Safety</option>
+                                <option value="Organizational Design">Organizational Design</option>
+                                <option disabled style="font-weight: bold;color: #000;">Data Science</option>
+                                <option value="Machine Learning">Machine Learning</option>
+                                <option value="Artificial Intelligence">Artificial Intelligence</option>
+                                <option value="Data Modeling & Visualization">Data Modeling & Visualization</option>
+                                <option value="Business Data Management & Analysis">Business Data Management &
+                                    Analysis
+                                </option>
+                                <option value="Decision Support Systems">Decision Support Systems</option>
+                                <option disabled style="font-weight: bold;color: #000;">Finance</option>
+                                <option value="Cryptocurrency">Cryptocurrency</option>
+                                <option value="International Trade & Finances">International Trade & Finances</option>
+                                <option value="Accounting & Corporate Finance">Accounting & Corporate Finance</option>
+                                <option value="Procurement">Procurement</option>
+                                <option disabled style="font-weight: bold;color: #000;">Engineering</option>
+                                <option value="Robotics & Drones">Robotics & Drones</option>
+                                <option value="Autonomous vehicles">Autonomous vehicles</option>
+                                <option value="Electric / Hybrid engine">Electric / Hybrid engine</option>
+                                <option value="Chemical process optimization">Chemical process optimization</option>
+                                <option value="Biotechnical / -medical Engineering">Biotechnical / -medical
+                                    Engineering
+                                </option>
+                                <option value="Pharmacology Research">Pharmacology Research</option>
+                                <option value="Wearables - Materials & Process Design">Wearables - Materials & Process
+                                    Design
+                                </option>
+                                <option value="Biostatistics">Biostatistics</option>
+                                <option value="Emerging Technology Evaluation & Management">Emerging Technology
+                                    Evaluation & Management
+                                </option>
+                                <option value="Energy & Clean-tech">Energy & Clean-tech</option>
+                                <option value="Aero- / Space Technology">Aero- / Space Technology</option>
+                                <option disabled style="font-weight: bold;color: #000;">Logistics, Supply Chain &
+                                    Operations
+                                </option>
+                                <option value="Logistics & Transportation">Logistics & Transportation</option>
+                                <option value="Closed-loop supply chain & Remanufacturing">Closed-loop supply chain &
+                                    Remanufacturing
+                                </option>
+                                <option value="Forecast - Demand - Inventory">Forecast - Demand - Inventory</option>
+                                <option value="Supply Chain Management">Supply Chain Management</option>
+                                <option value="Operations & Plant simulation">Operations & Plant simulation</option>
+                                <option value="Supplier Networks">Supplier Networks</option>
                             </select>
                         </label>
                     </div>
@@ -619,30 +694,11 @@ require("db_connection.php");
                 </div>
         </div>
         <section class="indent-1">
-            <!--<section style="width: 10%">
-            <div class="vertical-menu">
-                <a class="active" onclick='newStep()'>+</a>
-                <?php
-            /*$idComparado = "";
-            require("db_connection.php");
-            $query = "SELECT * FROM newslettermail ORDER BY id DESC";
-            if (!$result = mysqli_query($con, $query)) {
-                exit(mysqli_error($con));
-            }
-            if (mysqli_num_rows($result) > 0) {
-                while ($row = mysqli_fetch_assoc($result)) {
-                    $idComparado = $row['id'];
-                    echo "<a  onclick='onStepClicked($idComparado)'>" . $row['subject'] . "</a>";
-                }
-                echo "<input type='hidden' id='stepsNum' value='" . mysqli_num_rows($result) . "'>";
-            }*/
-            ?>
-            </div>
-        </section>-->
             <form action="Sequences.php" method="post">
                 <section style='width: 90%' class='sectionMails' id='new'>
-                    <label for="event"><select id="event" class="selectpicker" data-live-search="true"
-                                               style="height: 50px;line-height: 4;">
+                    <label for="event">
+                        <select id="event" class="selectpicker" data-live-search="true"
+                                style="height: 50px;line-height: 4;">
                             <?php
                             $query = "SELECT * FROM newsletterEvents";
                             if (!$result = mysqli_query($con, $query)) {
@@ -659,10 +715,9 @@ require("db_connection.php");
                     </label>
                     <p>Email Subject</p>
                     <label class='labelEmail'>
-                <textarea class='labelEmail' name="subject"
-                          style="border: 1px solid #bebcbb;border-radius: 4px;font-size: 0.72em;height: 2.6em; padding: 0.4em;"></textarea>
+                        <textarea class='labelEmail' name="subject"
+                                  style="border: 1px solid #bebcbb;border-radius: 4px;font-size: 0.72em;height: 2.6em; padding: 0.4em;"></textarea>
                     </label>
-
                     <p>Email Content</p>
                     <label class='labelEmail'>
                         <textarea class="ckeditor" name="content"></textarea>
@@ -821,12 +876,30 @@ if ($_POST) {
 
         $dateFormated = date("m-d-Y", strtotime($_POST['dateBBB']));
 
+        $preferencesSS = array(
+            implode(",",$_POST['preferences']));
+
+        $preferencesSS = array_filter($preferencesSS,'strlen');
+
+        $preferencesSS  = implode(",",$preferencesSS);
+
+        $preferencesZZ = array(
+            implode(",",$_POST['industry']));
+
+        $preferencesZZ = array_filter($preferencesZZ,'strlen');
+
+        $preferencesZZ  = implode(",",$preferencesZZ);
+
         if ($_POST['dateDay'] == 'DayChoose') {
-            $query = "UPDATE crontab SET days = '$preferences', dateFormat='day', timePicker = '$timeP', emails = '$preferencesEmails' WHERE name = 'Newsletter';";
+
+            $query = "UPDATE crontab SET days = '$preferences', dateFormat='day', timePicker = '$timeP', emails = '$preferencesEmails', industry = '$preferencesZZ', preferences = '$preferencesSS' WHERE name = 'Newsletter';";
+            var_dump($con);
         } else if ($_POST['dateDay'] == 'DateChoose') {
-            $query = "UPDATE crontab SET datePicker='$dateFormated', dateFormat='date', timePicker = '$timeP', emails = '$preferencesEmails' WHERE name = 'Newsletter';";
+            $query = "UPDATE crontab SET datePicker='' , dateFormat='date', timePicker = '$timeP', emails = '$preferencesEmails', industry = '$preferencesZZ', preferences = '$preferencesSS' WHERE name = 'Newsletter';";
+            var_dump($con);
         } else {
             echo "ERROR WITH THE CHOICE";
+            var_dump($con);
         }
         $query = mysqli_query($con, $query);
     } /*else {

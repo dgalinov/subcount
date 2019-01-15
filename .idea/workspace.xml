@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ba90ca5-96cf-451d-89fe-c2adbe3b3f67" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sequences.php" beforeDir="false" afterPath="$PROJECT_DIR$/Sequences.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,26 +34,33 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sequences.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="610" column="51" selection-start-line="610" selection-start-column="51" selection-end-line="610" selection-end-column="51" />
+            <state relative-caret-position="248">
+              <caret line="880" lean-forward="true" selection-start-line="880" selection-end-line="880" />
               <folding>
-                <element signature="e#6#41#0#PHP" expanded="true" />
-                <element signature="e#16416#16439#0#HTML" expanded="true" />
-                <element signature="e#16760#16796#0#HTML" expanded="true" />
-                <element signature="e#20595#20713#0#HTML" expanded="true" />
-                <element signature="e#20813#20908#0#HTML" expanded="true" />
-                <element signature="e#26563#26599#0#HTML" expanded="true" />
-                <element signature="e#26615#26726#0#HTML" expanded="true" />
+                <element signature="e#39286#39324#0#HTML" expanded="true" />
+                <element signature="e#40290#40328#0#HTML" expanded="true" />
+                <element signature="e#40977#41015#0#HTML" expanded="true" />
+                <element signature="e#41768#41806#0#HTML" expanded="true" />
+                <element signature="e#42746#42784#0#HTML" expanded="true" />
+                <element signature="e#43481#43519#0#HTML" expanded="true" />
+                <element signature="e#44140#44178#0#HTML" expanded="true" />
+                <element signature="e#44651#44689#0#HTML" expanded="true" />
+                <element signature="e#45973#46011#0#HTML" expanded="true" />
+                <element signature="e#40555#40573#0#HTML" expanded="true" />
+                <element signature="e#40755#40791#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../formtelanto/index.php">
+        <entry file="file://$PROJECT_DIR$/../formtelanto/thanks.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
-              <caret line="356" column="144" lean-forward="true" selection-start-line="356" selection-start-column="144" selection-end-line="356" selection-end-column="144" />
+            <state relative-caret-position="345">
+              <caret line="124" lean-forward="true" selection-start-line="124" selection-end-line="124" />
+              <folding>
+                <element signature="e#152#186#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -59,20 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="773" column="24" lean-forward="true" selection-start-line="773" selection-start-column="24" selection-end-line="773" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SendMailsNewsletter.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-247">
-              <caret line="27" column="51" lean-forward="true" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
-              <folding>
-                <element signature="e#200#234#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="532">
+              <caret line="788" column="16" selection-start-line="788" selection-start-column="16" selection-end-line="788" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -89,7 +86,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>mybarChart</find>
       <find>all day</find>
       <find>multi</find>
       <find>indu</find>
@@ -119,6 +115,7 @@
       <find>datepicker</find>
       <find>border</find>
       <find>08c</find>
+      <find>dateFormated</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -194,10 +191,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1407" />
-    <option name="y" value="-2" />
-    <option name="width" value="1305" />
-    <option name="height" value="555" />
+    <option name="x" value="41" />
+    <option name="y" value="25" />
+    <option name="width" value="1325" />
+    <option name="height" value="743" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -205,7 +202,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -213,10 +209,16 @@
               <item name="subcount" type="b2602c69:ProjectViewProjectNode" />
               <item name="subcount" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="subcount" type="b2602c69:ProjectViewProjectNode" />
+              <item name="subcount" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -339,15 +341,16 @@
       <workItem from="1547107288148" duration="1046000" />
       <workItem from="1547109027181" duration="11606000" />
       <workItem from="1547193866743" duration="14786000" />
-      <workItem from="1547454919713" duration="11321000" />
+      <workItem from="1547454919713" duration="11530000" />
+      <workItem from="1547539249252" duration="9468000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="390187000" />
+    <option name="totallyTimeSpent" value="399864000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1407" y="-2" width="1879" height="1082" extended-state="6" />
+    <frame x="41" y="25" width="1325" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
@@ -490,16 +493,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.lock">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../formtelanto/thanks.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-          <folding>
-            <element signature="e#152#186#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/PHPMailer.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -660,13 +653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="773" column="24" lean-forward="true" selection-start-line="773" selection-start-column="24" selection-end-line="773" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="532">
@@ -693,23 +679,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../formtelanto/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="356" column="144" lean-forward="true" selection-start-line="356" selection-start-column="144" selection-end-line="356" selection-end-column="144" />
+        <state relative-caret-position="338">
+          <caret line="476" column="33" lean-forward="true" selection-start-line="476" selection-start-column="33" selection-end-line="476" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="788" column="16" selection-start-line="788" selection-start-column="16" selection-end-line="788" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../formtelanto/thanks.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="124" lean-forward="true" selection-start-line="124" selection-end-line="124" />
+          <folding>
+            <element signature="e#152#186#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sequences.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="610" column="51" selection-start-line="610" selection-start-column="51" selection-end-line="610" selection-end-column="51" />
+        <state relative-caret-position="248">
+          <caret line="880" lean-forward="true" selection-start-line="880" selection-end-line="880" />
           <folding>
-            <element signature="e#6#41#0#PHP" expanded="true" />
-            <element signature="e#16416#16439#0#HTML" expanded="true" />
-            <element signature="e#16760#16796#0#HTML" expanded="true" />
-            <element signature="e#20595#20713#0#HTML" expanded="true" />
-            <element signature="e#20813#20908#0#HTML" expanded="true" />
-            <element signature="e#26563#26599#0#HTML" expanded="true" />
-            <element signature="e#26615#26726#0#HTML" expanded="true" />
+            <element signature="e#39286#39324#0#HTML" expanded="true" />
+            <element signature="e#40290#40328#0#HTML" expanded="true" />
+            <element signature="e#40977#41015#0#HTML" expanded="true" />
+            <element signature="e#41768#41806#0#HTML" expanded="true" />
+            <element signature="e#42746#42784#0#HTML" expanded="true" />
+            <element signature="e#43481#43519#0#HTML" expanded="true" />
+            <element signature="e#44140#44178#0#HTML" expanded="true" />
+            <element signature="e#44651#44689#0#HTML" expanded="true" />
+            <element signature="e#45973#46011#0#HTML" expanded="true" />
+            <element signature="e#40555#40573#0#HTML" expanded="true" />
+            <element signature="e#40755#40791#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
