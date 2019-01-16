@@ -874,38 +874,38 @@ if ($_POST) {
         $preferences = implode(",", $preferences);
         $preferencesEmails = implode(",", $preferencesEmails);
 
-        $dateFormated = date("m-d-Y", strtotime($_POST['dateBBB']));
+        $dateFormated = explode("/", $_POST['dateBBB']);
 
         $preferencesSS = array(
-            implode(",",$_POST['preferences']));
+            implode(",", $_POST['preferences']));
 
-        $preferencesSS = array_filter($preferencesSS,'strlen');
+        $preferencesSS = array_filter($preferencesSS, 'strlen');
 
-        $preferencesSS  = implode(",",$preferencesSS);
+        $preferencesSS = implode(",", $preferencesSS);
 
         $preferencesZZ = array(
-            implode(",",$_POST['industry']));
+            implode(",", $_POST['industry']));
 
-        $preferencesZZ = array_filter($preferencesZZ,'strlen');
+        $preferencesZZ = array_filter($preferencesZZ, 'strlen');
 
-        $preferencesZZ  = implode(",",$preferencesZZ);
+        $preferencesZZ = implode(",", $preferencesZZ);
 
         if ($_POST['dateDay'] == 'DayChoose') {
 
             $query = "UPDATE crontab SET days = '$preferences', dateFormat='day', timePicker = '$timeP', emails = '$preferencesEmails', industry = '$preferencesZZ', preferences = '$preferencesSS' WHERE name = 'Newsletter';";
-            var_dump($con);
+            //var_dump($con);
         } else if ($_POST['dateDay'] == 'DateChoose') {
-            $query = "UPDATE crontab SET datePicker='' , dateFormat='date', timePicker = '$timeP', emails = '$preferencesEmails', industry = '$preferencesZZ', preferences = '$preferencesSS' WHERE name = 'Newsletter';";
-            var_dump($con);
+            $query = "UPDATE crontab SET datePicker='$dateFormated[2]-$dateFormated[0]-$dateFormated[1]' , dateFormat='date', timePicker = '$timeP', emails = '$preferencesEmails', industry = '$preferencesZZ', preferences = '$preferencesSS' WHERE name = 'Newsletter';";
+            //var_dump($con);
         } else {
             echo "ERROR WITH THE CHOICE";
             var_dump($con);
         }
         $query = mysqli_query($con, $query);
-    } /*else {
+    } else {
         var_dump($con);
         echo "No funciona";
-    }*/
+    }
     if ($_POST['action'] == 'New') {
         if (!empty($_POST['NameEvent'])) {
             $nameEvent = $_POST['NameEvent'];
