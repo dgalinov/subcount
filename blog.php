@@ -74,7 +74,7 @@
 </head>
 <body>
 <div class="topnavS">
-    <a href="Sequences.php">Newsletter</a>
+    <a href="index.php">Newsletter</a>
     <a href="challengeaudit.php">Challenge Audit</a>
     <a href="webinars.php">Webinars</a>
     <a class="active" href="blog.php">Blog</a>
