@@ -370,7 +370,7 @@ input[type=text], select {
 }
 
 .col- {
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .modal {
@@ -762,6 +762,8 @@ p {
 #hiddenDay {}
 #hiddenDate {
     display:none;}
+#hiddenStep {
+    display:none;}
 .selectDateDay {
     width: 5.6em;
     background: white;
@@ -787,4 +789,7 @@ p {
 .categoryMarked {
     font-weight: bold;
     color: black;
+}
+.dropdown .bootstrap-select {
+    width: 6em;
 }

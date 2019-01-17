@@ -689,6 +689,50 @@ require("db_connection.php");
                         </label>
                     </div>
                     <div class="col-">
+                        <label for="eventoChoose">
+                            <div class="dropdown bootstrap-select">
+                                <select id="eventoChoose" name="eventoChoose" class="selectpicker">
+                                    <?php
+                                    $query = "SELECT * FROM newsletterEvents";
+                                    $eventoSelected = "";
+                                    if (!$result = mysqli_query($con, $query)) {
+                                        exit(mysqli_error($con));
+                                    } else {
+                                        if (mysqli_num_rows($result) > 0) {
+                                            while ($row = mysqli_fetch_assoc($result)) {
+                                                echo "<option>" . $row['evento'] . "</option>";
+                                                $eventoSelected = $row['evento'];
+                                            }
+                                        }
+                                    }
+                                    ?>
+                                </select>
+                            </div>
+
+                        </label>
+                    </div>
+                    <div id="hiddenStep">
+                        <div class="col-" >
+                            <label for="stepChoose">
+                                <select id="stepChoose" name="stepChoose" class="selectpicker" style="width: 6em;">
+                                    <?php
+                                    $query = "SELECT * FROM newsletterMail";
+                                    if (!$result = mysqli_query($con, $query)) {
+                                        exit(mysqli_error($con));
+                                    } else {
+                                        if (mysqli_num_rows($result) > 0) {
+                                            while ($row = mysqli_fetch_assoc($result)) {
+                                                echo "<option>" . $row['subject'] . "</option>";
+                                            }
+                                        }
+                                    }
+
+                                    ?>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-">
                         <input type="submit" class="buttonSaveSequence" name="action" value="Add Filter">
                     </div>
                 </div>
@@ -697,7 +741,7 @@ require("db_connection.php");
             <form action="index.php" method="post">
                 <section style='width: 90%' class='sectionMails' id='new'>
                     <label for="event">
-                        <select id="event" class="selectpicker" data-live-search="true" name="Eventos"
+                        <select id="event" name="Eventos"
                                 style="height: 50px;line-height: 4;">
                             <?php
                             $query = "SELECT * FROM newsletterEvents";
@@ -800,12 +844,15 @@ require("db_connection.php");
         function hideAndShow() {
             var x = document.getElementById("hiddenDay");
             var y = document.getElementById("hiddenDate");
+            var z = document.getElementById("hiddenStep");
             if (x.style.display === "none") {
                 x.style.display = "block";
                 y.style.display = "none";
+                z.style.display = "none";
             } else {
                 x.style.display = "none";
                 y.style.display = "block";
+                z.style.display = "block";
             }
         }
     </script>
@@ -818,7 +865,8 @@ if ($_POST) {
             if (!empty($_POST['content'])) {
                 $content = $_POST['content'];
                 $subject = $_POST['subject'];
-                $query = mysqli_query($con, "INSERT INTO newsletterMail(evento, content, subject) VALUES ('" . $_POST['Eventos'] . "','$content', '$subject')");
+                $evento = $_POST['Eventos'];
+                $query = mysqli_query($con, "INSERT INTO newsletterMail(evento, content, subject) VALUES ('$evento','$content', '$subject')");
             }
         }
     }
