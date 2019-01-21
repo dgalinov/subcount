@@ -169,7 +169,8 @@ require("db_connection.php");
                 <div class="modal-body">
                     <form method="post" action="index.php">
                         <input type="text" id="fname" name="emailSS" placeholder="Input email" class="EMAILStyle">
-                        <input type="password" id="fname" name="passwordSS" placeholder="Input password" class="PSSWStyle">
+                        <input type="password" id="fname" name="passwordSS" placeholder="Input password"
+                               class="PSSWStyle">
                         <input type="submit" class="buttonSaveSequence" name="action" value="New Email">
                     </form>
                 </div>
@@ -206,7 +207,8 @@ require("db_connection.php");
             </div>
             <div class="modal3-body">
                 <form method="post" action="index.php">
-                    <input type="text" id="fname" name="NameEvent" placeholder="Input Name Event" class="EventoCreating">
+                    <input type="text" id="fname" name="NameEvent" placeholder="Input Name Event"
+                           class="EventoCreating">
                     <input type="submit" class="buttonSaveSequence" name="action" value="New">
                 </form>
             </div>
@@ -296,7 +298,8 @@ require("db_connection.php");
                     </div>
                     <div class="col-">
                         <div id="hiddenDay">
-                            <label for="dias"><select id="dias" name="dias[]" class="selectpicker" multiple data-live-search="true">
+                            <label for="dias"><select id="dias" name="dias[]" class="selectpicker" multiple
+                                                      data-live-search="true">
                                     <?php
                                     $query = "SELECT days FROM crontab WHERE name = 'Newsletter'";
                                     if (!$result = mysqli_query($con, $query)) {
@@ -351,8 +354,7 @@ require("db_connection.php");
                     <div class="col-">
                         <div id="hiddenDate">
                             <label for="datepicker" class="datePickLabel">
-                                <input type="text" id="datepicker" name="dateBBB"
-                                       style="font-size: 0.70em; border:none;background: none;color: white;padding: 1em;width: 8.5em;">
+                                <input type="text" id="datepicker" name="dateBBB">
                                 <img src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fedgefunders.org%2Fwp-content%2Fuploads%2F2016%2F07%2FICEF_icon-calendar.png&f=1"
                                      id="input_img" alt="icon" width="52em" height="44em">
                             </label>
@@ -362,7 +364,7 @@ require("db_connection.php");
                         <div class="form-group">
                             <div class='input-group date' id='datetimepicker3'>
                                 <input type='text' id="timename" name="tpick" class="form-control" value="
-                        <?php
+                                <?php
                                 $query = "SELECT timePicker FROM crontab WHERE name = 'Newsletter'";
                                 if (!$result = mysqli_query($con, $query)) {
                                     exit(mysqli_error($con));
@@ -585,7 +587,7 @@ require("db_connection.php");
                         <label for="mails">
                             <select id="preferences" name="preferences[]" class="selectpicker" multiple
                                     data-live-search="true" title="Preferences">
-                                <option disabled style="font-weight: bold;color: #000;">Management</option>
+                                <option disabled class="CantChoose">Management</option>
                                 <option value="Strategic / Digital Transformation">Strategic / Digital Transformation
                                 </option>
                                 <option value="New Business Development & Entrepreneurship">New Business Development &
@@ -599,7 +601,7 @@ require("db_connection.php");
                                     Strategy
                                 </option>
                                 <option value="Law & Tax">Law & Tax</option>
-                                <option disabled style="font-weight: bold;color: #000;">Sustainability</option>
+                                <option disabled class="CantChoose">Sustainability</option>
                                 <option value="Circular Economy">Circular Economy</option>
                                 <option value="Social Enterprise / Innovation">Social Enterprise / Innovation</option>
                                 <option value="Sustainable Entrepreneurship">Sustainable Entrepreneurship</option>
@@ -607,7 +609,7 @@ require("db_connection.php");
                                 <option value="Environment & Corporate Social Responsibility">Environment & Corporate
                                     Social Responsibility
                                 </option>
-                                <option disabled style="font-weight: bold;color: #000;">Marketing</option>
+                                <option disabled class="CantChoose">Marketing</option>
                                 <option value="New Product / Service Development">New Product / Service Development
                                 </option>
                                 <option value="Consumer Behaviour 4.0">Consumer Behaviour 4.0</option>
@@ -617,7 +619,7 @@ require("db_connection.php");
                                 </option>
                                 <option value="Brand Management">Brand Management</option>
                                 <option value="Media - Gaming - Entertainment">Media - Gaming - Entertainment</option>
-                                <option disabled style="font-weight: bold;color: #000;">Computer Science</option>
+                                <option disabled class="CantChoose">Computer Science</option>
                                 <option value="Security - Cybersecurity & IT">Security - Cybersecurity & IT</option>
                                 <option value="Project & Service Management">Project & Service Management</option>
                                 <option value="Experience & Product Design">Experience & Product Design</option>
@@ -626,7 +628,7 @@ require("db_connection.php");
                                 <option value="Blockchain">Blockchain</option>
                                 <option value="Hard- & Software IoT">Hard- & Software IoT</option>
                                 <option value="Virtual & Augmented Reality">Virtual & Augmented Reality</option>
-                                <option disabled style="font-weight: bold;color: #000;">Human Resources</option>
+                                <option disabled class="CantChoose">Human Resources</option>
                                 <option value="Future of Work">Future of Work</option>
                                 <option value="Learning & Development">Learning & Development</option>
                                 <option value="Employer Branding - Acquisition & Retention">Employer Branding -
@@ -635,7 +637,7 @@ require("db_connection.php");
                                 <option value="Employee Engagement">Employee Engagement</option>
                                 <option value="Health & Safety">Health & Safety</option>
                                 <option value="Organizational Design">Organizational Design</option>
-                                <option disabled style="font-weight: bold;color: #000;">Data Science</option>
+                                <option disabled class="CantChoose">Data Science</option>
                                 <option value="Machine Learning">Machine Learning</option>
                                 <option value="Artificial Intelligence">Artificial Intelligence</option>
                                 <option value="Data Modeling & Visualization">Data Modeling & Visualization</option>
@@ -643,12 +645,12 @@ require("db_connection.php");
                                     Analysis
                                 </option>
                                 <option value="Decision Support Systems">Decision Support Systems</option>
-                                <option disabled style="font-weight: bold;color: #000;">Finance</option>
+                                <option disabled class="CantChoose">Finance</option>
                                 <option value="Cryptocurrency">Cryptocurrency</option>
                                 <option value="International Trade & Finances">International Trade & Finances</option>
                                 <option value="Accounting & Corporate Finance">Accounting & Corporate Finance</option>
                                 <option value="Procurement">Procurement</option>
-                                <option disabled style="font-weight: bold;color: #000;">Engineering</option>
+                                <option disabled class="CantChoose">Engineering</option>
                                 <option value="Robotics & Drones">Robotics & Drones</option>
                                 <option value="Autonomous vehicles">Autonomous vehicles</option>
                                 <option value="Electric / Hybrid engine">Electric / Hybrid engine</option>
@@ -666,7 +668,7 @@ require("db_connection.php");
                                 </option>
                                 <option value="Energy & Clean-tech">Energy & Clean-tech</option>
                                 <option value="Aero- / Space Technology">Aero- / Space Technology</option>
-                                <option disabled style="font-weight: bold;color: #000;">Logistics, Supply Chain &
+                                <option disabled class="CantChoose">Logistics, Supply Chain &
                                     Operations
                                 </option>
                                 <option value="Logistics & Transportation">Logistics & Transportation</option>
@@ -706,7 +708,7 @@ require("db_connection.php");
                     <div id="hiddenStep">
                         <div class="col-">
                             <label for="stepChoose">
-                                <select id="stepChoose" name="stepChoose" class="selectpicker" style="width: 6em;">
+                                <select id="stepChoose" name="stepChoose" class="selectpicker">
                                     <?php
                                     $query = "SELECT * FROM newsletterMail";
                                     if (!$result = mysqli_query($con, $query)) {
@@ -731,10 +733,9 @@ require("db_connection.php");
         </div>
         <section class="indent-1">
             <form action="index.php" method="post">
-                <section style='width: 90%' class='sectionMails' id='new'>
+                <section class="sectionMails" id="new">
                     <label for="event">
-                        <select id="event" name="Eventos"
-                                style="height: 50px;line-height: 4;">
+                        <select id="event" name="Eventos">
                             <?php
                             $query = "SELECT * FROM newsletterEvents";
                             if (!$result = mysqli_query($con, $query)) {
@@ -751,8 +752,7 @@ require("db_connection.php");
                     </label>
                     <p>Email Subject</p>
                     <label class='labelEmail'>
-                        <textarea class='labelEmail' name="subject"
-                                  style="border: 1px solid #bebcbb;border-radius: 4px;font-size: 0.72em;height: 2.6em; padding: 0.4em;"></textarea>
+                        <textarea class='labelEmail' name="subject" id="NewLabelEmail"></textarea>
                     </label>
                     <p>Email Content</p>
                     <label class='labelEmail'>
@@ -776,7 +776,7 @@ require("db_connection.php");
                                 <div id='" . $idComparar . "'>
                                     <p>Email Subject</p>
                                     <label class='labelEmail'>
-                                        <textarea class='labelEmail' style='border: 1px solid #bebcbb;border-radius: 4px;font-size: 0.72em;height: 2.6em; padding: 0.4em;' name='subject_" . $row['id'] . "'>" . $row['subject'] . "</textarea>
+                                        <textarea class='labelEmail' id='ExistLabelEmail' name='subject_" . $row['id'] . "'>" . $row['subject'] . "</textarea>
                                     </label>
                                     <p>Email Content</p>
                                     <label class='labelEmail'>
@@ -943,16 +943,20 @@ if ($_POST) {
                     while ($row = mysqli_fetch_assoc($result)) {
                         if ($row['event'] == $eventPost) {
                             $query = "UPDATE newsletterCron SET event = '$eventPost' ,days = '$preferences', dateFormat='day', timePicker = '$timeP', emails = '$preferencesEmails', industry = '$preferencesZZ', preferences = '$preferencesSS' ";
+                            var_dump($con);
                         } else {
                             $query = "INSERT INTO newsletterCron VALUES ('$eventPost', '$preferences', 'day', '$timeP', '$preferencesEmails', '$preferencesZZ', '$preferencesSS') ";
+                            var_dump($con);
                         }
                     }
                 } else if ($_POST['dateDay'] == 'DateChoose') {
                     while ($row = mysqli_fetch_assoc($result)) {
                         if ($row['step'] == $stepPost) {
                             $query = "UPDATE newsletterCron SET event = '$eventPost',step = '$stepPost' , datePicker='$dateFormated[2]-$dateFormated[0]-$dateFormated[1]' , dateFormat='date', timePicker = '$timeP', emails = '$preferencesEmails', industry = '$preferencesZZ', preferences = '$preferencesSS'";
+                            var_dump($con);
                         } else {
                             $query = "INSERT INTO newsletterCron VALUES ('$eventPost', '$stepPost', '$preferences', '$dateFormated[2]-$dateFormated[0]-$dateFormated[1]', 'date', '$timeP', '$preferencesEmails', '$preferencesZZ', '$preferencesSS') ";
+                            var_dump($con);
                         }
                     }
                 } else {

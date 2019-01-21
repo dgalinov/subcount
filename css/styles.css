@@ -281,6 +281,7 @@ html, body, #myChart {
 }
 
 .sectionMails {
+    width: 90%;
     padding: 10px;
 }
 
@@ -894,3 +895,45 @@ p {
     height: 2.47em;
 }
 
+#datepicker {
+    font-size: 0.70em;
+    border: none;
+    background: none;
+    color: white;
+    padding: 1em;
+    width: 8.5em;
+}
+
+.CantChoose {
+    font-weight: bold;
+    color: #000;
+}
+
+#stepChoose {
+    width: 6em;
+}
+
+#event {
+    height: 50px;
+    line-height: 4;
+}
+
+#NewLabelEmail {
+    border: 1px solid #bebcbb;
+    border-radius: 4px;
+    font-size: 0.72em;
+    height: 2.6em;
+    padding: 0.4em;
+}
+
+#ExistLabelEmail {
+    border: 1px solid #bebcbb;
+    border-radius: 4px;
+    font-size: 0.72em;
+    height: 2.6em;
+    padding: 0.4em;
+}
+
+#timename {
+    width: 7em;
+}
