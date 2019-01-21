@@ -93,10 +93,9 @@ require("db_connection.php");
         <a href="webinars.php">Webinars</a>
         <a href="blog.php">Blog</a>
         <a href="Now.php">Now</a>
-        <a id="myBtn2" style="float: right">Show History</a>
+        <a id="myBtn2">Show History</a>
         <div id="myModal2" class="modal2">
-            <div class="modal-content"
-                 style="margin-left: 1%;margin-right: 1%;width: 98% !important;margin-top: 20px;">
+            <div class="modal-content">
                 <div class="modal2-header">
                     <span class="close2">&times;</span>
                     <h2>History</h2>
@@ -160,19 +159,17 @@ require("db_connection.php");
                 }
             }
         </script>
-        <a id="myBtn" style="float: right">New Email</a>
+        <a id="myBtn">New Email</a>
         <div id="myModal" class="modal">
-            <div class="modal-content">
+            <div class="modal-content" id="NewEmailStyle">
                 <div class="modal-header">
                     <h2>Email Register</h2>
-                    <span class="close" style="color: white;">&times;</span>
+                    <span class="close">&times;</span>
                 </div>
                 <div class="modal-body">
                     <form method="post" action="index.php">
-                        <input type="text" id="fname" name="emailSS" placeholder="Input email"
-                               style="padding-left: 10px; padding-right: 10px; margin-bottom: 15px;margin-right: 15px;margin-top: 15px">
-                        <input type="password" id="fname" name="passwordSS" placeholder="Input password"
-                               style="padding-left: 10px; padding-right: 10px;margin-right: 15px;margin-bottom: 15px; height: 50px;border: 1px solid #bebcbb;border-radius: 4px;">
+                        <input type="text" id="fname" name="emailSS" placeholder="Input email" class="EMAILStyle">
+                        <input type="password" id="fname" name="passwordSS" placeholder="Input password" class="PSSWStyle">
                         <input type="submit" class="buttonSaveSequence" name="action" value="New Email">
                     </form>
                 </div>
@@ -202,15 +199,14 @@ require("db_connection.php");
         </a>
     </div>
     <div id="myModal3" class="modal3">
-        <div class="modal-content" style="margin-bottom: 40em;width: 27em !important;margin-left: 56em;">
+        <div class="modal-content" id="NewEventStyle">
             <div class="modal3-header">
                 <span class="close3">&times;</span>
                 <h2>Create Event</h2>
             </div>
             <div class="modal3-body">
                 <form method="post" action="index.php">
-                    <input type="text" id="fname" name="NameEvent" placeholder="Input Name Event"
-                           style="padding-left: 10px; padding-right: 10px; margin-bottom: 15px;margin-right: 15px;margin-top: 15px">
+                    <input type="text" id="fname" name="NameEvent" placeholder="Input Name Event" class="EventoCreating">
                     <input type="submit" class="buttonSaveSequence" name="action" value="New">
                 </form>
             </div>
@@ -220,7 +216,7 @@ require("db_connection.php");
         </div>
     </div>
     <div class="sidenav">
-        <a id="myBtn3" style="float: right">New Event</a>
+        <a id="myBtn3">New Event</a>
         <a id='myBtn3' onclick='newStep()'>New Step</a>
         <script>
             var modal3 = document.getElementById('myModal3');
@@ -284,14 +280,13 @@ require("db_connection.php");
     </script>
 
     <div class="main">
-        <div class="container" style="background:#08c">
+        <div class="container">
             <form method="post" action="index.php">
                 <div class="row">
                     <div class="col-">
                         <div class="selectDateDay">
                             <label>
-                                <select id="hideDateDay" name="dateDay"
-                                        style="height: 50px;line-height: 4;">
+                                <select id="hideDateDay" name="dateDay">
                                     <option onclick="hideAndShow()" value="DayChoose">Day</option>
                                     <option onclick="hideAndShow()" value="DateChoose">Date</option>
                                 </select>
@@ -301,9 +296,7 @@ require("db_connection.php");
                     </div>
                     <div class="col-">
                         <div id="hiddenDay">
-                            <label for="dias"><select id="dias" name="dias[]" class="selectpicker" multiple
-                                                      data-live-search="true"
-                                                      style="height: 50px;line-height: 4;">
+                            <label for="dias"><select id="dias" name="dias[]" class="selectpicker" multiple data-live-search="true">
                                     <?php
                                     $query = "SELECT days FROM crontab WHERE name = 'Newsletter'";
                                     if (!$result = mysqli_query($con, $query)) {
@@ -357,8 +350,7 @@ require("db_connection.php");
                     </div>
                     <div class="col-">
                         <div id="hiddenDate">
-                            <label for="datepicker"
-                                   style="border: 1px solid white; -webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;height: 2.47em;">
+                            <label for="datepicker" class="datePickLabel">
                                 <input type="text" id="datepicker" name="dateBBB"
                                        style="font-size: 0.70em; border:none;background: none;color: white;padding: 1em;width: 8.5em;">
                                 <img src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fedgefunders.org%2Fwp-content%2Fuploads%2F2016%2F07%2FICEF_icon-calendar.png&f=1"
@@ -712,7 +704,7 @@ require("db_connection.php");
                         </label>
                     </div>
                     <div id="hiddenStep">
-                        <div class="col-" >
+                        <div class="col-">
                             <label for="stepChoose">
                                 <select id="stepChoose" name="stepChoose" class="selectpicker" style="width: 6em;">
                                     <?php
@@ -938,17 +930,48 @@ if ($_POST) {
 
         $preferencesZZ = implode(",", $preferencesZZ);
 
-        if ($_POST['dateDay'] == 'DayChoose') {
+        $eventPost = $_POST['eventoChoose'];
 
-            $query = "UPDATE crontab SET days = '$preferences', dateFormat='day', timePicker = '$timeP', emails = '$preferencesEmails', industry = '$preferencesZZ', preferences = '$preferencesSS' WHERE name = 'Newsletter';";
+        $stepPost = $_POST['stepChoose'];
+
+        $queryA = "SELECT * FROM newsletterCron ";
+        if (!$result = mysqli_query($con, $queryA)) {
+            exit(mysqli_error($con));
+        } else {
+            if (mysqli_num_rows($result) > 0) {
+                if ($_POST['dateDay'] == 'DayChoose') {
+                    while ($row = mysqli_fetch_assoc($result)) {
+                        if ($row['event'] == $eventPost) {
+                            $query = "UPDATE newsletterCron SET event = '$eventPost' ,days = '$preferences', dateFormat='day', timePicker = '$timeP', emails = '$preferencesEmails', industry = '$preferencesZZ', preferences = '$preferencesSS' ";
+                        } else {
+                            $query = "INSERT INTO newsletterCron VALUES ('$eventPost', '$preferences', 'day', '$timeP', '$preferencesEmails', '$preferencesZZ', '$preferencesSS') ";
+                        }
+                    }
+                } else if ($_POST['dateDay'] == 'DateChoose') {
+                    while ($row = mysqli_fetch_assoc($result)) {
+                        if ($row['step'] == $stepPost) {
+                            $query = "UPDATE newsletterCron SET event = '$eventPost',step = '$stepPost' , datePicker='$dateFormated[2]-$dateFormated[0]-$dateFormated[1]' , dateFormat='date', timePicker = '$timeP', emails = '$preferencesEmails', industry = '$preferencesZZ', preferences = '$preferencesSS'";
+                        } else {
+                            $query = "INSERT INTO newsletterCron VALUES ('$eventPost', '$stepPost', '$preferences', '$dateFormated[2]-$dateFormated[0]-$dateFormated[1]', 'date', '$timeP', '$preferencesEmails', '$preferencesZZ', '$preferencesSS') ";
+                        }
+                    }
+                } else {
+                    echo "ERROR WITH THE CHOICE";
+                    var_dump($con);
+                }
+            }
+        }
+
+        /*if ($_POST['dateDay'] == 'DayChoose') {
+            $query = "UPDATE newsletterCron SET event = '$eventPost' ,days = '$preferences', dateFormat='day', timePicker = '$timeP', emails = '$preferencesEmails', industry = '$preferencesZZ', preferences = '$preferencesSS' WHERE name = 'Newsletter';";
             //var_dump($con);
         } else if ($_POST['dateDay'] == 'DateChoose') {
-            $query = "UPDATE crontab SET datePicker='$dateFormated[2]-$dateFormated[0]-$dateFormated[1]' , dateFormat='date', timePicker = '$timeP', emails = '$preferencesEmails', industry = '$preferencesZZ', preferences = '$preferencesSS' WHERE name = 'Newsletter';";
+            $query = "UPDATE newsletterCron SET event = '$eventPost',step = '$stepPost' , datePicker='$dateFormated[2]-$dateFormated[0]-$dateFormated[1]' , dateFormat='date', timePicker = '$timeP', emails = '$preferencesEmails', industry = '$preferencesZZ', preferences = '$preferencesSS' WHERE name = 'Newsletter';";
             //var_dump($con);
         } else {
             echo "ERROR WITH THE CHOICE";
             var_dump($con);
-        }
+        }*/
         $query = mysqli_query($con, $query);
     } else {
         var_dump($con);

@@ -68,6 +68,8 @@ html, body, #myChart {
     overflow: hidden;
     background-color: #08c;
     cursor: pointer;
+    position: fixed;
+    width: 100%;
 }
 
 .topnavS a {
@@ -95,11 +97,16 @@ html, body, #myChart {
     background-color: white;
     color: black;
 }
+
 .topnavS .icon {
     display: none;
 }
+
 @media screen and (max-width: 600px) {
-    .topnavS a:not(:first-child) {display: none;}
+    .topnavS a:not(:first-child) {
+        display: none;
+    }
+
     .topnavS a.icon {
         float: right;
         display: block;
@@ -107,12 +114,16 @@ html, body, #myChart {
 }
 
 @media screen and (max-width: 600px) {
-    .topnavS.responsive {position: relative;}
+    .topnavS.responsive {
+        position: relative;
+    }
+
     .topnavS.responsive .icon {
         position: absolute;
         right: 0;
         top: 0;
     }
+
     .topnavS.responsive a {
         float: none;
         display: block;
@@ -362,6 +373,7 @@ input[type=text], select {
     justify-content: center !important;
     padding-top: 0.6em !important;
     padding-left: 1.5em !important;
+    background: #08c;
     /*border-bottom: 4px solid #08c;*/
 }
 
@@ -376,7 +388,7 @@ input[type=text], select {
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     left: 0;
     top: 0;
     width: 100%;
@@ -394,15 +406,18 @@ input[type=text], select {
     position: fixed;
     bottom: 0;
     background-color: #fefefe;
-
     -webkit-animation-name: slideIn;
     -webkit-animation-duration: 0.4s;
     animation-name: slideIn;
     animation-duration: 0.4s;
-    margin-left: 30%;
+    /*margin-left: 30%;
     margin-right: 30%;
     width: 40% !important;
-    margin-top: 12%;
+    margin-top: 12%;*/
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 98% !important;
+    margin-top: 7em;
 }
 
 .close {
@@ -605,7 +620,7 @@ p {
     height: 100%;
     width: 200px;
     position: fixed;
-    /*z-index: 1;*/
+    z-index: 0 !important;
     top: 0;
     left: 0;
     background-color: #08c;
@@ -636,6 +651,7 @@ p {
 .main {
     margin-left: 10em;
     font-size: 20px;
+    margin-top: 2.416em;
 }
 
 .active {
@@ -674,7 +690,7 @@ p {
 .modal3 {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
     left: 0;
     top: 0;
     width: 100%;
@@ -732,6 +748,7 @@ p {
     background-color: #08c;
     color: white;
 }
+
 .btn-light:not(:disabled):not(.disabled).active, .btn-light:not(:disabled):not(.disabled):active, .show > .btn-light.dropdown-toggle {
     color: white !important;
 
@@ -739,42 +756,55 @@ p {
 
     border-color: white !important;
 }
+
 .form-control {
-    color: white !important;
-    background: none !important;
-    border: 1px solid white !important;
+    color: black !important;
+    background: white !important;
+    border: 1px solid #08c !important;
 }
+
 .open > .dropdown-menu {
-    background: #08c;
+    /*background: #08c;*/
 }
+
 .dropdown-menu.show {
-    background: #08c;
+    /*background: #08c;*/
 }
+
 .bootstrap-select .dropdown-menu.inner {
     /*-webkit-border-radius: 8px !important;
     -moz-border-radius: 8px !important;
     border-radius: 8px !important;*/
     background: white !important;
 }
+
 .dropdown-menu > .active > a, .dropdown-menu > .active > a:hover, .dropdown-menu > .active > a:focus {
     background-color: #46a4d4 !important;
 }
-#hiddenDay {}
+
+#hiddenDay {
+}
+
 #hiddenDate {
-    display:none;}
+    display: none;
+}
+
 #hiddenStep {
-    display:none;}
+    display: none;
+}
+
 .selectDateDay {
     width: 5.6em;
     background: white;
-    border:none;
-    overflow:hidden;
+    border: none;
+    overflow: hidden;
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
     height: 2.6em;
     padding-left: 0.7em;
 }
+
 .selectDateDay select {
     display: block;
     padding: 0em 3.6em 0em 0em;
@@ -786,10 +816,81 @@ p {
     font-weight: normal;
     font-size: 14px;
 }
+
 .categoryMarked {
     font-weight: bold;
     color: black;
 }
+
 .dropdown .bootstrap-select {
     width: 6em;
 }
+
+#myBtn2 {
+    float: right;
+}
+
+#myBtn {
+    float: right;
+}
+
+#myBtn3 {
+    float: right;
+}
+
+.PSSWStyle {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    height: 50px;
+    border: 1px solid #bebcbb;
+    border-radius: 4px;
+}
+
+.EMAILStyle {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    margin-top: 15px
+}
+
+#NewEventStyle {
+    margin-bottom: 40em;
+    width: 27em !important;
+    margin-left: 56em;
+}
+
+#NewEmailStyle {
+    margin-bottom: 40em;
+    width: 50em !important;
+    margin-left: 40em;
+}
+
+.EventoCreating {
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    margin-top: 15px
+}
+
+#hideDateDay {
+    height: 50px;
+    line-height: 4;
+}
+
+#dias {
+    height: 50px;
+    line-height: 4;
+}
+
+.datePickLabel {
+    border: 1px solid white;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    height: 2.47em;
+}
+
