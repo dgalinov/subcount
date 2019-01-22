@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ba90ca5-96cf-451d-89fe-c2adbe3b3f67" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,36 +30,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="940" column="47" selection-start-line="940" selection-start-column="47" selection-end-line="940" selection-end-column="47" />
-              <folding>
-                <element signature="n#style#0;n#section#0;n#form#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../ZoonimalsRP/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="982">
-              <caret line="69" column="22" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
-              <folding>
-                <element signature="n#style#0;n#svg#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#g#0;n#svg#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/styles.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="837">
-              <caret line="399" column="35" lean-forward="true" selection-start-line="399" selection-start-column="35" selection-end-line="399" selection-end-column="35" />
+            <state relative-caret-position="621">
+              <caret line="866" column="45" lean-forward="true" selection-start-line="866" selection-start-column="45" selection-end-line="866" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -76,7 +51,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>5677fc</find>
       <find>datepicker</find>
       <find>border</find>
       <find>08c</find>
@@ -106,6 +80,7 @@
       <find>timename</find>
       <find>z-index</find>
       <find>hide</find>
+      <find>cron</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -194,8 +169,44 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="subcount" type="b2602c69:ProjectViewProjectNode" />
+              <item name="subcount" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="subcount" type="b2602c69:ProjectViewProjectNode" />
+              <item name="subcount" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="subcount" type="b2602c69:ProjectViewProjectNode" />
+              <item name="subcount" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="phpmailer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="subcount" type="b2602c69:ProjectViewProjectNode" />
+              <item name="subcount" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="phpmailer" type="462c0819:PsiDirectoryNode" />
+              <item name="phpmailer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="subcount" type="b2602c69:ProjectViewProjectNode" />
+              <item name="subcount" type="462c0819:PsiDirectoryNode" />
+              <item name="vendor" type="462c0819:PsiDirectoryNode" />
+              <item name="phpmailer" type="462c0819:PsiDirectoryNode" />
+              <item name="phpmailer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -323,12 +334,13 @@
       <workItem from="1547625532150" duration="10319000" />
       <workItem from="1547714430353" duration="7290000" />
       <workItem from="1547799070081" duration="8671000" />
-      <workItem from="1548059291425" duration="10681000" />
+      <workItem from="1548059291425" duration="11249000" />
+      <workItem from="1548146834081" duration="9138000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="437427000" />
+    <option name="totallyTimeSpent" value="447133000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="41" y="25" width="1325" height="743" extended-state="6" />
@@ -397,7 +409,6 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../c4c/adminpanelC.php" />
     <entry file="file://$PROJECT_DIR$/../c4c/results.php" />
     <entry file="file://$PROJECT_DIR$/../c4c/calculator.php" />
     <entry file="file://$PROJECT_DIR$/../c4c/constants.php" />
@@ -447,13 +458,6 @@
     <entry file="file://$PROJECT_DIR$/Day.php" />
     <entry file="file://$PROJECT_DIR$/composer.lock">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/PHPMailer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-174">
-          <caret line="1127" column="36" selection-start-line="1127" selection-start-column="36" selection-end-line="1127" selection-end-column="36" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/D02F/styles.css" />
     <entry file="file://$PROJECT_DIR$/css/style.css" />
@@ -643,34 +647,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="837">
-          <caret line="399" column="35" lean-forward="true" selection-start-line="399" selection-start-column="35" selection-end-line="399" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../index.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="940" column="47" selection-start-line="940" selection-start-column="47" selection-end-line="940" selection-end-column="47" />
-          <folding>
-            <element signature="n#style#0;n#section#0;n#form#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../ZoonimalsRP/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="982">
-          <caret line="69" column="22" selection-start-line="69" selection-start-column="22" selection-end-line="69" selection-end-column="22" />
+        <state relative-caret-position="-788">
+          <caret line="14" column="68" lean-forward="true" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
           <folding>
             <element signature="n#style#0;n#svg#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#g#0;n#svg#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/PHPMailer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="3887" column="59" selection-start-line="3887" selection-start-column="59" selection-end-line="3887" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/POP3.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-30" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="399" column="35" selection-start-line="399" selection-start-column="35" selection-end-line="399" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="866" column="45" lean-forward="true" selection-start-line="866" selection-start-column="45" selection-end-line="866" selection-end-column="45" />
         </state>
       </provider>
     </entry>

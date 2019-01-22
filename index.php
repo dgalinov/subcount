@@ -289,8 +289,8 @@ require("db_connection.php");
                         <div class="selectDateDay">
                             <label>
                                 <select id="hideDateDay" name="dateDay">
-                                    <option onclick="hideAndShow()" value="DayChoose">Day</option>
-                                    <option onclick="hideAndShow()" value="DateChoose">Date</option>
+                                    <option onclick="showDay()" value="DayChoose">Day</option>
+                                    <option onclick="showDate()" value="DateChoose">Date</option>
                                 </select>
                             </label>
                         </div>
@@ -301,7 +301,8 @@ require("db_connection.php");
                             <label for="dias"><select id="dias" name="dias[]" class="selectpicker" multiple
                                                       data-live-search="true">
                                     <?php
-                                    $query = "SELECT days FROM crontab WHERE name = 'Newsletter'";
+                                    $mSelected = $tSelected = $wSelected = $thSelected = $fSelected = $sSelected = $suSelected = "";
+                                    $query = "SELECT days FROM newsletterCron ";
                                     if (!$result = mysqli_query($con, $query)) {
                                         exit(mysqli_error($con));
                                     } else {
@@ -309,44 +310,51 @@ require("db_connection.php");
                                             while ($row = mysqli_fetch_assoc($result)) {
                                                 $arrayDias = explode(",", $row['days']);
                                                 if (in_array("Monday", $arrayDias)) {
-                                                    echo "<option selected='selected' value='Monday'>Monday</option>";
+                                                    $mSelected = "selected='selected'";
                                                 } else {
-                                                    echo "<option value='Monday'>Monday</option>";
+                                                    $mSelected = "";
                                                 }
                                                 if (in_array("Tuesday", $arrayDias)) {
-                                                    echo "<option selected='selected' value='Tuesday'>Tuesday</option>";
+                                                    $tSelected = "selected='selected'";
                                                 } else {
-                                                    echo "<option value='Tuesday'>Tuesday</option>";
+                                                    $tSelected = "";
                                                 }
                                                 if (in_array("Wednesday", $arrayDias)) {
-                                                    echo "<option selected='selected' value='Wednesday'>Wednesday</option>";
+                                                    $wSelected = "selected='selected'";
                                                 } else {
-                                                    echo "<option value='Wednesday'>Wednesday</option>";
+                                                    $wSelected = "";
                                                 }
                                                 if (in_array("Thursday", $arrayDias)) {
-                                                    echo "<option selected='selected' value='Thursday'>Thursday</option>";
+                                                    $thSelected = "selected='selected'";
                                                 } else {
-                                                    echo "<option value='Thursday'>Thursday</option>";
+                                                    $thSelected = "";
                                                 }
                                                 if (in_array("Friday", $arrayDias)) {
-                                                    echo "<option selected='selected' value='Friday'>Friday</option>";
+                                                    $fSelected = "selected='selected'";
                                                 } else {
-                                                    echo "<option value='Friday'>Friday</option>";
+                                                    $fSelected = "";
                                                 }
                                                 if (in_array("Saturday", $arrayDias)) {
-                                                    echo "<option selected='selected' value='Saturday'>Saturday</option>";
+                                                    $sSelected = "selected='selected'";
                                                 } else {
-                                                    echo "<option value='Saturday'>Saturday</option>";
+                                                    $sSelected = "";
                                                 }
                                                 if (in_array("Sunday", $arrayDias)) {
-                                                    echo "<option selected='selected' value='Sunday'>Sunday</option>";
+                                                    $suSelected = "selected='selected'";
                                                 } else {
-                                                    echo "<option value='Sunday'>Sunday</option>";
+                                                    $suSelected = "";
                                                 }
                                             }
                                         }
                                     }
                                     ?>
+                                    <option <?php echo $mSelected ?> value="Monday">Monday</option>
+                                    <option <?php echo $tSelected ?> value="Monday">Tuesday</option>
+                                    <option <?php echo $wSelected ?> value="Monday">Wednesday</option>
+                                    <option <?php echo $thSelected ?> value="Monday">Thursday</option>
+                                    <option <?php echo $fSelected ?> value="Monday">Friday</option>
+                                    <option <?php echo $sSelected ?> value="Monday">Saturday</option>
+                                    <option <?php echo $suSelected ?> value="Monday">Sunday</option>
                                 </select>
                             </label>
                         </div>
@@ -365,7 +373,7 @@ require("db_connection.php");
                             <div class='input-group date' id='datetimepicker3'>
                                 <input type='text' id="timename" name="tpick" class="form-control" value="
                                 <?php
-                                $query = "SELECT timePicker FROM crontab WHERE name = 'Newsletter'";
+                                $query = "SELECT timePicker FROM newsletterCron ";
                                 if (!$result = mysqli_query($con, $query)) {
                                     exit(mysqli_error($con));
                                 } else {
@@ -832,20 +840,21 @@ require("db_connection.php");
                 x.className = "topnavS";
             }
         }
-
-        function hideAndShow() {
+        function showDay() {
             var x = document.getElementById("hiddenDay");
             var y = document.getElementById("hiddenDate");
             var z = document.getElementById("hiddenStep");
-            if (x.style.display === "none") {
-                x.style.display = "block";
-                y.style.display = "none";
-                z.style.display = "none";
-            } else {
-                x.style.display = "none";
-                y.style.display = "block";
-                z.style.display = "block";
-            }
+            x.style.display = "block";
+            y.style.display = "none";
+            z.style.display = "none";
+        }
+        function showDate() {
+            var x = document.getElementById("hiddenDay");
+            var y = document.getElementById("hiddenDate");
+            var z = document.getElementById("hiddenStep");
+            y.style.display = "block";
+            x.style.display = "none";
+            z.style.display = "block";
         }
     </script>
     </body>
@@ -944,19 +953,23 @@ if ($_POST) {
                         if ($row['event'] == $eventPost) {
                             $query = "UPDATE newsletterCron SET event = '$eventPost' ,days = '$preferences', dateFormat='day', timePicker = '$timeP', emails = '$preferencesEmails', industry = '$preferencesZZ', preferences = '$preferencesSS' ";
                             var_dump($con);
+                            echo "PRUEBA";
                         } else {
-                            $query = "INSERT INTO newsletterCron VALUES ('$eventPost', '$preferences', 'day', '$timeP', '$preferencesEmails', '$preferencesZZ', '$preferencesSS') ";
-                            var_dump($con);
+                            $query = "INSERT INTO newsletterCron (event, days, dateFormat, timePicker, emails, preferences, industry) VALUES ('$eventPost', '$preferences', 'day', '$timeP', '$preferencesEmails', '$preferencesSS', '$preferencesZZ') ";
+                            var_dump($query);
+                            echo "Entra en el INSERT !!!!!!";
                         }
                     }
                 } else if ($_POST['dateDay'] == 'DateChoose') {
                     while ($row = mysqli_fetch_assoc($result)) {
+                        echo "Entra en el While!!!!!";
                         if ($row['step'] == $stepPost) {
                             $query = "UPDATE newsletterCron SET event = '$eventPost',step = '$stepPost' , datePicker='$dateFormated[2]-$dateFormated[0]-$dateFormated[1]' , dateFormat='date', timePicker = '$timeP', emails = '$preferencesEmails', industry = '$preferencesZZ', preferences = '$preferencesSS'";
                             var_dump($con);
                         } else {
-                            $query = "INSERT INTO newsletterCron VALUES ('$eventPost', '$stepPost', '$preferences', '$dateFormated[2]-$dateFormated[0]-$dateFormated[1]', 'date', '$timeP', '$preferencesEmails', '$preferencesZZ', '$preferencesSS') ";
+                            $query = "INSERT INTO newsletterCron(event, step, datePicker, dateFormat, timePicker, emails, preferences, industry) VALUES ('$eventPost', '$stepPost', '$dateFormated[2]-$dateFormated[0]-$dateFormated[1]', 'date', '$timeP', '$preferencesEmails', '$preferencesSS', '$preferencesZZ') ";
                             var_dump($con);
+                            echo "Entra en el INSERT !!!!!!";
                         }
                     }
                 } else {
