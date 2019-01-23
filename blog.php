@@ -167,7 +167,7 @@ require("db_connection.php");
                     <span class="close">&times;</span>
                 </div>
                 <div class="modal-body">
-                    <form method="post" action="index.php">
+                    <form method="post" action="blog.php">
                         <input type="text" id="fname" name="emailSS" placeholder="Input email" class="EMAILStyle">
                         <input type="password" id="fname" name="passwordSS" placeholder="Input password"
                                class="PSSWStyle">
@@ -206,7 +206,7 @@ require("db_connection.php");
                 <h2>Create Event</h2>
             </div>
             <div class="modal3-body">
-                <form method="post" action="index.php">
+                <form method="post" action="blog.php">
                     <input type="text" id="fname" name="NameEvent" placeholder="Input Name Event"
                            class="EventoCreating">
                     <input type="submit" class="buttonSaveSequence" name="action" value="New">
@@ -283,7 +283,7 @@ require("db_connection.php");
 
     <div class="main">
         <div class="container">
-            <form method="post" action="index.php">
+            <form method="post" action="blog.php">
                 <div class="row">
                     <div class="col-">
                         <div class="selectDateDay">
@@ -408,7 +408,7 @@ require("db_connection.php");
                                 } else {
                                     if (mysqli_num_rows($result) > 0) {
                                         while ($row = mysqli_fetch_assoc($result)) {
-                                            if ($row['email'] == "newsletter@telanto.com") {
+                                            if ($row['email'] == "blog@telanto.com") {
                                                 echo "<option selected='selected'>" . $row['email'] . "</option>";
                                             } else {
                                                 echo "<option>" . $row['email'] . "</option>";
@@ -740,7 +740,7 @@ require("db_connection.php");
                 </div>
         </div>
         <section class="indent-1">
-            <form action="index.php" method="post">
+            <form action="blog.php" method="post">
                 <section class="sectionMails" id="new">
                     <label for="event">
                         <select id="event" name="Eventos" class="custom-select">
@@ -779,7 +779,7 @@ require("db_connection.php");
                     while ($row = mysqli_fetch_assoc($result)) {
                         $idComparar = $row['id'];
                         echo "
-                        <form action='index.php' method='post'>
+                        <form action='blog.php' method='post'>
                         <section style='width: 90%;display:none;' class='sectionMails' id='" . $idComparar . "'>
                                 <div id='" . $idComparar . "'>
                                     <p>Email Subject</p>
@@ -978,17 +978,6 @@ if ($_POST) {
                 }
             }
         }
-
-        /*if ($_POST['dateDay'] == 'DayChoose') {
-            $query = "UPDATE newsletterCron SET event = '$eventPost' ,days = '$preferences', dateFormat='day', timePicker = '$timeP', emails = '$preferencesEmails', industry = '$preferencesZZ', preferences = '$preferencesSS' WHERE name = 'Newsletter';";
-            //var_dump($con);
-        } else if ($_POST['dateDay'] == 'DateChoose') {
-            $query = "UPDATE newsletterCron SET event = '$eventPost',step = '$stepPost' , datePicker='$dateFormated[2]-$dateFormated[0]-$dateFormated[1]' , dateFormat='date', timePicker = '$timeP', emails = '$preferencesEmails', industry = '$preferencesZZ', preferences = '$preferencesSS' WHERE name = 'Newsletter';";
-            //var_dump($con);
-        } else {
-            echo "ERROR WITH THE CHOICE";
-            var_dump($con);
-        }*/
         $query = mysqli_query($con, $query);
     } else {
         var_dump($con);
