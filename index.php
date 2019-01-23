@@ -743,7 +743,7 @@ require("db_connection.php");
             <form action="index.php" method="post">
                 <section class="sectionMails" id="new">
                     <label for="event">
-                        <select id="event" name="Eventos">
+                        <select id="event" name="Eventos" class="custom-select">
                             <?php
                             $query = "SELECT * FROM newsletterEvents";
                             if (!$result = mysqli_query($con, $query)) {

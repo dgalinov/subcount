@@ -70,6 +70,7 @@ html, body, #myChart {
     cursor: pointer;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 .topnavS a {
@@ -89,7 +90,7 @@ html, body, #myChart {
 }
 
 .topnavS a.active {
-    background-color: #08c;
+    background-color: #0096e1;
     color: white;
 }
 
@@ -905,8 +906,8 @@ p {
 }
 
 .CantChoose {
-    font-weight: bold;
-    color: #000;
+    font-weight: bold !important;
+    color: #000 !important;
 }
 
 #stepChoose {
@@ -936,4 +937,11 @@ p {
 
 #timename {
     width: 7em;
+}
+
+.custom-select {
+    font-size: 0.8em !important;
+    font-weight: normal !important;
+    height: 2.5em !important;
+    line-height: normal !important;
 }
