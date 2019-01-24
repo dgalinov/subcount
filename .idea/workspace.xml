@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5ba90ca5-96cf-451d-89fe-c2adbe3b3f67" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challengeaudit.php" beforeDir="false" afterPath="$PROJECT_DIR$/challengeaudit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webinars.php" beforeDir="false" afterPath="$PROJECT_DIR$/webinars.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SendMailsNewsletter.php" beforeDir="false" afterPath="$PROJECT_DIR$/SendMailsNewsletter.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,32 +30,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SendMailsNewsletter.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="251">
-              <caret line="95" column="39" selection-start-line="95" selection-start-column="39" selection-end-line="95" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Now.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="548">
-              <caret line="307" column="49" lean-forward="true" selection-start-line="307" selection-start-column="49" selection-end-line="307" selection-end-column="49" />
+            <state relative-caret-position="383">
+              <caret line="142" column="41" lean-forward="true" selection-start-line="134" selection-start-column="40" selection-end-line="142" selection-end-column="41" />
               <folding>
-                <element signature="e#12880#12914#0#PHP" expanded="true" />
+                <element signature="e#200#234#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db_connection.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="23" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SendMailsWebinars.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1095">
-              <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+            <state relative-caret-position="-97">
+              <caret line="34" column="67" lean-forward="true" selection-start-line="34" selection-start-column="67" selection-end-line="34" selection-end-column="67" />
               <folding>
                 <element signature="e#200#234#0#PHP" expanded="true" />
               </folding>
@@ -77,7 +75,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>col-</find>
       <find>display:none</find>
       <find>0ba2db</find>
       <find>about.jpg</find>
@@ -107,6 +104,7 @@
       <find>newslet</find>
       <find>index</find>
       <find>newsl</find>
+      <find>contact_me</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -119,7 +117,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../form/css/style.css" />
         <option value="$PROJECT_DIR$/../form/index.php" />
         <option value="$PROJECT_DIR$/../form/thanks.php" />
         <option value="$PROJECT_DIR$/../gentelella-master/vendors/nprogress/nprogress.js" />
@@ -154,22 +151,23 @@
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/css/D02F/styles.css" />
         <option value="$PROJECT_DIR$/SendMailsChallengeAudit.php" />
-        <option value="$PROJECT_DIR$/SendMailsWebinars.php" />
         <option value="$PROJECT_DIR$/SendMailsBlog.php" />
         <option value="$PROJECT_DIR$/Now.php" />
         <option value="$PROJECT_DIR$/PruebaX.php" />
         <option value="$PROJECT_DIR$/doctrine.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/bootstrap.php" />
-        <option value="$PROJECT_DIR$/SendMailsNewsletter.php" />
         <option value="$PROJECT_DIR$/Sequences.php" />
         <option value="$PROJECT_DIR$/../ZoonimalsRP/css/style.css" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$PROJECT_DIR$/challengeaudit.php" />
-        <option value="$PROJECT_DIR$/../ZoonimalsRP/index.html" />
         <option value="$PROJECT_DIR$/webinars.php" />
         <option value="$PROJECT_DIR$/blog.php" />
+        <option value="$PROJECT_DIR$/../ZoonimalsRP/index.php" />
+        <option value="$PROJECT_DIR$/../ZoonimalsRP/index.html" />
+        <option value="$PROJECT_DIR$/SendMailsWebinars.php" />
+        <option value="$PROJECT_DIR$/SendMailsNewsletter.php" />
       </list>
     </option>
   </component>
@@ -195,6 +193,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -206,7 +205,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -337,12 +335,13 @@
       <workItem from="1548059291425" duration="11249000" />
       <workItem from="1548146834081" duration="10320000" />
       <workItem from="1548230294374" duration="598000" />
-      <workItem from="1548232241193" duration="9350000" />
+      <workItem from="1548232241193" duration="9389000" />
+      <workItem from="1548316475523" duration="10628000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="458263000" />
+    <option name="totallyTimeSpent" value="468930000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="41" y="25" width="1325" height="743" extended-state="6" />
@@ -350,7 +349,7 @@
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.20484754" />
+      <window_info content_ui="combo" id="Project" order="2" weight="0.20797499" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32899022" />
@@ -411,8 +410,6 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../c4c/results.php" />
-    <entry file="file://$PROJECT_DIR$/../c4c/calculator.php" />
     <entry file="file://$PROJECT_DIR$/../c4c/constants.php" />
     <entry file="file://$PROJECT_DIR$/../c4c/index.php" />
     <entry file="file://$USER_HOME$/Downloads/MDB-Free_4.5.16/index.html" />
@@ -564,13 +561,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cron.php" />
-    <entry file="file://$PROJECT_DIR$/db_connection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="13" column="35" selection-start-line="13" selection-start-column="35" selection-end-line="13" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../ZoonimalsRP/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
@@ -591,17 +581,6 @@
     <entry file="file://$PROJECT_DIR$/vendor/phpmailer/phpmailer/src/POP3.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-30" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ZoonimalsRP/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="n#style#0;n#svg#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#g#0;n#svg#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/styles.css">
@@ -641,6 +620,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../ZoonimalsRP/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="139" column="46" lean-forward="true" selection-start-line="139" selection-start-column="46" selection-end-line="139" selection-end-column="46" />
+          <folding>
+            <element signature="e#4405#4425#0#HTML" expanded="true" />
+            <element signature="e#4578#4602#0#HTML" expanded="true" />
+            <element signature="e#4752#4776#0#HTML" expanded="true" />
+            <element signature="e#4996#5020#0#HTML" expanded="true" />
+            <element signature="e#5137#5161#0#HTML" expanded="true" />
+            <element signature="e#5365#5389#0#HTML" expanded="true" />
+            <element signature="e#5526#5550#0#HTML" expanded="true" />
+            <element signature="e#5734#5758#0#HTML" expanded="true" />
+            <element signature="e#5900#5924#0#HTML" expanded="true" />
+            <element signature="e#6027#6051#0#HTML" expanded="true" />
+            <element signature="e#6384#6408#0#HTML" expanded="true" />
+            <element signature="e#6557#6581#0#HTML" expanded="true" />
+            <element signature="e#6728#6752#0#HTML" expanded="true" />
+            <element signature="e#6979#7003#0#HTML" expanded="true" />
+            <element signature="e#7214#7238#0#HTML" expanded="true" />
+            <element signature="e#7430#7454#0#HTML" expanded="true" />
+            <element signature="e#7745#7769#0#HTML" expanded="true" />
+            <element signature="e#7988#8012#0#HTML" expanded="true" />
+            <element signature="e#8100#8124#0#HTML" expanded="true" />
+            <element signature="e#8265#8289#0#HTML" expanded="true" />
+            <element signature="e#8439#8463#0#HTML" expanded="true" />
+            <element signature="e#8598#8622#0#HTML" expanded="true" />
+            <element signature="e#8744#8768#0#HTML" expanded="true" />
+            <element signature="e#8907#8931#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ZoonimalsRP/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="272" column="19" lean-forward="true" selection-start-line="272" selection-start-column="19" selection-end-line="272" selection-end-column="19" />
+          <folding>
+            <element signature="n#style#0;n#svg#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#g#0;n#svg#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Now.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="307" column="49" selection-start-line="307" selection-start-column="49" selection-end-line="307" selection-end-column="49" />
+          <folding>
+            <element signature="e#12880#12914#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="251">
@@ -648,30 +681,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SendMailsNewsletter.php">
+    <entry file="file://$PROJECT_DIR$/../responsive-sidebar-navigation-master/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270">
-          <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+        <state relative-caret-position="150">
+          <caret line="19" column="30" lean-forward="true" selection-start-line="19" selection-start-column="30" selection-end-line="20" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SendMailsWebinars.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-97">
+          <caret line="34" column="67" lean-forward="true" selection-start-line="34" selection-start-column="67" selection-end-line="34" selection-end-column="67" />
           <folding>
             <element signature="e#200#234#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Now.php">
+    <entry file="file://$PROJECT_DIR$/db_connection.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="307" column="49" lean-forward="true" selection-start-line="307" selection-start-column="49" selection-end-line="307" selection-end-column="49" />
-          <folding>
-            <element signature="e#12880#12914#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="225">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="23" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SendMailsWebinars.php">
+    <entry file="file://$PROJECT_DIR$/SendMailsNewsletter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1095">
-          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
+        <state relative-caret-position="383">
+          <caret line="142" column="41" lean-forward="true" selection-start-line="134" selection-start-column="40" selection-end-line="142" selection-end-column="41" />
           <folding>
             <element signature="e#200#234#0#PHP" expanded="true" />
           </folding>
