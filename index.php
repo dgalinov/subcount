@@ -952,24 +952,24 @@ if ($_POST) {
                     while ($row = mysqli_fetch_assoc($result)) {
                         if ($row['event'] == $eventPost) {
                             $query = "UPDATE newsletterCron SET event = '$eventPost' ,days = '$preferences', dateFormat='day', timePicker = '$timeP', emails = '$preferencesEmails', industry = '$preferencesZZ', preferences = '$preferencesSS' ";
-                            var_dump($con);
-                            echo "PRUEBA";
+                            //var_dump($con);
+                            //echo "PRUEBA";
                         } else {
                             $query = "INSERT INTO newsletterCron (event, days, dateFormat, timePicker, emails, preferences, industry) VALUES ('$eventPost', '$preferences', 'day', '$timeP', '$preferencesEmails', '$preferencesSS', '$preferencesZZ') ";
-                            var_dump($query);
-                            echo "Entra en el INSERT !!!!!!";
+                            //var_dump($query);
+                            //echo "Entra en el INSERT !!!!!!";
                         }
                     }
                 } else if ($_POST['dateDay'] == 'DateChoose') {
                     while ($row = mysqli_fetch_assoc($result)) {
-                        echo "Entra en el While!!!!!";
+                        //echo "Entra en el While!!!!!";
                         if ($row['step'] == $stepPost) {
                             $query = "UPDATE newsletterCron SET event = '$eventPost',step = '$stepPost' , datePicker='$dateFormated[2]-$dateFormated[0]-$dateFormated[1]' , dateFormat='date', timePicker = '$timeP', emails = '$preferencesEmails', industry = '$preferencesZZ', preferences = '$preferencesSS'";
-                            var_dump($con);
+                            //var_dump($con);
                         } else {
                             $query = "INSERT INTO newsletterCron(event, step, datePicker, dateFormat, timePicker, emails, preferences, industry) VALUES ('$eventPost', '$stepPost', '$dateFormated[2]-$dateFormated[0]-$dateFormated[1]', 'date', '$timeP', '$preferencesEmails', '$preferencesSS', '$preferencesZZ') ";
-                            var_dump($con);
-                            echo "Entra en el INSERT !!!!!!";
+                            //var_dump($con);
+                            //echo "Entra en el INSERT !!!!!!";
                         }
                     }
                 } else {
