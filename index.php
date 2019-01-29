@@ -924,21 +924,26 @@ if ($_POST) {
         $preferencesEmails = implode(",", $preferencesEmails);
 
         $dateFormated = explode("/", $_POST['dateBBB']);
+        if (!empty($_POST['preferences'])) {
+            $preferencesSS = array(
+                implode(",", $_POST['preferences']));
 
-        $preferencesSS = array(
-            implode(",", $_POST['preferences']));
+            $preferencesSS = array_filter($preferencesSS, 'strlen');
 
-        $preferencesSS = array_filter($preferencesSS, 'strlen');
+            $preferencesSS = implode(",", $preferencesSS);
+        } else {
+            echo "Sin preferences";
+        }
+        if (!empty($_POST['industry'])) {
+            $preferencesZZ = array(
+                implode(",", $_POST['industry']));
 
-        $preferencesSS = implode(",", $preferencesSS);
+            $preferencesZZ = array_filter($preferencesZZ, 'strlen');
 
-        $preferencesZZ = array(
-            implode(",", $_POST['industry']));
-
-        $preferencesZZ = array_filter($preferencesZZ, 'strlen');
-
-        $preferencesZZ = implode(",", $preferencesZZ);
-
+            $preferencesZZ = implode(",", $preferencesZZ);
+        } else {
+            echo "Sin industry";
+        }
         $eventPost = $_POST['eventoChoose'];
 
         $stepPost = $_POST['stepChoose'];

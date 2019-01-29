@@ -31,11 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SendMailsNewsletter.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="329" column="32" selection-start-line="329" selection-start-column="32" selection-end-line="329" selection-end-column="32" />
+            <state relative-caret-position="-489">
+              <caret line="298" column="5" lean-forward="true" selection-start-line="298" selection-start-column="5" selection-end-line="298" selection-end-column="5" />
               <folding>
                 <element signature="e#200#234#0#PHP" expanded="true" />
               </folding>
@@ -43,26 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="950" column="55" lean-forward="true" selection-start-line="950" selection-start-column="55" selection-end-line="950" selection-end-column="55" />
-              <folding>
-                <element signature="n#style#0;n#section#0;n#form#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SendMailsWebinars.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="47" column="85" lean-forward="true" selection-start-line="47" selection-start-column="85" selection-end-line="47" selection-end-column="85" />
-              <folding>
-                <element signature="e#200#234#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="180">
+              <caret line="933" column="9" selection-start-line="933" selection-start-column="9" selection-end-line="933" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -170,8 +155,8 @@
         <option value="$PROJECT_DIR$/SendMailsWebinars.php" />
         <option value="$USER_HOME$/Documentos/Zoonimals/index.html" />
         <option value="$USER_HOME$/Documentos/Zoonimals/css/style.css" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/SendMailsNewsletter.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -187,9 +172,9 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="1920" />
-    <option name="y" value="-2" />
+    <option name="y" value="25" />
     <option name="width" value="1366" />
-    <option name="height" value="770" />
+    <option name="height" value="696" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -197,6 +182,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -208,7 +194,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -342,19 +327,23 @@
       <workItem from="1548232241193" duration="9389000" />
       <workItem from="1548316475523" duration="12031000" />
       <workItem from="1548406538981" duration="8626000" />
-      <workItem from="1548663691290" duration="6410000" />
+      <workItem from="1548663691290" duration="7333000" />
+      <workItem from="1548685185086" duration="286000" />
+      <workItem from="1548749315308" duration="294000" />
+      <workItem from="1548751432650" duration="3726000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="485369000" />
+    <option name="totallyTimeSpent" value="490598000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1961" y="25" width="1325" height="743" extended-state="6" />
+    <frame x="1920" y="25" width="1366" height="696" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" weight="0.20797499" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.2030303" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32899022" />
@@ -656,10 +645,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Documentos/LSFutbol/LSFutbol/resources/views/LayoutCompeticions/mainlayout.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="50" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SendMailsWebinars.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="47" column="85" lean-forward="true" selection-start-line="47" selection-start-column="85" selection-end-line="47" selection-end-column="85" />
+        <state relative-caret-position="-22">
+          <caret line="45" column="71" lean-forward="true" selection-start-line="45" selection-start-column="71" selection-end-line="45" selection-end-column="71" />
+          <folding>
+            <element signature="e#200#234#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SendMailsNewsletter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-489">
+          <caret line="298" column="5" lean-forward="true" selection-start-line="298" selection-start-column="5" selection-end-line="298" selection-end-column="5" />
           <folding>
             <element signature="e#200#234#0#PHP" expanded="true" />
           </folding>
@@ -668,28 +674,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="950" column="55" lean-forward="true" selection-start-line="950" selection-start-column="55" selection-end-line="950" selection-end-column="55" />
-          <folding>
-            <element signature="n#style#0;n#section#0;n#form#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documentos/LSFutbol/LSFutbol/resources/views/LayoutCompeticions/mainlayout.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="50" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SendMailsNewsletter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="329" column="32" selection-start-line="329" selection-start-column="32" selection-end-line="329" selection-end-column="32" />
-          <folding>
-            <element signature="e#200#234#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="180">
+          <caret line="933" column="9" selection-start-line="933" selection-start-column="9" selection-end-line="933" selection-end-column="9" />
         </state>
       </provider>
     </entry>

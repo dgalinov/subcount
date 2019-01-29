@@ -358,6 +358,8 @@ function resultQuery(mysqli $con, $queryMail, $queryCron, $queryInfo, $queryEven
                                 list($timeExplode, $hourExplode, $minutes, $emailsArray, $hour, $rowInfo, $rowMail, $emailsInfoArray, $k, $queryCounter, $queryRecords) = DayOfWeekCompare($dayNumNow, $rowCron, $hourNow, $minutesNow, $resultInfo, $resultMail, $mail, $con);
                             } else if ($rowCron['dateFormat'] == "date") {
                                 fechaCompare($rowCron, $hourNow, $minutesNow, $resultInfo, $resultMail, $mail, $con);
+                            } else {
+                                echo "Format is not valid";
                             }
                         }
                     }
@@ -366,5 +368,7 @@ function resultQuery(mysqli $con, $queryMail, $queryCron, $queryInfo, $queryEven
         }
     }
 }
+
+echo "<h1>Welcome to Send Mail for Newsletter</h1>";
 
 resultQuery($con, $queryMail, $queryCron, $queryInfo, $queryEvents, $dayNumNow, $hourNow, $minutesNow, $mail);
