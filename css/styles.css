@@ -859,15 +859,15 @@ p {
 }
 
 #NewEventStyle {
-    margin-bottom: 40em;
-    width: 27em !important;
-    margin-left: 56em;
+    margin-top: 15%;
+    width: 27% !important;
+    margin-left: 40%;
 }
 
 #NewEmailStyle {
-    margin-bottom: 40em;
-    width: 50em !important;
-    margin-left: 40em;
+    margin-top: 13%;
+    width: 40% !important;
+    margin-left: 30%;
 }
 
 .EventoCreating {
@@ -937,8 +937,11 @@ p {
 
 #timename {
     width: 7em;
+    border: none !important;
 }
-
+.input-group-addon {
+    background-color: #fff;
+}
 .custom-select {
     font-size: 0.8em !important;
     font-weight: normal !important;

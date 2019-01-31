@@ -384,7 +384,7 @@ require("db_connection.php");
                                     }
                                 }
                                 ?>"/>
-                                <span class="input-group-addon">
+                                <span class="input-group-addon" style="background: #fff; border: none;">
                             <span class="glyphicon glyphicon-time"></span>
                         </span>
                             </div>
@@ -913,50 +913,33 @@ if ($_POST) {
     if ($_POST['action'] == 'Add Filter') {
         $timeP = $_POST['tpick'];
 
+        $preferences = array(
+            implode(",", $_POST['dias'])
+        );
+        $preferences = array_filter($preferences, 'strlen');
+        $preferences = implode(",", $preferences);
 
-        if (!empty($_POST['dias'])) {
-            $preferences = array(
-                implode(",", $_POST['dias'])
-            );
-            $preferences = array_filter($preferences, 'strlen');
-            $preferences = implode(",", $preferences);
-
-            $preferencesEmails = array(
-                implode(",", $_POST['mails'])
-            );
-        } else {
-            $preferences = "";
-        }
+        $preferencesEmails = array(
+            implode(",", $_POST['mails'])
+        );
 
         $preferencesEmails = array_filter($preferencesEmails, 'strlen');
 
         $preferencesEmails = implode(",", $preferencesEmails);
+        $dateFormated = explode("/", $_POST['dateBBB']);
+        $preferencesSS = array(
+            implode(",", $_POST['preferences']));
 
-        if (!empty($_POST['dateBBB'])) {
-            $dateFormated = explode("/", $_POST['dateBBB']);
-        } else {
-            $preferences = "";
-        }
-        if (!empty($_POST['preferences'])) {
-            $preferencesSS = array(
-                implode(",", $_POST['preferences']));
+        $preferencesSS = array_filter($preferencesSS, 'strlen');
 
-            $preferencesSS = array_filter($preferencesSS, 'strlen');
+        $preferencesSS = implode(",", $preferencesSS);
+        $preferencesSS = "";
+        $preferencesZZ = array(
+            implode(",", $_POST['industry']));
 
-            $preferencesSS = implode(",", $preferencesSS);
-        } else {
-            $preferencesSS = "";
-        }
-        if (!empty($_POST['industry'])) {
-            $preferencesZZ = array(
-                implode(",", $_POST['industry']));
+        $preferencesZZ = array_filter($preferencesZZ, 'strlen');
 
-            $preferencesZZ = array_filter($preferencesZZ, 'strlen');
-
-            $preferencesZZ = implode(",", $preferencesZZ);
-        } else {
-            $preferencesZZ = "";
-        }
+        $preferencesZZ = implode(",", $preferencesZZ);
         $eventPost = $_POST['eventoChoose'];
 
         $stepPost = $_POST['stepChoose'];
