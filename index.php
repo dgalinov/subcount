@@ -840,6 +840,7 @@ require("db_connection.php");
                 x.className = "topnavS";
             }
         }
+
         function showDay() {
             var x = document.getElementById("hiddenDay");
             var y = document.getElementById("hiddenDate");
@@ -848,6 +849,7 @@ require("db_connection.php");
             y.style.display = "none";
             z.style.display = "none";
         }
+
         function showDate() {
             var x = document.getElementById("hiddenDay");
             var y = document.getElementById("hiddenDate");
@@ -910,20 +912,31 @@ if ($_POST) {
     }
     if ($_POST['action'] == 'Add Filter') {
         $timeP = $_POST['tpick'];
-        $preferences = array(
-            implode(",", $_POST['dias'])
-        );
-        $preferencesEmails = array(
-            implode(",", $_POST['mails'])
-        );
 
-        $preferences = array_filter($preferences, 'strlen');
+
+        if (!empty($_POST['dias'])) {
+            $preferences = array(
+                implode(",", $_POST['dias'])
+            );
+            $preferences = array_filter($preferences, 'strlen');
+            $preferences = implode(",", $preferences);
+
+            $preferencesEmails = array(
+                implode(",", $_POST['mails'])
+            );
+        } else {
+            $preferences = "";
+        }
+
         $preferencesEmails = array_filter($preferencesEmails, 'strlen');
 
-        $preferences = implode(",", $preferences);
         $preferencesEmails = implode(",", $preferencesEmails);
 
-        $dateFormated = explode("/", $_POST['dateBBB']);
+        if (!empty($_POST['dateBBB'])) {
+            $dateFormated = explode("/", $_POST['dateBBB']);
+        } else {
+            $preferences = "";
+        }
         if (!empty($_POST['preferences'])) {
             $preferencesSS = array(
                 implode(",", $_POST['preferences']));
@@ -932,7 +945,7 @@ if ($_POST) {
 
             $preferencesSS = implode(",", $preferencesSS);
         } else {
-            echo "Sin preferences";
+            $preferencesSS = "";
         }
         if (!empty($_POST['industry'])) {
             $preferencesZZ = array(
@@ -942,7 +955,7 @@ if ($_POST) {
 
             $preferencesZZ = implode(",", $preferencesZZ);
         } else {
-            echo "Sin industry";
+            $preferencesZZ = "";
         }
         $eventPost = $_POST['eventoChoose'];
 
@@ -953,16 +966,18 @@ if ($_POST) {
             exit(mysqli_error($con));
         } else {
             if (mysqli_num_rows($result) > 0) {
+                echo "Entra al DateChooser";
                 if ($_POST['dateDay'] == 'DayChoose') {
+                    echo "Entra dentro del date chgooser";
                     while ($row = mysqli_fetch_assoc($result)) {
                         if ($row['event'] == $eventPost) {
                             $query = "UPDATE newsletterCron SET event = '$eventPost' ,days = '$preferences', dateFormat='day', timePicker = '$timeP', emails = '$preferencesEmails', industry = '$preferencesZZ', preferences = '$preferencesSS' ";
                             //var_dump($con);
-                            //echo "PRUEBA";
+                            echo "PRUEBA";
                         } else {
                             $query = "INSERT INTO newsletterCron (event, days, dateFormat, timePicker, emails, preferences, industry) VALUES ('$eventPost', '$preferences', 'day', '$timeP', '$preferencesEmails', '$preferencesSS', '$preferencesZZ') ";
                             //var_dump($query);
-                            //echo "Entra en el INSERT !!!!!!";
+                            echo "Entra en el INSERT !!!!!!";
                         }
                     }
                 } else if ($_POST['dateDay'] == 'DateChoose') {
