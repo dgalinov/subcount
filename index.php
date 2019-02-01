@@ -203,7 +203,7 @@ require("db_connection.php");
         <div class="modal-content" id="NewEventStyle">
             <div class="modal3-header">
                 <span class="close3">&times;</span>
-                <h2>Create Event</h2>
+                <h2>Create Campaign</h2>
             </div>
             <div class="modal3-body">
                 <form method="post" action="index.php">
@@ -218,7 +218,7 @@ require("db_connection.php");
         </div>
     </div>
     <div class="sidenav">
-        <a id="myBtn3">New Event</a>
+        <a id="myBtn3">New Campaign</a>
         <a id='myBtn3' onclick='newStep()'>New Step</a>
         <script>
             var modal3 = document.getElementById('myModal3');

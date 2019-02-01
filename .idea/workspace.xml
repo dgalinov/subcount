@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ba90ca5-96cf-451d-89fe-c2adbe3b3f67" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,35 +30,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SendMailsNewsletter.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="298" column="5" selection-start-line="298" selection-start-column="5" selection-end-line="298" selection-end-column="5" />
-              <folding>
-                <element signature="e#200#234#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="917" column="10" lean-forward="true" selection-start-line="917" selection-start-column="10" selection-end-line="917" selection-end-column="10" />
-              <folding>
-                <element signature="e#20918#20953#0#HTML" expanded="true" />
-              </folding>
+            <state relative-caret-position="135">
+              <caret line="781" column="63" lean-forward="true" selection-start-line="781" selection-start-column="63" selection-end-line="781" selection-end-column="63" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/styles.css">
+        <entry file="file://$PROJECT_DIR$/../formtelanto/thanks.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="939" column="28" selection-start-line="939" selection-start-column="28" selection-end-line="939" selection-end-column="28" />
+            <state relative-caret-position="289">
+              <caret line="153" column="94" selection-start-line="153" selection-start-column="94" selection-end-line="153" selection-end-column="94" />
+              <folding>
+                <element signature="e#152#186#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -75,8 +63,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>about.</find>
-      <find>unturned</find>
       <find>modal</find>
       <find>myBtn</find>
       <find>close</find>
@@ -105,6 +91,8 @@
       <find>#</find>
       <find>008B8B</find>
       <find>eventoChoose</find>
+      <find>emails</find>
+      <find>Create</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -192,7 +180,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -200,15 +187,11 @@
               <item name="subcount" type="b2602c69:ProjectViewProjectNode" />
               <item name="subcount" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="subcount" type="b2602c69:ProjectViewProjectNode" />
-              <item name="subcount" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -346,19 +329,21 @@
       <workItem from="1548685185086" duration="286000" />
       <workItem from="1548749315308" duration="294000" />
       <workItem from="1548751432650" duration="4430000" />
-      <workItem from="1548925172990" duration="7426000" />
+      <workItem from="1548925172990" duration="7459000" />
+      <workItem from="1549007231123" duration="7044000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="498728000" />
+    <option name="totallyTimeSpent" value="505805000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1366" height="768" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.2060606" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.2090909" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32899022" />
@@ -371,7 +356,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32899022" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" internal_type="SLIDING" order="12" type="SLIDING" weight="0.52256036" />
+      <window_info anchor="bottom" id="Terminal" internal_type="SLIDING" order="12" type="SLIDING" weight="0.5226209" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -556,16 +541,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../formtelanto/thanks.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="124" lean-forward="true" selection-start-line="124" selection-end-line="124" />
-          <folding>
-            <element signature="e#152#186#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cron.php" />
     <entry file="file://$PROJECT_DIR$/../ZoonimalsRP/css/style.css" />
     <entry file="file://$PROJECT_DIR$/../index.php">
@@ -666,7 +641,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SendMailsNewsletter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
+        <state relative-caret-position="-165">
           <caret line="298" column="5" selection-start-line="298" selection-start-column="5" selection-end-line="298" selection-end-column="5" />
           <folding>
             <element signature="e#200#234#0#PHP" expanded="true" />
@@ -676,18 +651,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
+        <state relative-caret-position="559">
           <caret line="939" column="28" selection-start-line="939" selection-start-column="28" selection-end-line="939" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../formtelanto/thanks.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="153" column="94" selection-start-line="153" selection-start-column="94" selection-end-line="153" selection-end-column="94" />
+          <folding>
+            <element signature="e#152#186#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="917" column="10" lean-forward="true" selection-start-line="917" selection-start-column="10" selection-end-line="917" selection-end-column="10" />
-          <folding>
-            <element signature="e#20918#20953#0#HTML" expanded="true" />
-          </folding>
+        <state relative-caret-position="135">
+          <caret line="781" column="63" lean-forward="true" selection-start-line="781" selection-start-column="63" selection-end-line="781" selection-end-column="63" />
         </state>
       </provider>
     </entry>
