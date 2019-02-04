@@ -724,7 +724,11 @@ require("db_connection.php");
                                     } else {
                                         if (mysqli_num_rows($result) > 0) {
                                             while ($row = mysqli_fetch_assoc($result)) {
-                                                echo "<option>" . $row['subject'] . "</option>";
+                                                if ($eventoSelected = $row['evento']) {
+                                                    echo "<option>" . $row['subject'] . "</option>";
+                                                } else {
+                                                    echo "<option disabled='disabled'>" . $row['subject'] . "</option>";
+                                                }
                                             }
                                         }
                                     }
@@ -911,6 +915,7 @@ if ($_POST) {
         }
     }
     if ($_POST['action'] == 'Add Filter') {
+        echo "awiemaioweda";
         $timeP = $_POST['tpick'];
 
         $preferences = array(

@@ -33,20 +33,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="781" column="63" lean-forward="true" selection-start-line="781" selection-start-column="63" selection-end-line="781" selection-end-column="63" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../formtelanto/thanks.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="153" column="94" selection-start-line="153" selection-start-column="94" selection-end-line="153" selection-end-column="94" />
-              <folding>
-                <element signature="e#152#186#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="428">
+              <caret line="729" column="84" selection-start-line="729" selection-start-column="84" selection-end-line="729" selection-end-column="84" />
             </state>
           </provider>
         </entry>
@@ -330,12 +318,13 @@
       <workItem from="1548749315308" duration="294000" />
       <workItem from="1548751432650" duration="4430000" />
       <workItem from="1548925172990" duration="7459000" />
-      <workItem from="1549007231123" duration="7044000" />
+      <workItem from="1549007231123" duration="8201000" />
+      <workItem from="1549270313995" duration="722000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="505805000" />
+    <option name="totallyTimeSpent" value="507684000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1366" height="768" extended-state="6" />
@@ -343,7 +332,7 @@
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.2090909" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.21212122" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32899022" />
@@ -356,7 +345,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32899022" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" internal_type="SLIDING" order="12" type="SLIDING" weight="0.5226209" />
+      <window_info anchor="bottom" id="Terminal" internal_type="SLIDING" order="12" type="SLIDING" weight="0.5225505" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -668,8 +657,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="781" column="63" lean-forward="true" selection-start-line="781" selection-start-column="63" selection-end-line="781" selection-end-column="63" />
+        <state relative-caret-position="428">
+          <caret line="729" column="84" selection-start-line="729" selection-start-column="84" selection-end-line="729" selection-end-column="84" />
         </state>
       </provider>
     </entry>
