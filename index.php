@@ -724,11 +724,7 @@ require("db_connection.php");
                                     } else {
                                         if (mysqli_num_rows($result) > 0) {
                                             while ($row = mysqli_fetch_assoc($result)) {
-                                                if ($eventoSelected = $row['evento']) {
-                                                    echo "<option>" . $row['subject'] . "</option>";
-                                                } else {
-                                                    echo "<option disabled='disabled'>" . $row['subject'] . "</option>";
-                                                }
+                                                echo "<option>" . $row['subject'] . "</option>";
                                             }
                                         }
                                     }
