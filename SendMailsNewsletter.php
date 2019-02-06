@@ -3,13 +3,19 @@
 //error_reporting(0);
 ini_set('display_errors', 'On');
 $hourExplode = $minutes = $hour = $timeExplode = $dayNumNow = $dayNum = $emailsArray = "";
+// Take current hours;
 $hourNow = date("G");
+// Take current minuts;
 $minutesNow = date("i");
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+// Connect to autoload.php
 require './vendor/autoload.php';
+// Create new PHPMailer;
 $mail = new PHPMailer();
+// Connect to BD by db_connection.php
 require("db_connection.php");
+// Into var select the tables we gonna use
 $queryInfo = "SELECT * FROM information WHERE newsletterSub = 1";
 $queryCron = "SELECT * FROM newsletterCron";
 $queryMail = "SELECT * FROM newsletterMail";
@@ -29,8 +35,8 @@ if (!$resultMail = mysqli_query($con, $queryMail)) {
             } else {
                 if (mysqli_num_rows($resultCron) > 0) {
                     while ($rowCron = mysqli_fetch_assoc($resultCron)) {
+                        // Check the format
                         if ($rowCron['dateFormat'] == "day") {
-                            echo "Entra en el Day format    ";
                             $dayNumNOW = date("w");
                             // echo $dayNumNow;
                             $dayNum = array(date("w", strtotime($rowCron['days'])));
@@ -38,25 +44,31 @@ if (!$resultMail = mysqli_query($con, $queryMail)) {
                             $hourExplode = explode(":", $timeExplode['0']);
                             $minutes = $hourExplode['1'];
                             $emailsArray = explode(",", $rowCron['emails']);
+                            // Format of the time picker
                             if ($timeExplode['1'] == "PM") {
                                 $hour = (int)$hourExplode['0'] + 12;
                             } else {
                                 $hour = (int)$hourExplode['0'];
                             }
                             for ($x = 0; $x < sizeof($dayNum); $x++) {
+                                // Check day of the week if it is the correct
                                 if ($dayNum[$x] == $dayNumNOW) {
+                                    // Check if the time is the current time
                                     if (($hour == $hourNow) && ($minutes == $minutesNow)) {
-                                        echo "Comprobacion de los minuts y horas  ";
                                         if (mysqli_num_rows($resultInfo) > 0) {
                                             while ($rowInfo = mysqli_fetch_assoc($resultInfo)) {
+                                                // Check if is an industry or preferences filter introduced in the filter
                                                 if (($rowInfo['industry'] == $rowCron['industry']) || ($rowInfo['preferences'] == $rowCron['preferences'])) {
                                                     if (mysqli_num_rows($resultMail) > 0) {
                                                         while ($rowMail = mysqli_fetch_assoc($resultMail)) {
+                                                            // Check if the event is the correct
                                                             if ($rowCron['event'] == $rowMail['evento']) {
+                                                                // Check if the counter is iqual to the id of the step
                                                                 if ($rowInfo['newsletterCounter'] == $rowMail['id']) {
                                                                     $emailsInfoArray = $rowInfo['email'];
                                                                     for ($k = 0; $k < sizeof($emailsArray); $k++) {
                                                                         try {
+                                                                            // This is the PHPMailer config that allows you to send the message
                                                                             $mail->SMTPDebug = 0;
                                                                             $mail->isSMTP();
                                                                             $mail->Host = 'smtp.gmail.com';
@@ -82,6 +94,7 @@ if (!$resultMail = mysqli_query($con, $queryMail)) {
                                                                             echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
                                                                         }
                                                                     }
+                                                                    // Change the counter +1 for the next step
                                                                     $queryRecords = "INSERT INTO newsletterRecords (timeInserted, subject, content, sendFrom, sendTo) VALUES (NOW(), '" . $rowMail['subject'] . "','" . $rowMail['content'] . "', '" . $rowCron['emails'] . "','" . $emailsInfoArray . "')";
                                                                     $queryCounter = mysqli_query($con, $queryCounter);
                                                                 } else {

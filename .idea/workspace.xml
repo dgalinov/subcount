@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ba90ca5-96cf-451d-89fe-c2adbe3b3f67" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/challengeaudit.php" beforeDir="false" afterPath="$PROJECT_DIR$/challengeaudit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webinars.php" beforeDir="false" afterPath="$PROJECT_DIR$/webinars.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Now.php" beforeDir="false" afterPath="$PROJECT_DIR$/Now.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SendMailsNewsletter.php" beforeDir="false" afterPath="$PROJECT_DIR$/SendMailsNewsletter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SendMailsWebinars.php" beforeDir="false" afterPath="$PROJECT_DIR$/SendMailsWebinars.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,45 +32,48 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.php">
+        <entry file="file://$PROJECT_DIR$/SendMailsNewsletter.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1100">
-              <caret line="1028" column="109" selection-end-line="1030" selection-end-column="1" />
+            <state relative-caret-position="-585">
+              <caret line="96" column="110" selection-end-line="235" selection-end-column="1" />
+              <folding>
+                <element signature="e#212#246#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/challengeaudit.php">
+        <entry file="file://$PROJECT_DIR$/SendMailsWebinars.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="93" column="22" selection-start-line="93" selection-start-column="17" selection-end-line="93" selection-end-column="22" />
+            <state relative-caret-position="201">
+              <caret line="86" column="156" selection-start-line="86" selection-start-column="156" selection-end-line="86" selection-end-column="156" />
               <folding>
-                <element signature="n#style#0;n#section#0;n#form#0;n#!!top" expanded="true" />
+                <element signature="e#259#293#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/blog.php">
+        <entry file="file://$PROJECT_DIR$/SendMailsChallengeAudit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="93" column="22" selection-start-line="93" selection-start-column="17" selection-end-line="93" selection-end-column="22" />
+            <state relative-caret-position="584">
+              <caret line="90" column="86" lean-forward="true" selection-start-line="90" selection-start-column="86" selection-end-line="90" selection-end-column="86" />
               <folding>
-                <element signature="n#style#0;n#section#0;n#form#0;n#!!top" expanded="true" />
+                <element signature="e#200#234#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/webinars.php">
+        <entry file="file://$PROJECT_DIR$/SendMailsBlog.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="93" column="22" selection-start-line="93" selection-start-column="17" selection-end-line="93" selection-end-column="22" />
+            <state relative-caret-position="555">
+              <caret line="79" column="61" lean-forward="true" selection-start-line="79" selection-start-column="61" selection-end-line="79" selection-end-column="61" />
               <folding>
-                <element signature="n#style#0;n#section#0;n#form#0;n#!!top" expanded="true" />
+                <element signature="e#200#234#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -88,7 +91,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>myBtn</find>
       <find>close</find>
       <find>modal-con</find>
       <find>container</find>
@@ -100,7 +102,6 @@
       <find>timename</find>
       <find>z-index</find>
       <find>hide</find>
-      <find>cron</find>
       <find>cant</find>
       <find>html</find>
       <find>topnavS</find>
@@ -116,8 +117,10 @@
       <find>emails</find>
       <find>Create</find>
       <find>newslette</find>
-      <find>newsletter</find>
+      <find>now</find>
       <find>index</find>
+      <find>cron</find>
+      <find>newsletter</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -162,7 +165,6 @@
         <option value="$PROJECT_DIR$/css/D02F/styles.css" />
         <option value="$PROJECT_DIR$/SendMailsChallengeAudit.php" />
         <option value="$PROJECT_DIR$/SendMailsBlog.php" />
-        <option value="$PROJECT_DIR$/Now.php" />
         <option value="$PROJECT_DIR$/PruebaX.php" />
         <option value="$PROJECT_DIR$/doctrine.php" />
         <option value="$PROJECT_DIR$/composer.json" />
@@ -174,13 +176,14 @@
         <option value="$USER_HOME$/Documentos/Zoonimals/index.html" />
         <option value="$USER_HOME$/Documentos/Zoonimals/css/style.css" />
         <option value="$PROJECT_DIR$/css/styles.css" />
-        <option value="$PROJECT_DIR$/SendMailsWebinars.php" />
         <option value="$PROJECT_DIR$/../formtelanto/index.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/SendMailsNewsletter.php" />
         <option value="$PROJECT_DIR$/webinars.php" />
         <option value="$PROJECT_DIR$/blog.php" />
         <option value="$PROJECT_DIR$/challengeaudit.php" />
+        <option value="$PROJECT_DIR$/Now.php" />
+        <option value="$PROJECT_DIR$/SendMailsNewsletter.php" />
+        <option value="$PROJECT_DIR$/SendMailsWebinars.php" />
       </list>
     </option>
   </component>
@@ -359,12 +362,12 @@
       <workItem from="1549270313995" duration="7839000" />
       <workItem from="1549354043471" duration="4520000" />
       <workItem from="1549375792386" duration="45000" />
-      <workItem from="1549446814064" duration="4252000" />
+      <workItem from="1549446814064" duration="5711000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="523618000" />
+    <option name="totallyTimeSpent" value="525077000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1366" height="768" extended-state="6" />
@@ -372,7 +375,7 @@
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.22045454" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.22045454" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32899022" />
@@ -476,26 +479,6 @@
     <entry file="file://$PROJECT_DIR$/css/D02F/styles.css" />
     <entry file="file://$PROJECT_DIR$/css/style.css" />
     <entry file="file://$PROJECT_DIR$/SendMails.php" />
-    <entry file="file://$PROJECT_DIR$/SendMailsChallengeAudit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="90" column="86" lean-forward="true" selection-start-line="90" selection-start-column="86" selection-end-line="90" selection-end-column="86" />
-          <folding>
-            <element signature="e#200#234#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SendMailsBlog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="79" column="61" lean-forward="true" selection-start-line="79" selection-start-column="61" selection-end-line="79" selection-end-column="61" />
-          <folding>
-            <element signature="e#200#234#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/PruebaX.php" />
     <entry file="file://$PROJECT_DIR$/vendor/composer/autoload_psr4.php">
       <provider selected="true" editor-type-id="text-editor" />
@@ -577,16 +560,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../ZoonimalsRP/index.php" />
     <entry file="file://$PROJECT_DIR$/../ZoonimalsRP/index.html" />
-    <entry file="file://$PROJECT_DIR$/Now.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="307" column="49" selection-start-line="307" selection-start-column="49" selection-end-line="307" selection-end-column="49" />
-          <folding>
-            <element signature="e#12880#12914#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../responsive-sidebar-navigation-master/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -633,16 +606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SendMailsWebinars.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="19" column="29" lean-forward="true" selection-end-line="107" />
-          <folding>
-            <element signature="e#200#234#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../formtelanto/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="354">
@@ -653,23 +616,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SendMailsNewsletter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
-          <folding>
-            <element signature="e#199#233#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bd_leads.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/challengeaudit.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1100">
-          <caret line="1028" column="109" selection-end-line="1030" selection-end-column="1" />
+        <state relative-caret-position="186">
+          <caret line="93" column="22" selection-start-line="93" selection-start-column="17" selection-end-line="93" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#section#0;n#form#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -693,12 +649,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/challengeaudit.php">
+    <entry file="file://$PROJECT_DIR$/Now.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="93" column="22" selection-start-line="93" selection-start-column="17" selection-end-line="93" selection-end-column="22" />
+        <state relative-caret-position="840">
+          <caret line="432" column="35" lean-forward="true" selection-start-line="432" selection-start-column="35" selection-end-line="432" selection-end-column="35" />
           <folding>
-            <element signature="n#style#0;n#section#0;n#form#0;n#!!top" expanded="true" />
+            <element signature="e#5340#5360#0#HTML" expanded="true" />
+            <element signature="e#5510#5590#0#HTML" expanded="true" />
+            <element signature="e#12880#12914#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="714" column="41" lean-forward="true" selection-start-line="714" selection-start-column="41" selection-end-line="714" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SendMailsNewsletter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-585">
+          <caret line="96" column="110" selection-end-line="235" selection-end-column="1" />
+          <folding>
+            <element signature="e#212#246#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SendMailsChallengeAudit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="90" column="86" lean-forward="true" selection-start-line="90" selection-start-column="86" selection-end-line="90" selection-end-column="86" />
+          <folding>
+            <element signature="e#200#234#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SendMailsBlog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="79" column="61" lean-forward="true" selection-start-line="79" selection-start-column="61" selection-end-line="79" selection-end-column="61" />
+          <folding>
+            <element signature="e#200#234#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SendMailsWebinars.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="86" column="156" selection-start-line="86" selection-start-column="156" selection-end-line="86" selection-end-column="156" />
+          <folding>
+            <element signature="e#259#293#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
