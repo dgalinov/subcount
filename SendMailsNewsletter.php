@@ -1,4 +1,5 @@
 <?php
+//Error hide
 //error_reporting(0);
 ini_set('display_errors', 'On');
 $hourExplode = $minutes = $hour = $timeExplode = $dayNumNow = $dayNum = $emailsArray = "";
@@ -13,6 +14,7 @@ $queryInfo = "SELECT * FROM information WHERE newsletterSub = 1";
 $queryCron = "SELECT * FROM newsletterCron";
 $queryMail = "SELECT * FROM newsletterMail";
 $queryEvents = "SELECT * FROM newsletterEvents";
+echo "<h1>SendMail</h1>";
 if (!$resultMail = mysqli_query($con, $queryMail)) {
     exit(mysqli_error($con));
 } else {
@@ -28,8 +30,9 @@ if (!$resultMail = mysqli_query($con, $queryMail)) {
                 if (mysqli_num_rows($resultCron) > 0) {
                     while ($rowCron = mysqli_fetch_assoc($resultCron)) {
                         if ($rowCron['dateFormat'] == "day") {
+                            echo "Entra en el Day format    ";
                             $dayNumNOW = date("w");
-                            echo $dayNumNow;
+                            // echo $dayNumNow;
                             $dayNum = array(date("w", strtotime($rowCron['days'])));
                             $timeExplode = explode(" ", $rowCron['timePicker']);
                             $hourExplode = explode(":", $timeExplode['0']);
@@ -43,6 +46,7 @@ if (!$resultMail = mysqli_query($con, $queryMail)) {
                             for ($x = 0; $x < sizeof($dayNum); $x++) {
                                 if ($dayNum[$x] == $dayNumNOW) {
                                     if (($hour == $hourNow) && ($minutes == $minutesNow)) {
+                                        echo "Comprobacion de los minuts y horas  ";
                                         if (mysqli_num_rows($resultInfo) > 0) {
                                             while ($rowInfo = mysqli_fetch_assoc($resultInfo)) {
                                                 if (($rowInfo['industry'] == $rowCron['industry']) || ($rowInfo['preferences'] == $rowCron['preferences'])) {

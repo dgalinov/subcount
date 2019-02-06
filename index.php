@@ -1,4 +1,5 @@
 <?php
+// Connect to the file that access to BD
 require("db_connection.php");
 ?>
     <!DOCTYPE html>
@@ -67,32 +68,35 @@ require("db_connection.php");
               href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
         <link rel="stylesheet" href="/resources/demos/style.css">
-        <!--<script src="https://code.jquery.com/jquery-1.12.4.js"></script>-->
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <script>
+            // This is the script of the date picker, calendar
             document.addEventListener('DOMContentLoaded', function () {
-                console.log('DOM LOADED!!!');
                 $(function () {
                     $("#datepicker").datepicker();
                 });
-            })
-            console.log('1 DOM LOADED!!!');
+            });
 
         </script>
     </head>
     <body>
     <?php
+
+    // When you introduce information you automatic reload the page to see the new content, but doesn't work.
+
     /*if ($_POST) {
         $url = "http" . (($_SERVER['SERVER_PORT'] == 443) ? "s" : "") . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
         header("Location: " . $url);
     }*/
     ?>
+    <!-- Horizontal menu that have the routes of the diferent websides with button create New Email and button Show History -->
     <div class="topnavS" id="myTopnavS">
         <a class="active" href="index.php">Newsletter</a>
         <a href="challengeaudit.php">Challenge Audit</a>
         <a href="webinars.php">Webinars</a>
         <a href="blog.php">Blog</a>
         <a href="Now.php">Now</a>
+        <!-- Button of the Popup of Show History -->
         <a id="myBtn2">Show History</a>
         <div id="myModal2" class="modal2">
             <div class="modal-content">
@@ -159,6 +163,7 @@ require("db_connection.php");
                 }
             }
         </script>
+        <!-- Button of the Popup of New Email -->
         <a id="myBtn">New Email</a>
         <div id="myModal" class="modal">
             <div class="modal-content" id="NewEmailStyle">
@@ -199,6 +204,7 @@ require("db_connection.php");
             <i class="fa fa-bars"></i>
         </a>
     </div>
+    <!-- Button Create Campaign, is a popup -->
     <div id="myModal3" class="modal3">
         <div class="modal-content" id="NewEventStyle">
             <div class="modal3-header">
@@ -217,6 +223,7 @@ require("db_connection.php");
             </div>
         </div>
     </div>
+    <!-- Show the div for creating of new step -->
     <div class="sidenav">
         <a id="myBtn3">New Campaign</a>
         <a id='myBtn3' onclick='newStep()'>New Step</a>
@@ -251,6 +258,7 @@ require("db_connection.php");
                         if (mysqli_num_rows($result) > 0) {
                             while ($row = mysqli_fetch_assoc($result)) {
                                 $idComparado = $row['id'];
+                                // Show the list of events
                                 if ($row['evento'] == $rowButton['evento']) {
                                     echo "<a  onclick='onStepClicked($idComparado)'>" . $row['subject'] . "</a>";
                                 }
@@ -264,6 +272,7 @@ require("db_connection.php");
         }
         ?>
     </div>
+    <!-- Script display and show div -->
     <script>
         var dropdown = document.getElementsByClassName("dropdown-btn");
         var i;
@@ -280,12 +289,13 @@ require("db_connection.php");
             });
         }
     </script>
-
+    <!-- MENU OF THE FILTERS -->
     <div class="main">
         <div class="container">
             <form method="post" action="index.php">
                 <div class="row">
                     <div class="col-">
+                        <!-- Change the format of the sequence -->
                         <div class="selectDateDay">
                             <label>
                                 <select id="hideDateDay" name="dateDay">
@@ -298,6 +308,7 @@ require("db_connection.php");
                     </div>
                     <div class="col-">
                         <div id="hiddenDay">
+                            <!-- Selector of the days of the week -->
                             <label for="dias"><select id="dias" name="dias[]" class="selectpicker" multiple
                                                       data-live-search="true">
                                     <?php
@@ -308,6 +319,7 @@ require("db_connection.php");
                                     } else {
                                         if (mysqli_num_rows($result) > 0) {
                                             while ($row = mysqli_fetch_assoc($result)) {
+                                                // The last update this will show it
                                                 $arrayDias = explode(",", $row['days']);
                                                 if (in_array("Monday", $arrayDias)) {
                                                     $mSelected = "selected='selected'";
@@ -361,6 +373,7 @@ require("db_connection.php");
                     </div>
                     <div class="col-">
                         <div id="hiddenDate">
+                            <!-- You have a input area to introduce by text the date or click que icon of calendar to show a calendar and choose the day/month/year -->
                             <label for="datepicker" class="datePickLabel">
                                 <input type="text" id="datepicker" name="dateBBB">
                                 <img src="https://proxy.duckduckgo.com/iu/?u=http%3A%2F%2Fedgefunders.org%2Fwp-content%2Fuploads%2F2016%2F07%2FICEF_icon-calendar.png&f=1"
@@ -370,6 +383,7 @@ require("db_connection.php");
                     </div>
                     <div class="col-">
                         <div class="form-group">
+                            <!-- Select the Hour and Minuts (This format is changed in SendMailerNewsletter.php or other) the format is "11:02 PM"-->
                             <div class='input-group date' id='datetimepicker3'>
                                 <input type='text' id="timename" name="tpick" class="form-control" value="
                                 <?php
@@ -389,6 +403,7 @@ require("db_connection.php");
                         </span>
                             </div>
                         </div>
+                        <!-- Script of the time picker -->
                         <script type="text/javascript">
                             $(function () {
                                 $('#datetimepicker3').datetimepicker({
@@ -400,7 +415,8 @@ require("db_connection.php");
 
                     <div class="col-">
                         <label for="mails">
-                            <select id="mails" name="mails[]" class="selectpicker" multiple data-live-search="true">
+                            <!-- Selector of the email from -->
+                            <select id="mails" name="mails[]" class="selectpicker" <!--multiple--> data-live-search="true">
                                 <?php
                                 $query = "SELECT * FROM emails ORDER BY id DESC";
                                 if (!$result = mysqli_query($con, $query)) {
@@ -409,6 +425,7 @@ require("db_connection.php");
                                     if (mysqli_num_rows($result) > 0) {
                                         while ($row = mysqli_fetch_assoc($result)) {
                                             if ($row['email'] == "newsletter@telanto.com") {
+                                                // This default set the email you will see
                                                 echo "<option selected='selected'>" . $row['email'] . "</option>";
                                             } else {
                                                 echo "<option>" . $row['email'] . "</option>";
@@ -423,6 +440,7 @@ require("db_connection.php");
                     </div>
                     <div class="col-">
                         <label for="mails">
+                            <!-- MULTI-SELECT OF INDUSTRY -->
                             <select id="industry" name="industry[]" class="selectpicker" multiple
                                     data-live-search="true" title="Industry">
                                 <option value="Primary/Secondary Education">Primary/Secondary Education</option>
@@ -593,6 +611,7 @@ require("db_connection.php");
                     </div>
                     <div class="col-">
                         <label for="mails">
+                            <!-- MULTI-SELECT OF PREFERENCES -->
                             <select id="preferences" name="preferences[]" class="selectpicker" multiple
                                     data-live-search="true" title="Preferences">
                                 <option disabled class="CantChoose">Management</option>
@@ -693,6 +712,7 @@ require("db_connection.php");
                     <div class="col-">
                         <label for="eventoChoose">
                             <div class="dropdown bootstrap-select">
+                                <!-- Event Selector -->
                                 <select id="eventoChoose" name="eventoChoose" class="selectpicker">
                                     <?php
                                     $query = "SELECT * FROM newsletterEvents";
@@ -716,6 +736,7 @@ require("db_connection.php");
                     <div id="hiddenStep">
                         <div class="col-">
                             <label for="stepChoose">
+                                <!-- Step chooser, only appear when date format is selected -->
                                 <select id="stepChoose" name="stepChoose" class="selectpicker">
                                     <?php
                                     $query = "SELECT * FROM newsletterMail";
@@ -735,6 +756,7 @@ require("db_connection.php");
                         </div>
                     </div>
                     <div class="col-">
+                        <!-- Button submit of the filter (its an update) -->
                         <input type="submit" class="buttonSaveSequence" name="action" value="Add Filter">
                     </div>
                 </div>
@@ -743,6 +765,7 @@ require("db_connection.php");
             <form action="index.php" method="post">
                 <section class="sectionMails" id="new">
                     <label for="event">
+                        <!-- Show all the events that ar introduced in a SELECT -->
                         <select id="event" name="Eventos" class="custom-select">
                             <?php
                             $query = "SELECT * FROM newsletterEvents";
@@ -758,10 +781,12 @@ require("db_connection.php");
                             ?>
                         </select>
                     </label>
+                    <!-- Text Area of the Subject -->
                     <p>Email Subject</p>
                     <label class='labelEmail'>
                         <textarea class='labelEmail' name="subject" id="NewLabelEmail"></textarea>
                     </label>
+                    <!-- Email text area of the content with custom parameters(template -- CKEDITOR) -->
                     <p>Email Content</p>
                     <label class='labelEmail'>
                         <textarea class="ckeditor" name="content"></textarea>
@@ -770,6 +795,7 @@ require("db_connection.php");
                 </section>
             </form>
             <?php
+            // SHOW THE STEP WITH THE TEXT AREAS FIELD COMPLETED BY THE INFORMATION INTRODUCED (The id is very important to follow the order of AI)
             $idComparar = "";
             $query = "SELECT * FROM newsletterMail ";
             if (!$result = mysqli_query($con, $query)) {
@@ -805,7 +831,7 @@ require("db_connection.php");
             <script>
                 var stepsNum = document.getElementById("stepsNum").value;
                 onStepClicked("new");
-
+                <!-- Show hide steps -->
                 function onStepClicked(id) {
                     if (id != "new") {
                         document.getElementById("new").style.display = "none";
@@ -820,7 +846,7 @@ require("db_connection.php");
                         }
                     }
                 }
-
+                <!-- Div of new step show -->
                 function newStep() {
                     document.getElementById("new").style.display = "block";
                     var i;
@@ -840,7 +866,7 @@ require("db_connection.php");
                 x.className = "topnavS";
             }
         }
-
+        // Show format when day is selected and hide other
         function showDay() {
             var x = document.getElementById("hiddenDay");
             var y = document.getElementById("hiddenDate");
@@ -849,7 +875,7 @@ require("db_connection.php");
             y.style.display = "none";
             z.style.display = "none";
         }
-
+        // Show format when date is selected and hide other
         function showDate() {
             var x = document.getElementById("hiddenDay");
             var y = document.getElementById("hiddenDate");
@@ -863,6 +889,7 @@ require("db_connection.php");
     </html>
 <?php
 if ($_POST) {
+    // This post is for the Creation of new step
     if ($_POST['action'] == 'Create') {
         if (!empty($_POST['subject'])) {
             if (!empty($_POST['content'])) {
@@ -873,6 +900,7 @@ if ($_POST) {
             }
         }
     }
+    // This post is for the update of X step
     if ($_POST['action']) {
         if (!empty($_POST['subject_' . $_POST['action']])) {
             if (!empty($_POST['content_' . $_POST['action']])) {
@@ -886,6 +914,7 @@ if ($_POST) {
             }
         }
     }
+    // This post is for the creation of new email
     if ($_POST['action'] == 'New Email') {
         $emailA = $_POST['emailSS'];
         $passwordA = $_POST['passwordSS'];
@@ -910,8 +939,8 @@ if ($_POST) {
             echo "Email can't be null!";
         }
     }
+    // Update or add the filter selected
     if ($_POST['action'] == 'Add Filter') {
-        echo "awiemaioweda";
         $timeP = $_POST['tpick'];
 
         $preferences = array(
@@ -951,11 +980,12 @@ if ($_POST) {
         } else {
             if (mysqli_num_rows($result) > 0) {
                 echo "Entra al DateChooser";
+                // Check if its day selected
                 if ($_POST['dateDay'] == 'DayChoose') {
                     echo "Entra dentro del date chgooser";
                     while ($row = mysqli_fetch_assoc($result)) {
                         if ($row['event'] == $eventPost) {
-                            $query = "UPDATE newsletterCron SET event = '$eventPost' ,days = '$preferences', dateFormat='day', timePicker = '$timeP', emails = '$preferencesEmails', industry = '$preferencesZZ', preferences = '$preferencesSS' ";
+                            $query = "UPDATE newsletterCron SET event = '$eventPost' ,days = '$preferences',datePicker='0000-00-00' ,dateFormat='day', timePicker = '$timeP', emails = '$preferencesEmails', industry = '$preferencesZZ', preferences = '$preferencesSS' ";
                             //var_dump($con);
                             echo "PRUEBA";
                         } else {
@@ -964,7 +994,7 @@ if ($_POST) {
                             echo "Entra en el INSERT !!!!!!";
                         }
                     }
-                } else if ($_POST['dateDay'] == 'DateChoose') {
+                } else if ($_POST['dateDay'] == 'DateChoose') { // Check if its date selected
                     while ($row = mysqli_fetch_assoc($result)) {
                         //echo "Entra en el While!!!!!";
                         if ($row['step'] == $stepPost) {
@@ -982,27 +1012,20 @@ if ($_POST) {
                 }
             }
         }
-
-        /*if ($_POST['dateDay'] == 'DayChoose') {
-            $query = "UPDATE newsletterCron SET event = '$eventPost' ,days = '$preferences', dateFormat='day', timePicker = '$timeP', emails = '$preferencesEmails', industry = '$preferencesZZ', preferences = '$preferencesSS' WHERE name = 'Newsletter';";
-            //var_dump($con);
-        } else if ($_POST['dateDay'] == 'DateChoose') {
-            $query = "UPDATE newsletterCron SET event = '$eventPost',step = '$stepPost' , datePicker='$dateFormated[2]-$dateFormated[0]-$dateFormated[1]' , dateFormat='date', timePicker = '$timeP', emails = '$preferencesEmails', industry = '$preferencesZZ', preferences = '$preferencesSS' WHERE name = 'Newsletter';";
-            //var_dump($con);
-        } else {
-            echo "ERROR WITH THE CHOICE";
-            var_dump($con);
-        }*/
+        // Execute the query
         $query = mysqli_query($con, $query);
     } else {
         var_dump($con);
         echo "No funciona";
     }
+    // Post of the new Event
     if ($_POST['action'] == 'New') {
         if (!empty($_POST['NameEvent'])) {
             $nameEvent = $_POST['NameEvent'];
             $query = mysqli_query($con, "INSERT INTO newsletterEvents(evento) VALUES ('$nameEvent')");
         }
     }
+
+    // When you introduce information you automatic reload the page to see the new content, but doesn't work.
     //header('Location: ' . $_SERVER['PHP_SELF']);
 }

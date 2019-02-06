@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ba90ca5-96cf-451d-89fe-c2adbe3b3f67" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SendMailsNewsletter.php" beforeDir="false" afterPath="$PROJECT_DIR$/SendMailsNewsletter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/challengeaudit.php" beforeDir="false" afterPath="$PROJECT_DIR$/challengeaudit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,23 +32,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="741" column="34" lean-forward="true" selection-start-line="741" selection-start-column="34" selection-end-line="741" selection-end-column="34" />
+            <state relative-caret-position="875">
+              <caret line="1028" column="109" selection-end-line="1030" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/challengeaudit.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="756">
+              <caret line="98" column="52" lean-forward="true" selection-start-line="98" selection-start-column="52" selection-end-line="98" selection-end-column="52" />
+              <folding>
+                <element signature="n#style#0;n#section#0;n#form#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SendMailsNewsletter.php">
+        <entry file="file://$PROJECT_DIR$/blog.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="49" column="108" lean-forward="true" selection-start-line="49" selection-start-column="108" selection-end-line="49" selection-end-column="108" />
-              <folding>
-                <element signature="e#199#233#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="15">
+              <caret line="90" column="22" selection-start-line="90" selection-start-column="17" selection-end-line="90" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/webinars.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="90" column="33" selection-start-line="90" selection-start-column="28" selection-end-line="90" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -64,7 +83,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>modal</find>
       <find>myBtn</find>
       <find>close</find>
       <find>modal-con</find>
@@ -84,7 +102,6 @@
       <find>active</find>
       <find>topnav</find>
       <find>bold</find>
-      <find>newsletter</find>
       <find>newslet</find>
       <find>index</find>
       <find>newsl</find>
@@ -94,6 +111,8 @@
       <find>eventoChoose</find>
       <find>emails</find>
       <find>Create</find>
+      <find>newslette</find>
+      <find>newsletter</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -145,7 +164,6 @@
         <option value="$PROJECT_DIR$/bootstrap.php" />
         <option value="$PROJECT_DIR$/Sequences.php" />
         <option value="$PROJECT_DIR$/../ZoonimalsRP/css/style.css" />
-        <option value="$PROJECT_DIR$/challengeaudit.php" />
         <option value="$PROJECT_DIR$/webinars.php" />
         <option value="$PROJECT_DIR$/blog.php" />
         <option value="$PROJECT_DIR$/../ZoonimalsRP/index.php" />
@@ -153,10 +171,11 @@
         <option value="$USER_HOME$/Documentos/Zoonimals/index.html" />
         <option value="$USER_HOME$/Documentos/Zoonimals/css/style.css" />
         <option value="$PROJECT_DIR$/css/styles.css" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/SendMailsWebinars.php" />
-        <option value="$PROJECT_DIR$/SendMailsNewsletter.php" />
         <option value="$PROJECT_DIR$/../formtelanto/index.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/SendMailsNewsletter.php" />
+        <option value="$PROJECT_DIR$/challengeaudit.php" />
       </list>
     </option>
   </component>
@@ -171,8 +190,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+    <option name="x" value="1920" />
+    <option name="width" value="1366" />
+    <option name="height" value="768" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -332,20 +352,22 @@
       <workItem from="1548925172990" duration="7459000" />
       <workItem from="1549007231123" duration="8201000" />
       <workItem from="1549270313995" duration="7839000" />
-      <workItem from="1549354043471" duration="3879000" />
+      <workItem from="1549354043471" duration="4520000" />
+      <workItem from="1549375792386" duration="45000" />
+      <workItem from="1549446814064" duration="3496000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="518680000" />
+    <option name="totallyTimeSpent" value="522862000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
+    <frame x="1920" y="0" width="1366" height="768" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.15154749" />
+      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.22045454" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32899022" />
@@ -358,7 +380,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32899022" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" internal_type="SLIDING" order="12" type="SLIDING" weight="0.5226209" />
+      <window_info anchor="bottom" id="Terminal" internal_type="SLIDING" order="12" type="SLIDING" weight="0.52256036" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -406,11 +428,6 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/bootstrap-datetimepicker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1190" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/bootstrap-datetimepicker.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -553,36 +570,6 @@
         <state relative-caret-position="-30" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webinars.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13072">
-          <caret line="90" column="33" selection-start-line="90" selection-start-column="28" selection-end-line="90" selection-end-column="33" />
-          <folding>
-            <element signature="n#style#0;n#section#0;n#form#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-558">
-          <caret line="90" column="22" selection-start-line="90" selection-start-column="17" selection-end-line="90" selection-end-column="22" />
-          <folding>
-            <element signature="n#style#0;n#section#0;n#form#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/challengeaudit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="90" column="38" selection-start-line="90" selection-start-column="28" selection-end-line="90" selection-end-column="38" />
-          <folding>
-            <element signature="n#style#0;n#section#0;n#form#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../ZoonimalsRP/index.php" />
     <entry file="file://$PROJECT_DIR$/../ZoonimalsRP/index.html" />
     <entry file="file://$PROJECT_DIR$/Now.php">
@@ -663,18 +650,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SendMailsNewsletter.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" column="108" lean-forward="true" selection-start-line="49" selection-start-column="108" selection-end-line="49" selection-end-column="108" />
+        <state relative-caret-position="15">
+          <caret line="1" column="12" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="12" />
           <folding>
             <element signature="e#199#233#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bd_leads.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="90" column="22" selection-start-line="90" selection-start-column="17" selection-end-line="90" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webinars.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="90" column="33" selection-start-line="90" selection-start-column="28" selection-end-line="90" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="741" column="34" lean-forward="true" selection-start-line="741" selection-start-column="34" selection-end-line="741" selection-end-column="34" />
+        <state relative-caret-position="875">
+          <caret line="1028" column="109" selection-end-line="1030" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/challengeaudit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="98" column="52" lean-forward="true" selection-start-line="98" selection-start-column="52" selection-end-line="98" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#section#0;n#form#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
