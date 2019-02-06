@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ba90ca5-96cf-451d-89fe-c2adbe3b3f67" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Now.php" beforeDir="false" afterPath="$PROJECT_DIR$/Now.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SendMailsNewsletter.php" beforeDir="false" afterPath="$PROJECT_DIR$/SendMailsNewsletter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SendMailsWebinars.php" beforeDir="false" afterPath="$PROJECT_DIR$/SendMailsWebinars.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SendMailsBlog.php" beforeDir="false" afterPath="$PROJECT_DIR$/SendMailsBlog.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SendMailsChallengeAudit.php" beforeDir="false" afterPath="$PROJECT_DIR$/SendMailsChallengeAudit.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,36 +43,12 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SendMailsWebinars.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="86" column="156" selection-start-line="86" selection-start-column="156" selection-end-line="86" selection-end-column="156" />
-              <folding>
-                <element signature="e#259#293#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SendMailsChallengeAudit.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="584">
-              <caret line="90" column="86" lean-forward="true" selection-start-line="90" selection-start-column="86" selection-end-line="90" selection-end-column="86" />
-              <folding>
-                <element signature="e#200#234#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SendMailsBlog.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="79" column="61" lean-forward="true" selection-start-line="79" selection-start-column="61" selection-end-line="79" selection-end-column="61" />
+            <state relative-caret-position="135">
+              <caret line="21" column="42" lean-forward="true" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
               <folding>
-                <element signature="e#200#234#0#PHP" expanded="true" />
+                <element signature="e#259#293#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -163,8 +138,6 @@
         <option value="$PROJECT_DIR$/SendMails.php" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/css/D02F/styles.css" />
-        <option value="$PROJECT_DIR$/SendMailsChallengeAudit.php" />
-        <option value="$PROJECT_DIR$/SendMailsBlog.php" />
         <option value="$PROJECT_DIR$/PruebaX.php" />
         <option value="$PROJECT_DIR$/doctrine.php" />
         <option value="$PROJECT_DIR$/composer.json" />
@@ -184,6 +157,8 @@
         <option value="$PROJECT_DIR$/Now.php" />
         <option value="$PROJECT_DIR$/SendMailsNewsletter.php" />
         <option value="$PROJECT_DIR$/SendMailsWebinars.php" />
+        <option value="$PROJECT_DIR$/SendMailsChallengeAudit.php" />
+        <option value="$PROJECT_DIR$/SendMailsBlog.php" />
       </list>
     </option>
   </component>
@@ -362,12 +337,12 @@
       <workItem from="1549270313995" duration="7839000" />
       <workItem from="1549354043471" duration="4520000" />
       <workItem from="1549375792386" duration="45000" />
-      <workItem from="1549446814064" duration="5711000" />
+      <workItem from="1549446814064" duration="6073000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="525077000" />
+    <option name="totallyTimeSpent" value="525439000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1366" height="768" extended-state="6" />
@@ -375,7 +350,7 @@
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.22045454" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.22045454" />
       <window_info anchor="bottom" id="Messages" order="0" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.32899022" />
@@ -668,6 +643,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SendMailsWebinars.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="211" column="64" lean-forward="true" selection-end-line="235" selection-end-column="1" />
+          <folding>
+            <element signature="e#259#293#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SendMailsChallengeAudit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="65" column="65" selection-start-line="65" selection-start-column="65" selection-end-line="65" selection-end-column="65" />
+          <folding>
+            <element signature="e#259#293#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SendMailsNewsletter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-585">
@@ -678,30 +673,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SendMailsChallengeAudit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="90" column="86" lean-forward="true" selection-start-line="90" selection-start-column="86" selection-end-line="90" selection-end-column="86" />
-          <folding>
-            <element signature="e#200#234#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SendMailsBlog.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="79" column="61" lean-forward="true" selection-start-line="79" selection-start-column="61" selection-end-line="79" selection-end-column="61" />
-          <folding>
-            <element signature="e#200#234#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SendMailsWebinars.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="86" column="156" selection-start-line="86" selection-start-column="156" selection-end-line="86" selection-end-column="156" />
+        <state relative-caret-position="135">
+          <caret line="21" column="42" lean-forward="true" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
           <folding>
             <element signature="e#259#293#0#PHP" expanded="true" />
           </folding>
