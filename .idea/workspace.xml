@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5ba90ca5-96cf-451d-89fe-c2adbe3b3f67" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/blog.php" beforeDir="false" afterPath="$PROJECT_DIR$/blog.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/challengeaudit.php" beforeDir="false" afterPath="$PROJECT_DIR$/challengeaudit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webinars.php" beforeDir="false" afterPath="$PROJECT_DIR$/webinars.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,17 +34,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="875">
+            <state relative-caret-position="1100">
               <caret line="1028" column="109" selection-end-line="1030" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/challengeaudit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="98" column="52" lean-forward="true" selection-start-line="98" selection-start-column="52" selection-end-line="98" selection-end-column="52" />
+            <state relative-caret-position="186">
+              <caret line="93" column="22" selection-start-line="93" selection-start-column="17" selection-end-line="93" selection-end-column="22" />
               <folding>
                 <element signature="n#style#0;n#section#0;n#form#0;n#!!top" expanded="true" />
               </folding>
@@ -50,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="1003" column="54" selection-start-line="1003" selection-start-column="54" selection-end-line="1003" selection-end-column="54" />
+            <state relative-caret-position="186">
+              <caret line="93" column="22" selection-start-line="93" selection-start-column="17" selection-end-line="93" selection-end-column="22" />
               <folding>
                 <element signature="n#style#0;n#section#0;n#form#0;n#!!top" expanded="true" />
               </folding>
@@ -65,8 +67,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webinars.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="90" column="33" selection-start-line="90" selection-start-column="28" selection-end-line="90" selection-end-column="33" />
+            <state relative-caret-position="186">
+              <caret line="93" column="22" selection-start-line="93" selection-start-column="17" selection-end-line="93" selection-end-column="22" />
+              <folding>
+                <element signature="n#style#0;n#section#0;n#form#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -103,7 +108,6 @@
       <find>topnav</find>
       <find>bold</find>
       <find>newslet</find>
-      <find>index</find>
       <find>newsl</find>
       <find>contact_me</find>
       <find>#</find>
@@ -113,6 +117,7 @@
       <find>Create</find>
       <find>newslette</find>
       <find>newsletter</find>
+      <find>index</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -164,7 +169,6 @@
         <option value="$PROJECT_DIR$/bootstrap.php" />
         <option value="$PROJECT_DIR$/Sequences.php" />
         <option value="$PROJECT_DIR$/../ZoonimalsRP/css/style.css" />
-        <option value="$PROJECT_DIR$/webinars.php" />
         <option value="$PROJECT_DIR$/../ZoonimalsRP/index.php" />
         <option value="$PROJECT_DIR$/../ZoonimalsRP/index.html" />
         <option value="$USER_HOME$/Documentos/Zoonimals/index.html" />
@@ -174,8 +178,9 @@
         <option value="$PROJECT_DIR$/../formtelanto/index.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/SendMailsNewsletter.php" />
-        <option value="$PROJECT_DIR$/challengeaudit.php" />
+        <option value="$PROJECT_DIR$/webinars.php" />
         <option value="$PROJECT_DIR$/blog.php" />
+        <option value="$PROJECT_DIR$/challengeaudit.php" />
       </list>
     </option>
   </component>
@@ -354,12 +359,12 @@
       <workItem from="1549270313995" duration="7839000" />
       <workItem from="1549354043471" duration="4520000" />
       <workItem from="1549375792386" duration="45000" />
-      <workItem from="1549446814064" duration="3970000" />
+      <workItem from="1549446814064" duration="4252000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="523336000" />
+    <option name="totallyTimeSpent" value="523618000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1366" height="768" extended-state="6" />
@@ -661,34 +666,37 @@
     <entry file="file://$PROJECT_DIR$/bd_leads.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/challengeaudit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="98" column="52" lean-forward="true" selection-start-line="98" selection-start-column="52" selection-end-line="98" selection-end-column="52" />
-          <folding>
-            <element signature="n#style#0;n#section#0;n#form#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="875">
+        <state relative-caret-position="1100">
           <caret line="1028" column="109" selection-end-line="1030" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webinars.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="90" column="33" selection-start-line="90" selection-start-column="28" selection-end-line="90" selection-end-column="33" />
+        <state relative-caret-position="186">
+          <caret line="93" column="22" selection-start-line="93" selection-start-column="17" selection-end-line="93" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#section#0;n#form#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/blog.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="1003" column="54" selection-start-line="1003" selection-start-column="54" selection-end-line="1003" selection-end-column="54" />
+        <state relative-caret-position="186">
+          <caret line="93" column="22" selection-start-line="93" selection-start-column="17" selection-end-line="93" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#section#0;n#form#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/challengeaudit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="93" column="22" selection-start-line="93" selection-start-column="17" selection-end-line="93" selection-end-column="22" />
           <folding>
             <element signature="n#style#0;n#section#0;n#form#0;n#!!top" expanded="true" />
           </folding>

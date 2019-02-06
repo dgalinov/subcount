@@ -172,7 +172,7 @@ require("db_connection.php");
                     <span class="close">&times;</span>
                 </div>
                 <div class="modal-body">
-                    <form method="post" action="index.php">
+                    <form method="post" action="challengeaudit.php">
                         <input type="text" id="fname" name="emailSS" placeholder="Input email" class="EMAILStyle">
                         <input type="password" id="fname" name="passwordSS" placeholder="Input password"
                                class="PSSWStyle">
@@ -212,7 +212,7 @@ require("db_connection.php");
                 <h2>Create Campaign</h2>
             </div>
             <div class="modal3-body">
-                <form method="post" action="index.php">
+                <form method="post" action="challengeaudit.php">
                     <input type="text" id="fname" name="NameEvent" placeholder="Input Name Event"
                            class="EventoCreating">
                     <input type="submit" class="buttonSaveSequence" name="action" value="New">
@@ -292,7 +292,7 @@ require("db_connection.php");
     <!-- MENU OF THE FILTERS -->
     <div class="main">
         <div class="container">
-            <form method="post" action="index.php">
+            <form method="post" action="challengeaudit.php">
                 <div class="row">
                     <div class="col-">
                         <!-- Change the format of the sequence -->
@@ -762,7 +762,7 @@ require("db_connection.php");
                 </div>
         </div>
         <section class="indent-1">
-            <form action="index.php" method="post">
+            <form action="challengeaudit.php" method="post">
                 <section class="sectionMails" id="new">
                     <label for="event">
                         <!-- Show all the events that ar introduced in a SELECT -->
@@ -805,7 +805,7 @@ require("db_connection.php");
                     while ($row = mysqli_fetch_assoc($result)) {
                         $idComparar = $row['id'];
                         echo "
-                        <form action='index.php' method='post'>
+                        <form action='challengeaudit.php' method='post'>
                         <section style='width: 90%;display:none;' class='sectionMails' id='" . $idComparar . "'>
                                 <div id='" . $idComparar . "'>
                                     <p>Email Subject</p>
